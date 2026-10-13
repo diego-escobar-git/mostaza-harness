@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "wheelhouse_version": 31,
+  "notebook_version": 3,
+  "resources": [
+    {
+      "id": "swegemma",
+      "path": "resources/official/swegemma-0.2.11-py3-none-any.whl",
+      "url": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/metric/gemma-4-developer-agent-wheelhouse/swegemma-0.2.11-py3-none-any.whl?datasetVersionNumber=31",
+      "version": "0.2.11",
+      "wheelhouse_version": 31,
+      "sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": ">=3.12",
+      "status": "verified",
+      "license": "Not declared in wheel metadata; no redistribution",
+      "max_bytes": 200000,
+      "download_verified_at": "2026-10-13"
+    },
+    {
+      "id": "adk_submission",
+      "path": "resources/official/adk_submission-0.2.13-py3-none-any.whl",
+      "url": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/metric/gemma-4-developer-agent-wheelhouse/adk_submission-0.2.13-py3-none-any.whl?datasetVersionNumber=31",
+      "version": "0.2.13",
+      "wheelhouse_version": 31,
+      "sha256": "f156f0bd84580ccb9334726d114d7a5481f16d3a6e2887cc4d276ced0ef8d99d",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": ">=3.11",
+      "status": "verified",
+      "license": "Not declared in wheel metadata; no redistribution",
+      "max_bytes": 200000,
+      "download_verified_at": "2026-10-13"
+    },
+    {
+      "id": "adk_eval_core",
+      "path": "resources/official/adk_eval_core-0.1.0-py3-none-any.whl",
+      "url": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/metric/gemma-4-developer-agent-wheelhouse/adk_eval_core-0.1.0-py3-none-any.whl?datasetVersionNumber=31",
+      "version": "0.1.0",
+      "wheelhouse_version": 31,
+      "sha256": "e614e1b2fe8d886a634871e4c57f9887e1cc66e8c27300f8503a43c6e3ca82f3",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": ">=3.11",
+      "status": "verified",
+      "license": "Not declared in wheel metadata; no redistribution",
+      "max_bytes": 200000,
+      "download_verified_at": "2026-10-13"
+    },
+    {
+      "id": "notebook",
+      "path": "resources/official/getting-started-response.json",
+      "url": "https://www.kaggle.com/code/ryanholbrook/getting-started-gemma-4-developer-agent",
+      "download_url": "https://www.kaggle.com/api/v1/kernels/pull/ryanholbrook/getting-started-gemma-4-developer-agent",
+      "version": 3,
+      "sha256": "2feb55b79401d9adca7f2df4a2b7ccbc96204b4a01b2df050c1ecd057dc85528",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": "3.12.13 notebook metadata",
+      "status": "verified",
+      "license": "Review Kaggle notebook terms before redistribution",
+      "max_bytes": 1000000
+    },
+    {
+      "id": "harness_readme",
+      "path": "resources/official/HARNESS_README.md",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "sha256": "445000219b803942c469391ec8b69791a31e9cec2f934738c767e34b5ca0aa1f",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "HARNESS_README.md",
+      "bytes": 55940
+    },
+    {
+      "id": "starter_agent",
+      "path": "resources/official/sample_submission/agent.yaml",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "sha256": "c7fbbbbdc44778419be8e9f53a85800eeb17d0cf151e0846c46e107401b72034",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "sample_submission/agent.yaml",
+      "bytes": 438
+    },
+    {
+      "id": "starter_eval",
+      "path": "resources/official/sample_submission/eval_config.yaml",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "sha256": "adb486b67535fa59b427b79d44dafc131176f1f1964d184e16046ed520ede02d",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "required": false,
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "sample_submission/eval_config.yaml",
+      "bytes": 232
+    },
+    {
+      "id": "tasks",
+      "path": "resources/official/tasks.jsonl",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "sha256": "e4b3fd60f69dbc2b9213e54eeb9636db78aefe92c1d06269d73d9f5f8f3c8ad6",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "tasks.jsonl",
+      "bytes": 1984455
+    },
+    {
+      "id": "starter_sampling",
+      "path": "resources/official/sample_submission/configs/sampling.yaml",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "sample_submission/configs/sampling.yaml",
+      "bytes": 120
+    },
+    {
+      "id": "starter_prompt",
+      "path": "resources/official/sample_submission/prompts/system.md",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "sample_submission/prompts/system.md",
+      "bytes": 3888
+    },
+    {
+      "id": "starter_analyzer_prompt",
+      "path": "resources/official/sample_submission/prompts/analyzer.md",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "sample_submission/prompts/analyzer.md",
+      "bytes": 527
+    },
+    {
+      "id": "starter_analyzer_agent",
+      "path": "resources/official/sample_submission/sub_agents/code_analyzer.yaml",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "download_url": null,
+      "version": null,
+      "version_basis": "Competition UI individual file; immutable identity is SHA-256, no numeric dataset version observed",
+      "sha256": "7a764798e36cc68aa38900256245e4aed969b5439b992c7da4105b6ebcb7e62b",
+      "retrieved_at": "2026-10-13",
+      "python_requirement": null,
+      "status": "verified",
+      "license": "Authenticated competition artifacts; no explicit file license in inspected README/sample, raw assets remain ignored",
+      "retrieval_method": "Official authenticated Kaggle Data UI individual download",
+      "source_path": "sample_submission/sub_agents/code_analyzer.yaml",
+      "bytes": 361
+    }
+  ],
+  "review": {
+    "starter_derivation": "Authentic selected starter declarations reviewed; E0 removes main_lora and agent_tool only, inlines exact sampling, renames prompt include and adds shared AC-4 budget checkpoints",
+    "real_compatibility": "unverified",
+    "local_compiler": "compiler-only, inert registry bindings; no Gemma inference",
+    "native_tools_source": "swegemma 0.2.11 swegemma/tools/__init__.py:create_tools",
+    "generation_defaults_source": "Authenticated sample_submission/configs/sampling.yaml and sample_submission/eval_config.yaml; copied provisionally without tuning",
+    "asset_policy": "Ignored local official assets; no datasets/models/archives redistributed",
+    "compiler_environment": {
+      "python": "3.13.15",
+      "google-adk": "1.36.1",
+      "adk_submission": "0.2.13",
+      "swegemma": "0.2.11",
+      "adk_eval_core": "0.1.0",
+      "gpu_packages_installed": false,
+      "runtime_dependencies_complete": false,
+      "native_dependencies": {
+        "cachetools": "5.5.2",
+        "networkx": "3.4.2",
+        "numpy": "2.2.6"
+      }
+    },
+    "official_resources_reviewed": true,
+    "reviewed_at": "2026-10-13",
+    "sample_tree_inventory": {
+      "kind": "locally_generated_inventory_of_official_individual_downloads",
+      "organizer_supplied_file": false,
+      "files": [
+        {
+          "path": "sample_submission/agent.yaml",
+          "sha256": "c7fbbbbdc44778419be8e9f53a85800eeb17d0cf151e0846c46e107401b72034",
+          "bytes": 438
+        },
+        {
+          "path": "sample_submission/eval_config.yaml",
+          "sha256": "adb486b67535fa59b427b79d44dafc131176f1f1964d184e16046ed520ede02d",
+          "bytes": 232
+        },
+        {
+          "path": "sample_submission/configs/sampling.yaml",
+          "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a",
+          "bytes": 120
+        },
+        {
+          "path": "sample_submission/prompts/system.md",
+          "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af",
+          "bytes": 3888
+        },
+        {
+          "path": "sample_submission/prompts/analyzer.md",
+          "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43",
+          "bytes": 527
+        },
+        {
+          "path": "sample_submission/sub_agents/code_analyzer.yaml",
+          "sha256": "7a764798e36cc68aa38900256245e4aed969b5439b992c7da4105b6ebcb7e62b",
+          "bytes": 361
+        }
+      ],
+      "omitted": [
+        {
+          "path": "sample_submission/adapters/main_lora",
+          "reason": "Original root adapter removed for approved no-LoRA E0; no weights downloaded"
+        },
+        {
+          "path": "sample_submission/adapters/tool_lora",
+          "reason": "Delegated analyzer and its adapter removed; no weights downloaded"
+        }
+      ]
+    },
+    "task_metadata_review": {
+      "count": 129,
+      "unique_instance_ids": true,
+      "repositories": {
+        "fastapi/fastapi": 67,
+        "psf/requests": 13,
+        "Textualize/rich": 48,
+        "encode/httpx": 1
+      },
+      "reviewed_fields": [
+        "instance_id",
+        "repo",
+        "base_commit"
+      ],
+      "solution_fields": "Raw data remains ignored; patch/test_patch content never printed, packaged or supplied as agent context"
+    },
+    "readme_comparison": {
+      "pinned_wheels_retained": true,
+      "material_contradiction_found": false,
+      "notes": [
+        "README permits four quantized competition models; Mostaza retains required31B.",
+        "Sample subagent uses ../ includes; it is removed from E0 as approved, no compiler schema changed.",
+        "README example timeout300 differs from authentic sample timeout60; actual source file timeout60 preserved.",
+        "Code similarity source supports symbol lookup with lexical fallback, not a neural text encoder."
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+# Local environments, tooling and caches
+.venv/
+.tools/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+.idea/
+.vscode/
+
+# Credentials
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+credentials*.json
+
+# Authentic external assets; keep only the compact provenance manifest
+resources/*
+!resources/manifest.json
+# Datasets and model weights
+data/
+datasets/
+models/
+weights/
+*.parquet
+*.arrow
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.ckpt
+
+# Submission archives and bulky local runs
+*.zip
+*.tar
+*.tar.gz
+*.whl
+results/*
+!results/.gitkeep
+runs/
