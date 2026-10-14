@@ -1,0 +1,653 @@
+{
+  "actual_executed_notebook_sha256": "df9c15aa2f34d1172612973e6ee8e445808e148c1864ab6da206b1a8e1c7f2d2",
+  "kind": "host_only_postrun_diagnosis",
+  "launched_notebook_sha256": "beaa495c188c20761facca67e0a3be9f0e9c6d8594404d2d4744551222c0b589",
+  "limitations": [
+    "Prompt tokens on rejected FastAPI requests are lower-bounded, not fully measured",
+    "Pure model/tool times and exact Kaggle verifier imports remain unknown",
+    "CPU calls are analyst-driven, not model-selected retrieval or real evaluation outcomes"
+  ],
+  "local_official_source_sha256": {
+    "google/adk/apps/_configs.py": "7332330d32804ca1cf9094799e28658869c1b00ade5e5d72993619eecc3ecc15",
+    "google/adk/tools/function_tool.py": "3d74d850137e959804f74d3cf81f964745d6f08ce161d8b5994d8788cc1f950b",
+    "swegemma/config.py": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b",
+    "swegemma/harness/agent_runner.py": "4d7eccabd203c26f7c39e882684d2fd851f383f6a5c76c4a75b0e559cd5d6a18",
+    "swegemma/harness/container_setup.py": "3192acdce35f2d0bd0b191186851b46c251390af16b7f139a1640e16fb1d862c",
+    "swegemma/harness/verification.py": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa",
+    "swegemma/sandbox/subprocess.py": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2",
+    "swegemma/tools/workspace.py": "d38ba2f68636c5e33c9f607bd9e5401dbf81d77125b966ef87c799a1615b05c6"
+  },
+  "rows": [
+    {
+      "compaction_configuration": null,
+      "configuration": "E0-B180",
+      "generated_condition": "if any(_netrc):",
+      "get_status_step_ids": [
+        15
+      ],
+      "host_only_verification_summary": "Returned empty credentials despite source edit; 1 failed,205 passed,13 skipped; no hidden test body copied",
+      "max_output_tokens": 16384,
+      "max_recorded_completion_tokens": 1915,
+      "max_recorded_prompt_tokens": 11966,
+      "native_duration_seconds": 177.71776480800008,
+      "native_error": null,
+      "patch_sha256": "9a407c374f5d5546214f461acd826febd963f4a903432a269097f7a40e1013fd",
+      "probe_events": [
+        {
+          "command": "PYTHONPATH=src python3 repro_netrc.py",
+          "response": {
+            "exit_code": 0,
+            "status": "ok",
+            "stderr": "",
+            "stdout": "Auth for empty entry: None\nAuth for user/pass: ('password', '')\n"
+          },
+          "step_id": 14
+        }
+      ],
+      "read_file_events": [
+        {
+          "arguments": {
+            "filepath": "src/requests/utils.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 4485,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 4
+        },
+        {
+          "arguments": {
+            "end_line": 240,
+            "filepath": "src/requests/utils.py",
+            "start_line": 205
+          },
+          "is_truncated": false,
+          "observation_characters": 1341,
+          "returned_end_line": 240,
+          "returned_start_line": 205,
+          "step_id": 6
+        },
+        {
+          "arguments": {
+            "end_line": 250,
+            "filepath": "src/requests/utils.py",
+            "start_line": 241
+          },
+          "is_truncated": false,
+          "observation_characters": 383,
+          "returned_end_line": 250,
+          "returned_start_line": 241,
+          "step_id": 7
+        }
+      ],
+      "recorded_tool_events": 16,
+      "result_sha256": "1fd5aeac595fa62a48abf21736b1a33bc63f6a08c7e286211d7443d7abaafc61",
+      "result_source": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/official-result-0001.json",
+      "retrieval_events": [],
+      "retrieval_notice_present": true,
+      "task": "requests_7205",
+      "trace": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/traces/trace_requests_7205.json",
+      "trace_sha256": "13f241c382cd8006da1b962bcb80b26aef32a5eaa4e7a340008b5e27d193512a",
+      "verification_exit_code": 1,
+      "verifier_import_origin": null,
+      "verifier_import_origin_missing_reason": "No module.__file__, import path or executing-function source hash in retained verifier receipts"
+    },
+    {
+      "compaction_configuration": null,
+      "configuration": "E0-B180",
+      "get_status_step_ids": [],
+      "max_output_tokens": 16384,
+      "max_recorded_completion_tokens": 173,
+      "max_recorded_prompt_tokens": 16281,
+      "native_duration_seconds": 40.41577250600005,
+      "native_error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 16384 output tokens and your prompt contains at least 16385 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=16385)",
+      "read_file_events": [
+        {
+          "arguments": {
+            "filepath": "fastapi/params.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 5362,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 4
+        },
+        {
+          "arguments": {
+            "filepath": "fastapi/params.py",
+            "start_line\"": 400
+          },
+          "is_truncated": true,
+          "observation_characters": 5362,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 5
+        },
+        {
+          "arguments": {
+            "end_line": 600,
+            "filepath": "fastapi/params.py",
+            "start_line": 400
+          },
+          "is_truncated": true,
+          "observation_characters": 5639,
+          "returned_end_line": 549,
+          "returned_start_line": 400,
+          "step_id": 6
+        },
+        {
+          "arguments": {
+            "end_line": 400,
+            "filepath": "fastapi/params.py",
+            "start_line\"": 300
+          },
+          "is_truncated": true,
+          "observation_characters": 5362,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 8
+        },
+        {
+          "arguments": {
+            "filepath": "fastapi/dependencies/utils.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 4941,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 10
+        },
+        {
+          "arguments": {
+            "end_line": 840,
+            "filepath": "fastapi/dependencies/utils.py",
+            "start_line\"": 780
+          },
+          "is_truncated": true,
+          "observation_characters": 4941,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 12
+        }
+      ],
+      "recorded_tool_events": 11,
+      "result_sha256": "46445c46fb6ceda84cec891a79ac1a2c3bf866c276ef5e2a5ba0c9c267f81896",
+      "result_source": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/official-result-0002.json",
+      "retrieval_events": [],
+      "retrieval_notice_present": true,
+      "task": "fastapi_15589",
+      "trace": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/traces/trace_fastapi_15589.json",
+      "trace_sha256": "5e06b919fa6a77a0ca85f11e73d47122963e270954549ad8a0172be83bcae086",
+      "verifier_import_origin": null,
+      "verifier_import_origin_missing_reason": "No module.__file__, import path or executing-function source hash in retained verifier receipts"
+    },
+    {
+      "compaction_configuration": null,
+      "configuration": "E0-B180",
+      "get_status_step_ids": [
+        3
+      ],
+      "max_output_tokens": 16384,
+      "max_recorded_completion_tokens": 1635,
+      "max_recorded_prompt_tokens": 11685,
+      "native_duration_seconds": 184.452348453,
+      "native_error": "Agent exceeded session timeout (3 min)",
+      "read_file_events": [
+        {
+          "arguments": {
+            "filepath": "rich/text.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 4748,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 7
+        },
+        {
+          "arguments": {
+            "end_line": 810,
+            "filepath": "rich/text.py",
+            "start_line": 775
+          },
+          "is_truncated": false,
+          "observation_characters": 1378,
+          "returned_end_line": 810,
+          "returned_start_line": 775,
+          "step_id": 11
+        },
+        {
+          "arguments": {
+            "end_line": 1050,
+            "filepath": "rich/text.py",
+            "start_line": 1007
+          },
+          "is_truncated": false,
+          "observation_characters": 1640,
+          "returned_end_line": 1050,
+          "returned_start_line": 1007,
+          "step_id": 13
+        },
+        {
+          "arguments": {
+            "end_line": 1080,
+            "filepath": "rich/text.py",
+            "start_line": 1051
+          },
+          "is_truncated": false,
+          "observation_characters": 1047,
+          "returned_end_line": 1080,
+          "returned_start_line": 1051,
+          "step_id": 15
+        },
+        {
+          "arguments": {
+            "end_line": 1100,
+            "filepath": "rich/text.py",
+            "start_line": 1080
+          },
+          "is_truncated": false,
+          "observation_characters": 832,
+          "returned_end_line": 1100,
+          "returned_start_line": 1080,
+          "step_id": 16
+        },
+        {
+          "arguments": {
+            "end_line": 545,
+            "filepath": "rich/text.py",
+            "start_line": 532
+          },
+          "is_truncated": false,
+          "observation_characters": 696,
+          "returned_end_line": 545,
+          "returned_start_line": 532,
+          "step_id": 18
+        },
+        {
+          "arguments": {
+            "end_line": 930,
+            "filepath": "rich/text.py",
+            "start_line": 913
+          },
+          "is_truncated": false,
+          "observation_characters": 729,
+          "returned_end_line": 930,
+          "returned_start_line": 913,
+          "step_id": 20
+        }
+      ],
+      "recorded_tool_events": 19,
+      "result_sha256": "988222494a5ce51fae2bcafbcfa186bd221f458b51ea3b115066ee82b33dc466",
+      "result_source": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/official-result-0003.json",
+      "retrieval_events": [],
+      "retrieval_notice_present": true,
+      "task": "rich_3061",
+      "trace": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/traces/trace_rich_3061.json",
+      "trace_sha256": "48ec0e69f91dfb7032955b4d41516e9b63e80b67d50ea10f8b7bb854bdd446c7",
+      "verifier_import_origin": null,
+      "verifier_import_origin_missing_reason": "No module.__file__, import path or executing-function source hash in retained verifier receipts"
+    },
+    {
+      "compaction_configuration": null,
+      "configuration": "E1-B180",
+      "generated_condition": "if _netrc and any(_netrc):",
+      "get_status_step_ids": [
+        25
+      ],
+      "host_only_verification_summary": "Returned empty credentials despite source edit; 1 failed,205 passed,13 skipped; no hidden test body copied",
+      "max_output_tokens": 16384,
+      "max_recorded_completion_tokens": 1253,
+      "max_recorded_prompt_tokens": 14421,
+      "native_duration_seconds": 143.6932626989999,
+      "native_error": null,
+      "patch_sha256": "f4b89587585b3006e785098a52572c3e122714517345c33c587af4160d33b58e",
+      "probe_events": [
+        {
+          "command": "python3 -c \"from requests.utils import get_netrc_auth; import os; open('.netrc', 'w').write('machine example.com\\n'); os.environ['NETRC'] = '.netrc'; print(get_netrc_auth('http://example.com/thing'))\"",
+          "response": {
+            "exit_code": 0,
+            "status": "ok",
+            "stderr": "",
+            "stdout": "('', '')\n"
+          },
+          "step_id": 16
+        },
+        {
+          "command": "PYTHONPATH=/workspace/src python3 -c \"from requests.utils import get_netrc_auth; import os; open('.netrc', 'w').write('machine example.com\\n'); os.environ['NETRC'] = '.netrc'; print(get_netrc_auth('http://example.com/thing'))\"",
+          "response": {
+            "exit_code": 0,
+            "status": "ok",
+            "stderr": "",
+            "stdout": "None\n"
+          },
+          "step_id": 17
+        },
+        {
+          "command": "pytest tests/test_utils.py::TestGetNetrcAuth",
+          "response": {
+            "budget_warning": "Only 8 tool call(s) remaining (22/30 used). Finalize your edits and call submit_patch soon.",
+            "exit_code": 0,
+            "status": "ok",
+            "stderr": "",
+            "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.12.13, pytest-8.4.2, pluggy-1.6.0\nrootdir: /tmp/swegemma_sandbox_ff65d558-45c_75jbxk3s/workspace\nconfigfile: pytest.ini\nplugins: typeguard-4.5.1, langsmith-0.7.34\ncollected 2 items\n\ntests/test_utils.py ..                                                   [100%]\n\n============================== 2 passed in 0.08s ===============================\n"
+          },
+          "step_id": 24
+        }
+      ],
+      "read_file_events": [
+        {
+          "arguments": {
+            "filepath": "src/requests/utils.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 4485,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 4
+        },
+        {
+          "arguments": {
+            "end_line": 250,
+            "filepath": "src/requests/utils.py",
+            "start_line": 205
+          },
+          "is_truncated": false,
+          "observation_characters": 1578,
+          "returned_end_line": 250,
+          "returned_start_line": 205,
+          "step_id": 6
+        },
+        {
+          "arguments": {
+            "filepath": "tests/test_utils.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 4484,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 10
+        },
+        {
+          "arguments": {
+            "end_line": 180,
+            "filepath": "tests/test_utils.py",
+            "start_line": 150
+          },
+          "is_truncated": false,
+          "observation_characters": 1393,
+          "returned_end_line": 180,
+          "returned_start_line": 150,
+          "step_id": 12
+        }
+      ],
+      "recorded_tool_events": 27,
+      "result_sha256": "337115deba8548849f233ec293321f7bc4930e5a7fb0dfccc5935e25663ea328",
+      "result_source": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/official-result-0001.json",
+      "retrieval_events": [],
+      "retrieval_notice_present": true,
+      "task": "requests_7205",
+      "trace": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/traces/trace_requests_7205.json",
+      "trace_sha256": "5b0b3c01aefd94178e516f7d59b84614cb9ef1ab1f79523a32b6d3ba7d4214a1",
+      "verification_exit_code": 1,
+      "verifier_import_origin": null,
+      "verifier_import_origin_missing_reason": "No module.__file__, import path or executing-function source hash in retained verifier receipts"
+    },
+    {
+      "compaction_configuration": null,
+      "configuration": "E1-B180",
+      "get_status_step_ids": [],
+      "max_output_tokens": 16384,
+      "max_recorded_completion_tokens": 1230,
+      "max_recorded_prompt_tokens": 15827,
+      "native_duration_seconds": 89.60791004499993,
+      "native_error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 16384 output tokens and your prompt contains at least 16385 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=16385)",
+      "read_file_events": [
+        {
+          "arguments": {
+            "filepath": "fastapi/params.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 5362,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 4
+        },
+        {
+          "arguments": {
+            "filepath": "fastapi/params.py",
+            "start_line\"": 500
+          },
+          "is_truncated": true,
+          "observation_characters": 5362,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 5
+        },
+        {
+          "arguments": {
+            "filepath": "fastapi/params.py",
+            "start_line": 500
+          },
+          "is_truncated": true,
+          "observation_characters": 5761,
+          "returned_end_line": 649,
+          "returned_start_line": 500,
+          "step_id": 6
+        },
+        {
+          "arguments": {
+            "end_line": 350,
+            "filepath": "fastapi/params.py",
+            "start_line": 303
+          },
+          "is_truncated": false,
+          "observation_characters": 1994,
+          "returned_end_line": 350,
+          "returned_start_line": 303,
+          "step_id": 8
+        },
+        {
+          "arguments": {
+            "end_line": 400,
+            "filepath": "fastapi/params.py",
+            "start_line": 351
+          },
+          "is_truncated": false,
+          "observation_characters": 1796,
+          "returned_end_line": 400,
+          "returned_start_line": 351,
+          "step_id": 9
+        },
+        {
+          "arguments": {
+            "filepath": "fastapi/dependencies/utils.py"
+          },
+          "is_truncated": true,
+          "observation_characters": 4941,
+          "returned_end_line": 150,
+          "returned_start_line": 1,
+          "step_id": 10
+        },
+        {
+          "arguments": {
+            "end_line": 550,
+            "filepath": "fastapi/dependencies/utils.py",
+            "start_line": 520
+          },
+          "is_truncated": false,
+          "observation_characters": 1452,
+          "returned_end_line": 550,
+          "returned_start_line": 520,
+          "step_id": 12
+        },
+        {
+          "arguments": {
+            "end_line": 830,
+            "filepath": "fastapi/dependencies/utils.py",
+            "start_line": 790
+          },
+          "is_truncated": false,
+          "observation_characters": 1876,
+          "returned_end_line": 830,
+          "returned_start_line": 790,
+          "step_id": 13
+        },
+        {
+          "arguments": {
+            "end_line": 770,
+            "filepath": "fastapi/dependencies/utils.py",
+            "start_line": 753
+          },
+          "is_truncated": false,
+          "observation_characters": 790,
+          "returned_end_line": 770,
+          "returned_start_line": 753,
+          "step_id": 15
+        }
+      ],
+      "recorded_tool_events": 14,
+      "result_sha256": "ceb7bf4911e203eac0ad45f9592728fcd7e207ad11d1527a7411190c748f0636",
+      "result_source": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/official-result-0002.json",
+      "retrieval_events": [],
+      "retrieval_notice_present": true,
+      "task": "fastapi_15589",
+      "trace": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/traces/trace_fastapi_15589.json",
+      "trace_sha256": "9f2942567d94bbebcf767cf05906dd919d48b4d01e41a05f23a2d49b66af98d4",
+      "verifier_import_origin": null,
+      "verifier_import_origin_missing_reason": "No module.__file__, import path or executing-function source hash in retained verifier receipts"
+    },
+    {
+      "compaction_configuration": null,
+      "configuration": "E1-B180",
+      "get_status_step_ids": [
+        3
+      ],
+      "max_output_tokens": 16384,
+      "max_recorded_completion_tokens": 1454,
+      "max_recorded_prompt_tokens": 14328,
+      "native_duration_seconds": 181.10218452000004,
+      "native_error": "Agent exceeded session timeout (3 min)",
+      "read_file_events": [
+        {
+          "arguments": {
+            "end_line": 785,
+            "filepath": "rich/text.py",
+            "start_line": 775
+          },
+          "is_truncated": false,
+          "observation_characters": 454,
+          "returned_end_line": 785,
+          "returned_start_line": 775,
+          "step_id": 8
+        },
+        {
+          "arguments": {
+            "end_line": 810,
+            "filepath": "rich/text.py",
+            "start_line": 775
+          },
+          "is_truncated": false,
+          "observation_characters": 1378,
+          "returned_end_line": 810,
+          "returned_start_line": 775,
+          "step_id": 9
+        },
+        {
+          "arguments": {
+            "end_line": 1030,
+            "filepath": "rich/text.py",
+            "start_line": 1007
+          },
+          "is_truncated": false,
+          "observation_characters": 1013,
+          "returned_end_line": 1030,
+          "returned_start_line": 1007,
+          "step_id": 11
+        },
+        {
+          "arguments": {
+            "end_line": 1060,
+            "filepath": "rich/text.py",
+            "start_line": 1031
+          },
+          "is_truncated": false,
+          "observation_characters": 1105,
+          "returned_end_line": 1060,
+          "returned_start_line": 1031,
+          "step_id": 12
+        },
+        {
+          "arguments": {
+            "end_line": 540,
+            "filepath": "rich/text.py",
+            "start_line": 532
+          },
+          "is_truncated": false,
+          "observation_characters": 497,
+          "returned_end_line": 540,
+          "returned_start_line": 532,
+          "step_id": 14
+        },
+        {
+          "arguments": {
+            "end_line": 350,
+            "filepath": "rich/text.py",
+            "start_line": 300
+          },
+          "is_truncated": false,
+          "observation_characters": 2126,
+          "returned_end_line": 350,
+          "returned_start_line": 300,
+          "step_id": 18
+        },
+        {
+          "arguments": {
+            "end_line": 200,
+            "filepath": "rich/text.py",
+            "start_line": 150
+          },
+          "is_truncated": false,
+          "observation_characters": 1774,
+          "returned_end_line": 200,
+          "returned_start_line": 150,
+          "step_id": 19
+        },
+        {
+          "arguments": {
+            "end_line": 550,
+            "filepath": "rich/text.py",
+            "start_line": 532
+          },
+          "is_truncated": false,
+          "observation_characters": 917,
+          "returned_end_line": 550,
+          "returned_start_line": 532,
+          "step_id": 21
+        },
+        {
+          "arguments": {
+            "end_line": 200,
+            "filepath": "rich/style.py",
+            "start_line": 150
+          },
+          "is_truncated": false,
+          "observation_characters": 2174,
+          "returned_end_line": 200,
+          "returned_start_line": 150,
+          "step_id": 24
+        }
+      ],
+      "recorded_tool_events": 23,
+      "result_sha256": "1261669600a89b6684de40b4a7526f19d5e5844b3d85a0cee235dc18dfc5e178",
+      "result_source": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/official-result-0003.json",
+      "retrieval_events": [],
+      "retrieval_notice_present": true,
+      "task": "rich_3061",
+      "trace": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/traces/trace_rich_3061.json",
+      "trace_sha256": "23fe2abb24cc3e7be2ad0f90d077394f50290f259d63bf4ffe1d15caa7130b68",
+      "verifier_import_origin": null,
+      "verifier_import_origin_missing_reason": "No module.__file__, import path or executing-function source hash in retained verifier receipts"
+    }
+  ],
+  "scope": "Read-only six authentic traces/native results plus CPU fixtures; no new benchmark or agent inputs"
+}

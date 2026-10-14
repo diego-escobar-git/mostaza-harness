@@ -1,0 +1,37 @@
+{
+  "commands": [
+    ".tools/official/bin/python results/postrun-diagnosis-20261014/replay.py \"$PWD\"",
+    ".tools/official/bin/python results/postrun-diagnosis-20261014/import-replay.py \"$PWD\"",
+    ".tools/official/bin/python results/postrun-diagnosis-20261014/retrieval-replay.py \"$PWD\"",
+    ".tools/official/bin/python results/postrun-diagnosis-20261014/collect.py \"$PWD\""
+  ],
+  "executed_diagnostic_assertions": {
+    "adk_optional_argument_filtering": "PASS",
+    "authentic_trace_summaries": 6,
+    "independent_netrc_cases": 12,
+    "module_binding_observations": 6,
+    "real_resource_cpu_checks": 3,
+    "status": "PASS"
+  },
+  "executed_preservation_checks": {
+    "B180_real_report_recomputation": "PASS",
+    "B180_v3_raw_inventory_files": 102,
+    "closed_plan_bytes": "unchanged",
+    "git_diff_whitespace": "PASS",
+    "prior_raw_inventory_files": 63,
+    "prior_startup_candidate_provenance": "PASS"
+  },
+  "full_implementation_gate_reexecuted": false,
+  "gpu_evaluations": 0,
+  "gpu_starts": 0,
+  "model_calls": 0,
+  "notes": [
+    "CPU3.13.15 differs from Kaggle3.12.13; import replay demonstrates mechanism, not exact historical verifier origin",
+    "No reference solution or hidden test fixture loaded in these CPU experiments",
+    "A preliminary system-Python3.9 replay is excluded because its netrc semantics predate the task environment",
+    "All original native FAIL/ERROR records remain unchanged; no reclassification to PASS"
+  ],
+  "official_compiler_reexecuted": false,
+  "raw_reproduction_directory": "results/postrun-diagnosis-20261014",
+  "status": "DIAGNOSIS_COMPLETE_CORRECTIONS_PENDING_APPROVAL"
+}

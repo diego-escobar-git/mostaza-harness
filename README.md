@@ -81,3 +81,10 @@ Every consumed allocation is historical; another execution requires a fresh,
 specific compute authorization and prelaunch controls. The original
 [phase-2 readiness report](docs/implementation/evidence/mostaza-phase2-budget-retrieval/report.md)
 is retained as the pre-acquisition checkpoint.
+
+The [approved CPU corrections](docs/implementation/evidence/mostaza-context-verification/report.md)
+prepare C8K, common Q1 verification and separate R1 recovery variants without new
+GPU evaluations. Exact verifier import provenance is unavailable, so the fresh
+notebook remains blocked for real execution. Use
+`.venv/bin/python scripts/check_context_verification.py --check` for the dedicated
+CPU gate; its PASS does not remove that blocker.

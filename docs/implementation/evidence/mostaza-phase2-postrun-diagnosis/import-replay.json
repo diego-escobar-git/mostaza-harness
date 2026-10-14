@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "binding": "workspace_only",
+      "exit_code": 0,
+      "observation": {
+        "function_source_sha256": "b325855e7dab7d5ef678ef709bc1c8168d9c1c1f3df064faab68623c6ecd0046",
+        "module_origin": "external_installed_package",
+        "value": null
+      },
+      "variant": "baseline"
+    },
+    {
+      "binding": "workspace_src_first",
+      "exit_code": 0,
+      "observation": {
+        "function_source_sha256": "49e524551bbeb65ea118cc40153c8b64ec4869ecb6f4a1958aa49105d5fd395b",
+        "module_origin": "snapshot_src",
+        "value": [
+          "",
+          ""
+        ]
+      },
+      "variant": "baseline"
+    },
+    {
+      "binding": "workspace_only",
+      "exit_code": 0,
+      "observation": {
+        "function_source_sha256": "b325855e7dab7d5ef678ef709bc1c8168d9c1c1f3df064faab68623c6ecd0046",
+        "module_origin": "external_installed_package",
+        "value": null
+      },
+      "variant": "E0_patch"
+    },
+    {
+      "binding": "workspace_src_first",
+      "exit_code": 0,
+      "observation": {
+        "function_source_sha256": "cf6a0b0934d2aeaed81c906dc3669563de0b2db8b25089b8613325dd64afe5cd",
+        "module_origin": "snapshot_src",
+        "value": null
+      },
+      "variant": "E0_patch"
+    },
+    {
+      "binding": "workspace_only",
+      "exit_code": 0,
+      "observation": {
+        "function_source_sha256": "b325855e7dab7d5ef678ef709bc1c8168d9c1c1f3df064faab68623c6ecd0046",
+        "module_origin": "external_installed_package",
+        "value": null
+      },
+      "variant": "E1_patch"
+    },
+    {
+      "binding": "workspace_src_first",
+      "exit_code": 0,
+      "observation": {
+        "function_source_sha256": "4f92e5f6e31fe536ba5296a3e1a8248989bc6676d56596983d2b65abf18d3b8c",
+        "module_origin": "snapshot_src",
+        "value": null
+      },
+      "variant": "E1_patch"
+    }
+  ],
+  "scope": "CPU import-resolution reproduction; host Python3.13, not a replay of the unavailable Kaggle verifier process"
+}

@@ -1,0 +1,136 @@
+{
+  "compiler_receipts": [
+    {
+      "archive_sha256": "4c3e323317be2c7ba2ef288f65012094550ff3ad0c168e293423e18b6b1b8cd5",
+      "configuration_id": "E0-C8K",
+      "manifest_sha256": "c72f23a7b58637b535d5d639ff86648361eab80d2c512b387e726ae54d1c4422",
+      "official_compiler": "PASS"
+    },
+    {
+      "archive_sha256": "e373cd32b7186809f5bf476fad63ac8b16a2ae471f1dd348b01119a480e6f4e1",
+      "configuration_id": "E1-C8K",
+      "manifest_sha256": "7c3f20bdbab2042f6a65a6558d1923f6d63271311b5fc27972b101c8accb807e",
+      "official_compiler": "PASS"
+    },
+    {
+      "archive_sha256": "b0c1e1240aafa700686bf3bcd72c6db3799933db62c3f766e68ba0b1103fdc2f",
+      "configuration_id": "E0-C8K-Q1",
+      "manifest_sha256": "64c7cede79192011206be38fc51f735db725d6b41df98287f6d82b53580ccd6c",
+      "official_compiler": "PASS"
+    },
+    {
+      "archive_sha256": "abc40446765259ad8a3809f3f7cd54df78d5366f5ed74b7234272079755a29a8",
+      "configuration_id": "E1-C8K-Q1",
+      "manifest_sha256": "c7e5b3900a67e6df6565cb85ca31a53d2c20002715a69514a2a14dbcdedfe4f8",
+      "official_compiler": "PASS"
+    },
+    {
+      "archive_sha256": "4b83938351e4143cb3f6ab06a86b9675134827bd854c287d1318b760ff9e7439",
+      "configuration_id": "E1-C8K-Q1-R1",
+      "manifest_sha256": "986597efd062d08ec01d3a03017f65b8f8f73138c55c05c6a2d91dcf4127c45a",
+      "official_compiler": "PASS"
+    }
+  ],
+  "fixtures": {
+    "context_known_unknown_boundaries": "PASS",
+    "exact_version_fallback_without_active_event": "PASS",
+    "gpu_starts": 0,
+    "hung_reader_timeout": "PASS",
+    "independent_netrc_cases": [
+      {
+        "case": "empty_machine",
+        "error": null,
+        "variant": "baseline"
+      },
+      {
+        "case": "empty_default",
+        "error": null,
+        "variant": "baseline"
+      },
+      {
+        "case": "missing",
+        "error": null,
+        "variant": "baseline"
+      },
+      {
+        "case": "valid",
+        "error": null,
+        "variant": "baseline"
+      },
+      {
+        "case": "empty_machine",
+        "error": null,
+        "variant": "E0_patch"
+      },
+      {
+        "case": "empty_default",
+        "error": null,
+        "variant": "E0_patch"
+      },
+      {
+        "case": "missing",
+        "error": "TypeError",
+        "variant": "E0_patch"
+      },
+      {
+        "case": "valid",
+        "error": null,
+        "variant": "E0_patch"
+      },
+      {
+        "case": "empty_machine",
+        "error": null,
+        "variant": "E1_patch"
+      },
+      {
+        "case": "empty_default",
+        "error": null,
+        "variant": "E1_patch"
+      },
+      {
+        "case": "missing",
+        "error": null,
+        "variant": "E1_patch"
+      },
+      {
+        "case": "valid",
+        "error": null,
+        "variant": "E1_patch"
+      }
+    ],
+    "model_inference_calls": 0,
+    "monitor_started_before_t0": true,
+    "native_read_ranges": [
+      {
+        "malformed_start": 1,
+        "truncated": true,
+        "valid_start": 300
+      }
+    ],
+    "origins": [
+      {
+        "binding_matches": true,
+        "coverage": "sibling_probe_not_actual_test_process",
+        "layout": "flat"
+      },
+      {
+        "binding_matches": false,
+        "coverage": "sibling_probe_not_actual_test_process",
+        "layout": "src"
+      },
+      {
+        "binding_matches": true,
+        "coverage": "sibling_probe_not_actual_test_process",
+        "layout": "src_control_binding"
+      }
+    ],
+    "python": "3.13.15",
+    "scope": "Synthetic CPU controls; not real benchmark results",
+    "status": "PASS_CPU_FIXTURES"
+  },
+  "gpu_ready": false,
+  "historical_files_unchanged": 61,
+  "native_verifier_changed": false,
+  "new_gpu_evaluations": 0,
+  "status": "PASS_CPU_PREPARATION_WITH_BLOCKED_GPU_READINESS"
+}

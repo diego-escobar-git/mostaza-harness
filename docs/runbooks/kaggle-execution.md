@@ -606,3 +606,44 @@ For future competitions and launches:
 Every new context/sampling/retrieval treatment needs its own reviewed proposal,
 comparable conditions and explicit GPU authorization. Never retry a consumed
 allocation to fill a failed or missing row without that decision.
+
+## 15. Verify context and imported-source provenance before another allocation
+
+The approved CPU corrections and current blocked readiness are recorded in
+[context-verification](../implementation/evidence/mostaza-context-verification/report.md).
+C8K reduces only output reservation; Q1 and retrieval R1 remain separate variants.
+Do not change old configurations or reinterpret their FAIL results after CPU replay.
+
+Before trusting verification semantics, record which source the agent and actual
+verifier process import. A workspace/src layout can be shadowed by a preinstalled
+package even when the edited file looks correct and an unrelated targeted test
+passes. Record the interpreter, module/function location/hash, cwd and import path;
+unknown/failed editable installation is a blocker. A separate python preflight
+is only a sibling observation, not an exact pytest-process receipt. The provided
+read-only origin adapter fails closed on this boundary and does not repair setup.
+An official setup inventory query returned403; obtain authorized provenance before
+proposing changes to setup, verifier environment or pytest plugins. Never copy
+returned hidden-test expectations into agent inputs to resolve the discrepancy.
+
+The reusable `ReadOnlyMonitor` in mostaza.evaluation.supervision_monitor runs an
+explicitly supplied, audited read-only metadata command with shell disabled. Start
+it and obtain a fresh successful observation BEFORE recording external T0; its
+prelaunch method rejects an absent/stopped/stale/unsuccessful observer. Bind the
+exact VersionIdentity after the platform exposes it. The metadata reader emits
+ref, script_version_id, sdk_status, browser_status, model_ready,
+version_cancel_available and active_event_visible as available, preserving nulls.
+Other fields are discarded. SDK status may be unavailable while an exact browser
+version remains usable. Do not fabricate browser observations from SDK data.
+
+Each command has a25s timeout and a15s interval by default; actual timestamps
+must still be checked because OS/network scheduling is not guaranteed. Repeated
+stop-control loss or stalled observations escalate. Its action is a supervisor
+recommendation, never an automatic cancellation. Keep a separate authenticated
+browser operator and the previously approved deadline/confirmation margins.
+This library implements no session mutation. A custom reader requires source
+review/hash binding before a separately authorized launch; do not pass arbitrary
+save/run/cancel commands as metadata readers.
+
+The new local candidate is intentionally not launch-ready: it raises before
+bootstrap, has GPU/internet disabled, and needs an exact verifier-origin decision
+and new quota authorization. Gate/audit PASS must preserve these limitations.
