@@ -1,0 +1,144 @@
+{
+  "capabilities": {
+    "default_graph_hops": 1,
+    "eval_config": [
+      "timeout_seconds",
+      "max_time_minutes",
+      "max_tool_calls",
+      "max_turns",
+      "verification_timeout_seconds"
+    ],
+    "neighbors_bound": 10,
+    "similarity_backend": "Native symbol embeddings; unmatched query may fall back lexically",
+    "similarity_k": 5,
+    "verification_seconds": 300
+  },
+  "current_primary_sources": {
+    "starter": {
+      "model_revision": 2,
+      "response_note": "Planner observed response; volatile metadata differs from retained phase-1 response below",
+      "response_sha256": "238d1d45d9a98652d954310cd5b48d68baca54006174e28eb5104ca0af359aa6",
+      "url": "https://www.kaggle.com/api/v1/kernels/pull/ryanholbrook/getting-started-gemma-4-developer-agent",
+      "version": 3
+    },
+    "wheelhouse": {
+      "swegemma_bytes": 119670,
+      "swegemma_sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3",
+      "updated": "2026-10-12T19:51:31.09Z",
+      "url": "https://www.kaggle.com/api/v1/datasets/list?search=gemma-4-developer-agent-wheelhouse",
+      "version": 31
+    }
+  },
+  "kind": "official_primary_resource_review",
+  "native_source_sha256": {
+    "swegemma/budget.py": "5e520b3019c13b2420e6998119128f9c45b58820530ec942b5b40cab67d2336f",
+    "swegemma/config.py": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b",
+    "swegemma/tools/__init__.py": "e19d1e81d90976fda93f346104d7f34f74018747ac81838a363de2e357358c31",
+    "swegemma/tools/base.py": "535a0e6d121549b41906685d0e440e8709c4b8b434bc31dcc82fa7740ec66281",
+    "swegemma/tools/execution.py": "ff4df981ae1070334665ce8ab726c231e139ac5cf34bb5ebc4660eada28a7b2d",
+    "swegemma/tools/graph.py": "74b74d151925f99ffa37fd68513c234e25b74136369c3a3b072519d36af577cd",
+    "swegemma/tools/workspace.py": "d38ba2f68636c5e33c9f607bd9e5401dbf81d77125b966ef87c799a1615b05c6"
+  },
+  "plan": "docs/specs/plans/active/mostaza-phase2-budget-retrieval.md",
+  "retained_inputs": [
+    {
+      "bytes": 119670,
+      "id": "swegemma",
+      "path": "resources/official/swegemma-0.2.11-py3-none-any.whl",
+      "sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3",
+      "source_url": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+      "version": "0.2.11"
+    },
+    {
+      "bytes": 66528,
+      "id": "adk_submission",
+      "path": "resources/official/adk_submission-0.2.13-py3-none-any.whl",
+      "sha256": "f156f0bd84580ccb9334726d114d7a5481f16d3a6e2887cc4d276ced0ef8d99d",
+      "source_url": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+      "version": "0.2.13"
+    },
+    {
+      "bytes": 90060,
+      "id": "adk_eval_core",
+      "path": "resources/official/adk_eval_core-0.1.0-py3-none-any.whl",
+      "sha256": "e614e1b2fe8d886a634871e4c57f9887e1cc66e8c27300f8503a43c6e3ca82f3",
+      "source_url": "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse",
+      "version": "0.1.0"
+    },
+    {
+      "bytes": 45997,
+      "id": "notebook",
+      "path": "resources/official/getting-started-response.json",
+      "sha256": "2feb55b79401d9adca7f2df4a2b7ccbc96204b4a01b2df050c1ecd057dc85528",
+      "source_url": "https://www.kaggle.com/code/ryanholbrook/getting-started-gemma-4-developer-agent",
+      "version": 3
+    },
+    {
+      "bytes": 55940,
+      "id": "harness_readme",
+      "path": "resources/official/HARNESS_README.md",
+      "sha256": "445000219b803942c469391ec8b69791a31e9cec2f934738c767e34b5ca0aa1f",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 438,
+      "id": "starter_agent",
+      "path": "resources/official/sample_submission/agent.yaml",
+      "sha256": "c7fbbbbdc44778419be8e9f53a85800eeb17d0cf151e0846c46e107401b72034",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 232,
+      "id": "starter_eval",
+      "path": "resources/official/sample_submission/eval_config.yaml",
+      "sha256": "adb486b67535fa59b427b79d44dafc131176f1f1964d184e16046ed520ede02d",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 1984455,
+      "id": "tasks",
+      "path": "resources/official/tasks.jsonl",
+      "sha256": "e4b3fd60f69dbc2b9213e54eeb9636db78aefe92c1d06269d73d9f5f8f3c8ad6",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 120,
+      "id": "starter_sampling",
+      "path": "resources/official/sample_submission/configs/sampling.yaml",
+      "sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 3888,
+      "id": "starter_prompt",
+      "path": "resources/official/sample_submission/prompts/system.md",
+      "sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 527,
+      "id": "starter_analyzer_prompt",
+      "path": "resources/official/sample_submission/prompts/analyzer.md",
+      "sha256": "c762b062032cc8463015e589ad8b4f0e17296062e1b0ff1e78712eef9f5e2d43",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    },
+    {
+      "bytes": 361,
+      "id": "starter_analyzer_agent",
+      "path": "resources/official/sample_submission/sub_agents/code_analyzer.yaml",
+      "sha256": "7a764798e36cc68aa38900256245e4aed969b5439b992c7da4105b6ebcb7e62b",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version": null
+    }
+  ],
+  "review_basis": "Planner official API research recorded in approved plan, 2026-10-14 UTC",
+  "schema_version": 1,
+  "scope": "Experimental local API review; no competition submission-limit change or GPU authorization"
+}

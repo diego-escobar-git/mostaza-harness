@@ -209,3 +209,63 @@ further experiments from those measurements. Each arm recorded PASS 0, FAIL 1,
 ERROR 2 and zero resolved tasks. All six sessions timed out; E1 made no vector or
 graph tool call. These authentic observations provide no retrieval-benefit or
 performance-superiority conclusion.
+
+
+## Phase-2 budget calibration preparation
+
+The five new configuration IDs are E0-B180, E1-B180, E0-B300, E1-B300 and
+E1-R180. Budget-only B180/B300 retain the original prompts; the distinct recovery
+variant changes only E1 exploration. All pairs preserve model, sampling, native
+tools, environment, verification and repair policy. Original phase-1 manifests,
+submission files, raw sources and evidence remain immutable.
+
+The locally generated [private offline notebook](../notebooks/mostaza-phase2-budget-retrieval.ipynb)
+embeds an exact positive allowlist of execution modules, pre-outcome cohort,
+resource pins and the two B180 archives. Post-run diagnosis, raw task metadata,
+reference patches, hidden tests and normalizer/analysis modules are excluded.
+The official Evaluator retains generated native results/traces privately; no
+post-run findings enter agent prompts or submission archives.
+
+Local preparation is complete independently of GPU permission. The default
+notebook accelerator and internet are disabled. All six phase-2 records are
+NOT_RUN with null outcomes/metrics and reasons. Its complete official serial
+execution loop is blocked before bootstrap/install/model startup until a separate
+human quota decision and verified platform allocation deadline/termination exist.
+A timer beginning in the first cell misses allocation startup; VllmServer.stop
+only stops the model process and does not prove Kaggle released GPUs.
+
+The exact initial proposal is six evaluations (E0-B180/E1-B180 on requests_7205,
+fastapi_15589, rich_3061), one private offline NVIDIA L4 x4 session, concurrency 1,
+zero retries, 180-second generation/30 charged tools/50 turns and 300-second
+verification per task. Generation totals at most 18 minutes; verification 30.
+The inclusive ceiling is 120 wall-clock minutes from allocation start (startup,
+loading, compiler and export included), at most 8 GPU-device-hours and $0 paid
+purchases. Actual remaining quota/accounting units must be checked before launch.
+Scheduling reserves full worst-case task allowance and export time. No remote
+notebook has been pushed or started. Authenticated allocation-start and confirmed
+allocation-termination support are currently unverified, so execution remains
+blocked even if a generic GPU authorization flag is manually changed.
+
+B300 requires persistent B180 time/tool constraints before implementation or
+verification; E1-R180 requires analyzed, held-fixed budget calibration and a new
+contemporaneous E0-B180 baseline. Each is a separate later six-run quota decision
+with its own 120-minute/8-device-hour/$0 ceiling; neither launches automatically.
+Retain failures, do not select on success, and make no significance or retrieval
+superiority claim from this exploratory three-task cohort.
+
+From this repository root with scoped uv on PATH:
+
+```sh
+uv run --frozen --no-sync python scripts/prepare_phase2.py
+uv run --frozen --no-sync python scripts/check_phase2.py --check --cohort experiments/cohort.json --evidence-dir docs/implementation/evidence/mostaza-phase2-budget-retrieval
+```
+
+The preparation command regenerates only the notebook and declared readiness,
+comparison and report evidence. The read-only checker recompiles all five variants,
+replays native historical sources, binds legacy bytes to the merged baseline and
+compares every declared artifact and all notebook/payload/source bytes. It rejects
+invented real outcomes. Native phase-2 acquisition remains pending; any subsequent
+authorized acquisition needs full provenance replay and a new gate/audit before
+outcome reporting. Absolute reproducible local commands, exact input hashes,
+limitations and the concrete quota proposal are in the declared
+[phase-2 report](implementation/evidence/mostaza-phase2-budget-retrieval/report.md).

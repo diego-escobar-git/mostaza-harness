@@ -61,3 +61,12 @@ prerequisite failure. Do not substitute invented APIs or simulated measurements.
 Original code is licensed under [Apache-2.0](LICENSE). External resources retain
 their own license and notices; no competition datasets or model weights are
 redistributed here.
+
+## Phase 2 local readiness
+
+Matched B180/B300 budget variants and the separate E1-R180 exploration treatment
+are prepared and compiler-validated. The private offline notebook defaults to GPU
+disabled; all new evaluations are NOT_RUN. Separate six-run quota authorization
+and verified allocation-start/deadline/termination support are required before
+execution. See the [phase-2 readiness report](docs/implementation/evidence/mostaza-phase2-budget-retrieval/report.md)
+for source hashes, absolute local commands, the exact quota proposal and blockers.

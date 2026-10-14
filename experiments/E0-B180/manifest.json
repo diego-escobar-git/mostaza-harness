@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "experiment": "E0-B180",
+  "experiment_id": "E0-B180",
+  "status": "ready",
+  "ready_for_evaluation": true,
+  "treatment": "budget_only",
+  "model": "gemma-4-31b-it-qat-w4a16-ct",
+  "prompt": "prompts/baseline.md",
+  "prompt_sha256": "4841635e2176986bef18dd6fca44c4757795894506a1db88c30975057884e140",
+  "baseline_source_sha256": "c7fbbbbdc44778419be8e9f53a85800eeb17d0cf151e0846c46e107401b72034",
+  "source_prompt_sha256": "f1cbf7943ee9687382321b1dfd9cd88581d608c1c8b8e6ea61a763bd1a3234af",
+  "source_sampling_sha256": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a",
+  "source_eval_sha256": "adb486b67535fa59b427b79d44dafc131176f1f1964d184e16046ed520ede02d",
+  "generation_parameters": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_output_tokens": 16384,
+    "thinking_config": {
+      "thinking_budget": 4096,
+      "include_thoughts": true
+    }
+  },
+  "tools": [
+    "run_command",
+    "read_file",
+    "edit_file",
+    "write_file",
+    "get_status",
+    "submit_patch",
+    "get_code_neighbors",
+    "search_similar_code",
+    "get_code_subgraph"
+  ],
+  "budgets": {
+    "timeout_seconds": 180,
+    "max_time_minutes": 3,
+    "max_tool_calls": 30,
+    "max_turns": 50,
+    "verification_timeout_seconds": 300
+  },
+  "repair_policy": "Exact original starter implementation/verification/anti-pattern sections preserved; no repair loop added",
+  "environment": {
+    "wheelhouse_version": 31,
+    "notebook_version": 3,
+    "swegemma": "0.2.11",
+    "adk_submission": "0.2.13",
+    "adk_eval_core": "0.1.0",
+    "google-adk": "1.36.1",
+    "verification_timeout_seconds": 300,
+    "verification_timeout_basis": "Pinned swegemma HarnessLimits default; absent from authentic sample eval config"
+  },
+  "shared_conditions": {
+    "model": "gemma-4-31b-it-qat-w4a16-ct",
+    "generation_parameters": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "max_output_tokens": 16384,
+      "thinking_config": {
+        "thinking_budget": 4096,
+        "include_thoughts": true
+      }
+    },
+    "tools": [
+      "run_command",
+      "read_file",
+      "edit_file",
+      "write_file",
+      "get_status",
+      "submit_patch",
+      "get_code_neighbors",
+      "search_similar_code",
+      "get_code_subgraph"
+    ],
+    "budgets": {
+      "timeout_seconds": 180,
+      "max_time_minutes": 3,
+      "max_tool_calls": 30,
+      "max_turns": 50,
+      "verification_timeout_seconds": 300
+    },
+    "repair_policy": "Exact original starter implementation/verification/anti-pattern sections preserved; no repair loop added",
+    "environment": {
+      "wheelhouse_version": 31,
+      "notebook_version": 3,
+      "swegemma": "0.2.11",
+      "adk_submission": "0.2.13",
+      "adk_eval_core": "0.1.0",
+      "google-adk": "1.36.1",
+      "verification_timeout_seconds": 300,
+      "verification_timeout_basis": "Pinned swegemma HarnessLimits default; absent from authentic sample eval config"
+    },
+    "cohort_sha256": "1ee1eef565392ee98efb2a4aa6398c79611a6e95d61def165410f2aaee918a09",
+    "context_cache_config": null,
+    "events_compaction_config": null
+  },
+  "shared_conditions_sha256": "7f083869a79db4b9733b51d81e47f1bf1a3c2537b9505091070ade3a891ca4d5",
+  "derivation": {
+    "source": "resources/official/sample_submission/agent.yaml",
+    "changes": [
+      {
+        "change": "Remove adapter: main_lora",
+        "basis": "agent-retrieval:AC-1 single agent/no-LoRA"
+      },
+      {
+        "change": "Remove agent_tool referencing code_analyzer.yaml and omit analyzer prompt/config and tool_lora adapter",
+        "basis": "agent-retrieval:AC-1 single agent/no-LoRA"
+      },
+      {
+        "change": "Inline byte-source-equivalent configs/sampling.yaml mapping in agent.yaml",
+        "basis": "Owned declarative path boundary, unchanged sampling values"
+      },
+      {
+        "change": "Change instruction include from prompts/system.md to prompts/baseline.md",
+        "basis": "Explicit E0/E1 prompt selection"
+      },
+      {
+        "change": "Append identical Shared Budget Checkpoints suffix; source prompt prefix otherwise byte-exact",
+        "basis": "agent-retrieval:AC-4 meaningful get_status transitions/reserved patch and verification time",
+        "added_text": "\n## Shared Budget Checkpoints\nCall get_status before exploration, before implementation, and before verification. Use the remaining official budgets to preserve time for patching, targeted verification, and submit_patch.\n",
+        "added_text_sha256": "09f15ed85caeb7d66150deafe05f7119911f1cdd2a01f7f714ce142b6cf55e24"
+      }
+    ],
+    "eval_config_byte_exact": false,
+    "model_changed": false,
+    "sampling_changed": false,
+    "global_budgets_changed": true,
+    "source_prompt_prefix_byte_exact": true,
+    "budget_overlay": {
+      "timeout_seconds": 180,
+      "max_time_minutes": 3,
+      "max_tool_calls": 30,
+      "max_turns": 50,
+      "verification_timeout_seconds": 300
+    }
+  },
+  "validation": {
+    "kind": "official_compiler_only",
+    "directory_schema_compiler": "PASS",
+    "real_gemma_execution": "NOT_RUN",
+    "real_compatibility": "unverified"
+  },
+  "configuration_id": "E0-B180",
+  "arm": "E0",
+  "budget_family": "B180",
+  "calibration_eligible": true,
+  "base_experiment_id": "E0"
+}

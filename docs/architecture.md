@@ -33,3 +33,21 @@ reproducible locators. Missing assets/evidence fail closed.
 Local tests check host contracts. Official compiler checks verify declarations.
 Actual Kaggle GPU execution establishes model behavior. These evidence levels
 remain separate throughout documentation and reports.
+
+
+## Phase-2 preparation boundaries
+
+Budget-only variants overlay evaluation budgets in temporary packaging trees;
+E1-R180 replaces only exploration. The new phase2 host module generates an exact
+notebook payload allowlist; diagnostic/analysis modules, raw task metadata and
+verification secrets are excluded. Only declarative config/prompt closures are
+submitted. The notebook uses one native VllmServer and serial Evaluator tasks,
+retaining native raw sources outside agent workspaces.
+
+GPU startup defaults off and fails closed before bootstrap/install/model startup.
+A verified allocation-start deadline and external resource termination mechanism
+must cover cold start and failures. Stopping the vLLM process alone cannot prove
+that Kaggle released the allocation. Local readiness and authentic historical
+replay can complete while all six new outcomes remain NOT_RUN. See the
+[phase-2 report](implementation/evidence/mostaza-phase2-budget-retrieval/report.md)
+for the exact six-run proposal, provenance and pending execution prerequisites.

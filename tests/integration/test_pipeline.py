@@ -486,3 +486,96 @@ def test_forged_metric_with_regenerated_summaries_and_original_trace_hash_fails(
     assert forged["artifacts"]["trace"]["sha256"] == original_trace
     with pytest.raises(ValueError, match="measurements.*native"):
         checker.check_real(cohort, evidence, project_root=project)
+
+
+def diagnostic_evidence_fixture(tmp_path):
+    import shutil
+
+    result = native_evidence_fixture(tmp_path)
+    project = result[0]
+    source = Path(__file__).resolve().parents[2]
+    relative = "resources/official/swegemma-0.2.11-py3-none-any.whl"
+    destination = project / relative
+    destination.parent.mkdir(parents=True)
+    shutil.copyfile(source / relative, destination)
+    return result
+
+
+def test_phase2_diagnosis_replays_legacy_sources_without_rewriting_receipts(tmp_path):
+    """budget-retrieval-calibration:AC-3/10: historical replay is immutable."""
+    from mostaza.research.trace_diagnostics import check_diagnosis, diagnose_historical
+
+    project, cohort, evidence, checker = diagnostic_evidence_fixture(tmp_path)
+    originals = {p.name: p.read_bytes() for p in evidence.iterdir() if p.is_file()}
+    legacy_report = checker.check_real(cohort, evidence, project_root=project)
+    report = diagnose_historical(project)
+    assert len(report["tasks"]) == 6
+    assert sum(r["metrics"]["tokens"]["value"] for r in report["tasks"]) == 370325
+    assert (
+        sum(r["metrics"]["recorded_attempts"]["value"] for r in report["tasks"]) == 51
+    )
+    assert (
+        sum(r["metrics"]["official_charged_calls"]["value"] for r in report["tasks"])
+        == 48
+    )
+    requests = [r for r in report["tasks"] if r["instance_id"] == "requests_7205"]
+    assert all(r["normalized_status"] == "FAIL" for r in requests)
+    assert all(r["requests_postrun_finding"]["reproduction_only"] for r in requests)
+    assert all(
+        r["verification"]["summary"] == {"failed": 1, "passed": 205, "skipped": 13}
+        for r in requests
+    )
+    assert all(r["patch_validity"]["valid"] is True for r in requests)
+    assert all(r["timeout"]["value"] for r in report["tasks"])
+    similarity = [
+        c
+        for r in report["tasks"]
+        for c in r["calls"]
+        if c["tool"] == "search_similar_code"
+    ]
+    assert len(similarity) == 1 and similarity[0]["similarity_backend"] is None
+    output = tmp_path / "trace-diagnosis.json"
+    output.write_bytes(canonical_json(report))
+    assert check_diagnosis(project, output) == report
+    assert checker.check_real(cohort, evidence, project_root=project) == legacy_report
+    assert originals == {
+        p.name: p.read_bytes() for p in evidence.iterdir() if p.is_file()
+    }
+    changed = json.loads(output.read_text())
+    changed["tasks"][0]["metrics"]["tokens"]["value"] += 1
+    output.write_bytes(canonical_json(changed))
+    with pytest.raises(ValueError, match="recomputation"):
+        check_diagnosis(project, output)
+
+
+def test_phase2_diagnosis_rejects_changed_native_source_and_normalizer(tmp_path):
+    """budget-retrieval-calibration:AC-10: no newly labelled historical code."""
+    from mostaza.research.trace_diagnostics import diagnose_historical
+
+    project, _, evidence, _ = diagnostic_evidence_fixture(tmp_path)
+    receipt = json.loads((evidence / "official-validation.json").read_text())
+    trace = (
+        project
+        / receipt["acquisition"]["retained_source_root"]
+        / "E0/results/traces/trace_requests_7205.json"
+    )
+    original_trace = trace.read_bytes()
+    trace.write_bytes(original_trace + b" ")
+    with pytest.raises(ValueError, match="bytes differ"):
+        diagnose_historical(project)
+    trace.write_bytes(original_trace)
+    normalizer = project / "src/mostaza/evaluation/import_results.py"
+    normalizer.write_bytes(normalizer.read_bytes() + b"\n# newly changed host source\n")
+    with pytest.raises(ValueError, match="source changed"):
+        diagnose_historical(project)
+
+
+def test_phase2_diagnosis_requires_pinned_tool_policy_source(tmp_path):
+    """budget-retrieval-calibration:AC-4/10: policy attribution needs source bytes."""
+    from mostaza.research.trace_diagnostics import diagnose_historical
+
+    project, _, _, _ = diagnostic_evidence_fixture(tmp_path)
+    wheel = project / "resources/official/swegemma-0.2.11-py3-none-any.whl"
+    wheel.write_bytes(wheel.read_bytes() + b" changed")
+    with pytest.raises(ValueError, match="tool policy source hash"):
+        diagnose_historical(project)

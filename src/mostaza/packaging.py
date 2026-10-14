@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import json
 import os
@@ -35,6 +36,24 @@ TOOLS = frozenset(
     }
 )
 EXPERIMENTS = {"E0": "E0-baseline", "E1": "E1-hybrid-retrieval"}
+VARIANTS = ("E0-B180", "E1-B180", "E0-B300", "E1-B300", "E1-R180")
+EXPERIMENTS.update({config: config for config in VARIANTS})
+BUDGETS = {
+    "B180": {
+        "timeout_seconds": 180,
+        "max_time_minutes": 3,
+        "max_tool_calls": 30,
+        "max_turns": 50,
+        "verification_timeout_seconds": 300,
+    },
+    "B300": {
+        "timeout_seconds": 300,
+        "max_time_minutes": 5,
+        "max_tool_calls": 50,
+        "max_turns": 50,
+        "verification_timeout_seconds": 300,
+    },
+}
 MAX_BYTES = 5 * 1024 * 1024  # Host MVP bound; below the official 3 GiB limit.
 MAX_FILES = 100
 
@@ -300,7 +319,7 @@ from pathlib import Path
 from adk_submission import ModelRegistry, compile_submission, validate_directory
 from adk_submission.schema import SandboxedAgentConfig
 from adk_submission.yaml_loader import load_yaml
-from swegemma.config import build_submission_limits
+from swegemma.config import EvalConfig, build_submission_limits
 assert m.version('adk-submission') == '0.2.13'
 assert m.version('google-adk') == '1.36.1'
 assert m.version('swegemma') == '0.2.11'
@@ -311,6 +330,17 @@ raw = load_yaml(root / 'agent.yaml', root_dir=root, limits=limits)
 SandboxedAgentConfig.model_validate(raw)
 models = ModelRegistry()
 models.register('gemma-4-31b-it-qat-w4a16-ct', 'inert-compiler-only-model')
+if (root / 'eval_config.yaml').exists():
+    import yaml
+    values = yaml.safe_load((root / 'eval_config.yaml').read_text())['evaluation']
+    config = EvalConfig(tasks_path=None, snapshots_dir=root, results_dir=root,
+                        submission_dir=root, models=models, **values)
+    assert config.budget.time_minutes == values.get('max_time_minutes', 3)
+    assert config.budget.tool_calls == values.get('max_tool_calls', 100)
+    assert config.budget.turns == values.get('max_turns', 50)
+    assert config.harness.command_timeout_seconds == values.get('timeout_seconds', 60)
+    assert config.harness.verification_timeout_seconds == values.get(
+        'verification_timeout_seconds', 300)
 def inert_tool(**kwargs):
     raise RuntimeError('Compiler-only binding must never execute')
 names = ['run_command', 'read_file', 'write_file', 'edit_file', 'submit_patch',
@@ -332,11 +362,10 @@ print('official directory/schema/compiler passed; no inference performed')
         raise PackagingError(f"Official compiler failed: {result.stderr.strip()}")
 
 
-def build_submission(
-    root: Path, experiment: str, output: Path, compiler_python: Path
-) -> str:
+def load_manifest(root: Path, experiment: str) -> dict[str, Any]:
+    """Validate explicit config identity and phase-2 treatment isolation (AC-1/2/6)."""
     if experiment not in EXPERIMENTS:
-        raise PackagingError("Explicit experiment must be E0 or E1")
+        raise PackagingError("Explicit experiment must be a registered configuration")
     sources = require_resources(root, ["harness_readme", "starter_agent", "tasks"])
     manifest = json.loads(
         (root / "experiments" / EXPERIMENTS[experiment] / "manifest.json").read_text()
@@ -354,7 +383,127 @@ def build_submission(
         "baseline_source_sha256"
     ) != sha256(sources["starter_agent"]):
         raise PackagingError("Experiment lacks official baseline derivation provenance")
+    if experiment in VARIANTS:
+        require_resources(
+            root,
+            [
+                "swegemma",
+                "adk_submission",
+                "adk_eval_core",
+                "notebook",
+                "starter_eval",
+                "starter_sampling",
+                "starter_prompt",
+            ],
+        )
+        arm = experiment[:2]
+        base = load_manifest(root, arm)
+        budget_key = "B300" if experiment.endswith("B300") else "B180"
+        expected = dict(base["shared_conditions"])
+        expected["budgets"] = BUDGETS[budget_key]
+        # The cohort and runtime defaults are bound explicitly without changing them.
+        expected["cohort_sha256"] = sha256(root / "experiments/cohort.json")
+        expected["context_cache_config"] = None
+        expected["events_compaction_config"] = None
+        canonical = json.dumps(expected, sort_keys=True, separators=(",", ":")).encode()
+        if (
+            manifest.get("arm") != arm
+            or manifest.get("configuration_id") != experiment
+            or manifest.get("budget_family") != budget_key
+            or manifest.get("base_experiment_id") != arm
+            or manifest.get("calibration_eligible") is not (experiment != "E1-R180")
+            or manifest.get("treatment")
+            != (
+                "recovery_exploration_only"
+                if experiment == "E1-R180"
+                else "budget_only"
+            )
+            or manifest.get("budgets") != BUDGETS[budget_key]
+            or manifest.get("shared_conditions") != expected
+            or manifest.get("shared_conditions_sha256")
+            != hashlib.sha256(canonical).hexdigest()
+        ):
+            raise PackagingError(
+                "Variant conditions or budget differ from approved pair"
+            )
+        for field in (
+            "model",
+            "generation_parameters",
+            "tools",
+            "repair_policy",
+            "environment",
+            "baseline_source_sha256",
+            "source_prompt_sha256",
+            "source_sampling_sha256",
+            "source_eval_sha256",
+        ):
+            if manifest.get(field) != base[field]:
+                raise PackagingError(f"Variant changes frozen condition: {field}")
+        expected_prompt = (
+            "prompts/hybrid-recovery.md" if experiment == "E1-R180" else base["prompt"]
+        )
+        if manifest.get("prompt") != expected_prompt:
+            raise PackagingError("Variant prompt selection differs")
+        if sha256(root / "submission" / expected_prompt) != manifest.get(
+            "prompt_sha256"
+        ):
+            raise PackagingError("Variant prompt hash differs")
+        if (
+            experiment != "E1-R180"
+            and manifest["prompt_sha256"] != base["prompt_sha256"]
+        ):
+            raise PackagingError("Budget calibration prompt changed")
+        if experiment == "E1-R180":
+            original = (root / "submission" / base["prompt"]).read_bytes()
+            recovery = (root / "submission" / expected_prompt).read_bytes()
+            before, tail = original.split(b"### 1. ", 1)
+            _, after = tail.split(b"### 2. Implement the Solution Directly", 1)
+            rb, rt = recovery.split(b"### 1. ", 1)
+            _, ra = rt.split(b"### 2. Implement the Solution Directly", 1)
+            expected_diff = "".join(
+                difflib.unified_diff(
+                    original.decode().splitlines(keepends=True),
+                    recovery.decode().splitlines(keepends=True),
+                    fromfile=base["prompt"],
+                    tofile=expected_prompt,
+                )
+            )
+            if (
+                manifest.get("exploration_diff") != expected_diff
+                or manifest.get("compared_configuration_id") != "E1-B180"
+                or manifest.get("retrieval_policy") != base["retrieval_policy"]
+            ):
+                raise PackagingError("Recovery policy or exact diff differs")
+            if before != rb or after != ra:
+                raise PackagingError("Recovery changes non-exploration instructions")
+    return manifest
+
+
+def configuration_files(root: Path, experiment: str) -> dict[str, bytes]:
+    """Select a closure and overlay budgets in memory, preserving source bytes."""
+    manifest = load_manifest(root, experiment)
     files = collect_submission(root / "submission", manifest["prompt"])
+    if experiment in VARIANTS:
+        agent = yaml.load(files["agent.yaml"], Loader=IncludeLoader)
+        if (
+            agent["model"] != manifest["model"]
+            or agent["tools"] != manifest["tools"]
+            or agent["generate_content_config"] != manifest["generation_parameters"]
+        ):
+            raise PackagingError("Agent conditions differ from variant manifest")
+        evaluation = yaml.safe_load(files["eval_config.yaml"])
+        base = load_manifest(root, manifest["arm"])
+        if evaluation != {"evaluation": base["budgets"]}:
+            raise PackagingError("Frozen source evaluation config changed")
+        evaluation["evaluation"] = manifest["budgets"]
+        files["eval_config.yaml"] = yaml.safe_dump(evaluation, sort_keys=True).encode()
+    return files
+
+
+def build_submission(
+    root: Path, experiment: str, output: Path, compiler_python: Path
+) -> str:
+    files = configuration_files(root, experiment)
     if output.resolve().is_relative_to((root / "submission").resolve()):
         raise PackagingError("Archive output must be outside submission inputs")
     with tempfile.TemporaryDirectory(prefix="mostaza-compile-") as temporary:
