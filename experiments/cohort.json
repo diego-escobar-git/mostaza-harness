@@ -1,0 +1,28 @@
+{
+  "frozen_at": "2026-10-13T21:32:11.932402+00:00",
+  "schema_version": 1,
+  "selection_basis": "pre-outcome",
+  "tasks": [
+    {
+      "base_commit": "1b40fdd004bfc8ba5301bcf8a6908264e9b6b877",
+      "instance_id": "requests_7205",
+      "rationale": "Easy pilot: the issue describes a narrow compatibility boundary in empty Python3.11+ netrc credentials. Choose it for localized authentication handling, based only on issue/base metadata; no solution or benchmark outcome inspected.",
+      "repo": "psf/requests",
+      "snapshot_sha256": "4a2934769da5ae77cc9db586430c40bf13a819958817e7c40b96885d1f819743"
+    },
+    {
+      "base_commit": "22b02e26f9e8c7e32bd8266e2b0ebe8bb3a0db2b",
+      "instance_id": "fastapi_15589",
+      "rationale": "Medium pilot: default underscore-to-hyphen header aliases must reject underscored names while explicit convert_underscores=False still accepts them. The issue implies behavior across request parameter extraction and schema/model handling; chosen from issue/base metadata without outcomes or reference solutions.",
+      "repo": "fastapi/fastapi",
+      "snapshot_sha256": "1722211e9d25388b077d67650fb283f8ef8aabed7300e184d3c85c0f089ceab1"
+    },
+    {
+      "base_commit": "aca9467ec6a482b3bed1ba7d2e3de72271c5f817",
+      "instance_id": "rich_3061",
+      "rationale": "Harder pilot: tab expansion must preserve styled span coverage as string positions change. The issue requires consistent text and span coordinate transformations, providing a different retrieval surface from the two HTTP cases. Chosen from issue/base metadata only, without benchmark outcomes or reference solutions.",
+      "repo": "Textualize/rich",
+      "snapshot_sha256": "729b0e97e291a05330e2c8f6f005989d2095332f6171a072fa0dc0078bfd3511"
+    }
+  ]
+}
