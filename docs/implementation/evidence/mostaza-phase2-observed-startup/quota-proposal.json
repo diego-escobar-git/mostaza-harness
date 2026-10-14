@@ -1,0 +1,73 @@
+{
+  "status": "AWAITING_NEW_EXPLICIT_GPU_AUTHORIZATION",
+  "batch_id": "B180-observed-v2",
+  "configurations": [
+    "E0-B180",
+    "E1-B180"
+  ],
+  "tasks_per_configuration": [
+    "requests_7205",
+    "fastapi_15589",
+    "rich_3061"
+  ],
+  "evaluations": 6,
+  "model": "gemma-4-31b-it-qat-w4a16-ct",
+  "model_revision": 2,
+  "gpu_model": "NVIDIA L4",
+  "gpu_count": 4,
+  "allocation_limit": 1,
+  "concurrency": 1,
+  "retries": 0,
+  "generation_seconds_per_task": 180,
+  "charged_tool_calls_per_task": 30,
+  "max_turns": 50,
+  "verification_seconds_per_task": 300,
+  "outer_task_seconds": 600,
+  "export_reserve_seconds": 300,
+  "startup_deadline_seconds": 1800,
+  "last_task_admission_seconds": 5340,
+  "work_deadline_seconds": 5940,
+  "browser_stop_request_seconds": 6240,
+  "operational_stop_latest_seconds": 6300,
+  "authorization_ceiling_seconds": 7200,
+  "authorization_ceiling_gpu_device_hours": 8,
+  "paid_purchases_usd": 0,
+  "clock_basis": "External monotonic/UTC receipt before allocation-capable submission; queue/startup/install/compile/export included conservatively",
+  "supervision": "Exact saved version and browser Cancel control; Active Events auxiliary; SDK latest status used only for dedicated fresh notebook with exactly one saved version",
+  "poll_interval_seconds": 60,
+  "prelaunch": [
+    "Independent PASS on current source/notebook; new explicit batch approval",
+    "Fresh UUID notebook absent in authenticated complete own-private inventory",
+    "All known own latest versions terminal, explicit reserved quota0, empty Active Events, stable used quota for30seconds",
+    "Reported remaining quota>=28800seconds, with fresh observations no older than60seconds atT0",
+    "Private offline L4x4; original model/sampling/task order/agent archives/harness/verification/repair unchanged"
+  ],
+  "stop_conditions": [
+    "Normal completion or fatal error",
+    "Model not proven ready by30minutes",
+    "Observation instrumentation reports failure",
+    "By104minutes regardless of progress; escalate if not confirmed by105minutes"
+  ],
+  "not_stop_conditions": [
+    "Active Events absent while exact-version status and Cancel control remain available",
+    "Live-log request fails while exact-version supervision remains available",
+    "Quiet model-loading logs before startup deadline"
+  ],
+  "closure": [
+    "Browser and SDK terminal states for exact target; CANCEL_REQUESTED insufficient",
+    "Stable reported quota across two observations>=30seconds apart; reserved0 alone insufficient",
+    "Retain native outputs/traces, observations, compiler/execution receipts and all6records, including failures/NOT_RUN"
+  ],
+  "residual_risk": "Browser/agent/network interruption and platform cancellation/release latency can defeat an exact physical120minute ceiling; cannot claim guaranteed cutoff. New approval must explicitly cover this risk.",
+  "excluded": [
+    "B300",
+    "E1-R180",
+    "Restart/retry",
+    "Other models/GPUs/services",
+    "Paid quota purchases",
+    "Competition submission",
+    "Public notebook",
+    "Local large-model download",
+    "Colima changes"
+  ]
+}

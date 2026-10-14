@@ -1,0 +1,33 @@
+{
+  "audit": {
+    "findings": [],
+    "receipt": "audit.json",
+    "result": "PASS",
+    "reviewer": "/root/browser_control_audit"
+  },
+  "cpu_fixtures_are_not_benchmark_results": true,
+  "full_gate": {
+    "command": "bash scripts/validate.sh",
+    "coverage": [
+      "format/lint",
+      "strict types",
+      "build",
+      "official compiler-only",
+      "retained historical real evidence"
+    ],
+    "exit_code": 0,
+    "integration_tests": 38,
+    "log": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/postrun-gate.log",
+    "log_sha256": "bdf17b7dde6b890a7bccd00183e848a883196e2abf0dd7990333b595893009a0",
+    "unit_tests": 226
+  },
+  "gpu_evaluations": 6,
+  "recomputation": {
+    "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+    "exit_code": 0,
+    "scope": "56 download files and native inventory, source equivalence, actual executed notebook counts, audit snapshots, normalized records, matched comparison and trace observations"
+  },
+  "runtime_protocol": "Operational closure within ceiling; strict <=60s polling compliance not established; see acquisition.json",
+  "status": "PASS_LOCAL_POSTRUN",
+  "subsequent_gpu_evaluations": 0
+}

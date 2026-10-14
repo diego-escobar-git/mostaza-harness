@@ -1,0 +1,47 @@
+[
+  {
+    "bytes": 2879,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/audit.json",
+    "sha256": "e7c6bd224f495f7669c983db87e3ab2048e462abcebbbb4354982e73de77803e"
+  },
+  {
+    "bytes": 2486,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/environment-comparison.json",
+    "sha256": "d6418593ed54f717eab44ec62e4c96e260214a7eee0d5ab808a7a0e04346f803"
+  },
+  {
+    "bytes": 3923,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/manifest.json",
+    "sha256": "5674d269501d48806440f1b75496a96484a2d80836b606fc6402e6d2bd3f32d6"
+  },
+  {
+    "bytes": 1380,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/native-builders.json",
+    "sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+  },
+  {
+    "bytes": 618,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/native-lifecycle.json",
+    "sha256": "32682c150651cef2332fe29745f7fbe8f6bcd6acf7f0e440399664a6fbddffa7"
+  },
+  {
+    "bytes": 1656,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/official-review.json",
+    "sha256": "7cace71126d0ddf9e22278b719546a7e1817ded94d2ae4e367006e611355036a"
+  },
+  {
+    "bytes": 3498,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/quota-proposal.json",
+    "sha256": "3b1168c2a1623982ba7e5a38691d815848004840556eda73232b31ef6127a3bc"
+  },
+  {
+    "bytes": 9045,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/report.md",
+    "sha256": "dd277f45b8893915a97a3ff27c7a22aeaffc64a3e59dca0146d0ff740335b38c"
+  },
+  {
+    "bytes": 2238,
+    "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/validation.json",
+    "sha256": "bbd201dcd8ccc52f7801595204515a436ca68db5618b1a0c2ba07bef9b0fda71"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "administrative_finalization": "Parent records the independent PASS and updates validation status; audited result artifacts remain unchanged",
+  "findings": [],
+  "independent": true,
+  "independently_verified": [
+    "recompute.py --check",
+    "56/56 official output hashes and 1061978 bytes",
+    "Executed notebook source equivalence and execution counts 1..5",
+    "Six native outcomes, four verifications and tool/token accounting scopes",
+    "Exact-version operational closure, quota units and physical-release limitation",
+    "Audited-source snapshots and no reference/hidden-test injection",
+    "67.08439898490906-second observation gap and incomplete early timestamp coverage disclosed"
+  ],
+  "limitations": [
+    "No task resolved; no recorded vector or graph invocation",
+    "Audit PASS confirms evidence integrity and disclosure; it does not certify strict <=60-second polling compliance",
+    "No further GPU run authorized"
+  ],
+  "recorded_utc": "2026-10-14T16:56:59.555477+00:00",
+  "result": "PASS",
+  "reviewed_evidence_sha256": {
+    "acquisition.json": "fd7390ac92c20c7cd2745d329fcea8fffa40ecec771d31493ef44ffaecf5fda4",
+    "comparison.json": "ad3ee101a45d0790e481a27599f818bf21db128661b317d1498636036b9b91c9",
+    "evaluation-records.json": "3932cf29e2cf65fec10d9babbffb5078bbe6f5ef7a01940467a0f029d3c78b5e",
+    "report.md": "8779db031c4fd7bb39ae21b33547c14fcb539eab00a37a5ecd9ff5b66c061f79",
+    "trace-observations.json": "eeddc816a685d216ab0b9260725159e54f326cd97318ad4a013e44a71b16c409"
+  },
+  "reviewer": "/root/browser_control_audit"
+}

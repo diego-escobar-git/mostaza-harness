@@ -1,0 +1,24 @@
+{
+  "kind": "local_cpu_native_lifecycle_fixtures",
+  "gpu_used": false,
+  "model_evaluations": 0,
+  "native_version": "0.2.13",
+  "native_server_source_sha256": "d60b3fe34dd7f6e359b003db82b68434757c74b1030862bacda5cff6164f91eb",
+  "outcomes": [
+    {
+      "fixture": "healthy",
+      "expected_failure_observed": false,
+      "retained_after_native_stop": true
+    },
+    {
+      "fixture": "timeout",
+      "expected_failure_observed": true,
+      "retained_after_native_stop": true
+    },
+    {
+      "fixture": "exits",
+      "expected_failure_observed": true,
+      "retained_after_native_stop": true
+    }
+  ]
+}

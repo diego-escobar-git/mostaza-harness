@@ -52,6 +52,9 @@ execution. Passing the local checks does not complete the benchmark.
 - `results/`: ignored bulky local outputs; retain compact approved evidence only.
 - `docs/`: architecture, proposal, experiment and Kaggle procedures.
 
+See the reusable [Kaggle execution runbook](docs/runbooks/kaggle-execution.md)
+for authentication, quota checks, exact-version supervision and evidence closure.
+
 See [architecture](docs/architecture.md), [research proposal](docs/research-proposal.md),
 [specifications](docs/specs/README.md), [Kaggle setup](docs/kaggle-setup.md), and
 [experiments](docs/experiments.md). Official downloads require a Kaggle account and
@@ -62,11 +65,19 @@ Original code is licensed under [Apache-2.0](LICENSE). External resources retain
 their own license and notices; no competition datasets or model weights are
 redistributed here.
 
-## Phase 2 local readiness
+## Phase 2 results and prepared variants
 
-Matched B180/B300 budget variants and the separate E1-R180 exploration treatment
-are prepared and compiler-validated. The private offline notebook defaults to GPU
-disabled; all new evaluations are NOT_RUN. Separate six-run quota authorization
-and verified allocation-start/deadline/termination support are required before
-execution. See the [phase-2 readiness report](docs/implementation/evidence/mostaza-phase2-budget-retrieval/report.md)
-for source hashes, absolute local commands, the exact quota proposal and blockers.
+The authorized B180-startup-v3 batch completed all six real evaluations after the
+startup/memory correction. Each arm produced PASS0 / FAIL2 / ERROR1; no similarity
+or graph-tool call was recorded, so hybrid retrieval effectiveness remains
+untested. The session ended normally around external minute25, with stable quota;
+a retained67-second observation gap is documented as a supervision deviation.
+See the [real batch report](docs/implementation/evidence/mostaza-phase2-startup-run/report.md)
+for source hashes, the executed notebook, metrics/coverage and reproducible checks.
+
+B300 and the separate E1-R180 treatment remain prepared and compiler-validated,
+with no real results. All saved preparation notebooks default to GPU disabled.
+Every consumed allocation is historical; another execution requires a fresh,
+specific compute authorization and prelaunch controls. The original
+[phase-2 readiness report](docs/implementation/evidence/mostaza-phase2-budget-retrieval/report.md)
+is retained as the pre-acquisition checkpoint.

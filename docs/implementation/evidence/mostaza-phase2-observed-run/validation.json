@@ -1,0 +1,28 @@
+{
+  "kind": "post_acquisition_local_validation",
+  "recorded_at_epoch": 1791987091.991267,
+  "gpu_allocations_in_validation": 0,
+  "checks": {
+    "current_native_output_files_hashes_verified": 34,
+    "historical_aborted_bundle_files_unchanged": 39,
+    "audited_runtime_files_unchanged": 7,
+    "planned_records_not_run_with_null_metrics_and_reasons": 6,
+    "local_document_links_verified_before_python_note": 13,
+    "documentation_code_blocks_syntax_valid": true,
+    "unbound_observed_notebook_provenance_check_exit_code": 0,
+    "git_diff_check_exit_code": 0
+  },
+  "prelaunch_checks_this_request": {
+    "focused_unit_tests": 33,
+    "passed": true,
+    "note": "Pytest cache could not be written under sandbox; all33tests passed. Prior full gate217unit/38integration remains historical local validation, not a new model run."
+  },
+  "quota_after_acquisition": {
+    "observed_at_utc": "2026-10-14T14:10:02.341406+00:00",
+    "time_used_seconds": 4115.521071,
+    "time_reserved_seconds": 0,
+    "unchanged_since_cancel": true
+  },
+  "executed_notebook_acquired": false,
+  "executed_notebook_reason": "Saved source is distinct from executed notebook; native official log and artifacts acquired"
+}

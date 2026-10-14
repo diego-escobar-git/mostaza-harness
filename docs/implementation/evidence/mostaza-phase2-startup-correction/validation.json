@@ -1,0 +1,59 @@
+{
+  "audit": "PASS; zero findings; independent reviewer /root/browser_control_audit; see audit.json",
+  "commands": [
+    {
+      "command": "bash scripts/validate.sh",
+      "coverage": [
+        "ruff format/lint",
+        "strict mypy src/scripts",
+        "unit/integration",
+        "build",
+        "official compiler-only E0/E1",
+        "retained real phase1 provenance"
+      ],
+      "exit_code": 0,
+      "integration_passed": 38,
+      "unit_passed": 226
+    },
+    {
+      "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/prepare_observed_phase2.py --check",
+      "exit_code": 0
+    },
+    {
+      "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+      "exit_code": 0,
+      "scope": "Native config extracted from actual new notebook; command/environment builders only; no server.start"
+    },
+    {
+      "command": ".tools/official/bin/python scripts/check_startup_observation.py",
+      "exit_code": 0,
+      "scope": "Three CPU localhost lifecycle fixtures, no vLLM model process"
+    },
+    {
+      "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json --evidence-dir docs/implementation/evidence/mostaza-phase2-budget-retrieval",
+      "exit_code": 0,
+      "scope": "Includes five variant compiler checks and original artifact integrity"
+    },
+    {
+      "command": "nbformat.validate(nbformat.read(candidate, as_version=4))",
+      "exit_code": 0,
+      "interpreter": "/private/tmp/mostaza-kaggle-session313/bin/python",
+      "scope": "Schema validation only; no Kaggle SDK import/network or cell execution"
+    }
+  ],
+  "current_quota": null,
+  "current_quota_reason": "Not queried in CPU-only preparation",
+  "gate_log": "results/phase2-startup-correction-review/gate.log",
+  "gate_log_sha256": "42b0b15fd01eab92be055b9a6995c570530c3ec83fb2bff888e0eafc9f9c818a",
+  "historical_bundle_verified_entries": 63,
+  "kaggle_operations": 0,
+  "local_gpu_used": false,
+  "model_downloads": 0,
+  "notebook_execution": "NOT_EXECUTED_GPU_AUTHORIZATION_REQUIRED",
+  "status": "PASS_LOCAL_ONLY",
+  "validated_utc": "2026-10-14T15:21:57.912871+00:00"
+}

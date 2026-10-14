@@ -1,0 +1,372 @@
+{
+  "authorization_consumed": true,
+  "authorization_source": "Explicit user reply call_ebaf73ceeded4147bdde4db1a0c7584c: Autorizar B180-startup-v3 y aceptar el riesgo residual",
+  "batch_id": "B180-startup-v3",
+  "closure": {
+    "allocations": 1,
+    "browser_active_events": 0,
+    "browser_observed_epoch": 1791995644.442,
+    "browser_text": [
+      "Successfully ran in1348.7s",
+      "GPU L4x4",
+      "Output1.06MB",
+      "0ActiveEvents"
+    ],
+    "browser_version_url": "https://www.kaggle.com/code/diegofescobar/mostaza-b180-ea1534a86873409b870b3b04d04e347f?scriptVersionId=358394257",
+    "cancellation_reason": "Version completed normally before manual cancellation was needed; no cancellation of a terminal version",
+    "cancellation_requested": false,
+    "closed_record_epoch": 1791995683.205914,
+    "competition_submission": false,
+    "final_clock_consistency": {
+      "monotonic_elapsed_seconds": 2383.6923920419995,
+      "wall_elapsed_seconds": 2383.7200920581818
+    },
+    "first_sdk_terminal_elapsed_seconds": 1512.6832492351532,
+    "first_sdk_terminal_epoch": 1791995580.3888252,
+    "paid_purchases_usd": 0,
+    "physical_release_epoch": null,
+    "physical_release_epoch_reason": "No direct physical allocation-boundary telemetry; SDK/browser terminal plus stable quota establish operational closure only",
+    "public_notebook": false,
+    "quota_unit": "Kaggle reported accounting seconds, not physical GPU-device seconds",
+    "reported_quota_after_seconds": 6812.967071,
+    "reported_quota_before_seconds": 4115.521071,
+    "reported_quota_delta_seconds": 2697.446,
+    "retries": 0,
+    "stable_quota_observations": [
+      {
+        "observed_epoch": 1791995580.892342,
+        "raw": {
+          "gpuQuota": {
+            "hasEverRun": true,
+            "minimumTimeAllowed": "108000s",
+            "timeReserved": "0s",
+            "timeUsed": "6812.967071s",
+            "totalTimeAllowed": "108000s"
+          },
+          "quotaRefreshTime": "2026-10-17T00:00:00Z",
+          "tpuQuota": {
+            "minimumTimeAllowed": "72000s",
+            "timeReserved": "0s",
+            "timeUsed": "0s",
+            "totalTimeAllowed": "72000s"
+          }
+        },
+        "utc": "2026-10-14T16:33:00.892343+00:00"
+      },
+      {
+        "observed_epoch": 1791995627.100044,
+        "raw": {
+          "gpuQuota": {
+            "hasEverRun": true,
+            "minimumTimeAllowed": "108000s",
+            "timeReserved": "0s",
+            "timeUsed": "6812.967071s",
+            "totalTimeAllowed": "108000s"
+          },
+          "quotaRefreshTime": "2026-10-17T00:00:00Z",
+          "tpuQuota": {
+            "minimumTimeAllowed": "72000s",
+            "timeReserved": "0s",
+            "timeUsed": "0s",
+            "totalTimeAllowed": "72000s"
+          }
+        },
+        "utc": "2026-10-14T16:33:47.100045+00:00"
+      }
+    ],
+    "status": "OPERATIONALLY_CLOSED",
+    "terminal_status": "COMPLETE"
+  },
+  "download": {
+    "bytes": 1061978,
+    "files": 56,
+    "inventory_sha256": "b83d26795b68ef22a1a677655730ddac82361c8a5621a49579fc5fd8f5f7e697"
+  },
+  "executed_notebook": {
+    "bytes": 734460,
+    "code_execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "path": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/executed-notebook.ipynb",
+    "same_cell_source_as_submitted": true,
+    "sha256": "df9c15aa2f34d1172612973e6ee8e445808e148c1864ab6da206b1a8e1c7f2d2",
+    "source": "Official browser Download .ipynb for observed saved version"
+  },
+  "further_gpu_executions_authorized": false,
+  "historical_source_bundle_modified": false,
+  "monitoring": {
+    "browser_epoch_source": "Compact transcription of timestamped CUA DOM/AX observations; earlier untimestamped UI checks remain in conversation only",
+    "browser_observation_epochs": [
+      1791994329.749,
+      1791994352.033,
+      1791994411.694,
+      1791994421.776,
+      1791994460.91,
+      1791994505.041,
+      1791994581.553,
+      1791994621.262,
+      1791994662.161,
+      1791994710.232,
+      1791994737.59,
+      1791994797.883,
+      1791994857.793,
+      1791994914.725,
+      1791994980.3,
+      1791995079.061,
+      1791995100.688,
+      1791995120.072,
+      1791995191.545,
+      1791995269.857,
+      1791995334.746,
+      1791995384.329,
+      1791995429.339,
+      1791995499.801,
+      1791995553.356,
+      1791995581.119,
+      1791995644.442
+    ],
+    "clock_scope": "Host/browser UTC; externalT0 before allocation-capable submission",
+    "conclusion": "Strict <=60s polling compliance is not established: a retained mixed gap exceeds60s and early UI timestamp coverage is incomplete. Continuous read-only observer was added during the run; next launch must start it before allocation. No allocation exceeded the termination or spending limits.",
+    "continuous_readonly_added_after_launch": true,
+    "continuous_readonly_max_gap_seconds": 16.263275146484375,
+    "continuous_readonly_started_epoch": 1791995325.189091,
+    "mixed_retained_max_gap_seconds": 67.08439898490906,
+    "mixed_retained_observation_coverage_begin_epoch": 1791994329.749,
+    "over_60_seconds": [
+      {
+        "from_epoch": 1791995202.7726011,
+        "seconds": 67.08439898490906,
+        "to_epoch": 1791995269.857
+      }
+    ]
+  },
+  "new_gpu_authorization": false,
+  "provenance": {
+    "approved_candidate_sha256": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b",
+    "audited_source_snapshots": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/audited-source",
+    "base_code_commit": "aa5203ea315a8217a355aedcdca39e656c7d5e6c",
+    "dirty_audited_source_sha256": {
+      "docs/kaggle-setup.md": "6722c27a21f347f4eef9d4c40b97dec8600f91c4b99dad3cd21a8c11d23bb72c",
+      "docs/runbooks/kaggle-execution.md": "a0320f6028c67f72c03afc75f844c310f219a791623de603941bf43e3a1b42fa",
+      "notebooks/mostaza-phase2-startup-corrected.ipynb": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b",
+      "scripts/check_startup_configuration.py": "af3ce21735a03b6d0676682925cc8ef0e374fa80e65cd05628948883611466c5",
+      "scripts/prepare_startup_phase2.py": "b0fce3fa7f007727a3483945598ae1769473a69366ddef90ff57477667dfc542",
+      "src/mostaza/evaluation/startup_candidate.py": "442dd5861a93c8813597f64bb9a510fd555f7655917c806d3edb1a501d2903d2",
+      "src/mostaza/evaluation/startup_configuration.py": "2f1eecd8dae553b4246b1738cdaf63455d3be79e5f3b35b86c4ee02fac1726c0",
+      "tests/unit/test_startup_configuration.py": "547822bfd377f542d5a877f506947f82735f11c31273493d3a90a54ad045c576"
+    },
+    "submitted_notebook_sha256": "beaa495c188c20761facca67e0a3be9f0e9c6d8594404d2d4744551222c0b589"
+  },
+  "reference_patch_or_hidden_tests_used_as_agent_inputs": false,
+  "sdk_source": {
+    "kind": "Saved source only; execution counts null",
+    "path": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/saved-source.ipynb",
+    "sha256": "149e5b9583e10f87369a8b22ffd399a873b4031a52994987848b2d4af3692c58"
+  },
+  "source_bundle": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f",
+  "startup": {
+    "configuration_sha256": "08ccb9f969cf121f0f1ba7540ee826825d85498c587cb42e2e20d9612515a76f",
+    "first_observer_seconds": 165.03563380241394,
+    "memory_point_samples": [
+      {
+        "event": "memory.point_sample",
+        "gpus": [
+          {
+            "free": 22561,
+            "index": 0,
+            "total": 23034,
+            "used": 3
+          },
+          {
+            "free": 22561,
+            "index": 1,
+            "total": 23034,
+            "used": 3
+          },
+          {
+            "free": 22561,
+            "index": 2,
+            "total": 23034,
+            "used": 3
+          },
+          {
+            "free": 22561,
+            "index": 3,
+            "total": 23034,
+            "used": 3
+          }
+        ],
+        "observer_monotonic_seconds": 117.34474055999999,
+        "phase": "server.start.wait",
+        "reason": null,
+        "since_launch_seconds": 282.38013648986816,
+        "stage": "before_server_spawn",
+        "timestamp_utc": "2026-10-14T16:12:30.085712+00:00",
+        "unit": "MiB"
+      },
+      {
+        "event": "memory.point_sample",
+        "gpus": [
+          {
+            "free": 2302,
+            "index": 0,
+            "total": 23034,
+            "used": 20263
+          },
+          {
+            "free": 2302,
+            "index": 1,
+            "total": 23034,
+            "used": 20263
+          },
+          {
+            "free": 2302,
+            "index": 2,
+            "total": 23034,
+            "used": 20263
+          },
+          {
+            "free": 2302,
+            "index": 3,
+            "total": 23034,
+            "used": 20263
+          }
+        ],
+        "observer_monotonic_seconds": 483.870527954,
+        "phase": "server.ready",
+        "reason": null,
+        "since_launch_seconds": 648.9059178829193,
+        "stage": "model_ready",
+        "timestamp_utc": "2026-10-14T16:18:36.611494+00:00",
+        "unit": "MiB"
+      }
+    ],
+    "observer_events": 308,
+    "pure_gpu_startup_time": null,
+    "pure_gpu_startup_time_reason": "External clock conservatively includes queue/container/kernel; native intervals have narrower scopes",
+    "runtime_configuration": {
+      "allocator_runtime_state": null,
+      "allocator_runtime_state_reason": "No worker-internal allocator probe",
+      "config": {
+        "dtype": "bfloat16",
+        "extra_args": [
+          "--max-num-seqs",
+          "1"
+        ],
+        "gpu_memory_utilization": 0.9,
+        "max_model_len": 32768,
+        "tensor_parallel_size": 4
+      },
+      "coverage": "allowlisted actual native build_env return; not allocator runtime state",
+      "environment": {
+        "LITELLM_LOCAL_MODEL_COST_MAP": "True",
+        "LITELLM_LOG": "WARNING",
+        "LITELLM_TELEMETRY": "False",
+        "NCCL_DEBUG": "WARN",
+        "OTEL_PYTHON_DISABLED": "true",
+        "OTEL_SDK_DISABLED": "true",
+        "PYTORCH_ALLOC_CONF": "expandable_segments:True",
+        "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+        "TRANSFORMERS_NO_FLAX": "1",
+        "TRANSFORMERS_NO_TF": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "VLLM_ENGINE_READY_TIMEOUT_S": "1200",
+        "VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS": "1",
+        "VLLM_NO_USAGE_STATS": "1",
+        "VLLM_WORKER_MULTIPROC_METHOD": "spawn"
+      },
+      "installed": {
+        "packages": {
+          "adk-submission": {
+            "reason": null,
+            "version": "0.2.13"
+          },
+          "google-adk": {
+            "reason": null,
+            "version": "1.36.1"
+          },
+          "swegemma": {
+            "reason": null,
+            "version": "0.2.11"
+          },
+          "torch": {
+            "reason": null,
+            "version": "2.10.0+cu128"
+          },
+          "vllm": {
+            "reason": null,
+            "version": "0.19.1"
+          }
+        },
+        "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+        "vllm_sources": {
+          "envs.py": {
+            "reason": null,
+            "sha256": "0878b5ca5379317b3f9f0fe65d9414c62f0a3a3400f79baeb07419507b933e5d"
+          },
+          "v1/worker/gpu_model_runner.py": {
+            "reason": null,
+            "sha256": "3afc290d3df1be3df1b89b9b35942695f5896c7729f608d6c44580899212c301"
+          },
+          "v1/worker/gpu_worker.py": {
+            "reason": null,
+            "sha256": "ffbd4567a25e0a82ca5c714b75e86c7353cedb6fc5c2814b22f3c91afb1c88b1"
+          }
+        }
+      },
+      "profile_id": "serial-memory-v3"
+    },
+    "stages_seconds": {
+      "bootstrap.begin": 165.0371778011322,
+      "bootstrap.complete": 165.13480520248413,
+      "compiler.begin": 282.28595209121704,
+      "compiler.complete": 282.3106687068939,
+      "evaluation.task": 658.822283744812,
+      "execution.imports.begin": 282.248309135437,
+      "execution.imports.complete": 282.2850842475891,
+      "inputs.verified": 170.913006067276,
+      "packages.install.begin": 170.9265377521515,
+      "packages.install.complete": 229.97633719444275,
+      "preflight.complete": 282.21573758125305,
+      "registry.begin": 648.9072287082672,
+      "registry.complete": 648.909407377243,
+      "server.ready": 648.8606731891632,
+      "server.start.wait": 282.31570172309875,
+      "tasks.loaded": 648.9227201938629,
+      "torch.import.begin": 229.98646187782288,
+      "torch.import.complete": 243.0735149383545
+    },
+    "upstream_source_comparison": {
+      "envs.py": {
+        "matches": true,
+        "runtime_sha256": "0878b5ca5379317b3f9f0fe65d9414c62f0a3a3400f79baeb07419507b933e5d",
+        "upstream_v0_19_1_sha256": "0878b5ca5379317b3f9f0fe65d9414c62f0a3a3400f79baeb07419507b933e5d"
+      },
+      "v1/worker/gpu_model_runner.py": {
+        "matches": true,
+        "runtime_sha256": "3afc290d3df1be3df1b89b9b35942695f5896c7729f608d6c44580899212c301",
+        "upstream_v0_19_1_sha256": "3afc290d3df1be3df1b89b9b35942695f5896c7729f608d6c44580899212c301"
+      },
+      "v1/worker/gpu_worker.py": {
+        "matches": true,
+        "runtime_sha256": "ffbd4567a25e0a82ca5c714b75e86c7353cedb6fc5c2814b22f3c91afb1c88b1",
+        "upstream_v0_19_1_sha256": "ffbd4567a25e0a82ca5c714b75e86c7353cedb6fc5c2814b22f3c91afb1c88b1"
+      }
+    }
+  },
+  "status": "REAL_BATCH_ACQUIRED_OPERATIONALLY_CLOSED",
+  "version": {
+    "browser_cancel_available": true,
+    "browser_url": "https://www.kaggle.com/code/diegofescobar/mostaza-b180-ea1534a86873409b870b3b04d04e347f?scriptVersionId=358394257",
+    "notebook_id": 138700613,
+    "observed_epoch": 1791994125.529889,
+    "physical_release_guaranteed": false,
+    "ref": "diegofescobar/mostaza-b180-ea1534a86873409b870b3b04d04e347f",
+    "script_version_id": 358394257,
+    "version_number": 1
+  }
+}

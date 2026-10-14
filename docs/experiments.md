@@ -269,3 +269,15 @@ authorized acquisition needs full provenance replay and a new gate/audit before
 outcome reporting. Absolute reproducible local commands, exact input hashes,
 limitations and the concrete quota proposal are in the declared
 [phase-2 report](implementation/evidence/mostaza-phase2-budget-retrieval/report.md).
+
+
+## Real B180 startup-v3 acquisition
+
+The [six-run report](implementation/evidence/mostaza-phase2-startup-run/report.md)
+records the separately authorized startup-corrected B180 pair. Each arm has
+0PASS/2FAIL/1ERROR. Requests changes library source but remains unresolved; two
+other applicable patches contain only reproduction scripts. No similarity or
+graph tool was invoked. New serving parameters and generation budgets prevent
+a causal budget-only comparison with phase1. Native manifests remain intact;
+the derived shared comparison ID and exact-version URL are explicitly recorded.
+B300/E1-R180 remain unexecuted. No additional GPU allocation is authorized.

@@ -1,0 +1,80 @@
+[
+  {
+    "configuration_id": "E0-B180",
+    "instance_id": "requests_7205",
+    "metrics": null,
+    "metrics_reason": "No agent task execution/trace acquired",
+    "native_acquisition": null,
+    "patch": null,
+    "patch_reason": "Task not run",
+    "reason": "Native vLLM EngineCore failed during sampler warm-up with CUDA OOM before model readiness and task scheduling; supervisor canceled exact version; no retry.",
+    "status": "NOT_RUN",
+    "verification": null,
+    "verification_reason": "Task not run"
+  },
+  {
+    "configuration_id": "E0-B180",
+    "instance_id": "fastapi_15589",
+    "metrics": null,
+    "metrics_reason": "No agent task execution/trace acquired",
+    "native_acquisition": null,
+    "patch": null,
+    "patch_reason": "Task not run",
+    "reason": "Native vLLM EngineCore failed during sampler warm-up with CUDA OOM before model readiness and task scheduling; supervisor canceled exact version; no retry.",
+    "status": "NOT_RUN",
+    "verification": null,
+    "verification_reason": "Task not run"
+  },
+  {
+    "configuration_id": "E0-B180",
+    "instance_id": "rich_3061",
+    "metrics": null,
+    "metrics_reason": "No agent task execution/trace acquired",
+    "native_acquisition": null,
+    "patch": null,
+    "patch_reason": "Task not run",
+    "reason": "Native vLLM EngineCore failed during sampler warm-up with CUDA OOM before model readiness and task scheduling; supervisor canceled exact version; no retry.",
+    "status": "NOT_RUN",
+    "verification": null,
+    "verification_reason": "Task not run"
+  },
+  {
+    "configuration_id": "E1-B180",
+    "instance_id": "requests_7205",
+    "metrics": null,
+    "metrics_reason": "No agent task execution/trace acquired",
+    "native_acquisition": null,
+    "patch": null,
+    "patch_reason": "Task not run",
+    "reason": "Native vLLM EngineCore failed during sampler warm-up with CUDA OOM before model readiness and task scheduling; supervisor canceled exact version; no retry.",
+    "status": "NOT_RUN",
+    "verification": null,
+    "verification_reason": "Task not run"
+  },
+  {
+    "configuration_id": "E1-B180",
+    "instance_id": "fastapi_15589",
+    "metrics": null,
+    "metrics_reason": "No agent task execution/trace acquired",
+    "native_acquisition": null,
+    "patch": null,
+    "patch_reason": "Task not run",
+    "reason": "Native vLLM EngineCore failed during sampler warm-up with CUDA OOM before model readiness and task scheduling; supervisor canceled exact version; no retry.",
+    "status": "NOT_RUN",
+    "verification": null,
+    "verification_reason": "Task not run"
+  },
+  {
+    "configuration_id": "E1-B180",
+    "instance_id": "rich_3061",
+    "metrics": null,
+    "metrics_reason": "No agent task execution/trace acquired",
+    "native_acquisition": null,
+    "patch": null,
+    "patch_reason": "Task not run",
+    "reason": "Native vLLM EngineCore failed during sampler warm-up with CUDA OOM before model readiness and task scheduling; supervisor canceled exact version; no retry.",
+    "status": "NOT_RUN",
+    "verification": null,
+    "verification_reason": "Task not run"
+  }
+]

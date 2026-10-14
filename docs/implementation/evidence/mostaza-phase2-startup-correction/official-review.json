@@ -1,0 +1,38 @@
+{
+  "reviewed_utc": "2026-10-14T15:19:02.828427+00:00",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.19.1/vllm/envs.py",
+      "local_path": "results/phase2-startup-correction-review/envs.py",
+      "sha256": "0878b5ca5379317b3f9f0fe65d9414c62f0a3a3400f79baeb07419507b933e5d",
+      "bytes": 84009
+    },
+    {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.19.1/vllm/v1/worker/gpu_worker.py",
+      "local_path": "results/phase2-startup-correction-review/gpu_worker.py",
+      "sha256": "ffbd4567a25e0a82ca5c714b75e86c7353cedb6fc5c2814b22f3c91afb1c88b1",
+      "bytes": 44483
+    },
+    {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.19.1/vllm/v1/worker/gpu_model_runner.py",
+      "local_path": "results/phase2-startup-correction-review/gpu_model_runner.py",
+      "sha256": "3afc290d3df1be3df1b89b9b35942695f5896c7729f608d6c44580899212c301",
+      "bytes": 309188
+    },
+    {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/v0.19.1/vllm/config/scheduler.py",
+      "local_path": "results/phase2-startup-correction-review/scheduler.py",
+      "sha256": "011cb6cda6625e9f05fc0a6479061e94ec5a449d984685f19985243e91c45a2d",
+      "bytes": 12991
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/notes/cuda.html",
+      "access": "web tool verified alias and expandable_segments documentation",
+      "sha256": null,
+      "reason": "Raw urllib acquisition returned HTTP403; do not invent a raw file hash"
+    }
+  ],
+  "limitations": [
+    "Upstream source review is not GPU validation or proof of installed wheel byte identity."
+  ]
+}
