@@ -1,0 +1,30 @@
+{
+  "base_commit": "eb04b1ccf6be629c7490d42b9e8de8cd28784bdc",
+  "closed_plan_excluded_sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5",
+  "files": [
+    {
+      "path": "src/mostaza/evaluation/pytest_origin_receipt.py",
+      "sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb"
+    },
+    {
+      "path": "scripts/pcv01_cpu_fixtures.py",
+      "sha256": "7a27e92cf83422d19f720f19eaecc8cb6d520d17c4a1bb57caea436f565e0488"
+    },
+    {
+      "path": "scripts/check_pcv01.py",
+      "sha256": "723e3813076a8fd22dd9bf5e84553c51d27befec85c60e37a283894d59db3a57"
+    },
+    {
+      "path": "tests/unit/test_pytest_origin_receipt.py",
+      "sha256": "2a1816dc16ab257a0c54e6029d5dfd5b4a525405f4f2a91af3a67ac994404745"
+    },
+    {
+      "path": "tests/integration/test_pcv01_cpu_contract.py",
+      "sha256": "73352deb0dc380cd18247b554723afe57944879860d898c731ba1c633ece442c"
+    },
+    {
+      "path": "docs/specs/pcv01.md",
+      "sha256": "5b5327ad624d672486d783149ca03aa73bf5edd3e65ddcccd82e5fe3ecf4c5ca"
+    }
+  ]
+}

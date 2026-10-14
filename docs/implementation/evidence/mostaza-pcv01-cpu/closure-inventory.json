@@ -1,0 +1,74 @@
+{
+  "audit_status": "PASS",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b640f9eb9915c19cf8889e63841639016d59b6b6e08f287dc1b8c87d1a1f434c"
+    },
+    {
+      "path": "docs/specs/README.md",
+      "sha256": "d418324eade51c3520880bab3c768d28c8713f3de0a78be2974b74c2dbbe54db"
+    },
+    {
+      "path": "docs/specs/pcv01.md",
+      "sha256": "5b5327ad624d672486d783149ca03aa73bf5edd3e65ddcccd82e5fe3ecf4c5ca"
+    },
+    {
+      "path": "docs/runbooks/kaggle-execution.md",
+      "sha256": "bae84f8dd2e2cde1569abce9b9ab3b51b9b4cdb493434e5768ea0afe6b23e8c4"
+    },
+    {
+      "path": "src/mostaza/evaluation/pytest_origin_receipt.py",
+      "sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb"
+    },
+    {
+      "path": "scripts/check_pcv01.py",
+      "sha256": "723e3813076a8fd22dd9bf5e84553c51d27befec85c60e37a283894d59db3a57"
+    },
+    {
+      "path": "scripts/pcv01_cpu_fixtures.py",
+      "sha256": "7a27e92cf83422d19f720f19eaecc8cb6d520d17c4a1bb57caea436f565e0488"
+    },
+    {
+      "path": "tests/unit/test_pytest_origin_receipt.py",
+      "sha256": "2a1816dc16ab257a0c54e6029d5dfd5b4a525405f4f2a91af3a67ac994404745"
+    },
+    {
+      "path": "tests/integration/test_pcv01_cpu_contract.py",
+      "sha256": "73352deb0dc380cd18247b554723afe57944879860d898c731ba1c633ece442c"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/approval.json",
+      "sha256": "16d8ec1b97c04fe996d11f375e0af8965b3a5310e055f3c017067e4ec99ce8eb"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/audit.json",
+      "sha256": "c582f23d459155c24fcd54155ddc9b2e882b895b657afa19a4bcd82b459ede9e"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/compatibility.json",
+      "sha256": "1f9318af3306e2dee569d60edab2bc6f7b35f3aa2b9e0b9f39f521e7dbadbdbe"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/cpu-controls.json",
+      "sha256": "f97ae254100021b515caeb4bdbc00dc23dd0452fca594313da9d35adb959939c"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/raw-inventory.json",
+      "sha256": "784c601662109c17e20c53160b7bdb676e747fccdad230884b34daa388c8c3b3"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/report.md",
+      "sha256": "eb69ebb63a18fc76f10bb68a2bab2f7bd52a4ddfa87028540530336546339d3d"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/source-inventory.json",
+      "sha256": "70ff243c7e58c1850ef7ddb999dea17bbf5980b19b917815c5b5301eebc9927d"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/validation.json",
+      "sha256": "8fc305ce10ca11792bc16e26a2cb95b8721c8a7088581152191d6e84f4b7ffa4"
+    }
+  ],
+  "scope": "P-CV-01 CPU-only closure; excludes self and preexisting closed plan change"
+}

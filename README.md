@@ -88,3 +88,9 @@ GPU evaluations. Exact verifier import provenance is unavailable, so the fresh
 notebook remains blocked for real execution. Use
 `.venv/bin/python scripts/check_context_verification.py --check` for the dedicated
 CPU gate; its PASS does not remove that blocker.
+
+The separately approved [P-CV-01 CPU diagnostic](docs/implementation/evidence/mostaza-pcv01-cpu/report.md)
+observes public-module origin in actual synthetic pytest processes. Its opt-in
+plugin stays outside agent/notebook payloads and the real Kaggle verifier.
+`.venv/bin/python scripts/check_pcv01.py --check` validates CPU parity/isolation;
+organizer acceptance and historical verifier provenance remain unconfirmed.

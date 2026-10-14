@@ -647,3 +647,28 @@ save/run/cancel commands as metadata readers.
 The new local candidate is intentionally not launch-ready: it raises before
 bootstrap, has GPU/internet disabled, and needs an exact verifier-origin decision
 and new quota authorization. Gate/audit PASS must preserve these limitations.
+
+## 16. Optional CPU diagnostic for actual pytest import origin
+
+[P-CV-01 CPU evidence](../implementation/evidence/mostaza-pcv01-cpu/report.md)
+extends the historical proposal with an offline implementation, not a real
+verifier integration. Reproduce its pinned dependencies and paired CPU controls
+before considering a competition-specific diagnostic protocol. Do not copy the
+plugin to an agent archive, model context or an unapproved scoring environment.
+
+Only in disposable native CPU sandboxes, adding `-p mostaza_origin_receipt` to the
+same pytest command loads a tryfirst call-phase observer. Its separate host-only
+configuration lists reviewed public module/function paths and source hashes; it
+never accepts a test item, imports the product or captures tests/fixtures/expected
+values. Compare original versus instrumented exit codes and JUnit counts, including
+negative, shadowing and unavailable-receipt controls. Retain interpreter/pytest
+versions, plugin/source pins, PID and declared point-in-time coverage. Unknown
+receipt, logging failure or unreached call phase remains null with a reason.
+
+Explicit `-p` loading is an official pytest API. That does not establish organizer
+permission, unchanged import order, real grader parity or historical imports.
+Inspect the authorized competition setup and supported instrumentation mechanism
+before proposing real use. The pinned public harness has a fixed verifier command
+and no reviewed EvalConfig plugin switch; this delivery changes neither. No real
+verification repair, setup/path change, GPU-ready promotion or new allocation
+follows from a CPU PASS. Each such change needs its own concrete authorization.
