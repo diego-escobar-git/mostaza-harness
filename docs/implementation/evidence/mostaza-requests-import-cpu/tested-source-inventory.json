@@ -1,0 +1,34 @@
+[
+  {
+    "path": "src/mostaza/evaluation/requests_import_cpu.py",
+    "sha256": "977a71b450dc0edb5d5534715c2d180d09847a42d53947316e24a376ebd8d0f3"
+  },
+  {
+    "path": "scripts/requests_import_cpu_fixtures.py",
+    "sha256": "e52c5e80b1bb285c855e1d4537457d9efa33b4d656929dabcc8ac1c0474806e7"
+  },
+  {
+    "path": "scripts/check_requests_import_cpu.py",
+    "sha256": "b47b6b4921541649640af6cea7754c19e1f92bba3e8fc7ad8eef59c45e97b739"
+  },
+  {
+    "path": "scripts/run_requests_import_cpu_gate.py",
+    "sha256": "5264b8aff14a63b7eff1b0f55f30ab24fcf399b66c119f5b7aad779e51d6ae71"
+  },
+  {
+    "path": "tests/unit/test_requests_import_cpu.py",
+    "sha256": "0981782ee090494266e26961b38f986ee80b996e9ee7bbdcb3839adb4841664d"
+  },
+  {
+    "path": "tests/integration/test_requests_import_cpu_contract.py",
+    "sha256": "4d483ddb90782ebbeecdb4bcc06fc5cbdb48cacebdc12cd3f8865cff559a88ce"
+  },
+  {
+    "path": "docs/specs/requests-import-cpu.md",
+    "sha256": "46b0ef1c66305a2bcfc4a1b57b647b09b7ac03d2d830370dfc998a7266fdf6b8"
+  },
+  {
+    "path": "docs/runbooks/kaggle-execution.md",
+    "sha256": "1cab84b9de241326e0a353b6ca97394a70cc474bf99d4e0e9b0286226e41436e"
+  }
+]

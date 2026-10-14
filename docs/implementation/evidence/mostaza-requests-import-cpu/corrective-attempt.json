@@ -1,0 +1,26 @@
+{
+  "reason": "audit_finding",
+  "finding_id": "RI-A01",
+  "priority": "P2",
+  "finding": "Outer timeout must explicitly attempt cleanup after stopping matrix controllers",
+  "repair": "Identify current raw roots from observed owned worker output paths; sweep only their fixture/sandboxes after termination; preserve raw records/prior runs; record cleanup scope/status",
+  "focused_checks": [
+    {
+      "command": "ruff check new source/tests",
+      "status": "PASS"
+    },
+    {
+      "command": "mypy four new source files",
+      "status": "PASS"
+    },
+    {
+      "command": "pytest new unit/integration contracts",
+      "status": "PASS",
+      "tests": 26
+    }
+  ],
+  "independent_repair_review": "NO_BLOCKERS",
+  "prior_gate_passed": true,
+  "maximum_additional_gate_attempts": 1,
+  "native_retries": false
+}

@@ -732,3 +732,31 @@ If setup/collection prevents any of the five Requests nodes, stop as BLOCKED.
 Native JUnit XML is consumed internally and removed at cleanup; its raw bytes
 remain null with a reason. Own test-body receipts do not claim general pytest
 hook/teardown coverage. See the local report for actual outcomes and limitations.
+
+
+## R-IMPORT-CPU-01: explicit source-layout diagnostic variant
+
+V-CPU-01 observed Requests imports from installed site-packages inside actual
+native pytest processes. Its historical inputs/results and strict path protocol
+remain unchanged. The separately approved
+[CPU layout contract](../specs/requests-import-cpu.md) permits one new root package
+symlink to its existing src package, supplied via native verify_task patch_path
+before eval_baseline. It does not edit the acquired archive or native verifier.
+The derived layout is a distinct CPU input; record its delta/tree hashes, never
+claim it is the original complete tree. Native bootstrap still adds its usual
+pytest configuration. No PYTHONPATH/install/plugin/sitecustomize repair is used.
+
+Run the bounded ten-command gate with
+`.venv/bin/python scripts/run_requests_import_cpu_gate.py --check --attempt 1`.
+It includes the old eleven native controls and nine new calls, twenty total,
+under one twenty-minute deadline. A second attempt requires a documented actual
+failure/audit repair and focused checks; no automatic retries or extra auditor
+matrices. See the approved proposal for full limits and exact command order.
+
+Each Requests U/B pair uses identical own test_patch bytes and retained agent
+patch, with only layout delta absent/present. Observe raw AND canonical module/
+function paths while the symlink exists, loaded-code fingerprints, package origin
+and actual pytest process/runtime. Installed distribution metadata and imported
+public package version are separate facts. Behavioral failures with correct binding
+are valid diagnostics; do not manufacture an E1 success. CPU binding validation
+does not authorize real Kaggle use, scorer changes, GPU, submissions or outreach.

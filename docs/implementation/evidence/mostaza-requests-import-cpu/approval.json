@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "proposal": "R-IMPORT-CPU-01",
+  "plan_sha256": "980590637f5d249ffc5002bb449db8901fa694d0a6b73df711b8703d8d3bec1d",
+  "maximum_gate_attempts": 2,
+  "maximum_native_invocations_per_gate": 20,
+  "maximum_wall_seconds_per_gate": 1200,
+  "automatic_retries": false,
+  "user_authorization": "Apruebo R-IMPORT-CPU-01, el gate exacto y sus l\u00edmites. Contin\u00faa con implementaci\u00f3n, validaci\u00f3n CPU, auditor\u00eda, correcciones, commit, push y actualizaci\u00f3n del PR #2 tras PASS, sin merge, GPU, Discussion ni cambios al verificador."
+}
