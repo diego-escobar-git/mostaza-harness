@@ -1,0 +1,7 @@
+{
+  "proposal": "V-CPU-01",
+  "approved": true,
+  "plan_sha256": "dd4ba2e90618f2c2829d15b0f5c6c200ccdb2ee5ed6cbd67e8e5dec72cc1068e",
+  "user_authorization": "Apruebo V-CPU-01, el gate exacto y sus l\u00edmites. Contin\u00faa con implementaci\u00f3n, validaci\u00f3n CPU, auditor\u00eda, correcciones, commit, push y actualizaci\u00f3n del PR #2, sin merge, GPU, Discussion ni cambios al verificador.",
+  "scope": "CPU implementation, nine-command gate, independent audit/corrections, commit/push/update PR2 toward develop; no merge/GPU/Discussion/verifier change"
+}

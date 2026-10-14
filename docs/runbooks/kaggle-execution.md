@@ -706,3 +706,29 @@ The eight-command gate and independent audit certify this CPU review only.
 Discussion outreach is explicitly withheld; the saved draft remains unsent.
 Any future publication, official observation integration or real evaluation needs
 its own authorization. Do not promote readiness from public setup access alone.
+
+
+## V-CPU-01: verify_task end-to-end before another real batch
+
+The approved [CPU contract](../specs/verify-task-cpu.md) and
+[exact matrix/gate](../implementation/evidence/mostaza-verify-task-cpu/plan-for-approval.md)
+exercise the unchanged native subprocess verifier locally. Run the ninth gate
+with `.tools/official/bin/python scripts/check_verify_task_cpu.py --check` from
+the phase2 worktree after the other eight commands. It performs eleven serial
+CPU invocations: eight synthetic controls and three Requests replay diagnostics.
+No model, GPU, Kaggle session or organizer communication is involved.
+
+The new test_patch files are independently authored diagnostics. They observe
+complete-module imports inside their actual pytest test bodies, without an
+origin plugin, path repair or changed native command. Retained E0/E1 agent patches
+are forensic inputs only; original task reference patches/test_patch are excluded.
+Use actual acquired snapshot hashes and validated base trees; do not equate the
+original cohort's compressed snapshot hash with a later downloaded archive hash.
+
+A synthetic negative result must fail for its intended reason. A Requests
+binding mismatch can complete the diagnostic milestone, but cannot credit the
+workspace patch, establish historical scorer behavior or clear GPU readiness.
+If setup/collection prevents any of the five Requests nodes, stop as BLOCKED.
+Native JUnit XML is consumed internally and removed at cleanup; its raw bytes
+remain null with a reason. Own test-body receipts do not claim general pytest
+hook/teardown coverage. See the local report for actual outcomes and limitations.
