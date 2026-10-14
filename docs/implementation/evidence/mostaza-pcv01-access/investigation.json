@@ -1,0 +1,64 @@
+{
+  "authentication_scope_changed": false,
+  "date": "2026-10-14",
+  "gpu_or_remote_sessions_started": 0,
+  "model_calls": 0,
+  "native_wheel": {
+    "sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3",
+    "source_sha256": {
+      "swegemma/config.py": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b",
+      "swegemma/harness/container_setup.py": "3192acdce35f2d0bd0b191186851b46c251390af16b7f139a1640e16fb1d862c",
+      "swegemma/harness/verification.py": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa",
+      "swegemma/sandbox/subprocess.py": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2"
+    },
+    "subprocess_early_returns": {
+      "install_editable_package": {
+        "condition": "type(docker).__name__ in {'SubprocessManager', 'SubprocessSandbox'}",
+        "effect": "Return before editable install/test dependency setup for native subprocess managers",
+        "line": 512
+      },
+      "install_test_dependencies": {
+        "condition": "type(docker).__name__ in {'SubprocessManager', 'SubprocessSandbox'}",
+        "effect": "Return before editable install/test dependency setup for native subprocess managers",
+        "line": 529
+      }
+    },
+    "version": "0.2.11"
+  },
+  "new_tests_executed": false,
+  "official_cli_docs": "https://github.com/Kaggle/kaggle-cli/blob/main/docs/competitions.md",
+  "official_contact": {
+    "badge": "Competition Host",
+    "discussion_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion",
+    "messages_sent": 0,
+    "observed_host": "Elan Markowitz",
+    "observed_host_topic": "https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/743007"
+  },
+  "prior_403": {
+    "evidence": "docs/implementation/evidence/mostaza-context-verification/official-setup-access.json",
+    "interpretation": "Denial for that dataset route; not evidence that public competition files are unavailable; no bypass or permission expansion",
+    "operation": "ListDatasetFiles",
+    "resource": "metric/gemma-4-developer-agent-metric-data",
+    "status": 403
+  },
+  "public_setup": {
+    "browser_account": "diegofescobar",
+    "bytes": 13883,
+    "download_event_wait": "Timed out in browser automation; resulting individual file was subsequently verified on disk by size, content syntax and SHA256",
+    "download_path": "/Users/diego/Downloads/setup.py",
+    "local_path": "resources/official/pcv01-access-20261014/sandbox/setup.py",
+    "numeric_source_version": null,
+    "retrieval": "Official authenticated competition Data UI, individual Download button",
+    "scorer_equivalence": null,
+    "scorer_equivalence_reason": "Published development asset; private scorer source/version/backend not attested",
+    "sha256": "0263995ade90f83c8efa0ab5c7c9b7629696f39bc75274d58fc27ab774568409",
+    "source_path": "sandbox/setup.py",
+    "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+    "status": "ACQUIRED_NOT_EXECUTED",
+    "version_missing_reason": "Numeric competition-file version not exposed in reviewed UI; exact bytes pinned"
+  },
+  "readiness_changed": false,
+  "real_verifier_changed": false,
+  "scope": "read-only investigation; no implementation or verifier changes",
+  "scorer_compatibility_confirmed": false
+}

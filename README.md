@@ -94,3 +94,10 @@ observes public-module origin in actual synthetic pytest processes. Its opt-in
 plugin stays outside agent/notebook payloads and the real Kaggle verifier.
 `.venv/bin/python scripts/check_pcv01.py --check` validates CPU parity/isolation;
 organizer acceptance and historical verifier provenance remain unconfirmed.
+
+The [public setup/scorer source review](docs/implementation/evidence/mostaza-pcv01-access/report.md)
+records authorized individual source downloads and distinguishes subprocess setup
+bypass from Docker bootstrap. Its offline command is
+`.venv/bin/python scripts/check_pcv01_scorer_contract.py --check`. Public source
+access preserves unknown scorer attestations and blocked GPU readiness; the
+organizer question remains unsent.

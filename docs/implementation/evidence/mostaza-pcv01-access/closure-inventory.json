@@ -1,0 +1,86 @@
+{
+  "audit_status": "PASS",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "6fdb49be671be57868e4aafdaabbc03b75aa945120c9585720199c630adada4c"
+    },
+    {
+      "path": "docs/runbooks/kaggle-execution.md",
+      "sha256": "4c47f7a0ed07ac86184a4c0d0cc60aad05840542fcd39a2d439c36ef82cdac2e"
+    },
+    {
+      "path": "docs/specs/pcv01.md",
+      "sha256": "4a53a813361771a1450e3d1146b526fef4c9cea4a7ef16ffef5019e5e3666b1f"
+    },
+    {
+      "path": "src/mostaza/evaluation/scorer_contract.py",
+      "sha256": "6dfeec2331f4ea4ad73891b249214c2eef6f386e3650919aeab043699b7bd767"
+    },
+    {
+      "path": "scripts/check_pcv01_scorer_contract.py",
+      "sha256": "254ff59c4caa5b0fc6ad8360c5be83a330a7f98e355c93ce32db7f522094c895"
+    },
+    {
+      "path": "tests/unit/test_scorer_contract.py",
+      "sha256": "3a4e43dacf04d0c517390db843cbeeb9c457e10f5c533e5300c77f504ad5ff86"
+    },
+    {
+      "path": "tests/integration/test_scorer_source_contract.py",
+      "sha256": "502ebea6747f5c11f6ac28690ddf0ef36c0ce1fb0c2df792b9e1cbd2647171ed"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/approval.json",
+      "sha256": "3d5644736c3e5f67ddd501ee3dc8ed71b7e7c35e6b7e5ae56d3ac019fc48043b"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/audit.json",
+      "sha256": "d63c620cec9f1bfafdbc1f7e25a0cbfcfa5d3783850f03b5c2e8f5dc790f92e8"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/contract-review.json",
+      "sha256": "639aaf648eaee6c52b07dfb13387eee574d42fcf09f256ca1dd6ca15d869ee4c"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/cpu-parity.json",
+      "sha256": "14085a66d0aa95b80e2c2080941e00a9e41cd490d2cc88888b0507e48a2adf1b"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/investigation.json",
+      "sha256": "652f9e0d2b169f8784fcec4850b395e527576e600f75447905669154862f2377"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/organizer-question-draft.md",
+      "sha256": "acad02faeaf39680c8d0494cf7178800e4a5e10a1ee10484a8964693727cac47"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/organizer-status.json",
+      "sha256": "6b9b09c2365b32cedb0019c56ab7d1301c746c5b4492dbdd20257ed7acac85ab"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/plan-for-approval.md",
+      "sha256": "44cd201c632a5447452b8456ea50d5f0f2b34facaff7ff870e0afcc164dacd32"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/public-sources.json",
+      "sha256": "6342b675acb6a88f34a777b2a0cbc47eecc00fa3950b4c6d9b587c7e1ca20efa"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/raw-inventory.json",
+      "sha256": "a7f6699a101ac9ec9a61e5740298e1490a25ff98093a07b9a0d20dd508de8a9d"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/report.md",
+      "sha256": "fb7cebeaaca7949321722a57d4c1fb35a84af8ab98ec6e0a0d97d895868c94a7"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/source-inventory.json",
+      "sha256": "f2998363f2fa0974c73a351c834ec2e94dc1a24149a6df794536b9c24ad94c67"
+    },
+    {
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/validation.json",
+      "sha256": "559c8e3b90d895cc6a18436e552d99f336a94ef7cbaed70b0b960923e2714da4"
+    }
+  ],
+  "scope": "Approved A/B CPU source-review closure; self/excluded closed plan not included"
+}

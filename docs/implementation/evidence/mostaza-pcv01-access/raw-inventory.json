@@ -1,0 +1,85 @@
+{
+  "files": [
+    {
+      "bytes": 25086,
+      "path": "results/pcv01-access/gate-v1/command-1.log",
+      "sha256": "cf28174b51ee7bc7af48b7f86390ca50634a6430de4b57c599b536ef8154d33c"
+    },
+    {
+      "bytes": 82,
+      "path": "results/pcv01-access/gate-v1/command-2.log",
+      "sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+    },
+    {
+      "bytes": 73,
+      "path": "results/pcv01-access/gate-v1/command-3.log",
+      "sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+    },
+    {
+      "bytes": 1380,
+      "path": "results/pcv01-access/gate-v1/command-4.log",
+      "sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+    },
+    {
+      "bytes": 549,
+      "path": "results/pcv01-access/gate-v1/command-5.log",
+      "sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+    },
+    {
+      "bytes": 2903,
+      "path": "results/pcv01-access/gate-v1/command-6.log",
+      "sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+    },
+    {
+      "bytes": 38945,
+      "path": "results/pcv01-access/gate-v1/command-7.log",
+      "sha256": "7d9d2ce7053f710313f41cf2b5d47dc4da5c7627331f29169d90dab03f64c63d"
+    },
+    {
+      "bytes": 5110,
+      "path": "results/pcv01-access/gate-v1/command-8.log",
+      "sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da"
+    },
+    {
+      "bytes": 5690,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/README.md",
+      "sha256": "6fdb49be671be57868e4aafdaabbc03b75aa945120c9585720199c630adada4c"
+    },
+    {
+      "bytes": 43964,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/docs/runbooks/kaggle-execution.md",
+      "sha256": "4c47f7a0ed07ac86184a4c0d0cc60aad05840542fcd39a2d439c36ef82cdac2e"
+    },
+    {
+      "bytes": 7141,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/docs/specs/pcv01.md",
+      "sha256": "4a53a813361771a1450e3d1146b526fef4c9cea4a7ef16ffef5019e5e3666b1f"
+    },
+    {
+      "bytes": 497,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/scripts/check_pcv01_scorer_contract.py",
+      "sha256": "254ff59c4caa5b0fc6ad8360c5be83a330a7f98e355c93ce32db7f522094c895"
+    },
+    {
+      "bytes": 16419,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/src/mostaza/evaluation/scorer_contract.py",
+      "sha256": "6dfeec2331f4ea4ad73891b249214c2eef6f386e3650919aeab043699b7bd767"
+    },
+    {
+      "bytes": 999,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/tests/integration/test_scorer_source_contract.py",
+      "sha256": "502ebea6747f5c11f6ac28690ddf0ef36c0ce1fb0c2df792b9e1cbd2647171ed"
+    },
+    {
+      "bytes": 5186,
+      "path": "results/pcv01-access/gate-v1/source-snapshot/tests/unit/test_scorer_contract.py",
+      "sha256": "3a4e43dacf04d0c517390db843cbeeb9c457e10f5c533e5300c77f504ad5ff86"
+    },
+    {
+      "bytes": 3078,
+      "path": "results/pcv01-access/gate-v1/validation.json",
+      "sha256": "1bc3f43b1e5f8f109fbeb19386c4e068918bc9f4f14ebd43e6a8a0e8dcc12db2"
+    }
+  ],
+  "scope": "Local CPU gate and source snapshots; authentic raw public artifacts stay in ignored resources"
+}

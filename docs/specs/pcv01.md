@@ -62,3 +62,44 @@ command statuses/source hashes and obtain independent PASS with zero open findin
 before commit/push/update PR2, without merge. The exact seven-command gate and
 reproduction prerequisites are recorded in the new CPU evidence report. A local
 PASS never unlocks GPU or proves historical Requests imports/task correctness.
+
+## Approved source-access and scorer-contract extension — 2026-10-14
+
+The user approved stages A/B of the source-access proposal, its eight-command CPU
+gate, independent audit/corrections and commit/push/update PR2 toward develop.
+Stage C publication is explicitly NOT approved. This is an ordinary follow-up;
+the closed SDD plan and earlier evidence remain historical and unchanged.
+
+AC-P8: Retain the individually downloaded public sandbox/setup.py and two public
+Docker recipes as ignored, hash-pinned source data. Record source URL/path, bytes,
+acquisition method/date and null version/reason when the UI exposes no numeric
+version. Bound downloads to four allowlisted text artifacts,256KiB each/1MiB total.
+A metric wrapper may be acquired only when an official public/redacted source is
+actually supplied; no guessed private paths,403 bypass or credential expansion.
+The earlier dataset403 does not establish public competition-file inaccessibility.
+
+AC-P9: Implement an offline static contract checker. Verify original native wheel
+and installed config/bootstrap/verifier/subprocess bytes; review AST facts without
+importing/executing downloaded setup, building/running images or invoking a grader.
+Separate native subprocess early returns from Docker install/setup operations,
+public workspace_paths.pth generation from observed effective import order, and
+host/agent/verifier runtime identities. Mutable Python image tags and unpinned
+pytest requirements must not become concrete image/patch/pytest runtime versions.
+No native source, real verifier command/environment/config or plugin activation.
+
+AC-P10: Keep public_setup_acquired/source_hash_verified/development_backend_reviewed
+separate from scorer_backend_attested/scorer_source_equivalence_attested,
+organizer_diagnostic_permission/supported_observation_route,
+actual_scorer_runtime_parity and gpu_readiness. Absent or unverified organizer
+metadata yields nulls/reasons, never approval or denial. The current A/B checker
+rejects attempts to promote claims or authorize publication; no verified response
+pipeline is included. Public source access and CPU PASS preserve blocked GPU
+readiness. No message, support request, Discussion post or automatic reply polling.
+
+The source-access gate extends the preceding seven commands with
+`.venv/bin/python scripts/check_pcv01_scorer_contract.py --check`. Its exact order,
+20min serial local-command ceiling,1GiB additional artifact cap and audit/closure
+requirements are in the approved source-access proposal. Synthetic controls are
+CPU diagnostics, not actual scorer execution. Historical setup-inaccessibility
+claims are superseded only for the acquired participant-facing public files;
+private scorer provenance and historical Requests import identity stay unknown.

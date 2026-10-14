@@ -672,3 +672,37 @@ before proposing real use. The pinned public harness has a fixed verifier comman
 and no reviewed EvalConfig plugin switch; this delivery changes neither. No real
 verification repair, setup/path change, GPU-ready promotion or new allocation
 follows from a CPU PASS. Each such change needs its own concrete authorization.
+
+## 17. Public setup provenance and backend-specific scorer review
+
+The [approved A/B source review](../implementation/evidence/mostaza-pcv01-access/report.md)
+obtained sandbox/setup.py and Dockerfile.sandbox/public through the authenticated
+competition Data UI, with individual downloads only. A403 on a separate metric
+dataset did not preclude this authorized public route. Pin the actual source
+bytes and record a null/reason if the UI exposes no numeric version. Keep raw
+third-party source outside Git and model payloads; never download the full dataset
+or guess private scorer paths merely to obtain one small setup file.
+
+Review the effective backend before attributing verification behavior to setup:
+swegemma0.2.11 returns immediately from editable/test-dependency installation for
+SubprocessManager/SubprocessSandbox. Its other path may select/copy/run setup
+with --fast-path. The public script writes workspace_paths.pth and discovery
+configuration, but reading that script does not establish its execution or import
+precedence in a particular runtime. Suppressed/unchecked installation statuses
+are code-path facts, not evidence that an install ran/failed in the subprocess
+notebook. Keep host, agent sandbox and verifier runtime identities separate.
+
+Both published Docker recipes use python:3.13-slim and an unpinned pytest install.
+Their source hashes do not identify an effective image digest or runtime pytest
+version. Request an authorized public/redacted scorer bootstrap/runtime manifest
+when source equivalence matters. Keep public API support, organizer permission,
+source equivalence and actual scorer-process parity as separate claims. Missing
+or participant-only advice never becomes an organizer attestation.
+
+`.venv/bin/python scripts/check_pcv01_scorer_contract.py --check` validates local
+pins/AST facts and preserves null scorer claims and blocked GPU readiness. It
+imports/executes no downloaded setup, builds no image and changes no verifier.
+The eight-command gate and independent audit certify this CPU review only.
+Discussion outreach is explicitly withheld; the saved draft remains unsent.
+Any future publication, official observation integration or real evaluation needs
+its own authorization. Do not promote readiness from public setup access alone.

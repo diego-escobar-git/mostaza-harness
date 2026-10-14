@@ -1,0 +1,48 @@
+{
+  "metric_bootstrap_wrapper": {
+    "reason": "No official public/redacted metric wrapper supplied in the reviewed source surface; organizer outreach not authorized. No private path accessed.",
+    "value": null
+  },
+  "schema_version": 1,
+  "source_download_bytes": 15644,
+  "source_download_limits": {
+    "max_file_bytes": 262144,
+    "max_files": 4,
+    "max_total_bytes": 1048576
+  },
+  "sources": [
+    {
+      "acquired_date": "2026-10-14",
+      "bytes": 13883,
+      "local_path": "resources/official/pcv01-access-20261014/sandbox/setup.py",
+      "numeric_source_version": null,
+      "retrieval_method": "Official authenticated competition Data UI individual Download; no execution",
+      "sha256": "0263995ade90f83c8efa0ab5c7c9b7629696f39bc75274d58fc27ab774568409",
+      "source_path": "sandbox/setup.py",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version_missing_reason": "No numeric file version exposed in reviewed competition UI; exact bytes are pinned"
+    },
+    {
+      "acquired_date": "2026-10-14",
+      "bytes": 773,
+      "local_path": "resources/official/pcv01-access-20261014/docker/Dockerfile.sandbox",
+      "numeric_source_version": null,
+      "retrieval_method": "Official authenticated competition Data UI individual Download; no execution",
+      "sha256": "2fef37c9275522eea4dc3371c60b54d9ba3cfa7871f89f1749aa92f34beff70a",
+      "source_path": "docker/Dockerfile.sandbox",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version_missing_reason": "No numeric file version exposed in reviewed competition UI; exact bytes are pinned"
+    },
+    {
+      "acquired_date": "2026-10-14",
+      "bytes": 988,
+      "local_path": "resources/official/pcv01-access-20261014/docker/Dockerfile.public",
+      "numeric_source_version": null,
+      "retrieval_method": "Official authenticated competition Data UI individual Download; no execution",
+      "sha256": "c92dfd9cd9ce019c4910a5334d6ecac606b612ec736a933b4af36da9c6fdf06c",
+      "source_path": "docker/Dockerfile.public",
+      "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/data",
+      "version_missing_reason": "No numeric file version exposed in reviewed competition UI; exact bytes are pinned"
+    }
+  ]
+}
