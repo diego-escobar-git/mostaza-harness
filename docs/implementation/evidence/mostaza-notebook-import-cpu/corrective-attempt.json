@@ -1,0 +1,14 @@
+{
+  "reason": "gate_failure",
+  "repair": "Own supervisor continues bounded owned-group shutdown after signal EPERM, then verifies all observed matching processes exited; any survivor blocks PASS. Store signal errors and full failure traceback. Frozen legacy/native sources remain unchanged.",
+  "diagnosis": "Gate1 interrupted step10 with PermissionError;20 native-start boundaries,19 retained results. Exact traceback was not retained by old outer cleanup. /bin/ps is setuid root, consistent with a transient permission race in descendant-group signaling, but this cause is not conclusively established. Correction tests reproduce permission failures with mocked signals; do not claim a live OS reproduction.",
+  "focused_checks": [
+    "44 focused non-native tests PASS; transient EPERM, live survivor, reused PID, finished root and complete26/6/2 record contract",
+    "ruff PASS; mypy56 PASS"
+  ],
+  "prior_attempt": "results/notebook-import-cpu/gate-1/receipt.json",
+  "maximum_additional_gate_attempts": 1,
+  "native_calls_outside_gate": 0,
+  "independent_pre_gate_review": "Supervisor reviewed; no new blocker; final gate/audit still pending",
+  "previous_workers_remaining": []
+}

@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "bytes": 37402474,
+      "path": "resources/official/snapshots/requests_7205.tgz",
+      "sha256": "42dc3d360f842a5c7a66d0008ac05447fcd807dc33ee8cc18d2f2d4876283106"
+    },
+    {
+      "bytes": 119670,
+      "path": "resources/official/swegemma-0.2.11-py3-none-any.whl",
+      "sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3"
+    },
+    {
+      "bytes": 27196,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/harness/verification.py",
+      "sha256": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa"
+    },
+    {
+      "bytes": 40661,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/harness/container_setup.py",
+      "sha256": "3192acdce35f2d0bd0b191186851b46c251390af16b7f139a1640e16fb1d862c"
+    },
+    {
+      "bytes": 21429,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/sandbox/subprocess.py",
+      "sha256": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2"
+    },
+    {
+      "bytes": 7750,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/config.py",
+      "sha256": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b"
+    },
+    {
+      "bytes": 71825,
+      "path": "docs/specs/plans/closed/mostaza-phase2-budget-retrieval.md",
+      "sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5"
+    }
+  ],
+  "gpu_sessions_started": 0,
+  "head": "c54946237ee9921f5247be75eb888864da93333a",
+  "host_platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "native_environment_versions": {
+    "adk-submission": "0.2.13",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "pytest": "9.1.1",
+    "requests": "2.34.2",
+    "swegemma": "0.2.11",
+    "urllib3": "2.8.0"
+  },
+  "new_verify_task_invocations": 0,
+  "observed_date": "2026-10-14",
+  "project_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness",
+  "retained_agent_patches": [
+    {
+      "agent_patch_bytes": 492,
+      "agent_patch_sha256": "9a407c374f5d5546214f461acd826febd963f4a903432a269097f7a40e1013fd",
+      "arm": "E0-B180",
+      "path": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E0-B180/results/official-result-0001.json",
+      "result_sha256": "1fd5aeac595fa62a48abf21736b1a33bc63f6a08c7e286211d7443d7abaafc61"
+    },
+    {
+      "agent_patch_bytes": 503,
+      "agent_patch_sha256": "f4b89587585b3006e785098a52572c3e122714517345c33c587af4160d33b58e",
+      "arm": "E1-B180",
+      "path": "results/kaggle-phase2-startup-v3-ea1534a86873409b870b3b04d04e347f/downloaded-output/private-phase2-evidence/ea1534a8-6873-409b-870b-3b04d04e347f/E1-B180/results/official-result-0001.json",
+      "result_sha256": "337115deba8548849f233ec293321f7bc4930e5a7fb0dfccc5935e25663ea328"
+    }
+  ],
+  "schema_version": 1,
+  "source_policy": "Read pinned local native sources and retained agent_patch only; no reference patch or original test_patch.",
+  "status": "PLANNING_ONLY_NOT_EXECUTED"
+}

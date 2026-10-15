@@ -1,0 +1,38 @@
+{
+  "administrative_finalization": "Parent records reviewer PASS and updates report/validation status only; audited candidate/configuration unchanged",
+  "candidate_sha256": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b",
+  "findings": [],
+  "independent": true,
+  "independently_rerun_cpu_checks": [
+    ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+    ".tools/official/bin/python scripts/check_startup_configuration.py",
+    "AST re-extraction of the8 explicit environment values in historical launched.ipynb"
+  ],
+  "limitations": [
+    "No successful GPU startup established",
+    "Current quota not queried in this preparation",
+    "No new GPU authorization granted"
+  ],
+  "result": "PASS",
+  "reviewed_evidence_sha256": {
+    "docs/implementation/evidence/mostaza-phase2-startup-correction/environment-comparison.json": "d6418593ed54f717eab44ec62e4c96e260214a7eee0d5ab808a7a0e04346f803",
+    "docs/implementation/evidence/mostaza-phase2-startup-correction/manifest.json": "5674d269501d48806440f1b75496a96484a2d80836b606fc6402e6d2bd3f32d6",
+    "docs/implementation/evidence/mostaza-phase2-startup-correction/native-builders.json": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+    "docs/implementation/evidence/mostaza-phase2-startup-correction/native-lifecycle.json": "32682c150651cef2332fe29745f7fbe8f6bcd6acf7f0e440399664a6fbddffa7",
+    "docs/implementation/evidence/mostaza-phase2-startup-correction/official-review.json": "7cace71126d0ddf9e22278b719546a7e1817ded94d2ae4e367006e611355036a",
+    "docs/implementation/evidence/mostaza-phase2-startup-correction/quota-proposal.json": "3b1168c2a1623982ba7e5a38691d815848004840556eda73232b31ef6127a3bc"
+  },
+  "reviewed_files_sha256": {
+    "docs/kaggle-setup.md": "6722c27a21f347f4eef9d4c40b97dec8600f91c4b99dad3cd21a8c11d23bb72c",
+    "docs/runbooks/kaggle-execution.md": "a0320f6028c67f72c03afc75f844c310f219a791623de603941bf43e3a1b42fa",
+    "notebooks/mostaza-phase2-startup-corrected.ipynb": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b",
+    "scripts/check_startup_configuration.py": "af3ce21735a03b6d0676682925cc8ef0e374fa80e65cd05628948883611466c5",
+    "scripts/prepare_startup_phase2.py": "b0fce3fa7f007727a3483945598ae1769473a69366ddef90ff57477667dfc542",
+    "src/mostaza/evaluation/startup_candidate.py": "442dd5861a93c8813597f64bb9a510fd555f7655917c806d3edb1a501d2903d2",
+    "src/mostaza/evaluation/startup_configuration.py": "2f1eecd8dae553b4246b1738cdaf63455d3be79e5f3b35b86c4ee02fac1726c0",
+    "tests/unit/test_startup_configuration.py": "547822bfd377f542d5a877f506947f82735f11c31273493d3a90a54ad045c576"
+  },
+  "reviewed_utc": "2026-10-14T15:24:48.842329+00:00",
+  "reviewer": "/root/browser_control_audit",
+  "verified_gate_receipt": "226 unit +38 integration; lint/types/build/compiler/schema; no new GPU execution"
+}

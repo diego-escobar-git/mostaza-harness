@@ -1,0 +1,7 @@
+{
+  "gpu_authorized": false,
+  "merge_authorized": false,
+  "original_proposed_plan_sha256": "ddd8c9f970b4334c9f4004f4c9267764ee02c543cb90b8706d04c6eb201317d7",
+  "scope": "CPU stages A-D and exact six-command gate; audit delegation; commit/push/update existing PR2 to develop",
+  "user_authorization": "Apruebo el alcance CPU, el plan y el gate exacto. Contin\u00faa con implementaci\u00f3n, auditor\u00eda, correcciones, commit, push y actualizaci\u00f3n del PR #2 hacia develop, sin merge ni consumo de GPU."
+}

@@ -1,0 +1,153 @@
+{
+  "status": "BLOCKED_FINAL_GATE_BUDGET_EXHAUSTED",
+  "attempts": [
+    {
+      "attempt": 1,
+      "wall_limit_seconds": 1200,
+      "duration_seconds": 96.19507687499936,
+      "commands": [
+        {
+          "command": "bash scripts/validate.sh",
+          "exit_code": 0,
+          "duration_seconds": 46.016481708000356,
+          "log": "results/verify-task-cpu/gate-1/01.log",
+          "log_sha256": "e7074098df5ba4ad0e9649a1c9ce177805ec2d38bf14a4b4acea5d2b07816b3f"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "exit_code": 0,
+          "duration_seconds": 7.808760500000062,
+          "log": "results/verify-task-cpu/gate-1/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+        },
+        {
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "exit_code": 0,
+          "duration_seconds": 0.129416832998686,
+          "log": "results/verify-task-cpu/gate-1/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+        },
+        {
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "exit_code": 0,
+          "duration_seconds": 0.7080050420008774,
+          "log": "results/verify-task-cpu/gate-1/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+        },
+        {
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "exit_code": 0,
+          "duration_seconds": 0.07632033299887553,
+          "log": "results/verify-task-cpu/gate-1/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "exit_code": 0,
+          "duration_seconds": 8.796038000000408,
+          "log": "results/verify-task-cpu/gate-1/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "exit_code": 0,
+          "duration_seconds": 9.09450199999992,
+          "log": "results/verify-task-cpu/gate-1/07.log",
+          "log_sha256": "66941679f5920a2ae62e6e62cdaf65f5c1e43c684a6008ab77664b9c030a935f"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "exit_code": 0,
+          "duration_seconds": 1.0879740829986986,
+          "log": "results/verify-task-cpu/gate-1/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da"
+        },
+        {
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "exit_code": 1,
+          "duration_seconds": 22.473243500000535,
+          "log": "results/verify-task-cpu/gate-1/09.log",
+          "log_sha256": "ba2b8c76ae41ce7b1093e299434eca7699c5ad70cd1dd5da50b4e83902bb7451"
+        }
+      ],
+      "passed": false,
+      "raw_receipt_path": "results/verify-task-cpu/gate-1/receipt.json",
+      "raw_receipt_sha256": "b209e464e43264768cbd72ec384c769659097f93a2540eb00bd8345be0756bbe"
+    },
+    {
+      "attempt": 2,
+      "wall_limit_seconds": 1200,
+      "duration_seconds": 81.09148191699933,
+      "commands": [
+        {
+          "command": "bash scripts/validate.sh",
+          "exit_code": 0,
+          "duration_seconds": 44.627062291001494,
+          "log": "results/verify-task-cpu/gate-2/01.log",
+          "log_sha256": "ef072d924c93b6af410e4a5dbe3234fe7eb3e66bb93d6f3659b6509f10885430"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "exit_code": 0,
+          "duration_seconds": 6.989660374998493,
+          "log": "results/verify-task-cpu/gate-2/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+        },
+        {
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "exit_code": 0,
+          "duration_seconds": 0.13231325000015204,
+          "log": "results/verify-task-cpu/gate-2/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+        },
+        {
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "exit_code": 0,
+          "duration_seconds": 0.6524516669996956,
+          "log": "results/verify-task-cpu/gate-2/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+        },
+        {
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "exit_code": 0,
+          "duration_seconds": 0.0728019169982872,
+          "log": "results/verify-task-cpu/gate-2/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "exit_code": 0,
+          "duration_seconds": 6.784333083000092,
+          "log": "results/verify-task-cpu/gate-2/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "exit_code": 0,
+          "duration_seconds": 7.9214796670021315,
+          "log": "results/verify-task-cpu/gate-2/07.log",
+          "log_sha256": "ded51cd267c2db275a2db58fcbe5c0850dc00a34caad914748f53901e712e20e"
+        },
+        {
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "exit_code": 0,
+          "duration_seconds": 0.9275567919976311,
+          "log": "results/verify-task-cpu/gate-2/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da"
+        },
+        {
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "exit_code": 1,
+          "duration_seconds": 12.979889166999783,
+          "log": "results/verify-task-cpu/gate-2/09.log",
+          "log_sha256": "f42ea5149c9e55b7194d0f4e0f985906944875258a59f36d7ceeba341dc55c46"
+        }
+      ],
+      "passed": false,
+      "raw_receipt_path": "results/verify-task-cpu/gate-2/receipt.json",
+      "raw_receipt_sha256": "8560f633c249d95ebbd8a5d5753743f6a04e3cb1710086e159ae194f2d824710"
+    }
+  ],
+  "more_native_execution_authorized": false,
+  "final_corrected_full_gate_passed": false
+}

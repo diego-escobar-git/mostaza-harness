@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "commit": "1b40fdd004bfc8ba5301bcf8a6908264e9b6b877",
+      "error": null,
+      "finite_nonzero_seed_embedding": true,
+      "graph_nodes": 732,
+      "neighbors_count": 4,
+      "neighbors_status": "ok",
+      "repo": "psf/requests",
+      "seed": "requests.utils.get_netrc_auth",
+      "similarity_count": 5,
+      "similarity_status": "ok",
+      "symbol_resolved": "requests.utils.get_netrc_auth"
+    },
+    {
+      "commit": "22b02e26f9e8c7e32bd8266e2b0ebe8bb3a0db2b",
+      "error": null,
+      "finite_nonzero_seed_embedding": true,
+      "graph_nodes": 4259,
+      "neighbors_count": 8,
+      "neighbors_status": "ok",
+      "repo": "fastapi/fastapi",
+      "seed": "fastapi.params.Header",
+      "similarity_count": 5,
+      "similarity_status": "ok",
+      "symbol_resolved": "fastapi.params.Header"
+    },
+    {
+      "commit": "aca9467ec6a482b3bed1ba7d2e3de72271c5f817",
+      "error": null,
+      "finite_nonzero_seed_embedding": true,
+      "graph_nodes": 1920,
+      "neighbors_count": 1,
+      "neighbors_status": "ok",
+      "repo": "Textualize/rich",
+      "seed": "rich.text.Text.expand_tabs",
+      "similarity_count": 5,
+      "similarity_status": "ok",
+      "symbol_resolved": "rich.text.Text.expand_tabs"
+    }
+  ],
+  "scope": "CPU native host calls with retained real graph/embedding resources; not model-selected calls or GPU benchmark outcomes"
+}

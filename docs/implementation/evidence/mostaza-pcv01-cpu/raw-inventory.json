@@ -1,0 +1,795 @@
+{
+  "files": [
+    {
+      "bytes": 24400,
+      "path": "results/pcv01-cpu/gate-v1/command-1.log",
+      "sha256": "c87ae73043a138945d91f20a455f8cdcc481d1ce518366157e026e0bb78f10b8"
+    },
+    {
+      "bytes": 82,
+      "path": "results/pcv01-cpu/gate-v1/command-2.log",
+      "sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+    },
+    {
+      "bytes": 73,
+      "path": "results/pcv01-cpu/gate-v1/command-3.log",
+      "sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+    },
+    {
+      "bytes": 1380,
+      "path": "results/pcv01-cpu/gate-v1/command-4.log",
+      "sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+    },
+    {
+      "bytes": 549,
+      "path": "results/pcv01-cpu/gate-v1/command-5.log",
+      "sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+    },
+    {
+      "bytes": 2903,
+      "path": "results/pcv01-cpu/gate-v1/command-6.log",
+      "sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+    },
+    {
+      "bytes": 40115,
+      "path": "results/pcv01-cpu/gate-v1/command-7.log",
+      "sha256": "94a07b0adf0bbde5b6d60afc473c59a4406a680708ac1e1978224e4eea195972"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/command-0.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/command-1.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 359,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/fixture-product.py",
+      "sha256": "169c937894b890857c50581f5be370dfc21388bc2b43d9a083409b03d162801b"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 447,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/fixture-test.py",
+      "sha256": "35ab2a2e5d36ddbbd26dbb1df91406b8edebcb0e14c9789ddc50e51394b80d17"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/junit-0.xml",
+      "sha256": "8869ef25acbd3182ea167944901f22cab2b1c6040396337a0e1cc440a0d65c72"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/junit-1.xml",
+      "sha256": "575bea52edb5ec1aa41dbf0b766a4ede081f8a25e5670f54ab2244e6be524913"
+    },
+    {
+      "bytes": 2489,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/observer-config.json",
+      "sha256": "647e9c5b0a5659b0e1dfcf55c6e2455f6e508b46b2a3fcfc7fe7e23d659baed9"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/logging_failure/test_process_proof.json",
+      "sha256": "c5d6d0d97f8f2327b1c088f01b22124a1d22997b00cf25eaaa93f4ae45d50af8"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/command-0.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/command-1.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 365,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/fixture-product.py",
+      "sha256": "f7982a0249d45feb92adab37b42bea53b9579dd66c8c89099e3e9a6216e44854"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 453,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/fixture-test.py",
+      "sha256": "84ccbaa6f4d2c6dca61f70369e5a9b6bc63c1fd30e5e6b59b316d877e8bffce1"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/junit-0.xml",
+      "sha256": "e3f5532370470151c06bd21feec20ec47ad61917a2da388ec3cf6e06dc8d39eb"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/junit-1.xml",
+      "sha256": "293a9d0a82a8fd7ac314bd500ff4b77896fd5ede99dd6823f1f3d8b8c6772cb8"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/missing_configuration/test_process_proof.json",
+      "sha256": "5134494b34c24a6a2ba45c5016871679a80e9a7018b48fae46a2a7076251352c"
+    },
+    {
+      "bytes": 1213,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/command-0.log",
+      "sha256": "e82d850ee3c2e37cc29e6ccf3e1008b040f96e30ad64f6fc5db8eb51b57304fc"
+    },
+    {
+      "bytes": 1213,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/command-1.log",
+      "sha256": "e82d850ee3c2e37cc29e6ccf3e1008b040f96e30ad64f6fc5db8eb51b57304fc"
+    },
+    {
+      "bytes": 352,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/fixture-product.py",
+      "sha256": "f94112624898fd7fa59ce5c6febd448663b5611ecc7ae2e4baa726e71a561c95"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 475,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/fixture-test.py",
+      "sha256": "f5a7d32fe4b0eaf273fdcbdf0e71bcb9f1f7382c8aaa5827bcb27cc205ea7de8"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 1193,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/junit-0.xml",
+      "sha256": "4085c9936f93f459edf930c450999327b2f9e8afc8bf386a5bad9d7905aa4c03"
+    },
+    {
+      "bytes": 1193,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/junit-1.xml",
+      "sha256": "055ba3574d8b1c276220e4ec75319fa0e9f2d90823dd8bbb098d197fa0f9d085"
+    },
+    {
+      "bytes": 2482,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/observer-config.json",
+      "sha256": "c18da39fb54f2b8128ba970e056aef9ee16498529d0adcf2f2896191e28bfe4e"
+    },
+    {
+      "bytes": 3735,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/origin.jsonl",
+      "sha256": "1845bc0b9761d63288bea39d5c57cdfa5e1a00f242ba66124bebda312a441838"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/negative/test_process_proof.json",
+      "sha256": "0fecc4b33868316f43362b6263feaa5383f7fb73e698d9959cd328d7618d3fd5"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/command-0.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/command-1.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 352,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/fixture-product.py",
+      "sha256": "d6e5ed9f2e01c253d5d43721a5d8789b62990bdc9fd18d4159ad306fadf5b692"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 440,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/fixture-test.py",
+      "sha256": "fca217497419f2a29aea5a51dd7ec034fca2ca1ce61de62ccc82bc1458c140bd"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/junit-0.xml",
+      "sha256": "4a703f310f59b21f2c6dc253b995545803f5dc2b5f1cd014cc8969dd7cc602d8"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/junit-1.xml",
+      "sha256": "a8e7284fd393d554f6ddb3872af7802ba38a23903be421aaa6e28fac1910702b"
+    },
+    {
+      "bytes": 2482,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/observer-config.json",
+      "sha256": "db27b253a3db95a10843f76ed0c1bce289aed56055a1bfea39b0758999fa8295"
+    },
+    {
+      "bytes": 3734,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/origin.jsonl",
+      "sha256": "d9c7e790b423345e8a559c98ab71ebc7fe4ee9700ffc6de44341103d12007617"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/positive/test_process_proof.json",
+      "sha256": "bf5d4c4606effaa9a4219849bf9eb0aa5332d8932bbf37fb9d677e1379c496b4"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/command-0.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/command-1.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 127,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/fixture-conftest.py",
+      "sha256": "2f421fdf4a4713a1fbc11d9d9b2266ae9e643764505aa37e20f1e85f5e16568a"
+    },
+    {
+      "bytes": 361,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/fixture-product.py",
+      "sha256": "8c8156ba291eca58dc01d65496b82d6e4c968b6af04505373bcd8d47eb9f6a31"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 449,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/fixture-test.py",
+      "sha256": "5dd54582bb37a4b026dd320723a03a93441a4fbf343d760682fe4e1ba79f44c2"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/junit-0.xml",
+      "sha256": "f1ad6d6c695f74ef6fcd36f712ea991c9759d3d18cf5090978dc3fb44df3ce95"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/junit-1.xml",
+      "sha256": "de01e619b3f53e327327a7ceedcdfcfe207264a781fd82241ae51a512b44c4a7"
+    },
+    {
+      "bytes": 2491,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/observer-config.json",
+      "sha256": "bd94873cc80d953d6399e74b2c9954dcb1fb1be29cd8dd476f090265b26f41b8"
+    },
+    {
+      "bytes": 3651,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/origin.jsonl",
+      "sha256": "83fdea344188a88fa47838234f05473d2077011650c48ea2fa512d4268e5d164"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/replaced_function/test_process_proof.json",
+      "sha256": "d260c07423044b95d37bd25d746704760b716ad18a9099051f82710ac0ac0f44"
+    },
+    {
+      "bytes": 860,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/command-0.log",
+      "sha256": "caf8c60809abbc2ab4e78645954a478e62319d82a1e950716048ec7e1512288e"
+    },
+    {
+      "bytes": 860,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/command-1.log",
+      "sha256": "caf8c60809abbc2ab4e78645954a478e62319d82a1e950716048ec7e1512288e"
+    },
+    {
+      "bytes": 151,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/fixture-conftest.py",
+      "sha256": "3c593a9ccabbe6f1d4eb2447373e05b11b29c18b9a5fb9eca3c0d4686705e907"
+    },
+    {
+      "bytes": 355,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/fixture-product.py",
+      "sha256": "8001793f15ceecac342453dad793e2b9a70ce7c60af5d970d46c1ce7143df331"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 443,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/fixture-test.py",
+      "sha256": "94ffc1cbc74427bf6be588780b952a287dd6ca043d4a24c77d959b48951e97e6"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 782,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/junit-0.xml",
+      "sha256": "fcd329a78c8915938646ad3fd746d32072d78c6dc741d22d474400edad95ecdd"
+    },
+    {
+      "bytes": 782,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/junit-1.xml",
+      "sha256": "93009e591b17ce7c704512c234b63df6c482d3a31d59a6467c7a290c9bb3fe39"
+    },
+    {
+      "bytes": 2485,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/setup_error/observer-config.json",
+      "sha256": "672bc5248d541587043302071efde2f313e086689879cb8ce127bfffc75a672a"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/command-0.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 304,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/command-1.log",
+      "sha256": "19441a48f096e7bb8162ff06de3a5f02e449888051c9e8841483cfc05dbef946"
+    },
+    {
+      "bytes": 350,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/fixture-product.py",
+      "sha256": "d2e1aea108f2546481125713859343d6c7903ee7b2a4760db8954ab5a313021f"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 435,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/fixture-test.py",
+      "sha256": "1b924d5fe0a80c2bcaa8c98b2ccae071eea861d73f44c4adadbbea77a90a3308"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/junit-0.xml",
+      "sha256": "c9e6b882cbfd8cae848821d57db00d65bb6b9855e3292eab3faa15e9e68f2b7e"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/junit-1.xml",
+      "sha256": "fb961e9135aec1add3ab02b8fc6975a00d34d0e6e8521737f83052becef9c3d7"
+    },
+    {
+      "bytes": 2496,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/observer-config.json",
+      "sha256": "b66f16a09bbc7b8b6ff2f308f639924b3b5e1a5ec43ffa6d1872c693729118e1"
+    },
+    {
+      "bytes": 3793,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/origin.jsonl",
+      "sha256": "17854299ea114c5005cb6d808b9667d877d19aea33839e16177c3fbba3e48096"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/8.4.2/shadow/test_process_proof.json",
+      "sha256": "f703eea30bbdd1fb2b3faaa782cff41fe5c652e3fee990120e580c6258f36951"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/command-0.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/command-1.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 359,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/fixture-product.py",
+      "sha256": "03c828917751984da5b79696e3216df59be993f549f2e7f8b9c6664b4ea4e515"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 447,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/fixture-test.py",
+      "sha256": "a7a936f9ed67f43131595168931c35177904f80f7634ec1a5d22de5c29e38025"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/junit-0.xml",
+      "sha256": "eb1bbac1ba286cfad5b1ab7dde191f190e70e8ae1e1d29206ed7b4390c8e7962"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/junit-1.xml",
+      "sha256": "a8917ab77d1f18c462fa5dfecda9dc4f5f4ffe472c9faa20f54650f0043b8b19"
+    },
+    {
+      "bytes": 2489,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/observer-config.json",
+      "sha256": "5aca18ba4747aa7510c5fc3fcbf783dc34e0ff843f2789df2963effa8de17006"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/logging_failure/test_process_proof.json",
+      "sha256": "509fdfd436a5e8c491f6ce8bb939ee65965e57adb47f8dced781bea6e9c77637"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/command-0.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/command-1.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 365,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/fixture-product.py",
+      "sha256": "38e5e2882d44128160bd6b73b2346b941cc3b90496ab7d7f69afc178a9c87f4f"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 453,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/fixture-test.py",
+      "sha256": "8847eae53ad468d5ae1196b4796eb8792fba1a4675bba623deaa6f121e990c43"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/junit-0.xml",
+      "sha256": "4ef3215480481ec824fb44eaf513ba717fd6d4ebc1edb473269a9f9bcb0fc073"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/junit-1.xml",
+      "sha256": "92151b16b36a7a69b7f8a1517ab6fff1e18c8c8899ba8eb76ebe67b34e3d0ef8"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/missing_configuration/test_process_proof.json",
+      "sha256": "fcf3174011d3ba534112f3546bce8a18e5bfc3f27ecbe9fe1f6d4737c9f44d7c"
+    },
+    {
+      "bytes": 1560,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/command-0.log",
+      "sha256": "e0a9ffe400e17c2399269950cf4a724088fd2bb24c7ecf5f334c2ea7f735a5fd"
+    },
+    {
+      "bytes": 1560,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/command-1.log",
+      "sha256": "e0a9ffe400e17c2399269950cf4a724088fd2bb24c7ecf5f334c2ea7f735a5fd"
+    },
+    {
+      "bytes": 352,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/fixture-product.py",
+      "sha256": "4ab3d0a08e8ad34cc51ce4ae0795b1eb76cb8a22267690a141b4d16612e09046"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 475,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/fixture-test.py",
+      "sha256": "8985a3445c694300c5bd5482434262ead31392f6c9eacb3f470f10254663f1bf"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 1193,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/junit-0.xml",
+      "sha256": "425e1414ecb43a07d606bfe3b0c2b4e7734275b670624b0ea06a5e5d79647cc9"
+    },
+    {
+      "bytes": 1193,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/junit-1.xml",
+      "sha256": "ca4ce5881eb40dbebc01119532c3a7a5b13e6d43cd479891e06876672a69e959"
+    },
+    {
+      "bytes": 2482,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/observer-config.json",
+      "sha256": "078f3b8caa93d05d82e096c2703cc32ece7be9e946e05ed535ecbc4c9510131e"
+    },
+    {
+      "bytes": 3735,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/origin.jsonl",
+      "sha256": "c243da93444086d6e6c4a816128f7e45565e35e27da10f2df84d3a58ab5c2807"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/negative/test_process_proof.json",
+      "sha256": "47dc8595defa3a1b116066c7e178ed6a62fae1838008181eb08d87c5c0ca0b82"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/command-0.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/command-1.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 352,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/fixture-product.py",
+      "sha256": "fb32a7bf988234a1f5d58dee5445ec0d37c7fdd2682cbad064e55e2419139988"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 440,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/fixture-test.py",
+      "sha256": "61f2529c8d34fdcec036412e22aa493b7a424705924e325d2c4f750f393061c1"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/junit-0.xml",
+      "sha256": "88f746cbc29c98939311943f2bbf0a43f2585b51cf90a2d5613ab66f6fb505d1"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/junit-1.xml",
+      "sha256": "a7418c691657b93f5e84b52f088bbb9a5852ce0e24ac9745af7da84659398721"
+    },
+    {
+      "bytes": 2482,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/observer-config.json",
+      "sha256": "84753976207bef62c3f3a1e0e8df7702cea7168bedd3e16cfedd33c7e22ae284"
+    },
+    {
+      "bytes": 3735,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/origin.jsonl",
+      "sha256": "9425b2718dd30620c9a2f6a97eee556dde42b438a1d8e62e41a356a9f6220ae2"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/positive/test_process_proof.json",
+      "sha256": "5d329f10f45b0b641d61cd1388440b095ad855cc8af178813798740562a82c14"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/command-0.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/command-1.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 127,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/fixture-conftest.py",
+      "sha256": "2f421fdf4a4713a1fbc11d9d9b2266ae9e643764505aa37e20f1e85f5e16568a"
+    },
+    {
+      "bytes": 361,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/fixture-product.py",
+      "sha256": "07a5c9f1c53a56a1724da4d224299cd9870931f74f519ee0e75671f9f75d6a23"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 449,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/fixture-test.py",
+      "sha256": "7be6c59d73c7f41dd9dffe9b57c44829f8b7b93a222994542ced46c36a81bb1b"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/junit-0.xml",
+      "sha256": "e40440a9637bf460782246def92d1184f8a3cb5432d67ff8694cda06b56a89d4"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/junit-1.xml",
+      "sha256": "7c575fd49b9ee315d0476b5557a9d4d84af2809be7075260972848f6000e2290"
+    },
+    {
+      "bytes": 2491,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/observer-config.json",
+      "sha256": "a2df274ef653ae7e377dfa41ea1a95a274d5c05a105d7ff55d54b995c58d4182"
+    },
+    {
+      "bytes": 3651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/origin.jsonl",
+      "sha256": "1ac20f85477cc011aa3c7f97417218afbdabd45a886266a1136d6b3f89019ebc"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/replaced_function/test_process_proof.json",
+      "sha256": "8d5db30ad946b8ace152b2feaa7f3998c0b939b4b77b1191f5383b1d446b9a52"
+    },
+    {
+      "bytes": 1207,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/command-0.log",
+      "sha256": "d6ab77b7d04c3de20afb92a83801ac2f592a80084a587017a1c7fca9ae31bd13"
+    },
+    {
+      "bytes": 1207,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/command-1.log",
+      "sha256": "d6ab77b7d04c3de20afb92a83801ac2f592a80084a587017a1c7fca9ae31bd13"
+    },
+    {
+      "bytes": 151,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/fixture-conftest.py",
+      "sha256": "3c593a9ccabbe6f1d4eb2447373e05b11b29c18b9a5fb9eca3c0d4686705e907"
+    },
+    {
+      "bytes": 355,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/fixture-product.py",
+      "sha256": "5566deac22c9eff7c6b30fc21b82a75a2efb177a62b59448d13dc8b70474e795"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 443,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/fixture-test.py",
+      "sha256": "f986fa9edef0c4b41e9736330878aed00bfe2e0f4a0c15add618d63ea0b7c682"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 782,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/junit-0.xml",
+      "sha256": "59081c1eae3cda6b419f5d911e04f52b20cde7cec38ed555f7b1b2b557f379f8"
+    },
+    {
+      "bytes": 782,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/junit-1.xml",
+      "sha256": "b07ea35582d4be8097b366b22f1be71c99ede56ed28b5c085ce3d8e899258f79"
+    },
+    {
+      "bytes": 2485,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/setup_error/observer-config.json",
+      "sha256": "82fe9eb77985e3eb074a17294bc3d500b99d6a6c2a1f675235d132043e79f82e"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/command-0.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 651,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/command-1.log",
+      "sha256": "2ded957d77995b22db6af376bf6d88628fb4b51ec2e9bad1eb51470816a6ea26"
+    },
+    {
+      "bytes": 350,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/fixture-product.py",
+      "sha256": "50da51ff1623bb2929598bc582b69abfcc3df3bf609ce0fcf17810721aa6913d"
+    },
+    {
+      "bytes": 36,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/fixture-shadow.py",
+      "sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9"
+    },
+    {
+      "bytes": 435,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/fixture-test.py",
+      "sha256": "a25a0dff6062b8a0aa8b6d3cbfbd5572de455f8470dfa7b03262b875dc35c611"
+    },
+    {
+      "bytes": 65,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/fixture-unused.py",
+      "sha256": "be3349ad3303db2c64626c5e814bf8dd3d1c5634ce10593373e4b45d41dcaa7d"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/junit-0.xml",
+      "sha256": "ddd1713138ee1f062aed20b0e98181990851737cad7353d6d771b70325156686"
+    },
+    {
+      "bytes": 426,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/junit-1.xml",
+      "sha256": "1cbcba773ea4ea874c11c90ead31050707ec5d73ec0bd815fc6ffa26b1b4aebb"
+    },
+    {
+      "bytes": 2496,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/observer-config.json",
+      "sha256": "56f02d9d92ec794accb9260fc732aab30e43c376681cc879f4f78394f5d2413c"
+    },
+    {
+      "bytes": 3793,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/origin.jsonl",
+      "sha256": "bc5c6cc5e97715a51e7f4120c7f533f9545d8dd361191df30f5302bce7f1b104"
+    },
+    {
+      "bytes": 47,
+      "path": "results/pcv01-cpu/gate-v1/controls/9.1.1/shadow/test_process_proof.json",
+      "sha256": "41fdacdea495bb02887527c41889f0ee9694926b5bf24679860d11092bd5d9b7"
+    },
+    {
+      "bytes": 15447,
+      "path": "results/pcv01-cpu/gate-v1/controls/driver-source.py",
+      "sha256": "7a27e92cf83422d19f720f19eaecc8cb6d520d17c4a1bb57caea436f565e0488"
+    },
+    {
+      "bytes": 9607,
+      "path": "results/pcv01-cpu/gate-v1/controls/plugin-source.py",
+      "sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb"
+    },
+    {
+      "bytes": 2503,
+      "path": "results/pcv01-cpu/gate-v1/validation.json",
+      "sha256": "f0978e8eb5bbd20a43a5dc5caae3c866cf3cdfb60f94d3f6d837e512ef3464b7"
+    }
+  ],
+  "scope": "CPU-only synthetic controls and gate logs; not native benchmark evidence"
+}

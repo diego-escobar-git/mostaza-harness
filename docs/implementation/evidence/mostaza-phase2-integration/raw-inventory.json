@@ -1,0 +1,162 @@
+[
+  {
+    "path": "results/phase2-integration/command-1-supervision.json",
+    "bytes": 13343,
+    "sha256": "a83ad1b2fc232094763d853fe3a4700ac35e00a5485cd3fc997e49f3e508b78a"
+  },
+  {
+    "path": "results/phase2-integration/command-1.log",
+    "bytes": 6813,
+    "sha256": "84c8045c88a4635bdb01cd644c4b8a9039731f6133e88c96c06965bfdad86349"
+  },
+  {
+    "path": "results/phase2-integration/controller-preflight-tests.json",
+    "bytes": 197,
+    "sha256": "416f9f4ac73df6bf6a650d1c44a31000edaaa2e0a8f826377c32b03f6d22c12d"
+  },
+  {
+    "path": "results/phase2-integration/driver-sha256.json",
+    "bytes": 83,
+    "sha256": "a862fa3a1d06f29daab583e84c31ee296a995f0656844f0e37bd16f9b83f0183"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-1-supervision.json",
+    "bytes": 12873,
+    "sha256": "b9b805d40e27ed81fb636a20c65e0efdd19248759cd7f2d57343a46151dd93e3"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-1.log",
+    "bytes": 29240,
+    "sha256": "944b24b07e85de2b892d18dcccaf1bf731bc7d90e385ec240476d304248a0708"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-2-supervision.json",
+    "bytes": 1522,
+    "sha256": "17042e479f6c8a0b1817b12a6aa02ccdd7586ef0f079b6118d7b888ad32ccd62"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-2.log",
+    "bytes": 2909,
+    "sha256": "8597d5a0c38a9c27e7affccb918a595560556de70211897b25f165c2f8e04ec8"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-3-supervision.json",
+    "bytes": 1523,
+    "sha256": "4f9ddec5f5bd1d7d91934b1d3ca1bba8f17581326ec0436cf310709644651e31"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-3.log",
+    "bytes": 43,
+    "sha256": "f9b031e5c45aa702cd4fef028d465551cb20a2c4698e0913c7b00766b20ac4d8"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-4-supervision.json",
+    "bytes": 2468,
+    "sha256": "c303d548df174ced3c70a4d8a0e76f859977e8e26c287daabb9db376eb7ed2f7"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-4.log",
+    "bytes": 70,
+    "sha256": "ccafe9f13d40ae3adee94edbf6bf33cb9e5f3f5bba662e3da654787f97fbdcad"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-5-supervision.json",
+    "bytes": 1523,
+    "sha256": "d9e4326d49acdb97eb8477bf15ede2409ebc3e34ef9744b0e9b47bfb6c5c8057"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/command-5.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/gate.json",
+    "bytes": 4729,
+    "sha256": "472f80403f7e7615799bcf5e282794863b3d330838baf557c543afad1322fb7c"
+  },
+  {
+    "path": "results/phase2-integration/gate-2/source-inventory.json",
+    "bytes": 41908,
+    "sha256": "1dde1fd0df2a5f7a7c761dc4865c98d44f7a54d1482c2d1dd18d4b0c06a19c89"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-1-supervision.json",
+    "bytes": 11223,
+    "sha256": "1fed18629ffb0cd056800f6ed0f7c191e33687d5faadb312c1c6524f1c6aebbb"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-1.log",
+    "bytes": 29137,
+    "sha256": "9dfa3c292c3a40586c685bca857dc18589dbd20a8921ba0b1c90c8b2dfb6e637"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-2-supervision.json",
+    "bytes": 1523,
+    "sha256": "fa5c3f90090bdf8847f9414d79a93612b21b3338b82eeb86a0b0301c06e9de3b"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-2.log",
+    "bytes": 2909,
+    "sha256": "9f18fe6a05659b512e5ed49f7e03b9f65b48487993fee5bed650c519ad976bf9"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-3-supervision.json",
+    "bytes": 1522,
+    "sha256": "3aef04a56615c7fb75f28a3cd6c8ba01316898c4d22b9b0e6aec55d3aa0566b4"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-3.log",
+    "bytes": 43,
+    "sha256": "f9b031e5c45aa702cd4fef028d465551cb20a2c4698e0913c7b00766b20ac4d8"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-4-supervision.json",
+    "bytes": 2465,
+    "sha256": "0b378ef876efde491e24e9bbe44bbcd3877a56680d68053db0280492674fa701"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-4.log",
+    "bytes": 70,
+    "sha256": "ccafe9f13d40ae3adee94edbf6bf33cb9e5f3f5bba662e3da654787f97fbdcad"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-5-supervision.json",
+    "bytes": 1520,
+    "sha256": "2edaf7e26164fdcabf24ef8ef8c1fc703e02ee4b44ac2c037922c17753410229"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/command-5.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/gate.json",
+    "bytes": 5156,
+    "sha256": "fb8f4517a3cdb876617c2461705b5aaf033a192bf41a93a7025e09be4f920725"
+  },
+  {
+    "path": "results/phase2-integration/gate-3/source-inventory.json",
+    "bytes": 41908,
+    "sha256": "1dde1fd0df2a5f7a7c761dc4865c98d44f7a54d1482c2d1dd18d4b0c06a19c89"
+  },
+  {
+    "path": "results/phase2-integration/gate.json",
+    "bytes": 2133,
+    "sha256": "2dc7b520b512e44099455736cce98bb818bd012a5e0292b2031231992197c36c"
+  },
+  {
+    "path": "results/phase2-integration/prerequisites.json",
+    "bytes": 1242,
+    "sha256": "e48f42279bfb2b8bfcc5a62d26bc4b4203598862773ec950c6f46e70cde3036e"
+  },
+  {
+    "path": "results/phase2-integration/provisioning.json",
+    "bytes": 236,
+    "sha256": "a0e0c83afc4e6888d49ae75629093777abbb0daedb513f301ada2e508a648cd2"
+  },
+  {
+    "path": "results/phase2-integration/source-inventory.json",
+    "bytes": 41805,
+    "sha256": "0c139a5dbda1efafc5ddbee83eda899e9ed280a822ad4d05a04b3eb28d704c56"
+  }
+]

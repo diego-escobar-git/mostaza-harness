@@ -1,0 +1,168 @@
+"""One approved, serial CPU integration gate; no historical matrix replay."""
+
+from __future__ import annotations
+
+import hashlib
+import importlib
+import json
+import os
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
+from pathlib import Path
+
+ROOT = Path('/Users/diego/.codex/worktrees/mostaza-phase2-integration/Mostaza-Harness')
+OUTPUT = ROOT / 'results/phase2-integration'
+sys.path.insert(0, str(ROOT / 'scripts'))
+supervision = importlib.import_module('notebook_import_supervision')
+watchdog = importlib.import_module('check_verify_task_cpu')
+LIMIT = 2 * 1024**3
+COMMANDS = [
+    (['bash', 'scripts/validate.sh'], 600),
+    (['.venv/bin/python', '-B', '-m', 'unittest', 'discover', '-s', 'tests/reconciliation', '-p', 'test_phase2_reconciliation.py', '-v'], 120),
+    (['.venv/bin/python', '-B', '-m', 'mypy', '--strict', '--cache-dir=/dev/null', 'scripts/check_phase2_reconciliation.py', 'tests/reconciliation/test_phase2_reconciliation.py'], 120),
+    (['.venv/bin/python', '-B', 'scripts/check_phase2_reconciliation.py', '--check'], 300),
+    (['git', 'diff', '--check', 'e343692fc6b45585932a3a0ff20a28c3c80ce372', 'HEAD'], 30),
+]
+
+
+def git(*args):
+    return subprocess.check_output(['git', *args], cwd=ROOT, text=True, timeout=10).strip()
+
+
+def files_digest():
+    records = {}
+    for name in git('ls-files').splitlines():
+        path = ROOT / name
+        if path.is_symlink():
+            raise ValueError('Unexpected tracked symlink: ' + name)
+        records[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+    return records
+
+
+def invariant_checks():
+    original = '1b86b19f7654212c1d9f95eeca84d0e2a05db16b'
+    reconciliation = '7bd3cf29ca6256178c3da1764563794ac4dc79cf'
+    for commit in (original, reconciliation, 'e343692fc6b45585932a3a0ff20a28c3c80ce372'):
+        git('merge-base', '--is-ancestor', commit, 'HEAD')
+    for name in git('ls-tree', '-r', '--name-only', original).splitlines():
+        if name in {'README.md', 'docs/specs/README.md'}:
+            continue
+        if git('rev-parse', original + ':' + name) != git('rev-parse', 'HEAD:' + name):
+            raise ValueError('Original PR2 file changed: ' + name)
+    for name in git('diff', '--name-only', '60ad0cec85bb36a1e65609ca2b1a743ba087384d', reconciliation).splitlines():
+        if name == 'docs/specs/README.md':
+            continue
+        if git('rev-parse', reconciliation + ':' + name) != git('rev-parse', 'HEAD:' + name):
+            raise ValueError('Original PR3 artifact changed: ' + name)
+    specs = sorted(p.name for p in (ROOT / 'docs/specs').glob('*.md') if p.name != 'README.md')
+    index = (ROOT / 'docs/specs/README.md').read_text()
+    for name in specs:
+        if index.count('](' + name + ')') != 1:
+            raise ValueError('Missing/duplicate indexed spec: ' + name)
+    if len(specs) != 10:
+        raise ValueError('Unexpected spec coverage')
+    return {'original_pr2_files_unchanged_except_two_docs': True,
+            'original_pr3_files_unchanged_except_index': True, 'indexed_specs': specs}
+
+
+def size(paths):
+    return sum(watchdog.used_bytes(path) for path in paths if path.exists())
+
+
+def main():
+    if (OUTPUT / 'gate.json').exists():
+        raise ValueError('This output is consumed; automatic replay forbidden')
+    before = files_digest()
+    invariants = invariant_checks()
+    baseline = size([ROOT / '.venv', ROOT / '.tools/official', ROOT / '.tools/uv', ROOT / 'resources', ROOT / 'results/kaggle-v2-358139443', ROOT / 'results/kaggle-v2-host-normalization-revision1'])
+    if baseline >= LIMIT:
+        raise ValueError('Baseline exceeds approved storage cap')
+    scratch = Path(tempfile.mkdtemp(prefix='mostaza-integration-', dir='/private/tmp'))
+    (scratch / 'owner.json').write_text(json.dumps({'root': str(ROOT), 'output': str(OUTPUT)}))
+    temp = scratch / 'tmp'
+    temp.mkdir()
+    env = dict(os.environ)
+    env.update(TMPDIR=str(temp), UV_OFFLINE='true', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', PYTHONDONTWRITEBYTECODE='1', PYTEST_ADDOPTS='-o tmp_path_retention_policy=failed')
+    started = time.monotonic()
+    deadline = started + 1200
+    work_stop = deadline - 30
+    receipt = {'status': 'RUNNING', 'started_utc': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'candidate_commit': git('rev-parse', 'HEAD'), 'candidate_tree': git('rev-parse', 'HEAD^{tree}'),
+               'base': 'e343692fc6b45585932a3a0ff20a28c3c80ce372', 'wall_limit_seconds': 1200, 'storage_cap_bytes': LIMIT,
+               'baseline_copied_inputs_bytes': baseline, 'sampled_peak_bytes': baseline, 'storage_scope': 'copied tool/resource inputs plus owned scratch/output/build/cache artifacts; polled, not instantaneous physical peak',
+               'source_inventory_sha256': hashlib.sha256(json.dumps(before, sort_keys=True).encode()).hexdigest(),
+               'invariants': invariants, 'commands': [], 'automatic_retries': 0,
+               'scope': 'ordinary approved integration; CPU fixtures/compiler only; no V/R/N matrices, model/GPU, Kaggle or Discussion',
+               'environment_controls': {'UV_OFFLINE': 'true', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '-o tmp_path_retention_policy=failed', 'TMPDIR': str(temp)},
+               'scratch': str(scratch), 'failure': None, 'cleanup_complete': False}
+    (OUTPUT / 'source-inventory.json').write_text(json.dumps(before, indent=2) + '\n')
+
+    def persist():
+        (OUTPUT / 'gate.json').write_text(json.dumps(receipt, indent=2) + '\n')
+
+    def check():
+        measured = baseline + size([scratch, OUTPUT, ROOT / 'build', ROOT / 'dist', ROOT / '.tools/cache', ROOT / '.mypy_cache', ROOT / '.ruff_cache'])
+        receipt['sampled_peak_bytes'] = max(receipt['sampled_peak_bytes'], measured)
+        if measured > LIMIT:
+            raise ValueError('Approved storage cap exceeded')
+
+    try:
+        persist()
+        for index, (argv, timeout) in enumerate(COMMANDS, 1):
+            step = {'argv': argv, 'timeout_seconds': timeout}
+            receipt['commands'].append(step)
+            step_started = time.monotonic()
+            cutoff = min(work_stop, step_started + timeout)
+            if cutoff <= step_started:
+                raise TimeoutError('No approved work time remains')
+            log = OUTPUT / f'command-{index}.log'
+            with log.open('wb') as stream:
+                process = subprocess.Popen(argv, cwd=ROOT, env=env, stdout=stream, stderr=subprocess.STDOUT, start_new_session=True)
+                known = {}
+                result = supervision.supervise(process, known, watchdog, cutoff, min(deadline - 5, cutoff + 25), check, OUTPUT / f'command-{index}-supervision.json')
+            step.update(exit_code=result['exit_code'], duration_seconds=time.monotonic()-step_started,
+                        log_sha256=hashlib.sha256(log.read_bytes()).hexdigest(), cleanup=result['process_cleanup'])
+            persist()
+            if step['exit_code'] != 0:
+                raise RuntimeError(f'Command {index} failed with exit {step["exit_code"]}')
+        if files_digest() != before:
+            raise ValueError('Tracked source drift during gate')
+        check()
+        receipt['status'] = 'PASS'
+    except Exception as error:
+        receipt.update(status='FAIL', failure=f'{type(error).__name__}: {error}')
+    finally:
+        try:
+            if time.monotonic() > deadline - 5:
+                raise TimeoutError('Cleanup/export reserve exhausted')
+            table = supervision.read_process_table(deadline - 3, [])
+            excluded = {os.getpid()}
+            parent = os.getppid()
+            while parent in table and parent not in excluded:
+                excluded.add(parent)
+                parent = table[parent][0]
+            own = [pid for pid, (_, _, command) in table.items()
+                   if pid not in excluded and (str(scratch) in command or str(ROOT) in command)]
+            if own:
+                raise RuntimeError('Owned process cleanup not proven: ' + str(own))
+            if not (scratch / 'owner.json').is_file() or scratch.is_symlink():
+                raise ValueError('Scratch ownership changed')
+            shutil.rmtree(scratch)
+            receipt['cleanup_complete'] = not scratch.exists()
+        except Exception as error:
+            receipt.update(status='FAIL', cleanup_error=f'{type(error).__name__}: {error}')
+        receipt['duration_seconds'] = time.monotonic() - started
+        if receipt['duration_seconds'] > 1200:
+            receipt.update(status='FAIL', failure='Total wall deadline exceeded')
+        persist()
+        if time.monotonic() > deadline:
+            receipt.update(status='FAIL', failure='Receipt export exceeded total deadline')
+            persist()
+    print(json.dumps({k: receipt[k] for k in ('status', 'duration_seconds', 'sampled_peak_bytes', 'failure', 'cleanup_complete')}))
+    return 0 if receipt['status'] == 'PASS' else 1
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

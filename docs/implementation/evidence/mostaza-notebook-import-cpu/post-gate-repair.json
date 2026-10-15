@@ -1,0 +1,11 @@
+{
+  "status": "REPAIRED_CPU_ASSESSMENT_FULL_GATE_PENDING",
+  "issue": "Setup python -c legitimately reports an initial empty sys.path entry; old pytest-only predicate rejected it. Setup scope label also inherited pytest wording despite being a plain Python setup probe.",
+  "repair": "Interpret only raw first empty entry as witnessed cwd in a separate validation view; retain raw receipt, native runtime/env and all origin/fingerprint checks. Label future setup receipt actual_native_setup_import_cpu.",
+  "official_reference": "https://docs.python.org/3.13/library/sys.html#sys.path",
+  "reference_limit": "Online docs3.13.16; observed local runtime3.13.15. Documentation establishes empty-entry semantics, not runtime portability.",
+  "native_calls_after_gate2": 0,
+  "additional_gate_authorized": false,
+  "focused_checks": "53 non-native tests PASS;ruffPASS;mypy56PASS",
+  "host_temp_fix": "Set child TMPDIR to owned scratch/host-tmp; matrix verifies effective tempfile root. Historical cap coverage incomplete, no overrun inferred."
+}

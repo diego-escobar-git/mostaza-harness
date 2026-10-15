@@ -1,0 +1,22 @@
+{
+  "auditor": "/root/browser_control_audit",
+  "discussion_publication": "Explicitly unauthorized; draft unsent",
+  "excluded_closed_plan_sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5",
+  "findings": [],
+  "focused_reproduction": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+    "protected_files_unchanged": 104,
+    "public_source_bytes": 15644,
+    "public_source_pins_verified": 3,
+    "raw_inventory_pins_verified": 16,
+    "result": "PASS_CPU_STATIC_REVIEW",
+    "source_inventory_pins_verified": 7
+  },
+  "gpu_or_remote_compute_started": 0,
+  "independent": true,
+  "organizer_scorer_attestations": "All five fields null with reasons; no GPU readiness promotion",
+  "real_verifier_changed": false,
+  "scope": "Complete relevant A/B source/checker/tests/documentation/evidence delta, ordinary follow-up, read-only audit",
+  "setup_executed": false,
+  "status": "PASS"
+}

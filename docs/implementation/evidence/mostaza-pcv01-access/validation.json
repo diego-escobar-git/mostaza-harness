@@ -1,0 +1,111 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "bash",
+        "scripts/validate.sh"
+      ],
+      "elapsed_seconds": 47.085309542002506,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-1.log",
+      "log_sha256": "cf28174b51ee7bc7af48b7f86390ca50634a6430de4b57c599b536ef8154d33c",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/check_phase2.py",
+        "--check",
+        "--cohort",
+        "experiments/cohort.json"
+      ],
+      "elapsed_seconds": 7.491872250000597,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-2.log",
+      "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/prepare_startup_phase2.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.12728908400094952,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-3.log",
+      "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".tools/official/bin/python",
+        "scripts/check_startup_configuration.py"
+      ],
+      "elapsed_seconds": 0.6745682910004689,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-4.log",
+      "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.07304454100085422,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-5.log",
+      "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/check_context_verification.py",
+        "--check"
+      ],
+      "elapsed_seconds": 6.873081457997614,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-6.log",
+      "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/check_pcv01.py",
+        "--check"
+      ],
+      "elapsed_seconds": 8.344059540999297,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-7.log",
+      "log_sha256": "7d9d2ce7053f710313f41cf2b5d47dc4da5c7627331f29169d90dab03f64c63d",
+      "timeout": false
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "scripts/check_pcv01_scorer_contract.py",
+        "--check"
+      ],
+      "elapsed_seconds": 1.0387885830023151,
+      "exit_code": 0,
+      "log": "results/pcv01-access/gate-v1/command-8.log",
+      "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da",
+      "timeout": false
+    }
+  ],
+  "discussion_messages_sent": 0,
+  "elapsed_seconds": 71.71217275000163,
+  "gpu_starts": 0,
+  "integration_tests": 41,
+  "model_calls": 0,
+  "real_verifier_changed": false,
+  "scope": "CPU_ONLY",
+  "status": "PASS_EIGHT_CPU_COMMANDS",
+  "strict_type_checked_files": 39,
+  "unit_tests": 287,
+  "wall_clock_limit_seconds": 1200
+}

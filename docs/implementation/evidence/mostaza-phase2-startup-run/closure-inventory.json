@@ -1,0 +1,57 @@
+[
+  {
+    "bytes": 9907,
+    "path": "E0-B180-derived-manifest.json",
+    "sha256": "6a536462ebfab50a39189d4fd1c739231d4dd9e706463c8c0fd251be28ded52d"
+  },
+  {
+    "bytes": 9907,
+    "path": "E1-B180-derived-manifest.json",
+    "sha256": "e109b4382a54bd3c16814e3cf2ec50e41bdbc7ccc21a61cae2f4d02c015f0c17"
+  },
+  {
+    "bytes": 13859,
+    "path": "acquisition.json",
+    "sha256": "fd7390ac92c20c7cd2745d329fcea8fffa40ecec771d31493ef44ffaecf5fda4"
+  },
+  {
+    "bytes": 1575,
+    "path": "audit.json",
+    "sha256": "0ec99bf7e6ee1a79555e342d1cdb96867436f1f9ca085cda4ee9bfea6aa3ad54"
+  },
+  {
+    "bytes": 20301,
+    "path": "comparison.json",
+    "sha256": "ad3ee101a45d0790e481a27599f818bf21db128661b317d1498636036b9b91c9"
+  },
+  {
+    "bytes": 30248,
+    "path": "evaluation-records.json",
+    "sha256": "3932cf29e2cf65fec10d9babbffb5078bbe6f5ef7a01940467a0f029d3c78b5e"
+  },
+  {
+    "bytes": 9515,
+    "path": "paired-report.md",
+    "sha256": "89b35b491215002942f12208d3bc7f95e116dd6c1bf789a71b45a21e83648ecc"
+  },
+  {
+    "bytes": 10691,
+    "path": "recompute.py",
+    "sha256": "4df1c9f96de0b99b1ebde9168e809f3e679dd7edb0f33da71ff3642cf07450fa"
+  },
+  {
+    "bytes": 10672,
+    "path": "report.md",
+    "sha256": "8779db031c4fd7bb39ae21b33547c14fcb539eab00a37a5ecd9ff5b66c061f79"
+  },
+  {
+    "bytes": 39614,
+    "path": "trace-observations.json",
+    "sha256": "eeddc816a685d216ab0b9260725159e54f326cd97318ad4a013e44a71b16c409"
+  },
+  {
+    "bytes": 1233,
+    "path": "validation.json",
+    "sha256": "6871773b2485f1c7f0ce732a190e74a0e1c48b185fce1de7592361574f568c0b"
+  }
+]

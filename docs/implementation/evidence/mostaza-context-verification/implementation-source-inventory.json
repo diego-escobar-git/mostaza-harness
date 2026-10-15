@@ -1,0 +1,70 @@
+[
+  {
+    "path": "docs/specs/context-verification.md",
+    "sha256": "61f78bb9dbea3c449d1bbccf97c02b056ba4cb21a7aded0e35953c242d8a4866"
+  },
+  {
+    "path": "experiments/E0-C8K/manifest.json",
+    "sha256": "c72f23a7b58637b535d5d639ff86648361eab80d2c512b387e726ae54d1c4422"
+  },
+  {
+    "path": "experiments/E0-C8K-Q1/manifest.json",
+    "sha256": "64c7cede79192011206be38fc51f735db725d6b41df98287f6d82b53580ccd6c"
+  },
+  {
+    "path": "experiments/E1-C8K/manifest.json",
+    "sha256": "7c3f20bdbab2042f6a65a6558d1923f6d63271311b5fc27972b101c8accb807e"
+  },
+  {
+    "path": "experiments/E1-C8K-Q1/manifest.json",
+    "sha256": "c7e5b3900a67e6df6565cb85ca31a53d2c20002715a69514a2a14dbcdedfe4f8"
+  },
+  {
+    "path": "experiments/E1-C8K-Q1-R1/manifest.json",
+    "sha256": "986597efd062d08ec01d3a03017f65b8f8f73138c55c05c6a2d91dcf4127c45a"
+  },
+  {
+    "path": "notebooks/mostaza-context-verification.ipynb",
+    "sha256": "2fe6aafade2e0c11cf195a648462596651c59e9c5e2c92e750d750807df3f85f"
+  },
+  {
+    "path": "scripts/check_context_verification.py",
+    "sha256": "ec5e6c0e60374612eab43c27018f304c90bfcca6ffd8e1732c5cca8fde2886ea"
+  },
+  {
+    "path": "scripts/context_cpu_fixtures.py",
+    "sha256": "52bfc78dbeba7e51ba5d653cbb7c4ee31b5da941bb130984a454878972187969"
+  },
+  {
+    "path": "scripts/prepare_context_verification.py",
+    "sha256": "dbb06ecfcc708d0b2ec01c06d9e217fdf88a00d83e64f90fc10ece3cdce1eb1a"
+  },
+  {
+    "path": "src/mostaza/evaluation/context_candidate.py",
+    "sha256": "6e0d89b7f840a02822e13229f2e6363dcfb817d9407f1d7f4145dc49fa8b4976"
+  },
+  {
+    "path": "src/mostaza/evaluation/context_diagnostics.py",
+    "sha256": "bc7ffad7d20f93761a5f0db1a306505cddd32386a9b5c25a57a2d87d7b1a43af"
+  },
+  {
+    "path": "src/mostaza/evaluation/context_variants.py",
+    "sha256": "3728896e6a974c30bbaa8a890d9a512f21340642ea7ff19fa871be95653ba52e"
+  },
+  {
+    "path": "src/mostaza/evaluation/supervision_monitor.py",
+    "sha256": "c19356d047cc3fa75b63605a122e34c74a877ee4b437b7a557645644584e0c80"
+  },
+  {
+    "path": "src/mostaza/evaluation/verification_origin.py",
+    "sha256": "c97a53eecab4929b57f95b38059b857152db64b65ff5ad5138dfcd34d0a152d1"
+  },
+  {
+    "path": "tests/integration/test_context_native_contract.py",
+    "sha256": "adaf8c85257d0f5d262f16e3996fa536d4a6e0e6ac5f365631edb59f34f3e88b"
+  },
+  {
+    "path": "tests/unit/test_context_verification.py",
+    "sha256": "22ca464dacba03d03ceeae6b66ef66cdbaacf831f613d839296e67d98b423ac6"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "gate4_receipt": "results/notebook-import-cpu/gate-4/receipt.json",
+  "gpu_readiness": false,
+  "historical_gate2_first_row": "checkpoints/before-resource-gate/cpu-results.json (unassessed historical row; not retroactively accepted)",
+  "host_retention_policy_active": true,
+  "host_retention_scope": "Attempt4 command1 only; no native environment override",
+  "host_source_diagnosis": "gate4-source-diagnosis.json",
+  "host_source_repair": "source_data_filter active in new blocked candidate; native validation NOT_RUN_AFTER_REPAIR",
+  "latest_gate_attempt": 4,
+  "linux_runtime_portability": "NOT_TESTED",
+  "new_generic_rows": [
+    {
+      "binding": true,
+      "id": "N-L01",
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "setup_binding": true,
+      "test_exit_code": 1
+    },
+    {
+      "binding": true,
+      "id": "N-L02",
+      "native_resolved": true,
+      "node_outcomes": {
+        "test_required": "passed"
+      },
+      "setup_binding": true,
+      "test_exit_code": 0
+    },
+    {
+      "binding": true,
+      "id": "N-L03",
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "setup_binding": true,
+      "test_exit_code": 1
+    }
+  ],
+  "new_matrix_raw": "results/notebook-import-cpu/gate-4/matrix/summary.json",
+  "not_run": [
+    "N-R00 setup/native",
+    "N-R01 setup/native",
+    "N-R02 setup/native",
+    "Python3.12 generic transport",
+    "Python3.12 Requests transport"
+  ],
+  "post_gate_native_calls": 0,
+  "post_gate_setup_probes": 0,
+  "post_gate_stdlib_transport_probes": 0,
+  "private_scorer_parity": null,
+  "private_scorer_parity_reason": "No actual Kaggle scorer execution",
+  "real_evaluations": "NOT_RUN",
+  "requests_preparation": "R00 host proof failed before setup/native; R01/R02 not dispatched",
+  "resource_gate_proposal": "source-filter-gate-plan.md",
+  "status": "BLOCKED_GATE4_CONSUMED"
+}

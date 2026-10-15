@@ -1,0 +1,126 @@
+{
+  "compiler_versions": {
+    "adk-submission": "0.2.13",
+    "google-adk": "1.36.1",
+    "swegemma": "0.2.11"
+  },
+  "configurations": [
+    {
+      "archive_sha256": "df3267ecadeff1fdf3193495632fa55556d140d79952368e41bb3b103f6ffde2",
+      "arm": "E0",
+      "budget": {
+        "max_time_minutes": 3,
+        "max_tool_calls": 30,
+        "max_turns": 50,
+        "timeout_seconds": 180,
+        "verification_timeout_seconds": 300
+      },
+      "configuration_id": "E0-B180",
+      "directory_schema_compiler": "PASS",
+      "eval_config_native_mapping": "PASS",
+      "manifest_sha256": "400fa15b41cbe497d0c758b48cf10602a0563ea6bc60382266869a0c0e0bed88",
+      "members_sha256": {
+        "agent.yaml": "7cffdea86e32d6acf0a586d5ac7caade57d9b43b145f971600f388bbe71cc371",
+        "eval_config.yaml": "b4185b7b796ec26a35766ea26aaaafb7ddf1ca428b30ab731c00f3d77730000b",
+        "prompts/baseline.md": "4841635e2176986bef18dd6fca44c4757795894506a1db88c30975057884e140"
+      },
+      "real_gemma_execution": "NOT_RUN",
+      "reason": "Compiler-only inert bindings; GPU not authorized",
+      "reproducible_archive": true
+    },
+    {
+      "archive_sha256": "6dd6cede0a924bc25ef5d1a7fb6f817a5f3fe8d01476d6e42fe4b2c8ff50c564",
+      "arm": "E1",
+      "budget": {
+        "max_time_minutes": 3,
+        "max_tool_calls": 30,
+        "max_turns": 50,
+        "timeout_seconds": 180,
+        "verification_timeout_seconds": 300
+      },
+      "configuration_id": "E1-B180",
+      "directory_schema_compiler": "PASS",
+      "eval_config_native_mapping": "PASS",
+      "manifest_sha256": "58409d7a173dfcc1f6892fbc95f0d94c5ea55d3a7513935b7040d3e7c08fa464",
+      "members_sha256": {
+        "agent.yaml": "85e0396558d132862387a23a4fa76afdeba227dd83d42a66a7443efde51df2b4",
+        "eval_config.yaml": "b4185b7b796ec26a35766ea26aaaafb7ddf1ca428b30ab731c00f3d77730000b",
+        "prompts/hybrid-retrieval.md": "c6ecb762f46ae76ad4cc18a6559706822c559fc110152acc88539a48d7b5be0e"
+      },
+      "real_gemma_execution": "NOT_RUN",
+      "reason": "Compiler-only inert bindings; GPU not authorized",
+      "reproducible_archive": true
+    },
+    {
+      "archive_sha256": "72305069659d01db3d8de83f448747531a945b26984c71acca0575c31764952b",
+      "arm": "E0",
+      "budget": {
+        "max_time_minutes": 5,
+        "max_tool_calls": 50,
+        "max_turns": 50,
+        "timeout_seconds": 300,
+        "verification_timeout_seconds": 300
+      },
+      "configuration_id": "E0-B300",
+      "directory_schema_compiler": "PASS",
+      "eval_config_native_mapping": "PASS",
+      "manifest_sha256": "fad16d4d5e21df8aae052a55522d4b7fa230dfcea639aee1fa18170a708ac3b8",
+      "members_sha256": {
+        "agent.yaml": "7cffdea86e32d6acf0a586d5ac7caade57d9b43b145f971600f388bbe71cc371",
+        "eval_config.yaml": "329be9479dd7dea55fea400550de18ac383e5e9d0cf2858dfb723e7a0f429509",
+        "prompts/baseline.md": "4841635e2176986bef18dd6fca44c4757795894506a1db88c30975057884e140"
+      },
+      "real_gemma_execution": "NOT_RUN",
+      "reason": "Compiler-only inert bindings; GPU not authorized",
+      "reproducible_archive": true
+    },
+    {
+      "archive_sha256": "a0b56702e81b483f3722e36cfeb57414d44fc0c4ea4840e938e1dbff8c89b27b",
+      "arm": "E1",
+      "budget": {
+        "max_time_minutes": 5,
+        "max_tool_calls": 50,
+        "max_turns": 50,
+        "timeout_seconds": 300,
+        "verification_timeout_seconds": 300
+      },
+      "configuration_id": "E1-B300",
+      "directory_schema_compiler": "PASS",
+      "eval_config_native_mapping": "PASS",
+      "manifest_sha256": "2bad3f9ae84eb411d247542a4712ecbbef6206d5be564404d9b56d9a5e20ef9f",
+      "members_sha256": {
+        "agent.yaml": "85e0396558d132862387a23a4fa76afdeba227dd83d42a66a7443efde51df2b4",
+        "eval_config.yaml": "329be9479dd7dea55fea400550de18ac383e5e9d0cf2858dfb723e7a0f429509",
+        "prompts/hybrid-retrieval.md": "c6ecb762f46ae76ad4cc18a6559706822c559fc110152acc88539a48d7b5be0e"
+      },
+      "real_gemma_execution": "NOT_RUN",
+      "reason": "Compiler-only inert bindings; GPU not authorized",
+      "reproducible_archive": true
+    },
+    {
+      "archive_sha256": "0a4e84e16a0759a67d97c78a736793e1ffadfe3a680217d486c0a27e07ed6977",
+      "arm": "E1",
+      "budget": {
+        "max_time_minutes": 3,
+        "max_tool_calls": 30,
+        "max_turns": 50,
+        "timeout_seconds": 180,
+        "verification_timeout_seconds": 300
+      },
+      "configuration_id": "E1-R180",
+      "directory_schema_compiler": "PASS",
+      "eval_config_native_mapping": "PASS",
+      "manifest_sha256": "8204b9f04e4bc0f78c05271168a68cb500664abb539a2b06210821e0daab5b59",
+      "members_sha256": {
+        "agent.yaml": "8b5de72613676bbe1d259adc252c9bd264e07b9b3d4382157ed575ba2d08e64a",
+        "eval_config.yaml": "b4185b7b796ec26a35766ea26aaaafb7ddf1ca428b30ab731c00f3d77730000b",
+        "prompts/hybrid-recovery.md": "dc303ac516a09bbff118253f9bb90542d02cba0e6055af37754fb53a59b6fae5"
+      },
+      "real_gemma_execution": "NOT_RUN",
+      "reason": "Compiler-only inert bindings; GPU not authorized",
+      "reproducible_archive": true
+    }
+  ],
+  "kind": "official_compiler_only",
+  "schema_version": 1
+}

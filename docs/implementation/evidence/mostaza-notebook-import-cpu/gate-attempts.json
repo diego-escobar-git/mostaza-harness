@@ -1,0 +1,4689 @@
+{
+  "attempts": [
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": null,
+            "completed": 8,
+            "native_start_lower_bound": 8,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": null
+          },
+          {
+            "assessed": 11,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11
+          }
+        ],
+        "native_total": {
+          "assessed": null,
+          "completed": 19,
+          "started": 20,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "setup": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "attempt": 1,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-fba21b9f-8555-49b6-8dc0-b4d385e95647"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 78.68157441700168,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/01.log",
+          "log_sha256": "9ff3555f7bc9cc56ab16a147d0b740b5f3fd1cda763bb69dd25fef7933f5f63f"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 19.00891520899677,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.33770225000262144,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 1.7196907500001544,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.34075804200256243,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 17.451422792000812,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 19.81391900000017,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/07.log",
+          "log_sha256": "0ded1a3eb1649f449f5afbc7e0e47157bd3735f3fa50169953646f08b4713cd7"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 2.9058841669975664,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da"
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 58.19293079199997,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/09.log",
+          "log_sha256": "54d1deae13dd90b933f1e52b24cf7facb4982da8161ae95d9f54940633494f66"
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 49.98971087500104,
+          "exit_code": null,
+          "exit_code_reason": "PermissionError: [Errno 1] Operation not permitted",
+          "log": "results/notebook-import-cpu/gate-1/10.log",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "duration_seconds": 253.49931737500083,
+      "failure": "PermissionError: [Errno 1] Operation not permitted",
+      "maximum_attempts": 2,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 324568386,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": 9,
+            "assessed_reason": null,
+            "completed": 9,
+            "native_start_lower_bound": 9,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": 9,
+            "worker_starts_reason": null
+          },
+          {
+            "assessed": 11,
+            "assessed_reason": null,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11,
+            "worker_starts_reason": null
+          }
+        ],
+        "native_total": {
+          "assessed": 20,
+          "assessed_reason": null,
+          "completed": 21,
+          "started": 21,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 0,
+          "completed": 1,
+          "started": 1
+        },
+        "setup": {
+          "assessed": 0,
+          "completed": 1,
+          "started": 1
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "attempt": 2,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 57.25794737499746,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/01.log",
+          "log_sha256": "d5adea4ed2e4b4239fdd7472fef53acf7c967f3820eaebda00e7e43f1c5d0303",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 10.420260250000865,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.3303095410010428,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 1.1006937919992197,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.33238512499883655,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 9.380571833000431,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 10.465126708000753,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/07.log",
+          "log_sha256": "01593911146cdf8edbe0f5f7fd1ee28f19b1b9bc5a12120fe6e0deeabf3ca1f6",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 1.538972249996732,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 37.243092541000806,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/09.log",
+          "log_sha256": "9d5b647bb981456a6c17ba3a74111b7d81c1e26961e9545aac5fbc806e2f1aed",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 32.896832874997926,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/10.log",
+          "log_sha256": "50f44d72b4713206a047166132d6a4a1ca56dbee4dc57e4fc38026ab1fe787e1",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_notebook_import_cpu.py",
+            "--check",
+            "--output",
+            "results/notebook-import-cpu/gate-2/matrix"
+          ],
+          "command": ".tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-2/matrix",
+          "duration_seconds": 7.404852708001272,
+          "exit_code": 1,
+          "log": "results/notebook-import-cpu/gate-2/11.log",
+          "log_sha256": "242e1d5631a06bf49313f8b633f290df94eb80b52f2681f9e527ea21db3480d2",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        }
+      ],
+      "duration_seconds": 171.20347295899774,
+      "failure": "ValueError: Gate command failed: .tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-2/matrix",
+      "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/run_notebook_import_cpu_gate.py\", line 286, in run\n    raise ValueError(\"Gate command failed: \" + command)\nValueError: Gate command failed: .tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-2/matrix\n",
+      "maximum_attempts": 2,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 293128318,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [],
+        "native_total": {
+          "assessed": 0,
+          "assessed_reason": null,
+          "completed": 0,
+          "started": 0,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "setup": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "additional_authorization": {
+        "approval_sha256": "40948a4bba9ab941e10c4df9c2a99074dd1047a832f8dfa621eb9b1d636dbcbd",
+        "attempt": 3,
+        "maximum_additional_attempts": 1,
+        "ordinary_maximum_attempts": 2,
+        "prior_receipts": [
+          {
+            "path": "results/notebook-import-cpu/gate-1/receipt.json",
+            "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-2/receipt.json",
+            "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+          }
+        ],
+        "proposal_sha256": "1dc7f539b490ad8c30bf31e999f9e1713eab2805b274cb3f53365fe3a5450ec1",
+        "repair_sha256": "d5e5cbcf188f6687548052a97bdde7dbec37812a31705a358d00cba6a7da770c"
+      },
+      "attempt": 3,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [],
+          "roots": [],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-4579f8a6-5bbe-4ee4-8625-240d701fa6b0"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 5.361622541000543,
+          "exit_code": null,
+          "exit_code_reason": "ValueError: Whole CPU gate artifact ceiling",
+          "log": "results/notebook-import-cpu/gate-3/01.log",
+          "log_sha256": "4d9b51ae51932d7769f532b5aa7679d0a77326cd37d6318bfb7fb39905f19f9d"
+        }
+      ],
+      "duration_seconds": 6.929505082996911,
+      "failure": "ValueError: Whole CPU gate artifact ceiling",
+      "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/run_notebook_import_cpu_gate.py\", line 319, in run\n    raise ValueError(\"Whole CPU gate artifact ceiling\")\nValueError: Whole CPU gate artifact ceiling\n",
+      "host_temporary_root": "/private/tmp/mostaza-notebook-import-4579f8a6-5bbe-4ee4-8625-240d701fa6b0/host-tmp",
+      "maximum_attempts": 3,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 1405596992,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": 9,
+            "assessed_reason": null,
+            "completed": 9,
+            "native_start_lower_bound": 9,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": 9,
+            "worker_starts_reason": null
+          },
+          {
+            "assessed": 11,
+            "assessed_reason": null,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11,
+            "worker_starts_reason": null
+          }
+        ],
+        "native_total": {
+          "assessed": 23,
+          "assessed_reason": null,
+          "completed": 23,
+          "started": 23,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 3,
+          "completed": 3,
+          "started": 3
+        },
+        "setup": {
+          "assessed": 3,
+          "completed": 3,
+          "started": 3
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "additional_authorization": {
+        "approval_sha256": "00e42bf4958b271183ef044bc53119b81ff3cc7ce57d4f27a5c80ab04091b5ee",
+        "attempt": 4,
+        "maximum_additional_attempts": 1,
+        "ordinary_maximum_attempts": 2,
+        "previous_additional_attempts": 1,
+        "prior_receipts": [
+          {
+            "path": "results/notebook-import-cpu/gate-1/receipt.json",
+            "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-2/receipt.json",
+            "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-3/receipt.json",
+            "sha256": "5d5510b1c179042abe826368c5a4c26a0371facd94fdcf57104b95b9db4eeada"
+          }
+        ],
+        "proposal_sha256": "c5494823b94b4081b03839673494be84d49ab2ba21ccd5a4690b60b5b42b630e",
+        "repair_sha256": "e3a9e5c708061715f80dc935b5a925c61025443141e7e0d4d0f7c9899a1d584f"
+      },
+      "attempt": 4,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-eaf3cc69-7d53-4749-8969-e033ad9e146b",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/2c210b44-2015-425c-9002-52122fc43173"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-ecf28ad2-da83-4e03-8974-344d1a5142d0"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 45.47320516699983,
+          "environment_overrides": {
+            "PYTEST_ADDOPTS": "-o tmp_path_retention_policy=failed"
+          },
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/01.log",
+          "log_sha256": "24c50cd312df289b11e40fb89d89657dab41ba075d1db3dfb9f6b46dcc0bada3",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 6.804359458001272,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.33170337499905145,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 0.8029483749996871,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.33516333399893483,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 6.554045458004111,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 7.970607875002315,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/07.log",
+          "log_sha256": "2e1e19e0b217ca69191c5c8f66ee913b66bb023d115e16df290158b23c29026d",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 1.0319190839945804,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 28.737561458001437,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/09.log",
+          "log_sha256": "6ed970bb1f806de21728abc1f726b9cdccd850971a6f72d018fe14c2d8eedd0a",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 26.003376874999958,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-4/10.log",
+          "log_sha256": "103a3b2aa89888178c1cd89d6e1c921624cd7662c64d78917d214d42a43406e7",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_notebook_import_cpu.py",
+            "--check",
+            "--output",
+            "results/notebook-import-cpu/gate-4/matrix"
+          ],
+          "command": ".tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-4/matrix",
+          "duration_seconds": 17.841394625000248,
+          "environment_overrides": {},
+          "exit_code": 1,
+          "log": "results/notebook-import-cpu/gate-4/11.log",
+          "log_sha256": "91554f936c947818e28fb6d14043ec9598287adf4b17a22752f5085249c1e970",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        }
+      ],
+      "duration_seconds": 144.3997087500029,
+      "failure": "ValueError: Gate command failed: .tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-4/matrix",
+      "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/run_notebook_import_cpu_gate.py\", line 430, in run\n    raise ValueError(\"Gate command failed: \" + command)\nValueError: Gate command failed: .tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-4/matrix\n",
+      "host_temporary_root": "/private/tmp/mostaza-notebook-import-ecf28ad2-da83-4e03-8974-344d1a5142d0/host-tmp",
+      "maximum_attempts": 4,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 420152916,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": 9,
+            "assessed_reason": null,
+            "completed": 9,
+            "native_start_lower_bound": 9,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": 9,
+            "worker_starts_reason": null
+          },
+          {
+            "assessed": 11,
+            "assessed_reason": null,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11,
+            "worker_starts_reason": null
+          }
+        ],
+        "native_total": {
+          "assessed": 24,
+          "assessed_reason": null,
+          "completed": 24,
+          "started": 24,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 4,
+          "completed": 4,
+          "started": 4
+        },
+        "setup": {
+          "assessed": 4,
+          "completed": 4,
+          "started": 4
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "additional_authorization": {
+        "approval_sha256": "61a263e5eed9b848d9ad9b5fc0e1552f40e11b902689e871a96f7b656c1a2598",
+        "attempt": 5,
+        "maximum_additional_attempts": 1,
+        "ordinary_maximum_attempts": 2,
+        "previous_additional_attempts": 2,
+        "prior_receipts": [
+          {
+            "path": "results/notebook-import-cpu/gate-1/receipt.json",
+            "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-2/receipt.json",
+            "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-3/receipt.json",
+            "sha256": "5d5510b1c179042abe826368c5a4c26a0371facd94fdcf57104b95b9db4eeada"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-4/receipt.json",
+            "sha256": "648425f80a7bb244cad9f3f48401034816cf9f0b754654630743e3f38e81429f"
+          }
+        ],
+        "proposal_sha256": "85c5fc864ea90e27fcead149649f22bf662543b10509da3ff9623d030a364337",
+        "repair_sha256": "9df0226dfe643b4ddc8e93798cbb75d550955b7d761cdae3a5eeab0c63ea2124"
+      },
+      "attempt": 5,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-137fa1cf-b18d-42c3-a5e7-15d96840c59d",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f5052b9-5bf0-42c7-98f8-74540ae1e6b7"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 58.8006736249954,
+          "environment_overrides": {
+            "PYTEST_ADDOPTS": "-o tmp_path_retention_policy=failed"
+          },
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/01.log",
+          "log_sha256": "237c3f79401dabce8506a27cb07898e3b7d9bf830b3f2dd68aeaf046046a1b03",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 8.891683667003235,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.3199293330035289,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 1.0838094999999157,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.3235911660012789,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 9.050583834003191,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 10.361912374995882,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/07.log",
+          "log_sha256": "4ddc141c58976f063adf82dca223a9e99d54dba84b99918bb4e0abbaf9add3ea",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 1.591943874998833,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 37.39043820799998,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/09.log",
+          "log_sha256": "8a88a24f9052f4eecd65a60a716763ffc6c364d2389f99599fa071e0a900dcb6",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 34.83829320899531,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-5/10.log",
+          "log_sha256": "f1cd2992803db3c100290040ffa06347095aa94d013b7ce6096214d198171ab1",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_notebook_import_cpu.py",
+            "--check",
+            "--output",
+            "results/notebook-import-cpu/gate-5/matrix"
+          ],
+          "command": ".tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-5/matrix",
+          "duration_seconds": 48.91471179200016,
+          "environment_overrides": {},
+          "exit_code": null,
+          "exit_code_reason": "TimeoutExpired: Command '['ps', '-ww', '-axo', 'pid=,ppid=,pgid=,command=']' timed out after 2 seconds",
+          "log": "results/notebook-import-cpu/gate-5/11.log",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "duration_seconds": 215.92259433299478,
+      "failure": "TimeoutExpired: Command '['ps', '-ww', '-axo', 'pid=,ppid=,pgid=,command=']' timed out after 2 seconds",
+      "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/run_notebook_import_cpu_gate.py\", line 433, in run\n    process.pid, watchdog.process_table(), known\n                 ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/check_verify_task_cpu.py\", line 51, in process_table\n    output = subprocess.run(\n             ~~~~~~~~~~~~~~^\n        [\"ps\", \"-ww\", \"-axo\", \"pid=,ppid=,pgid=,command=\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n        timeout=2,\n        ^^^^^^^^^^\n    ).stdout\n    ^\n  File \"/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/subprocess.py\", line 556, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/subprocess.py\", line 1222, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/subprocess.py\", line 2155, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/subprocess.py\", line 1269, in _check_timeout\n    raise TimeoutExpired(\n    ...<2 lines>...\n            stderr=b''.join(stderr_seq) if stderr_seq else None)\nsubprocess.TimeoutExpired: Command '['ps', '-ww', '-axo', 'pid=,ppid=,pgid=,command=']' timed out after 2 seconds\n",
+      "host_temporary_root": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/host-tmp",
+      "maximum_attempts": 5,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 539910575,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": 9,
+            "assessed_reason": null,
+            "completed": 9,
+            "native_start_lower_bound": 9,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": 9,
+            "worker_starts_reason": null
+          },
+          {
+            "assessed": 11,
+            "assessed_reason": null,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11,
+            "worker_starts_reason": null
+          }
+        ],
+        "native_total": {
+          "assessed": 26,
+          "assessed_reason": null,
+          "completed": 26,
+          "started": 26,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 6,
+          "completed": 6,
+          "started": 6
+        },
+        "setup": {
+          "assessed": 6,
+          "completed": 6,
+          "started": 6
+        },
+        "stdlib": {
+          "assessed": 2,
+          "completed": 2,
+          "started": 2
+        }
+      },
+      "additional_authorization": {
+        "approval_sha256": "dba8c1e6266b1c3ae09b06a489e5439a7a3e8acf8f0be9aa1fb9f83f205ad1f8",
+        "attempt": 6,
+        "maximum_additional_attempts": 1,
+        "ordinary_maximum_attempts": 2,
+        "previous_additional_attempts": 3,
+        "prior_receipts": [
+          {
+            "path": "results/notebook-import-cpu/gate-1/receipt.json",
+            "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-2/receipt.json",
+            "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-3/receipt.json",
+            "sha256": "5d5510b1c179042abe826368c5a4c26a0371facd94fdcf57104b95b9db4eeada"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-4/receipt.json",
+            "sha256": "648425f80a7bb244cad9f3f48401034816cf9f0b754654630743e3f38e81429f"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-5/receipt.json",
+            "sha256": "f7df3c51a8b08a0d585e84d7c35a34767a23ddaf7188b60c93479c828d2973df"
+          }
+        ],
+        "proposal_sha256": "ad6ed73b8b66ca55e9f3a561b2ef95b1c62d0adeccb96427dd8385bbf37a7c0a",
+        "repair_sha256": "72aa47eac39845f9e4eee2c24ea552a82d66a16b3fc57346df5c3ac1c7dbc2a5"
+      },
+      "attempt": 6,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-ff29faa0-373a-4c6f-8e44-aa79a818dd19",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/bfad524f-f9e0-4176-974c-e8b8b27798b7"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-abcb96c3-be0a-49b1-a6e6-f4e98fa9acf5"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 64.72410395900079,
+          "environment_overrides": {
+            "PYTEST_ADDOPTS": "-o tmp_path_retention_policy=failed"
+          },
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/01.log",
+          "log_sha256": "8a1c024fe0c99b0066c6014b28138e3bbfccbe19e28d174df3375517624a0dbf",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.025359041006595362,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 624,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03804179099824978,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03237920800165739,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03501091599900974,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.037188665999565274,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.028863291001471225,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03272445799666457,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024925583005824592,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025903875000949483,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026560708000033628,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025639500003308058,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026768916999571957,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02677429100003792,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027930375006690156,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02808691699465271,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.030933875001210254,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025801124997087754,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025407458997506183,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026658499999030028,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027642416003800463,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.028313208997133188,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02603629200166324,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026695833999838214,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026773750003485475,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02783133400225779,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.028422625000530388,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.035008458005904686,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03716945799533278,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.028691707993857563,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027467167004942894,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02674754199688323,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 622,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025489040999673307,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0288354580043233,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02923291700426489,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 633,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.14500695800234098,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02415241600101581,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 623,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024898750001739245,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02631154200207675,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026393458996608388,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025836542001343332,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025081833002332132,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025111165996349882,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025604499998735264,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026767499999550637,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 631,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025654874996689614,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024414334002358373,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02516437500162283,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02455562500108499,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02422504100104561,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024308124993694946,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026583082995784935,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02387420800369,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023986916996364016,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02448112500132993,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025693791001685895,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025210291998519097,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02572804100054782,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02533400000538677,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02463908399658976,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024386208002397325,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 7.870504957994854,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.023324082998442464,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02482149999559624,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025097541998547968,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024733042002480943,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02439991699793609,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023847374999604654,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02585370800079545,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026275874995917547,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023628875002032146,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024174750004021917,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.3171898330037948,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.02436554100131616,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023505584002123214,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0232566249978845,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023566333002236206,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 0.7509442500013392,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.023126207997847814,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023650082999665756,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023699541001406033,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02438550000078976,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.320284041998093,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.02352079199772561,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02507654100190848,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023561875001178123,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023248208002769388,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 7.2461560829979135,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.02395595799316652,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024742000001424458,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02448937499866588,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023668375004490372,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02544612500059884,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02476366700284416,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024543082996387966,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023875208993558772,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023400958998536225,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02342270899680443,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 9.099886374999187,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/07.log",
+          "log_sha256": "7de9505f24d5a5bac7658ce3b4e3fef94d12e0e143a8b1f4940230ac15bab1ba",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.0254486249978072,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024954417000117246,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02553033299773233,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025094333999732044,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025178208001307212,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027161958001670428,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024615624999569263,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026348125000367872,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.028027415995893534,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026140207999560516,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0289935830005561,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 1.4337169170030393,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.02646058299433207,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025247999998100568,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024288667002110742,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02317704100278206,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02457124999637017,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 625,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 34.10595295899839,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/09.log",
+          "log_sha256": "2c05c27c69ff0651cc5255f0f0f86c15434e1639d5ad54a3040778551cb1c25e",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.025193416004185565,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 626,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02739866699994309,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025220791998435743,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025797333000809886,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025453041002037935,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024251666000054684,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026079791998199653,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027323834001435898,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02762179199635284,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 629,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02533233299618587,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 627,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02856400000018766,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 630,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025465667000389658,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 628,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02670895800110884,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 617,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.029187959000410046,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 621,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02718441699835239,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 617,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02366295799583895,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 612,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03576808300567791,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02500208400306292,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025391499999386724,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02785470800154144,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02640895800141152,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02622841599804815,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.032255625003017485,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026904750004177913,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027740500001527835,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02824374999909196,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02462412499880884,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024839958998200018,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02709408300142968,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02517204199830303,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023988834000192583,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02391445800458314,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02421808299550321,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 28.74560187500174,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/10.log",
+          "log_sha256": "deced791a9aeb31fc69fc2ac4a0c304302b0d13b4e586c7a6412d08257d64f25",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.0311662919993978,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024242334002337884,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023432249996403698,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025747624997165985,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.030193833001249004,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02493466600571992,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02766866700403625,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023319332998653408,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027820333998533897,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02371391600172501,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023403334002068732,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02419870800076751,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024384333002672065,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023635292003746144,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023866124996857252,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02764108299743384,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02478437500394648,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02594958300323924,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02895416699902853,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02419512499909615,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024392915998760145,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.028590875001100358,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024971124999865424,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02693662499950733,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025082291998842265,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 603,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024045207996095996,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023536250002507586,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.022976374995778315,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_notebook_import_cpu.py",
+            "--check",
+            "--output",
+            "results/notebook-import-cpu/gate-6/matrix"
+          ],
+          "command": ".tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-6/matrix",
+          "duration_seconds": 52.14154212499852,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/11.log",
+          "log_sha256": "8acad5c6eb3164e2dcb5725b0e39ff61c464f000c6e7ceeecc3bd54891022afe",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.024598458003310952,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 603,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02472620800108416,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023345540997979697,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02471066699945368,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024046124999586027,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024428374999843072,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023277459004020784,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02308508299756795,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026660374998755287,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 610,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023965207998116966,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 608,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025447375002841,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0258900420012651,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02809966700442601,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 609,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025394458003574982,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.027002666996850166,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 607,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02307220899820095,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 604,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024151375000656117,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023977417004061863,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025081665997277014,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024739125001360662,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024389874997723382,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 608,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024332000000867993,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 603,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.022416208004869986,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 601,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024212500000430737,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 603,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.022086083998146933,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 598,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.026558792000287212,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024202916996728163,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023686833003011998,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0235569590004161,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 605,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023313959005463403,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 601,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02500187500118045,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 602,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023988457993254997,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 600,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0236986669988255,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 601,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0320708340004785,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 606,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024295750001328997,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02786791600374272,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023052167001878843,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023125916995923035,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025669042006484233,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.03587775000050897,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023937916004797444,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 599,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023270957994100172,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 601,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023481832999095786,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 601,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02271070799906738,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 601,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023142916994402185,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 600,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.02440145899890922,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 597,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025378250000358094,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 596,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.023762834003719036,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 596,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.06584083299821941,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 596,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        },
+        {
+          "argv": [
+            "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12",
+            "-I",
+            "-S",
+            "scripts/check_notebook_import_portability.py",
+            "--check",
+            "--receipt",
+            "results/notebook-import-cpu/gate-6/matrix/summary.json",
+            "--output",
+            "results/notebook-import-cpu/gate-6/portability"
+          ],
+          "command": "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12 -I -S scripts/check_notebook_import_portability.py --check --receipt results/notebook-import-cpu/gate-6/matrix/summary.json --output results/notebook-import-cpu/gate-6/portability",
+          "duration_seconds": 1.4575059589988086,
+          "environment_overrides": {},
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-6/12.log",
+          "log_sha256": "cf78a08f8fa381ce8186e2977d96ca6317cc9baac84f74da933ff442dcdbdf6a",
+          "process_cleanup": {
+            "complete": true,
+            "observation_errors": [],
+            "root_exited": true,
+            "signal_errors": [],
+            "survivors": [],
+            "survivors_reason": null
+          },
+          "supervision": {
+            "cap_check_interval_seconds": 0.2,
+            "cleanup_deadline": 50395.19796925,
+            "cleanup_error": null,
+            "cleanup_traceback": null,
+            "discovery_interval_seconds": 1.0,
+            "exit_code": 0,
+            "observations": [
+              {
+                "duration_seconds": 0.02322499999718275,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 597,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024444208000204526,
+                "outcome": "observed",
+                "phase": "work",
+                "process_count": 598,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.024686500000825617,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 596,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.0251036660047248,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 596,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              },
+              {
+                "duration_seconds": 0.025106000000960194,
+                "outcome": "observed",
+                "phase": "cleanup",
+                "process_count": 596,
+                "process_count_reason": null,
+                "table_available": true,
+                "timeout_seconds": 5.0
+              }
+            ],
+            "persistence_errors": [],
+            "process_cleanup": {
+              "complete": true,
+              "observation_errors": [],
+              "root_exited": true,
+              "signal_errors": [],
+              "survivors": [],
+              "survivors_reason": null
+            },
+            "read_timeout_maximum_seconds": 5.0,
+            "status": "COMPLETE",
+            "work_deadline": 50365.19796925,
+            "work_error": null,
+            "work_traceback": null
+          }
+        }
+      ],
+      "duration_measurement_scope": "Through counters/inventory before final JSON write; export completion is checked separately against the same wall limit",
+      "duration_seconds": 211.39025270799903,
+      "failure": null,
+      "failure_traceback": null,
+      "final_export_checked_within_wall_limit": true,
+      "host_temporary_root": "/private/tmp/mostaza-notebook-import-abcb96c3-be0a-49b1-a6e6-f4e98fa9acf5/host-tmp",
+      "maximum_attempts": 6,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": true,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 556434407,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    }
+  ],
+  "automatic_retries": false,
+  "gate3_observed_cap_exceeded": true,
+  "gate3_sampled_bytes": 1405596992,
+  "gate6_sampled_bytes": 556434407,
+  "next_gate_authorized": false,
+  "original_cap_bytes": 1073741824,
+  "retained_native_results": 113,
+  "setup_started": 14,
+  "status": "ATTEMPT6_PASS_ALL_ALLOWANCES_CONSUMED",
+  "stdlib_started": 2,
+  "total_gate_wall_seconds": 1003.3448512079922,
+  "total_native_started": 114
+}

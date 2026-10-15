@@ -1,0 +1,31 @@
+{
+  "auditor": "/root/browser_control_audit",
+  "compact_evidence_sha256": {
+    "acquisition.json": "57995512309e61af3e823832701b7d1a6288dcaff0fadb6a32c04a98b8363360",
+    "evaluation-records.json": "bbbcdd2bc459f460f6cc12e055210ab1680c5613b8bd9dcae2f7e065e443b888",
+    "report.md": "50f2f09c713b3101573bb9c589f30d60b1d5e48c41a26baaf0a936a94039e7d5",
+    "startup-environment-delta.json": "8680026534870dbacb64863855b05fa20d3cc235f21b9262b73e941c0d008964",
+    "validation.json": "d2bb649cc07996a16cd1156dfbfb9b628ee7ceaaa41fe856bbc38fba33de6f5f"
+  },
+  "findings": [],
+  "post_environment_delta_local_checks": {
+    "declared_source_hashes_verified": 13,
+    "git_diff_check_exit_code": 0,
+    "local_doc_links_verified": 15
+  },
+  "recorded_at_utc": "2026-10-14T14:17:35.670027+00:00",
+  "runbook_sha256": "99064feddf1baa44bf33fdb1dd3dddf0788d6c3968ec80a726dca08eac5509ef",
+  "scope": "Independent outcome/closure/provenance review of real canceled allocation, complete34-file inventory, native full log,117events, null NOT_RUN records and source-level environment delta. No GPU/actions by auditor.",
+  "verdict": "PASS",
+  "verification_summary": {
+    "downloaded_bytes": 504399,
+    "downloaded_files_hashes_verified": 34,
+    "future_gpu_authorization": null,
+    "native_server_retained_source_log_bytes": 85871,
+    "physical_release_at": null,
+    "quota_delta_reported_seconds": 1017.237842,
+    "startup_events": 117,
+    "task_evaluations": 0,
+    "task_status": "sixNOT_RUN"
+  }
+}

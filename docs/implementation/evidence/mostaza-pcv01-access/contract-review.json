@@ -1,0 +1,131 @@
+{
+  "compatibility": {
+    "actual_scorer_runtime_parity": null,
+    "discussion_publication_authorized": false,
+    "gpu_readiness": false,
+    "gpu_readiness_reason": "Existing verification-origin guard remains blocked; no real integration authorized",
+    "missing_reasons": {
+      "actual_scorer_runtime_parity": "No verified organizer response or actual scorer-process evidence; public assets and CPU API parity do not attest scoring",
+      "organizer_diagnostic_permission": "No verified organizer response or actual scorer-process evidence; public assets and CPU API parity do not attest scoring",
+      "scorer_backend_attested": "No verified organizer response or actual scorer-process evidence; public assets and CPU API parity do not attest scoring",
+      "scorer_source_equivalence_attested": "No verified organizer response or actual scorer-process evidence; public assets and CPU API parity do not attest scoring",
+      "supported_observation_route": "No verified organizer response or actual scorer-process evidence; public assets and CPU API parity do not attest scoring"
+    },
+    "organizer_diagnostic_permission": null,
+    "scorer_backend_attested": null,
+    "scorer_source_equivalence_attested": null,
+    "status": "PENDING_HOST_CONFIRMATION",
+    "supported_observation_route": null,
+    "unverified_response_url": null
+  },
+  "development_backend_reviewed": true,
+  "docker_images_built_or_downloaded": false,
+  "docker_recipe_review": {
+    "docker/Dockerfile.public": {
+      "base_tag": "python:3.13-slim",
+      "coverage": "STATIC_RECIPE_NOT_BUILT_OR_RUN",
+      "image_digest": null,
+      "pytest_requirement": "pytest",
+      "pytest_version": null,
+      "python_minor_declared": "3.13",
+      "python_patch_version": null,
+      "unknown_reason": "Mutable base tag and unpinned pytest; no effective build/runtime manifest"
+    },
+    "docker/Dockerfile.sandbox": {
+      "base_tag": "python:3.13-slim",
+      "coverage": "STATIC_RECIPE_NOT_BUILT_OR_RUN",
+      "image_digest": null,
+      "pytest_requirement": "pytest",
+      "pytest_version": null,
+      "python_minor_declared": "3.13",
+      "python_patch_version": null,
+      "unknown_reason": "Mutable base tag and unpinned pytest; no effective build/runtime manifest"
+    }
+  },
+  "model_calls": 0,
+  "native_setup_review": {
+    "coverage": "STATIC_PINNED_SOURCE_NOT_RUNTIME",
+    "effective_selected_setup": null,
+    "effective_selected_setup_reason": "Resolver depends on runtime environment/config/files; not executed here",
+    "other_backend_path": "Stages cached dependencies, resolves/copies setup and may execute --fast-path",
+    "subprocess_early_returns": {
+      "install_editable_package": {
+        "line": 512,
+        "subprocess_action": "RETURN_WITHOUT_INSTALL"
+      },
+      "install_test_dependencies": {
+        "line": 529,
+        "subprocess_action": "RETURN_WITHOUT_INSTALL"
+      }
+    }
+  },
+  "native_source_sha256": {
+    "swegemma/config.py": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b",
+    "swegemma/harness/container_setup.py": "3192acdce35f2d0bd0b191186851b46c251390af16b7f139a1640e16fb1d862c",
+    "swegemma/harness/verification.py": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa",
+    "swegemma/sandbox/subprocess.py": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2"
+  },
+  "protected_files_unchanged": 104,
+  "public_setup_acquired": true,
+  "public_setup_review": {
+    "coverage": "STATIC_PUBLIC_DEVELOPMENT_SOURCE_NOT_EXECUTED",
+    "editable_install_result": null,
+    "editable_install_result_reason": "Script not executed; unchecked fallback code is not an observed failure",
+    "fast_path_configures_pytest_ini_and_conftest": true,
+    "fast_path_writes_workspace_paths_pth": true,
+    "main_calls_editable_install": true
+  },
+  "public_source_bytes": 15644,
+  "public_source_sha256": {
+    "docker/Dockerfile.public": "c92dfd9cd9ce019c4910a5334d6ecac606b612ec736a933b4af36da9c6fdf06c",
+    "docker/Dockerfile.sandbox": "2fef37c9275522eea4dc3371c60b54d9ba3cfa7871f89f1749aa92f34beff70a",
+    "sandbox/setup.py": "0263995ade90f83c8efa0ab5c7c9b7629696f39bc75274d58fc27ab774568409"
+  },
+  "real_verifier_changed": false,
+  "remote_compute_sessions_started": 0,
+  "runtime_source_review": {
+    "coverage": "STATIC_PINNED_SOURCE_NOT_ACTUAL_SCORER_RUNTIME",
+    "effective_scorer_python_pytest_image": null,
+    "effective_scorer_runtime_reason": "No verified organizer manifest or real scorer-process observation",
+    "host_runtime_vs_verifier_runtime": "Separate identities; Docker Python3.13 recipe is not a scorer execution manifest",
+    "inspected_eval_config_fields": [
+      "adapter_manifest",
+      "budget",
+      "concurrency",
+      "context_cache_config",
+      "display_mode",
+      "embeddings_dir",
+      "enable_sandbox_testing",
+      "events_compaction_config",
+      "generation_constraints",
+      "graph_dir",
+      "harness",
+      "image",
+      "limits",
+      "max_llm_calls",
+      "max_time_minutes",
+      "max_tool_calls",
+      "max_turns",
+      "models",
+      "num_shards",
+      "results_dir",
+      "sandbox",
+      "shard_index",
+      "skip_agent_patch",
+      "snapshots_dir",
+      "submission_dir",
+      "task_ids",
+      "tasks_path",
+      "timeout_seconds",
+      "verbose",
+      "verification_timeout_seconds",
+      "wheels_dir"
+    ],
+    "pytest_command_template": "PYTHONSAFEPATH=1 PYTHONNOUSERSITE=1 python3 -s -m pytest <native targets/options>",
+    "subprocess_pythonpath_assignment": "str(workspace_dir)",
+    "subprocess_system_site_packages_default": true
+  },
+  "setup_imported_or_executed": false,
+  "source_hash_verified": true,
+  "status": "PASS_CPU_STATIC_REVIEW"
+}

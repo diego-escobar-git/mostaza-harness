@@ -1,0 +1,58 @@
+{
+  "harness_config_support_for_plugin": "No plugin activation parameter in inspected EvalConfig; native verifier constructs fixed command",
+  "inspected_eval_config_fields": [
+    "adapter_manifest",
+    "budget",
+    "concurrency",
+    "context_cache_config",
+    "display_mode",
+    "embeddings_dir",
+    "enable_sandbox_testing",
+    "events_compaction_config",
+    "generation_constraints",
+    "graph_dir",
+    "harness",
+    "image",
+    "limits",
+    "max_llm_calls",
+    "max_time_minutes",
+    "max_tool_calls",
+    "max_turns",
+    "models",
+    "num_shards",
+    "results_dir",
+    "sandbox",
+    "shard_index",
+    "skip_agent_patch",
+    "snapshots_dir",
+    "submission_dir",
+    "task_ids",
+    "tasks_path",
+    "timeout_seconds",
+    "verbose",
+    "verification_timeout_seconds",
+    "wheels_dir"
+  ],
+  "native_source_sha256": {
+    "pytest8.4.2/_pytest/hookspec.py": "ca5ce6d785970ed31a20bd5134bac4715892fcc8528eab2158276df93ef11e72",
+    "pytest9.1.1/_pytest/hookspec.py": "12098571044671c24ed0011e2bb7d94976380265e5734c30f856479482e6f88d",
+    "swegemma/config.py": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b",
+    "swegemma/harness/verification.py": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa"
+  },
+  "official_sources": [
+    "https://docs.pytest.org/en/8.4.x/how-to/plugins.html",
+    "https://docs.pytest.org/en/8.4.x/reference/reference.html#pytest.hookspec.pytest_runtest_call",
+    "https://docs.pytest.org/en/stable/how-to/writing_plugins.html",
+    "https://www.kaggle.com/datasets/metric/gemma-4-developer-agent-wheelhouse"
+  ],
+  "organizer_permission_missing_reason": "Official setup unavailable (prior403); no real verifier change or organizer acceptance tested",
+  "organizer_permission_or_scorer_parity": null,
+  "pinned_harness": "swegemma0.2.11",
+  "pytest842_wheel": {
+    "metadata": "https://pypi.org/pypi/pytest/8.4.2/json",
+    "path": "resources/official/pytest-8.4.2-py3-none-any.whl",
+    "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79",
+    "url": "https://files.pythonhosted.org/packages/a8/a4/20da314d277121d6534b3a980b29035dcd51e6744bd79075a6ce8fa4eb8d/pytest-8.4.2-py3-none-any.whl"
+  },
+  "pytest_public_api": "Explicit -p loading and tryfirst pytest_runtest_call with argument pruning"
+}

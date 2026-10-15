@@ -1,0 +1,12 @@
+{
+  "status": "PREPARED_NOT_ACTIVE",
+  "cause": "Five frozen unit test cases copy463659201byte resources each; default pytest retains passed temp paths until session end.",
+  "gate3_sampled_bytes": 1405596992,
+  "cap_bytes": 1073741824,
+  "prepared_policy": "PYTEST_ADDOPTS=-o tmp_path_retention_policy=failed for command1 only",
+  "supported_source": ".venv/lib/python3.13/site-packages/_pytest/tmpdir.py:303-310",
+  "frozen_test_source": "tests/unit/test_packaging.py:400-419",
+  "focused_validation": "64 focused non-native tests PASS;ruffPASS;mypy56PASS",
+  "native_calls_after_gate3": 0,
+  "gate4_authorized": false
+}

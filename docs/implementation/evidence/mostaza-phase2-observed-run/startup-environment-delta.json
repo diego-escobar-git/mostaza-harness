@@ -1,0 +1,18 @@
+{
+  "causal_conclusion": "UNESTABLISHED: source-level difference warrants local review; does not prove cause of this OOM or the prior aborted run.",
+  "kind": "configured_startup_environment_source_delta",
+  "next_local_step": "Review restoring the historically explicit startup environment before proposing new capacity parameters; preserve same effective settings within any future E0/E1 pair; no GPU retry authorized.",
+  "observed_effective_environment_values": null,
+  "observed_effective_environment_values_reason": "No complete subprocess environment snapshot was acquired; container/default inherited values cannot be inferred from absent notebook assignments.",
+  "observed_notebook": "results/kaggle-phase2-observed-6526b0decc91474cb1bd3335d77d06a0/launched.ipynb",
+  "observed_notebook_explicit_assignments_for_these_keys": false,
+  "observed_notebook_sha256": "350015e26944ec849a531d8f1156b6c64512e410aedf50add93a6cd22bf0cdaf",
+  "phase1_explicit_values": {
+    "NCCL_DEBUG": "WARN",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "VLLM_ENGINE_READY_TIMEOUT_S": "1200",
+    "VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS": "1"
+  },
+  "phase1_notebook": "results/kaggle-v2-358139443/mostaza-e0-e1-phase-1-paired-benchmark.ipynb",
+  "phase1_notebook_sha256": "b615bed6092788e423faf9c40cdddb8e7719822544f8d0f99936b643dacfb28e"
+}

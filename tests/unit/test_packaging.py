@@ -374,3 +374,52 @@ def test_ac5_pending_arm_is_rejected_after_resources_available(
     with pytest.raises(PackagingError, match="pending or not ready"):
         build_submission(tmp_path, "E1", tmp_path / "submission.zip", Path("python"))
     assert not (tmp_path / "submission.zip").exists()
+
+
+@pytest.mark.parametrize(
+    "config", ["E0-B180", "E1-B180", "E0-B300", "E1-B300", "E1-R180"]
+)
+def test_phase2_ac1_immutable_sources_and_budget_closure(config: str) -> None:
+    import yaml
+
+    from mostaza.packaging import BUDGETS, configuration_files, load_manifest
+
+    root = Path(__file__).resolve().parents[2]
+    paths = [root / "submission/agent.yaml", root / "submission/eval_config.yaml"]
+    before = [path.read_bytes() for path in paths]
+    m = load_manifest(root, config)
+    files = configuration_files(root, config)
+    assert yaml.safe_load(files["eval_config.yaml"]) == {
+        "evaluation": BUDGETS[m["budget_family"]]
+    }
+    assert files[m["prompt"]] == (root / "submission" / m["prompt"]).read_bytes()
+    assert [path.read_bytes() for path in paths] == before
+    assert set(files) == {"agent.yaml", "eval_config.yaml", m["prompt"]}
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("budgets", {}),
+        ("model", "other"),
+        ("prompt_sha256", "0" * 64),
+        ("arm", "E0"),
+        ("calibration_eligible", False),
+    ],
+)
+def test_phase2_ac2_rejects_manifest_drift(
+    tmp_path: Path, field: str, value: object
+) -> None:
+    import shutil
+
+    from mostaza.packaging import load_manifest
+
+    root = Path(__file__).resolve().parents[2]
+    for directory in ("experiments", "submission", "resources"):
+        shutil.copytree(root / directory, tmp_path / directory)
+    path = tmp_path / "experiments/E1-B180/manifest.json"
+    data = json.loads(path.read_text())
+    data[field] = value
+    path.write_text(json.dumps(data))
+    with pytest.raises(PackagingError):
+        load_manifest(tmp_path, "E1-B180")

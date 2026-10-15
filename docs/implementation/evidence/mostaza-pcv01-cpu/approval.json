@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-14",
+  "kind": "ordinary_follow_up_not_sdd_resume",
+  "user_instruction": "Apruebo P-CV-01 para implementación y validación en CPU. Verifica la compatibilidad oficial, audita y actualiza el PR #2, sin merge, GPU ni cambios en el verificador real de Kaggle.",
+  "prior_git_authorization": "commit, push and update PR #2 toward develop, without merge",
+  "scope": "CPU-only diagnostic plugin and synthetic native controls; public official compatibility review; independent audit/corrections",
+  "forbidden": [
+    "GPU",
+    "model inference",
+    "new Kaggle sessions",
+    "real Kaggle verifier changes",
+    "merge",
+    "reference/hidden-test context leakage"
+  ],
+  "real_readiness_unlocked": false
+}

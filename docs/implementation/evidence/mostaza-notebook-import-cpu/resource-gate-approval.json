@@ -1,0 +1,30 @@
+{
+  "status": "APPROVED",
+  "authorization": "Autorizo el único intento 4 con la corrección y los límites propuestos. Tras PASS y auditoría satisfactoria, completa commit, push y actualización del PR #2, sin merge, GPU, Discussion ni cambios al verificador.",
+  "proposal_sha256": "c5494823b94b4081b03839673494be84d49ab2ba21ccd5a4690b60b5b42b630e",
+  "repair_sha256": "e3a9e5c708061715f80dc935b5a925c61025443141e7e0d4d0f7c9899a1d584f",
+  "prior_receipts": [
+    {
+      "path": "results/notebook-import-cpu/gate-1/receipt.json",
+      "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+    },
+    {
+      "path": "results/notebook-import-cpu/gate-2/receipt.json",
+      "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+    },
+    {
+      "path": "results/notebook-import-cpu/gate-3/receipt.json",
+      "sha256": "5d5510b1c179042abe826368c5a4c26a0371facd94fdcf57104b95b9db4eeada"
+    }
+  ],
+  "limits": {
+    "attempt": 4,
+    "maximum_additional_attempts": 1,
+    "native_verifications": 26,
+    "setup_probes": 6,
+    "stdlib_probes": 2,
+    "wall_seconds": 1200,
+    "artifact_bytes": 1073741824,
+    "automatic_retries": false
+  }
+}

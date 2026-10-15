@@ -1,0 +1,19 @@
+{
+  "verdict": "PASS",
+  "findings": [],
+  "auditor": "/root/browser_control_audit",
+  "recorded_at_utc": "2026-10-14T03:50:25.837448+00:00",
+  "candidate_sha256": {
+    "src/mostaza/evaluation/startup_observation.py": "4339904ff43c1611e71cbc6d9f388e11661acf82743216ac4fe2bb8c2d7338da",
+    "src/mostaza/evaluation/browser_supervision.py": "8900bc6017cac46d079a6cfe3e329a34c9c0105766b0d592c476464f7306d8f5",
+    "scripts/prepare_observed_phase2.py": "b1e2bf6b12e62d5278b185c119c8eb04ecb9dbfa6d27f939256e1686700edf07",
+    "scripts/check_startup_observation.py": "816d63f65af414b152e64ef0d8e0004e451cd203c4e3a6eddbcd5f0aef8352b8",
+    "tests/unit/test_startup_observation.py": "6f2d9215dd72c74cdabf53744845453298191be4944819608de165ccb0483e61",
+    "tests/unit/test_browser_supervision.py": "6305ea3e4c889a376719f111ed75126ead28d21a60e00d1c41ac8c659bb98804",
+    "notebooks/mostaza-phase2-observed.ipynb": "a50664fae097d1c79d2b3b724cb3524e0ad85cbde53cae175e0d2cfdc7494d95",
+    "docs/kaggle-setup.md": "bb24992c4dec2c38482ea6adde9dca23cad9837e15e9b6dda26bb9195356725b"
+  },
+  "scope": "Independent read-only full review of observer, exact-version supervision, preparation/native-check scripts, tests, generated notebook, operational documentation and investigation/proposal evidence.",
+  "review": "Original agent/input payload hashes and B180 settings preserved. Notebook unbound with GPU/internet disabled. Persistent hard link precedes native startup. Opaque scriptVersionId is distinct from display version. Missing Active Events does not trigger false abort. Before/after candidate and historical bundle hashes unchanged. No GPU outcome claimed.",
+  "gpu_actions_in_audit": 0
+}

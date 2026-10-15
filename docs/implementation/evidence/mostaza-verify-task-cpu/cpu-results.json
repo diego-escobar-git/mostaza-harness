@@ -1,0 +1,669 @@
+{
+  "actual_scorer_runtime_parity": null,
+  "actual_scorer_runtime_parity_reason": "Owned local CPU diagnostics only; no private scorer execution",
+  "coverage_note": "Actual owned test bodies only, not general pytest teardown/hook coverage; native result remains authority.",
+  "cpu_time_reason": "Only elapsed wall-clock times recorded, not process CPU time.",
+  "cpu_time_seconds": null,
+  "duration_seconds": 30.583511500000895,
+  "failure": null,
+  "gpu_readiness": false,
+  "gpu_starts": 0,
+  "inputs_and_results": [
+    {
+      "agent_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "case": "V01",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "function": "evaluate",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "id": "V01",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "4ef339483d634104e9d0487e7475507fb5125cb481e8d54677b9867f94f6d9c7",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "2f7817751365939f297c5cb33b324ef127847aeccea1b040ab1f5eff34a27b44"
+    },
+    {
+      "agent_patch_sha256": "23184150a54fc8f5b9cb48393f3bc5fe999cc09333a6d713463cde3605de1c4c",
+      "case": "V02",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "abe23769ed7f816a8209d7527670d1f8d38731cf3083459303962d50891dcd73",
+        "function": "evaluate",
+        "function_fingerprint": "7d1aa7e813fbc748e1815ee1000fce9bf3dda44e98978fc27f47829028bb5cc0",
+        "id": "V02",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "591a228235eac567233d6aeeabc72f5c944d08cb5c775365b541f62f1db9f9c8",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "ce561991d9a898c24d0c68927de646e1b0a34bbaca085ca338279e411e3a9b60"
+    },
+    {
+      "agent_patch_sha256": "84d894b86d61b6ee1cd16a6ed1f5652f8321f8a09789f0a40f9dbbcbb9a49c7f",
+      "case": "V03",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "34fd45422e2b4ea3a04964870ef8ad5c9a15b1207f7f79f39acc877983469cf8",
+        "function": "evaluate",
+        "function_fingerprint": "c85eb92cee3f1a6e7fa83cf76227c6a74b1f22677a5d7abcd8a0603e1179901e",
+        "id": "V03",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "03fea40d9966fda48beefaed9d19ed2de78e22c360d1e25626b74bc84c46f5e1",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "3c5dc798aea867891353341a88c34f08801488d07c17179dc3dd174a18b4f9a3"
+    },
+    {
+      "agent_patch_sha256": "9a033113cf8c8f4bc3b561886e11b55fa9cb007dd3df67589a30b5926d32feeb",
+      "case": "V04",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "abe23769ed7f816a8209d7527670d1f8d38731cf3083459303962d50891dcd73",
+        "function": "evaluate",
+        "function_fingerprint": "7d1aa7e813fbc748e1815ee1000fce9bf3dda44e98978fc27f47829028bb5cc0",
+        "id": "V04",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "src/diag_product.py"
+      },
+      "native_result_file_sha256": "b11e841c5121f887c5139ab378c02ab86c613372cf0baceec4240b78c16cbc61",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "c4ae63a0803fcf30feacf6ae258fda5f154cf216117b05b2a5d43ec574ea0416"
+    },
+    {
+      "agent_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "case": "V05",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "function": "evaluate",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "id": "V05",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "940dcd2aff56adf8d866a43a2e039568bd6f6ac6950d117fffda0b2098a87005",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V05/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "29a8c41e013829b02a2280c519dd4b2494ef8e66c525fda13813454ad40f4d3c"
+    },
+    {
+      "agent_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "case": "V06",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "function": "evaluate",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "id": "V06",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "2d493e7b38ab2da3477b0fb1a67ef8a035c9e33766904d577a629e11d4358809",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V06/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "8f6d95d5a86449d33b2bab01aa34cb7f5e90336951208f637eb8e96e144e990b"
+    },
+    {
+      "agent_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "case": "V07",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "function": "evaluate",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "id": "V07",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "e7b377316a276da24e554b7ba34cadee3a82bdba732a8ea1036dd429da5b48d8",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "7a4f726a249a5168882cf765b8a32241a51fb9325062f474d6d82e67a49e27b1"
+    },
+    {
+      "agent_patch_sha256": "fb48c8b0285283b717f28068525f336fdd60e236cfeabeba4368ac1181e24c32",
+      "case": "V08",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "function": "evaluate",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "id": "V08",
+        "module": "diag_product",
+        "nodes": [
+          "test_required"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "diag_product.py"
+      },
+      "native_result_file_sha256": "953e0a93e636bb13e0ae6831e69983c796e3b00fddee13e0fbbe3a8f4c092fa4",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "c7e229357f9fc88b2a562e4cc6319efcc8c13f5e75e43081bf0f08689a9b39ed"
+    },
+    {
+      "agent_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "case": "R00",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "ba580f898f3a98dfaae9161b4f30da3e929d8a9340837a6df74a9ef08632e59c",
+        "function": "get_netrc_auth",
+        "function_fingerprint": "e379f40799c3d104ded1e7ded0b85124644179e848a3fa104d424124dc01c147",
+        "id": "R00",
+        "module": "requests.utils",
+        "nodes": [
+          "test_origin_binding",
+          "test_empty_machine",
+          "test_empty_default",
+          "test_missing",
+          "test_valid"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "src/requests/utils.py"
+      },
+      "native_result_file_sha256": "2a8dd454826ddcd57430746d32323131c023bb447d34aab73ed64630ef79be7d",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R00/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "c5b3751a759b3d2a6a134f3257a7062a5b8ae92b194bca7cb72dd2a3b88aaec3"
+    },
+    {
+      "agent_patch_sha256": "9a407c374f5d5546214f461acd826febd963f4a903432a269097f7a40e1013fd",
+      "case": "R01",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "a1b5a5564fc45afe1863efc7d85751a91293765b0df9076f3b58bef21b757c07",
+        "function": "get_netrc_auth",
+        "function_fingerprint": "7d51ebfcf96c62c41d34a34d0da5232b524de09f2051fe618e89f963a524db7a",
+        "id": "R01",
+        "module": "requests.utils",
+        "nodes": [
+          "test_origin_binding",
+          "test_empty_machine",
+          "test_empty_default",
+          "test_missing",
+          "test_valid"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "src/requests/utils.py"
+      },
+      "native_result_file_sha256": "a004221d845dcb1ff6f2e827cddd72e678b38e7ca46c0d9ad7343231acc09a5b",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R01/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "85e5ba1153dffb5a994a75eba07292b54c7b9ae51fb31ae46ff9669e3c548b8b"
+    },
+    {
+      "agent_patch_sha256": "f4b89587585b3006e785098a52572c3e122714517345c33c587af4160d33b58e",
+      "case": "R02",
+      "cleanup_complete": true,
+      "expected": {
+        "file_sha256": "91302671e03442e8247a091049fc0d725dc4970f5306bbbb167f128f75d67309",
+        "function": "get_netrc_auth",
+        "function_fingerprint": "0e492fccec5887b6dc3c72e0fc199d1101cf7ad2d15d3bcbc92c0df7fc61e7b6",
+        "id": "R02",
+        "module": "requests.utils",
+        "nodes": [
+          "test_origin_binding",
+          "test_empty_machine",
+          "test_empty_default",
+          "test_missing",
+          "test_valid"
+        ],
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "relative_file": "src/requests/utils.py"
+      },
+      "native_result_file_sha256": "9a10d725d8fb0e883bae5211ed72481c0f1e16780216ef230ad7a3fa14a4eca7",
+      "native_result_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R02/result.json",
+      "raw_junit": null,
+      "raw_junit_reason": "Native verifier consumes JUnit and removes sandbox in finally; XML is not returned",
+      "test_patch_sha256": "81d56dd6cbce7f38e784824dcb57f67eda0650049047619d81315fa8d19d10cb"
+    }
+  ],
+  "invocations_assessed": 11,
+  "invocations_started": 11,
+  "native_results_present": 11,
+  "native_verifier_changed": false,
+  "peak_disk_bytes": null,
+  "peak_disk_reason": "Controller enforces a polled 1GiB ceiling; peak value was not retained.",
+  "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250",
+  "raw_summary_path": "results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/summary.json",
+  "raw_summary_sha256": "03eb50107f1871854c07e1d5fc73df7015a152dcf9681918ab7be8d7e8776d52",
+  "results": [
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "V01",
+      "native_duration_seconds": 2.040301624998392,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/sandboxes/swegemma_sandbox_3ee58af3-d3b/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/sandboxes/swegemma_sandbox_3ee58af3-d3b/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/sandboxes/swegemma_sandbox_3ee58af3-d3b/workspace/diag_product.py",
+          "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+          "function_module": "diag_product",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/sandboxes/swegemma_sandbox_3ee58af3-d3b/workspace/diag_product.py",
+          "module_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+          "pid": 95305,
+          "ppid": 95304,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/sandboxes/swegemma_sandbox_3ee58af3-d3b/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V01/sandboxes/swegemma_sandbox_3ee58af3-d3b/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": true
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "V02",
+      "native_duration_seconds": 1.7855611670020153,
+      "native_error_message": null,
+      "native_resolved": true,
+      "node_outcomes": {
+        "test_required": "passed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/sandboxes/swegemma_sandbox_ac9a0a46-fb1/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/sandboxes/swegemma_sandbox_ac9a0a46-fb1/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/sandboxes/swegemma_sandbox_ac9a0a46-fb1/workspace/diag_product.py",
+          "function_fingerprint": "7d1aa7e813fbc748e1815ee1000fce9bf3dda44e98978fc27f47829028bb5cc0",
+          "function_module": "diag_product",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/sandboxes/swegemma_sandbox_ac9a0a46-fb1/workspace/diag_product.py",
+          "module_sha256": "abe23769ed7f816a8209d7527670d1f8d38731cf3083459303962d50891dcd73",
+          "pid": 95387,
+          "ppid": 95386,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/sandboxes/swegemma_sandbox_ac9a0a46-fb1/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V02/sandboxes/swegemma_sandbox_ac9a0a46-fb1/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 0,
+      "workspace_binding": true
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "V03",
+      "native_duration_seconds": 1.9440462080019643,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/sandboxes/swegemma_sandbox_cdfaf9b9-e31/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/sandboxes/swegemma_sandbox_cdfaf9b9-e31/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/sandboxes/swegemma_sandbox_cdfaf9b9-e31/workspace/diag_product.py",
+          "function_fingerprint": "c85eb92cee3f1a6e7fa83cf76227c6a74b1f22677a5d7abcd8a0603e1179901e",
+          "function_module": "diag_product",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/sandboxes/swegemma_sandbox_cdfaf9b9-e31/workspace/diag_product.py",
+          "module_sha256": "34fd45422e2b4ea3a04964870ef8ad5c9a15b1207f7f79f39acc877983469cf8",
+          "pid": 95551,
+          "ppid": 95550,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/sandboxes/swegemma_sandbox_cdfaf9b9-e31/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V03/sandboxes/swegemma_sandbox_cdfaf9b9-e31/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": true
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "V04",
+      "native_duration_seconds": 1.7371210000019346,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/sandboxes/swegemma_sandbox_eafa3450-f42/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/sandboxes/swegemma_sandbox_eafa3450-f42/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/sandboxes/swegemma_sandbox_eafa3450-f42/workspace/diag_product.py",
+          "function_fingerprint": "7d1aa7e813fbc748e1815ee1000fce9bf3dda44e98978fc27f47829028bb5cc0",
+          "function_module": "diag_product",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/sandboxes/swegemma_sandbox_eafa3450-f42/workspace/diag_product.py",
+          "module_sha256": "abe23769ed7f816a8209d7527670d1f8d38731cf3083459303962d50891dcd73",
+          "pid": 95638,
+          "ppid": 95637,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/sandboxes/swegemma_sandbox_eafa3450-f42/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V04/sandboxes/swegemma_sandbox_eafa3450-f42/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": false
+    },
+    {
+      "coverage": null,
+      "coverage_reason": "Intentional skip/no-collection control",
+      "id": "V05",
+      "native_duration_seconds": 1.6499846250007977,
+      "native_error_message": "No passing tests recorded in JUnit XML (total=1, passed=0, skipped=1)",
+      "native_resolved": false,
+      "node_outcomes": {},
+      "process_witnesses": [],
+      "test_exit_code": 0,
+      "workspace_binding": null
+    },
+    {
+      "coverage": null,
+      "coverage_reason": "Intentional skip/no-collection control",
+      "id": "V06",
+      "native_duration_seconds": 1.6110292079974897,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {},
+      "process_witnesses": [],
+      "test_exit_code": 5,
+      "workspace_binding": null
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "V07",
+      "native_duration_seconds": 1.6443170830025338,
+      "native_error_message": "Missing JUnit XML report (possible premature os._exit(0))",
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "premature_exit"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/sandboxes/swegemma_sandbox_d422e5f6-f51/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/sandboxes/swegemma_sandbox_d422e5f6-f51/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/sandboxes/swegemma_sandbox_d422e5f6-f51/workspace/diag_product.py",
+          "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+          "function_module": "diag_product",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/sandboxes/swegemma_sandbox_d422e5f6-f51/workspace/diag_product.py",
+          "module_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+          "pid": 95880,
+          "ppid": 95879,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/sandboxes/swegemma_sandbox_d422e5f6-f51/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V07/sandboxes/swegemma_sandbox_d422e5f6-f51/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 0,
+      "workspace_binding": true
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "V08",
+      "native_duration_seconds": 1.7378940420021536,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/sandboxes/swegemma_sandbox_e01b8cff-21d/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/sandboxes/swegemma_sandbox_e01b8cff-21d/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/sandboxes/swegemma_sandbox_e01b8cff-21d/workspace/diag_product.py",
+          "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+          "function_module": "diag_product",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/sandboxes/swegemma_sandbox_e01b8cff-21d/workspace/diag_product.py",
+          "module_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+          "pid": 95978,
+          "ppid": 95977,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/sandboxes/swegemma_sandbox_e01b8cff-21d/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/V08/sandboxes/swegemma_sandbox_e01b8cff-21d/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": true
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "R00",
+      "native_duration_seconds": 1.8307122080004774,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_empty_default": "passed",
+        "test_empty_machine": "passed",
+        "test_missing": "passed",
+        "test_origin_binding": "assertion_failed",
+        "test_valid": "passed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R00/sandboxes/swegemma_sandbox_47540ef4-e3b/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R00/sandboxes/swegemma_sandbox_47540ef4-e3b/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages/requests/utils.py",
+          "function_fingerprint": "71939d2e8ce6aa05c5695427647a180a55036b2903d7bbae07a832a5ff5d1309",
+          "function_module": "requests.utils",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages/requests/utils.py",
+          "module_sha256": "657fd02343b2586bbd138a4ec0f03ceeb7610c2712f96ac54f28a708bf7d079c",
+          "pid": 96083,
+          "ppid": 96082,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R00/sandboxes/swegemma_sandbox_47540ef4-e3b/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R00/sandboxes/swegemma_sandbox_47540ef4-e3b/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": false
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "R01",
+      "native_duration_seconds": 1.8344342079981288,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_empty_default": "passed",
+        "test_empty_machine": "passed",
+        "test_missing": "passed",
+        "test_origin_binding": "assertion_failed",
+        "test_valid": "passed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R01/sandboxes/swegemma_sandbox_1d85543e-0a1/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R01/sandboxes/swegemma_sandbox_1d85543e-0a1/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages/requests/utils.py",
+          "function_fingerprint": "71939d2e8ce6aa05c5695427647a180a55036b2903d7bbae07a832a5ff5d1309",
+          "function_module": "requests.utils",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages/requests/utils.py",
+          "module_sha256": "657fd02343b2586bbd138a4ec0f03ceeb7610c2712f96ac54f28a708bf7d079c",
+          "pid": 96184,
+          "ppid": 96183,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R01/sandboxes/swegemma_sandbox_1d85543e-0a1/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R01/sandboxes/swegemma_sandbox_1d85543e-0a1/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": false
+    },
+    {
+      "coverage": "actual_pytest_owned_diagnostic_test_cpu",
+      "coverage_reason": null,
+      "id": "R02",
+      "native_duration_seconds": 2.0036940409991075,
+      "native_error_message": null,
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_empty_default": "passed",
+        "test_empty_machine": "passed",
+        "test_missing": "passed",
+        "test_origin_binding": "assertion_failed",
+        "test_valid": "passed"
+      },
+      "process_witnesses": [
+        {
+          "cwd": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R02/sandboxes/swegemma_sandbox_72d32622-6b0/workspace",
+          "executable": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R02/sandboxes/swegemma_sandbox_72d32622-6b0/venv/bin/python3",
+          "fingerprint_algorithm": "cpu-code-json-v1",
+          "function_filename": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages/requests/utils.py",
+          "function_fingerprint": "71939d2e8ce6aa05c5695427647a180a55036b2903d7bbae07a832a5ff5d1309",
+          "function_module": "requests.utils",
+          "module_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages/requests/utils.py",
+          "module_sha256": "657fd02343b2586bbd138a4ec0f03ceeb7610c2712f96ac54f28a708bf7d079c",
+          "pid": 96291,
+          "ppid": 96290,
+          "pytest": "9.1.1",
+          "python": "3.13.15",
+          "sys_path": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R02/sandboxes/swegemma_sandbox_72d32622-6b0/workspace",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/8f46edb6-27ed-4dc8-ae57-1a89e04c5250/R02/sandboxes/swegemma_sandbox_72d32622-6b0/venv/lib/python3.13/site-packages",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+            "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+          ]
+        }
+      ],
+      "test_exit_code": 1,
+      "workspace_binding": false
+    }
+  ],
+  "schema_version": 1,
+  "status": "CPU_E2E_CONTROLS_PASS_REQUESTS_BINDING_MISMATCH"
+}

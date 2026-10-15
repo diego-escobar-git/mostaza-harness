@@ -1,0 +1,87 @@
+{
+  "files": [
+    {
+      "bytes": 16563,
+      "path": "src/mostaza/evaluation/notebook_import.py",
+      "sha256": "3ae8fd6a033bca8e5f0246c757a0abc2caefa7f3f1260dd8c29985c440ff8671"
+    },
+    {
+      "bytes": 8978,
+      "path": "src/mostaza/evaluation/notebook_import_candidate.py",
+      "sha256": "be9d4118515c8f7b5ca20dd6dfae4cda5664118ebb2cc63ca00b89938b135aec"
+    },
+    {
+      "bytes": 8347,
+      "path": "src/mostaza/evaluation/notebook_import_cpu.py",
+      "sha256": "19ba573f30aa25069e299a667d23024358c66dbe4badd13cd5e9a4ecb4f5f73d"
+    },
+    {
+      "bytes": 8728,
+      "path": "scripts/check_notebook_import_cpu.py",
+      "sha256": "2bcfea30fa486a6fe22a47bbe70de8bc28df6c74b0f411697f169c9ad41be0da"
+    },
+    {
+      "bytes": 9680,
+      "path": "scripts/check_notebook_import_portability.py",
+      "sha256": "b3eae50f3ccd54001798715492038df24785ce4ed3f8d84b4dfcea35dbb41ea9"
+    },
+    {
+      "bytes": 9012,
+      "path": "scripts/notebook_import_cpu_fixtures.py",
+      "sha256": "0b1a09042f0ee457b84e4bd23f729d2aaeffcdf622ff54b119df29a438520636"
+    },
+    {
+      "bytes": 12050,
+      "path": "scripts/notebook_import_supervision.py",
+      "sha256": "36cd0c814377f66f847604ae6599ae0911c7c4a8da3f3b3d82824ffa60350d1f"
+    },
+    {
+      "bytes": 7548,
+      "path": "scripts/notebook_import_worker.py",
+      "sha256": "4c99172f114ad1ae372a26633e0d3b725ec073e70040e6b64139ec211dbd8971"
+    },
+    {
+      "bytes": 1610,
+      "path": "scripts/prepare_notebook_import_cpu.py",
+      "sha256": "0ebad7bb7e91bd2469aee1baa02066fabcd48edb3db0ec13694042c4542f4f11"
+    },
+    {
+      "bytes": 28618,
+      "path": "scripts/run_notebook_import_cpu_gate.py",
+      "sha256": "d35a24cf36abc660e3340a84763785b4e882c29055771a702b5187a256142e72"
+    },
+    {
+      "bytes": 19149,
+      "path": "tests/unit/test_notebook_import.py",
+      "sha256": "f63ceb8d53d6fe91092172d74c701909ed77503645f5a9d7a025fcd16b0b1706"
+    },
+    {
+      "bytes": 45492,
+      "path": "tests/integration/test_notebook_import_contract.py",
+      "sha256": "e29602e0b12e34fe0520023430dafd23d1afdf0247385a72eba4d36259195eaa"
+    },
+    {
+      "bytes": 262908,
+      "path": "notebooks/mostaza-notebook-import-cpu.ipynb",
+      "sha256": "29e022c34fdbc6915971f4f1d4b0392b18d25f56c834c40b87e82bbef0b9e1b2"
+    },
+    {
+      "bytes": 487,
+      "path": "experiments/E0-C8K-L1/manifest.json",
+      "sha256": "b0096e3519542123640b82d705629fb96152991b393b6ce336487bbad996d5c3"
+    },
+    {
+      "bytes": 487,
+      "path": "experiments/E1-C8K-L1/manifest.json",
+      "sha256": "9dd4b9591afe889ddc557a8e0bc7843c5b5b8be2a87c9342c5bdbe68d572ba01"
+    },
+    {
+      "bytes": 2031,
+      "path": "docs/specs/notebook-import-cpu.md",
+      "sha256": "ddeeb857e784866feaae5fbbbe7222d9a0215651381c15b520721e3a04d9f2f8"
+    }
+  ],
+  "gate6_source_inventory_sha256": "0e1c183ee56b27925ecbb4d6c9acc7b64cf7c75efafb64fb9b2eb977984d4dbf",
+  "runbook_sha256": "55e7d7882a4d91e8268a2c85bdb51678e1d136273296a9a75aa13f48a2b8c432",
+  "status": "GATE6_TESTED_SOURCE_CURRENT_MATCH"
+}

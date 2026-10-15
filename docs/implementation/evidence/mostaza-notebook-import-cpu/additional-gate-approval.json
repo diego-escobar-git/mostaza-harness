@@ -1,0 +1,26 @@
+{
+  "status": "APPROVED",
+  "authorization": "Autorizo el único gate CPU adicional con los límites propuestos. Tras PASS, completa auditoría, correcciones, commit, push y actualización del PR #2, sin merge, GPU, Discussion ni cambios al verificador.",
+  "proposal_sha256": "1dc7f539b490ad8c30bf31e999f9e1713eab2805b274cb3f53365fe3a5450ec1",
+  "repair_sha256": "d5e5cbcf188f6687548052a97bdde7dbec37812a31705a358d00cba6a7da770c",
+  "prior_receipts": [
+    {
+      "path": "results/notebook-import-cpu/gate-1/receipt.json",
+      "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+    },
+    {
+      "path": "results/notebook-import-cpu/gate-2/receipt.json",
+      "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+    }
+  ],
+  "limits": {
+    "attempt": 3,
+    "maximum_additional_attempts": 1,
+    "native_verifications": 26,
+    "setup_probes": 6,
+    "stdlib_probes": 2,
+    "wall_seconds": 1200,
+    "artifact_bytes": 1073741824,
+    "automatic_retries": false
+  }
+}

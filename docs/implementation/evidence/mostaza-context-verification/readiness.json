@@ -1,0 +1,33 @@
+{
+  "blockers": [
+    "Exact Kaggle verifier-process import/source receipt is unavailable",
+    "Official setup script and its effective editable-install result were not retained locally",
+    "Fresh GPU authorization, quota and exact session controls are absent"
+  ],
+  "candidate_pair": [
+    "E0-C8K",
+    "E1-C8K"
+  ],
+  "candidate_sha256": "2fe6aafade2e0c11cf195a648462596651c59e9c5e2c92e750d750807df3f85f",
+  "configurations": [
+    "E0-C8K",
+    "E1-C8K",
+    "E0-C8K-Q1",
+    "E1-C8K-Q1",
+    "E1-C8K-Q1-R1"
+  ],
+  "context_limit": "8192 output reservation increases nominal input headroom; no future-fit guarantee or automatic compaction",
+  "gpu_starts": 0,
+  "manifest_sha256": {
+    "E0-C8K": "c72f23a7b58637b535d5d639ff86648361eab80d2c512b387e726ae54d1c4422",
+    "E0-C8K-Q1": "64c7cede79192011206be38fc51f735db725d6b41df98287f6d82b53580ccd6c",
+    "E1-C8K": "7c3f20bdbab2042f6a65a6558d1923f6d63271311b5fc27972b101c8accb807e",
+    "E1-C8K-Q1": "c7e5b3900a67e6df6565cb85ca31a53d2c20002715a69514a2a14dbcdedfe4f8",
+    "E1-C8K-Q1-R1": "986597efd062d08ec01d3a03017f65b8f8f73138c55c05c6a2d91dcf4127c45a"
+  },
+  "physical_gpu_release_confirmed": null,
+  "protocol_change_proposed_not_applied": "Obtain official setup provenance and an organizer-supported executing-process import receipt; changing verifier PYTHONPATH, plugins or grader requires a separate reviewed protocol decision",
+  "ready_for_gpu": false,
+  "real_evaluations": "NOT_RUN",
+  "status": "PREPARED_BLOCKED_VERIFICATION_ORIGIN"
+}

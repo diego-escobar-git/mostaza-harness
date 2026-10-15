@@ -1,0 +1,64 @@
+{
+  "extraction_method": "AST of code cells; os.environ subscript assignments and os.environ.update dict/keyword arguments; allowlisted nonsecret keys only",
+  "historic_effective_environment": null,
+  "historic_effective_environment_reason": "No child build_env snapshot in the acquired historical run",
+  "observed_v2": {
+    "explicit_environment": {
+      "LITELLM_LOCAL_MODEL_COST_MAP": "True",
+      "LITELLM_TELEMETRY": "False",
+      "OTEL_SDK_DISABLED": "true",
+      "TRANSFORMERS_NO_FLAX": "1",
+      "TRANSFORMERS_NO_TF": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "VLLM_NO_USAGE_STATS": "1",
+      "VLLM_WORKER_MULTIPROC_METHOD": "spawn"
+    },
+    "path": "results/kaggle-phase2-observed-6526b0decc91474cb1bd3335d77d06a0/launched.ipynb",
+    "sha256": "350015e26944ec849a531d8f1156b6c64512e410aedf50add93a6cd22bf0cdaf"
+  },
+  "phase1": {
+    "explicit_environment": {
+      "LITELLM_LOCAL_MODEL_COST_MAP": "True",
+      "LITELLM_LOG": "WARNING",
+      "LITELLM_TELEMETRY": "False",
+      "NCCL_DEBUG": "WARN",
+      "OTEL_PYTHON_DISABLED": "true",
+      "OTEL_SDK_DISABLED": "true",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+      "TRANSFORMERS_NO_FLAX": "1",
+      "TRANSFORMERS_NO_TF": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "VLLM_ENGINE_READY_TIMEOUT_S": "1200",
+      "VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS": "1",
+      "VLLM_NO_USAGE_STATS": "1",
+      "VLLM_WORKER_MULTIPROC_METHOD": "spawn"
+    },
+    "path": "results/kaggle-v2-358139443/mostaza-e0-e1-phase-1-paired-benchmark.ipynb",
+    "sha256": "b615bed6092788e423faf9c40cdddb8e7719822544f8d0f99936b643dacfb28e"
+  },
+  "scope": "Explicit source assignments only; historic effective inheritance is unknown",
+  "startup_v3": {
+    "explicit_environment": {
+      "LITELLM_LOCAL_MODEL_COST_MAP": "True",
+      "LITELLM_LOG": "WARNING",
+      "LITELLM_TELEMETRY": "False",
+      "NCCL_DEBUG": "WARN",
+      "OTEL_PYTHON_DISABLED": "true",
+      "OTEL_SDK_DISABLED": "true",
+      "PYTORCH_ALLOC_CONF": "expandable_segments:True",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+      "TRANSFORMERS_NO_FLAX": "1",
+      "TRANSFORMERS_NO_TF": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "VLLM_ENGINE_READY_TIMEOUT_S": "1200",
+      "VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS": "1",
+      "VLLM_NO_USAGE_STATS": "1",
+      "VLLM_WORKER_MULTIPROC_METHOD": "spawn"
+    },
+    "extra_args": [
+      "--max-num-seqs",
+      "1"
+    ],
+    "profile": "serial-memory-v3"
+  }
+}

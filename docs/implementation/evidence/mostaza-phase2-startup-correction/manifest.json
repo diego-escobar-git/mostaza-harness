@@ -1,0 +1,69 @@
+{
+  "candidate_sha256": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b",
+  "files": {
+    "docs/kaggle-setup.md": "6722c27a21f347f4eef9d4c40b97dec8600f91c4b99dad3cd21a8c11d23bb72c",
+    "docs/runbooks/kaggle-execution.md": "a0320f6028c67f72c03afc75f844c310f219a791623de603941bf43e3a1b42fa",
+    "notebooks/mostaza-phase2-startup-corrected.ipynb": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b",
+    "scripts/check_startup_configuration.py": "af3ce21735a03b6d0676682925cc8ef0e374fa80e65cd05628948883611466c5",
+    "scripts/prepare_startup_phase2.py": "b0fce3fa7f007727a3483945598ae1769473a69366ddef90ff57477667dfc542",
+    "src/mostaza/evaluation/startup_candidate.py": "442dd5861a93c8813597f64bb9a510fd555f7655917c806d3edb1a501d2903d2",
+    "src/mostaza/evaluation/startup_configuration.py": "2f1eecd8dae553b4246b1738cdaf63455d3be79e5f3b35b86c4ee02fac1726c0",
+    "tests/unit/test_startup_configuration.py": "547822bfd377f542d5a877f506947f82735f11c31273493d3a90a54ad045c576"
+  },
+  "gpu_evaluations": 0,
+  "gpu_outcome": null,
+  "gpu_outcome_reason": "Fresh GPU batch not authorized or executed",
+  "historic_inputs": {
+    "docs/specs/plans/closed/mostaza-phase2-budget-retrieval.md": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5",
+    "notebooks/mostaza-phase2-budget-retrieval.ipynb": "02d410a2cec6d833426eed6cd8fcfee43d8b16c8e537592e92a87ec32cc0c4c2",
+    "notebooks/mostaza-phase2-observed.ipynb": "a50664fae097d1c79d2b3b724cb3524e0ad85cbde53cae175e0d2cfdc7494d95",
+    "src/mostaza/evaluation/browser_supervision.py": "8900bc6017cac46d079a6cfe3e329a34c9c0105766b0d592c476464f7306d8f5",
+    "src/mostaza/evaluation/startup_observation.py": "4339904ff43c1611e71cbc6d9f388e11661acf82743216ac4fe2bb8c2d7338da"
+  },
+  "historical_bundle_verified_entries": 63,
+  "id": "B180-startup-v3",
+  "original_input_payload_sha256": {
+    "archives/E0-B180.zip": "df3267ecadeff1fdf3193495632fa55556d140d79952368e41bb3b103f6ffde2",
+    "archives/E1-B180.zip": "6dd6cede0a924bc25ef5d1a7fb6f817a5f3fe8d01476d6e42fe4b2c8ff50c564",
+    "experiments/cohort.json": "8ff596e7cb5f3d81575723402b37ca6569d112465a543ecf29bb4251db04c755",
+    "quota-proposal.json": "b747adb68531d0b71d559324f32fe6612523ac6da595a282ba9eabbc3f2f1ec2",
+    "resources/manifest.json": "d6e6e7671d63c21ec4d7fc7c97e56ec32733a3aeb6070cf483c22b5dc79cd5e9",
+    "selected-input-pins.json": "8d370f8509da628280634be75b019f5bf3880612078b87a3c30f7b8cfc1e105a",
+    "src/mostaza/__init__.py": "e6e7452e239f7a03d6645be265792ed103fcc93b27da4e1f2b982aa8af018d3c",
+    "src/mostaza/evaluation/__init__.py": "2106119b057d082ec60e8a8e21aef6fcc3f7d63a3ff4d0e177ddbac3db9efcac",
+    "src/mostaza/evaluation/contracts.py": "b8500c062a3e81b7bc0fb6051e72cc4af07689fc1cf2f8dc60f8c58a8c87e7d3",
+    "src/mostaza/evaluation/runner.py": "5f56dfd22e339ac72ae6c93b0b43c4229f92959b5fc28cda1f531d952b229770",
+    "src/mostaza/evaluation/tasks.py": "eab3240c3ddc78114b849b81b8944a74daadd6da7e1859e7bfa99455e6a8dc91",
+    "src/mostaza/packaging.py": "b1944c8e7dd66036cfc9679f0dca66386c2c30a5e2066cf2d559680b90ec029f",
+    "src/mostaza/resources.py": "b3b628f0b40e5303d18b412664fc2f542088983838ed003960cb0886ef41530c"
+  },
+  "pair": [
+    "E0-B180",
+    "E1-B180"
+  ],
+  "policy": {
+    "allocations": 1,
+    "ceiling_seconds": 7200,
+    "evaluations": 6,
+    "gpu_count": 4,
+    "id": "B180-startup-v3",
+    "last_admission_seconds": 5340,
+    "latest_stop_seconds": 6300,
+    "minimum_reported_quota_seconds": 28800,
+    "observer_interval_seconds": 5,
+    "paid_purchases_usd": 0,
+    "request_stop_seconds": 6240,
+    "retries": 0,
+    "serving_profile": "serial-memory-v3",
+    "startup_seconds": 1800,
+    "supervisor_interval_seconds": 60,
+    "work_seconds": 5940
+  },
+  "serving_profile": "serial-memory-v3",
+  "status": "PREPARED_UNAPPROVED_NO_GPU",
+  "tasks": [
+    "requests_7205",
+    "fastapi_15589",
+    "rich_3061"
+  ]
+}

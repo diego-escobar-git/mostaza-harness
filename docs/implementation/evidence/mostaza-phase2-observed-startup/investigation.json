@@ -1,0 +1,61 @@
+{
+  "kind": "offline_investigation_and_preparation",
+  "new_gpu_authorization": null,
+  "new_gpu_allocations": 0,
+  "real_task_evaluations": 0,
+  "historical_run": {
+    "notebook_id": 138597596,
+    "script_version_id": 358189844,
+    "notebook_version": 1,
+    "native_bundle": "results/kaggle-phase2-browser-b180",
+    "executed_notebook_sha256": "7fdcda2836f045d5e1fbcf5de1fa7ab940efc8724d647d22be97f40b9eb59568",
+    "closure_inventory_sha256": "6624bdef8d51805e88fa8733455a25e785a12462a9980be5843aba355e3b9be1"
+  },
+  "established": [
+    {
+      "claim": "Operator cancellation preceded the allowed thirty-minute startup deadline; the evidence does not establish a model startup timeout.",
+      "source": "results/kaggle-phase2-browser-b180/monitor.jsonl",
+      "cancel_requested_elapsed_seconds": 718.8761436659843
+    },
+    {
+      "claim": "Preflight completed; the execution cell began but emitted no model-ready/task marker.",
+      "source": "results/kaggle-phase2-browser-b180/executed-cancelled.ipynb",
+      "preflight_seconds": 123.759715
+    },
+    {
+      "claim": "The retained complete output inventory has no native server log, task result or agent trace.",
+      "source": "results/kaggle-phase2-browser-b180/download-inventory.json"
+    },
+    {
+      "claim": "Native server redirects stdout/stderr to its log and sends wait progress to an INFO logger; log is initially temporary and active-stop cleanup may unlink it.",
+      "source": "adk_submission/server.py in pinned adk-submission0.2.13",
+      "installed_source_sha256": "d60b3fe34dd7f6e359b003db82b68434757c74b1030862bacda5cff6164f91eb"
+    },
+    {
+      "claim": "The original outer finally-only copy cannot preserve that log during an abrupt platform cancellation.",
+      "source": "results/kaggle-phase2-browser-b180/controller.py"
+    }
+  ],
+  "unknown": {
+    "reason_model_not_ready_before_cancellation": null,
+    "reason_model_not_ready_before_cancellation_reason": "No native server log or model-ready observation survives; no claim of CUDA failure, OOM, compilation stall, dead process, load duration or eventual readiness is justified."
+  },
+  "implemented": [
+    "Persist stage and heartbeat observations before imports/install/compilation/model startup.",
+    "Retain native server output through a same-filesystem hard link before native start; original lifecycle methods unchanged.",
+    "Use null plus explicit reasons and schema for unobserved process/health/log fields.",
+    "Record exact scriptVersionId browser URL separately from display version number.",
+    "Switch to exact-version status and cancellation when Active Events is absent; missing event or failed live-log request alone does not trigger abort.",
+    "Escalate missing stop control after sixty seconds and unconfirmed cancellation at105minutes.",
+    "New unapproved policy blocks old batch authorization; no new GPU start command is invoked."
+  ],
+  "native_check": "local-native-validation.json",
+  "native_check_kind": "CPU-only localhost/exit/timeout fixtures with the pinned manager; no model validation or GPU evaluation",
+  "artifact": "notebooks/mostaza-phase2-observed.ipynb",
+  "limitations": [
+    "Local fixtures do not prove real Gemma startup or Kaggle release latency.",
+    "Full model startup cause remains unestablished from the aborted run.",
+    "All six future task outcomes remain NOT_RUN; no retrieval efficacy claim.",
+    "Exact physical GPU allocation/release timestamps are unavailable."
+  ]
+}

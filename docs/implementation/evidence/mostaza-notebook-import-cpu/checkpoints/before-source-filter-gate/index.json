@@ -1,0 +1,29 @@
+{
+  "scope": "Blocked evidence before approved attempt5 activation",
+  "files": [
+    {
+      "path": "report.md",
+      "sha256": "3ec473968258617ff42cf58852e9a94626cea78a2dc13e026b108bfe3f2b3b1e"
+    },
+    {
+      "path": "audit.json",
+      "sha256": "09af00c923d139015ba76dad278397956610311724e754c417ad5ba092b3a4f3"
+    },
+    {
+      "path": "cpu-results.json",
+      "sha256": "b850403448a97d2d2e94da15d3710ff753356a6e788ee2747d26944c39e726d1"
+    },
+    {
+      "path": "gate-attempts.json",
+      "sha256": "fc4154861dc53a9cc4a8caa8c9712fd2ae501ace0bded5af2391097fcf5b6f03"
+    },
+    {
+      "path": "raw-inventory.json",
+      "sha256": "ab8bb8e07582390f7a74ee2857f2a656bf03f808624ff8384f54763e559fb185"
+    },
+    {
+      "path": "source-inventory.json",
+      "sha256": "6901e68d12d90f90403b034b6a964b1435a841d0202bb7bfa15c02d2aa0c4141"
+    }
+  ]
+}

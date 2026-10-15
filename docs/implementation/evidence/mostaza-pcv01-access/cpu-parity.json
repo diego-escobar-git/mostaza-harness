@@ -1,0 +1,402 @@
+{
+  "paired_controls": 14,
+  "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+  "pytest_processes": 28,
+  "python_version": "3.13.15",
+  "runs": [
+    {
+      "case": "positive",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50569
+    },
+    {
+      "case": "negative",
+      "exit_codes": [
+        1,
+        1
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 1,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 1,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50574
+    },
+    {
+      "case": "shadow",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50580
+    },
+    {
+      "case": "replaced_function",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50584
+    },
+    {
+      "case": "setup_error",
+      "exit_codes": [
+        1,
+        1
+      ],
+      "junit_counts": [
+        {
+          "errors": 1,
+          "failures": 0,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 1,
+          "failures": 0,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": null,
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed",
+      "receipt_process_id": null
+    },
+    {
+      "case": "logging_failure",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": null,
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed",
+      "receipt_process_id": null
+    },
+    {
+      "case": "missing_configuration",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_coverage": null,
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed",
+      "receipt_process_id": null
+    },
+    {
+      "case": "positive",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50619
+    },
+    {
+      "case": "negative",
+      "exit_codes": [
+        1,
+        1
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 1,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 1,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50625
+    },
+    {
+      "case": "shadow",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50655
+    },
+    {
+      "case": "replaced_function",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": "actual_pytest_call_hook_cpu_diagnostic",
+      "receipt_missing_reason": null,
+      "receipt_process_id": 50663
+    },
+    {
+      "case": "setup_error",
+      "exit_codes": [
+        1,
+        1
+      ],
+      "junit_counts": [
+        {
+          "errors": 1,
+          "failures": 0,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 1,
+          "failures": 0,
+          "passed": 0,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": null,
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed",
+      "receipt_process_id": null
+    },
+    {
+      "case": "logging_failure",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": null,
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed",
+      "receipt_process_id": null
+    },
+    {
+      "case": "missing_configuration",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "junit_counts": [
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        },
+        {
+          "errors": 0,
+          "failures": 0,
+          "passed": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_coverage": null,
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed",
+      "receipt_process_id": null
+    }
+  ],
+  "scope": "Synthetic native CPU controls; no scorer execution",
+  "status": "PASS_PCV01_CPU"
+}

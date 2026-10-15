@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-14",
+  "kind": "ordinary_follow_up_not_sdd_resume",
+  "user_instruction": "Apruebo las etapas 1–2, el gate y la auditoría. Continúa con implementación, validación, commit, push y actualización del PR #2, sin merge, GPU ni cambios al verificador. No publiques aún la consulta en Discussion.",
+  "approved_stages": [
+    "A/source provenance",
+    "B/static CPU review and eight-command gate",
+    "independent audit/corrections",
+    "commit/push/update PR2 toward develop"
+  ],
+  "discussion_publication_authorized": false,
+  "real_verifier_changes_authorized": false,
+  "gpu_authorized": false,
+  "plan_sha256": "44cd201c632a5447452b8456ea50d5f0f2b34facaff7ff870e0afcc164dacd32"
+}

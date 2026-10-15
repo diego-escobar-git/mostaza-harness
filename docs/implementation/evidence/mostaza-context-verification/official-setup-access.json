@@ -1,0 +1,11 @@
+{
+  "consequence": "Exact official setup is unavailable through the approved client; no grader/setup/import-path modification made",
+  "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasetFiles",
+  "exit_code": 1,
+  "gpu_sessions_started": 0,
+  "http_status": 403,
+  "kind": "Read-only official authenticated CLI metadata request",
+  "operation": "kaggle datasets files metric/gemma-4-developer-agent-metric-data --page-size 200 --format json",
+  "scope_change_or_permission_bypass_attempted": false,
+  "setup_source_acquired": false
+}

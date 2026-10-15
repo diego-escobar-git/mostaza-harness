@@ -89,3 +89,64 @@ def test_ac2_ac3_ac6_prompt_records_native_policy_limits() -> None:
         "run_command",
     ):
         assert requirement in prompt
+
+
+def test_phase2_ac1_calibration_pair_rendered_conditions() -> None:
+    from mostaza.packaging import configuration_files, load_manifest
+
+    for family in ("B180", "B300"):
+        ids = [f"E0-{family}", f"E1-{family}"]
+        manifests = [load_manifest(ROOT, config) for config in ids]
+        assert manifests[0]["shared_conditions"] == manifests[1]["shared_conditions"]
+        closures = [configuration_files(ROOT, config) for config in ids]
+        agents = [
+            yaml.load(files["agent.yaml"], Loader=IncludeLoader) for files in closures
+        ]
+        for agent in agents:
+            agent.pop("instruction")
+        assert agents[0] == agents[1]
+        assert closures[0]["eval_config.yaml"] == closures[1]["eval_config.yaml"]
+        for m, files in zip(manifests, closures, strict=True):
+            assert (
+                files[m["prompt"]]
+                == (ROOT / "submission" / manifest(m["arm"])["prompt"]).read_bytes()
+            )
+
+
+def test_phase2_ac6_recovery_exact_exploration_diff() -> None:
+    import difflib
+
+    from mostaza.packaging import configuration_files, load_manifest
+
+    original = configuration_files(ROOT, "E1-B180")
+    recovered = configuration_files(ROOT, "E1-R180")
+    m = load_manifest(ROOT, "E1-R180")
+    a = original["prompts/hybrid-retrieval.md"]
+    b = recovered["prompts/hybrid-recovery.md"]
+    assert a.split(b"### 1. ")[0] == b.split(b"### 1. ")[0]
+    assert (
+        a.split(b"### 2. Implement the Solution Directly")[1]
+        == b.split(b"### 2. Implement the Solution Directly")[1]
+    )
+    assert original["eval_config.yaml"] == recovered["eval_config.yaml"]
+    assert m["exploration_diff"] == "".join(
+        difflib.unified_diff(
+            a.decode().splitlines(keepends=True),
+            b.decode().splitlines(keepends=True),
+            fromfile="prompts/hybrid-retrieval.md",
+            tofile="prompts/hybrid-recovery.md",
+        )
+    )
+    assert m["calibration_eligible"] is False
+    for phrase in (
+        b"After unsuccessful exact lexical lookup",
+        b"fully qualified symbol",
+        b"k=5",
+        b"max_neighbors=10",
+        b"one-hop",
+        b"second hop requires",
+        b"never force",
+        b"Stop",
+        b"lexical fallback",
+    ):
+        assert phrase in b

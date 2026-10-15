@@ -1,0 +1,35 @@
+{
+  "scope": "Byte-exact blocked state before separately approved gate3",
+  "files": [
+    {
+      "original": "report.md",
+      "bytes": 7144,
+      "sha256": "8f1f4d8c648a467916529c7922ea080d73f513d36462caa5ae5d6ca98abda3d7"
+    },
+    {
+      "original": "audit.json",
+      "bytes": 1118,
+      "sha256": "1dec513d34b9a89049e514e97fde1fffe932c60880202b7d52c570a6827056ae"
+    },
+    {
+      "original": "cpu-results.json",
+      "bytes": 16710,
+      "sha256": "2cae7f595fc703afe751cf803d7a106c3f448c72b5f635146ef65fc231b1946d"
+    },
+    {
+      "original": "gate-attempts.json",
+      "bytes": 38165,
+      "sha256": "e4e2def2bfe49b5da725b3a99c5fa6c5484d5c8d765022d4f5683144b6cf3723"
+    },
+    {
+      "original": "raw-inventory.json",
+      "bytes": 58595,
+      "sha256": "a95999ba5545bd472d25219751d50eb6ee01baa5b13269db90a80fdfd9a5e4e0"
+    },
+    {
+      "original": "source-inventory.json",
+      "bytes": 2963,
+      "sha256": "12f02b84f04218228ecb3fa6aaa82cb32d1f2028f7b148515abb09eda861b4c8"
+    }
+  ]
+}

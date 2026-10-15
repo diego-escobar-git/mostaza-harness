@@ -159,3 +159,26 @@ def test_ac5_authentic_e0_archive_compiles_and_reproduces(tmp_path: Path) -> Non
             archive.read("prompts/baseline.md")
             == (ROOT / "submission/prompts/baseline.md").read_bytes()
         )
+
+
+def test_phase2_ac2_native_budget_and_all_variant_compilation(tmp_path: Path) -> None:
+    import zipfile
+
+    import yaml
+
+    from mostaza.packaging import VARIANTS, build_submission, load_manifest
+
+    for config in VARIANTS:
+        first, second = tmp_path / f"{config}-1.zip", tmp_path / f"{config}-2.zip"
+        assert build_submission(ROOT, config, first, COMPILER) == build_submission(
+            ROOT, config, second, COMPILER
+        )
+        m = load_manifest(ROOT, config)
+        with zipfile.ZipFile(first) as archive:
+            assert yaml.safe_load(archive.read("eval_config.yaml")) == {
+                "evaluation": m["budgets"]
+            }
+            assert (
+                archive.read(m["prompt"])
+                == (ROOT / "submission" / m["prompt"]).read_bytes()
+            )

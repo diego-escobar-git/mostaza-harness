@@ -1,0 +1,1032 @@
+{
+  "gpu_readiness_unlocked": false,
+  "gpu_starts": 0,
+  "isolation": {
+    "agent_closures_checked": 5,
+    "historical_files_unchanged": 91,
+    "notebook_payload_contains_plugin": false,
+    "plugin_auto_registration": false,
+    "real_gpu_readiness_changed": false
+  },
+  "model_inference_calls": 0,
+  "official_organizer_acceptance": null,
+  "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+  "pytest842_wheel_sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79",
+  "python_version": "3.13.15",
+  "raw_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls",
+  "real_kaggle_verifier_changed": false,
+  "runs": [
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 19899,
+        "protocol": "P-CV-01",
+        "pytest_version": "9.1.1",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "file_sha256": "fb32a7bf988234a1f5d58dee5445ec0d37c7fdd2682cbad064e55e2419139988",
+            "function_code_sha256": "3375906dadc1732d44c6aff5f367a13487c09f7c78d02317094c9b56db2b4dd1",
+            "function_hash_reason": null,
+            "function_identity": 4445633440,
+            "function_source_sha256": "df018d4f98b81d7c5eccf94165b2903778395f01e862272068092c37b7213701",
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "file_sha256": "fb32a7bf988234a1f5d58dee5445ec0d37c7fdd2682cbad064e55e2419139988",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005467.592912,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace"
+      },
+      "case": "positive",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.15778662500088103,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.1354111250002461,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 19907,
+        "protocol": "P-CV-01",
+        "pytest_version": "9.1.1",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "file_sha256": "4ab3d0a08e8ad34cc51ce4ae0795b1eb76cb8a22267690a141b4d16612e09046",
+            "function_code_sha256": "3375906dadc1732d44c6aff5f367a13487c09f7c78d02317094c9b56db2b4dd1",
+            "function_hash_reason": null,
+            "function_identity": 4412075808,
+            "function_source_sha256": "df018d4f98b81d7c5eccf94165b2903778395f01e862272068092c37b7213701",
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "file_sha256": "4ab3d0a08e8ad34cc51ce4ae0795b1eb76cb8a22267690a141b4d16612e09046",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005467.865097,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace"
+      },
+      "case": "negative",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.134618332998798,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 0,
+            "failures": 1,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.1442867080004362,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 0,
+            "failures": 1,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 19919,
+        "protocol": "P-CV-01",
+        "pytest_version": "9.1.1",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/src/pcv_product/__init__.py",
+            "file_sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9",
+            "function_code_sha256": "22154e3e8ce4f59fe47a20adb21daf645353ae3895395a165a6c610862e98d5f",
+            "function_hash_reason": null,
+            "function_identity": 4400017184,
+            "function_source_sha256": "f8c6d22c970f632b707443595a70b0594a17ba89a2a28d4dfc6eb298814ca6cc",
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/lib/python3.13/site-packages/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": false
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/src/pcv_product/__init__.py",
+            "file_sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/lib/python3.13/site-packages/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": false
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005468.142715,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace"
+      },
+      "case": "shadow",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.13489816700166557,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.13201762500102632,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 19926,
+        "protocol": "P-CV-01",
+        "pytest_version": "9.1.1",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "file_sha256": "07a5c9f1c53a56a1724da4d224299cd9870931f74f519ee0e75671f9f75d6a23",
+            "function_code_sha256": null,
+            "function_hash_reason": "Function code is outside reviewed public source",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "file_sha256": "07a5c9f1c53a56a1724da4d224299cd9870931f74f519ee0e75671f9f75d6a23",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005468.4029791,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-9.1.1/swegemma_sandbox_b88d12ad-b05/workspace"
+      },
+      "case": "replaced_function",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.12648937499761814,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.13245779199860408,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": null,
+      "case": "setup_error",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.13622304199816426,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 1,
+            "failures": 0,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.14097266599856084,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 1,
+            "failures": 0,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed"
+    },
+    {
+      "actual_process_receipt": null,
+      "case": "logging_failure",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.1350230410025688,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.13544687499961583,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed"
+    },
+    {
+      "actual_process_receipt": null,
+      "case": "missing_configuration",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.1281844170007389,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.13094799999817042,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "9.1.1",
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed"
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 19985,
+        "protocol": "P-CV-01",
+        "pytest_version": "8.4.2",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "file_sha256": "d6e5ed9f2e01c253d5d43721a5d8789b62990bdc9fd18d4159ad306fadf5b692",
+            "function_code_sha256": "9236ae0a1cf0ed493bdb720363ebbf8cae8904342fecd9120bbedad10e49b3f2",
+            "function_hash_reason": null,
+            "function_identity": 4463007744,
+            "function_source_sha256": "df018d4f98b81d7c5eccf94165b2903778395f01e862272068092c37b7213701",
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "file_sha256": "d6e5ed9f2e01c253d5d43721a5d8789b62990bdc9fd18d4159ad306fadf5b692",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005470.86309,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace"
+      },
+      "case": "positive",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.26414762499916833,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.15596725000068545,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 19998,
+        "protocol": "P-CV-01",
+        "pytest_version": "8.4.2",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "file_sha256": "f94112624898fd7fa59ce5c6febd448663b5611ecc7ae2e4baa726e71a561c95",
+            "function_code_sha256": "9236ae0a1cf0ed493bdb720363ebbf8cae8904342fecd9120bbedad10e49b3f2",
+            "function_hash_reason": null,
+            "function_identity": 4402960064,
+            "function_source_sha256": "df018d4f98b81d7c5eccf94165b2903778395f01e862272068092c37b7213701",
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "file_sha256": "f94112624898fd7fa59ce5c6febd448663b5611ecc7ae2e4baa726e71a561c95",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005471.182575,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace"
+      },
+      "case": "negative",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.15819387499868753,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 0,
+            "failures": 1,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.16426329200112377,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 0,
+            "failures": 1,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 20004,
+        "protocol": "P-CV-01",
+        "pytest_version": "8.4.2",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/src/pcv_product/__init__.py",
+            "file_sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9",
+            "function_code_sha256": "b198e882b5e5208008571c07776781f49947aac38ae07637550b1a319a558f6e",
+            "function_hash_reason": null,
+            "function_identity": 4465415872,
+            "function_source_sha256": "f8c6d22c970f632b707443595a70b0594a17ba89a2a28d4dfc6eb298814ca6cc",
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/lib/python3.13/site-packages/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": false
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/src/pcv_product/__init__.py",
+            "file_sha256": "7983096fc3018355629a9e63588ed038e86041fbb6695810fd0270fa6fccb4e9",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/lib/python3.13/site-packages/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": false
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005471.502207,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace"
+      },
+      "case": "shadow",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.14220445799946901,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.17028237500198884,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": {
+        "coverage": "actual_pytest_call_hook_cpu_diagnostic",
+        "effective_import_path": [
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ],
+        "interpreter": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/venv/bin/python3",
+        "phase": "pytest_runtest_call_tryfirst",
+        "plugin_sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb",
+        "process_id": 20012,
+        "protocol": "P-CV-01",
+        "pytest_version": "8.4.2",
+        "python_version": "3.13.15",
+        "schema_version": 1,
+        "targets": [
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "file_sha256": "8c8156ba291eca58dc01d65496b82d6e4c968b6af04505373bcd8d47eb9f6a31",
+            "function_code_sha256": null,
+            "function_hash_reason": "Function code is outside reviewed public source",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "evaluate",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "file_sha256": "8c8156ba291eca58dc01d65496b82d6e4c968b6af04505373bcd8d47eb9f6a31",
+            "function_code_sha256": null,
+            "function_hash_reason": "No supported public Python function is loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_product",
+            "reason": null,
+            "resolved_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_product/__init__.py",
+            "status": "OBSERVED",
+            "symbol": "missing_function",
+            "workspace_binding_matches": true
+          },
+          {
+            "expected_file": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace/pcv_unused.py",
+            "file_sha256": null,
+            "function_code_sha256": null,
+            "function_hash_reason": "Public module not already loaded",
+            "function_identity": null,
+            "function_source_sha256": null,
+            "module": "pcv_unused",
+            "reason": "Public module not already loaded",
+            "resolved_file": null,
+            "status": "UNAVAILABLE",
+            "symbol": null,
+            "workspace_binding_matches": null
+          }
+        ],
+        "timestamp_epoch": 1792005471.8285692,
+        "working_directory": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/pcv01-cpu/gate-v1/controls/sandboxes-8.4.2/swegemma_sandbox_9804715d-c6e/workspace"
+      },
+      "case": "replaced_function",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.1565638329993817,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.16519516699918313,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": null
+    },
+    {
+      "actual_process_receipt": null,
+      "case": "setup_error",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.16325408299962874,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 1,
+            "failures": 0,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.17206850000002305,
+          "exit_code": 1,
+          "outcomes": {
+            "errors": 1,
+            "failures": 0,
+            "passed": 0,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed"
+    },
+    {
+      "actual_process_receipt": null,
+      "case": "logging_failure",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.13798450000103912,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.14144779100024607,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed"
+    },
+    {
+      "actual_process_receipt": null,
+      "case": "missing_configuration",
+      "command_delta": [
+        "-p",
+        "mostaza_origin_receipt"
+      ],
+      "observations": [
+        {
+          "elapsed_seconds": 0.13784050000322168,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        },
+        {
+          "elapsed_seconds": 0.13827033300185576,
+          "exit_code": 0,
+          "outcomes": {
+            "errors": 0,
+            "failures": 0,
+            "passed": 1,
+            "skipped": 0,
+            "tests": 1
+          }
+        }
+      ],
+      "outcome_parity": true,
+      "pytest_version": "8.4.2",
+      "receipt_missing_reason": "Call hook not reached, configuration unavailable or receipt write failed"
+    }
+  ],
+  "scope": "Synthetic CPU pytest processes; not Kaggle verifier or benchmark outcomes",
+  "status": "PASS_PCV01_CPU"
+}

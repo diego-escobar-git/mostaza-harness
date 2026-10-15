@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "additional_attempts": 1,
+  "gate_attempt": 3,
+  "maximum_seconds": 1200,
+  "maximum_serial_native_invocations": 11,
+  "automatic_retries": false,
+  "user_authorization": "Autorizo un \u00fanico intento adicional del mismo gate CPU, m\u00e1ximo 20 minutos y 11 invocaciones seriales, sin reintentos autom\u00e1ticos. Si pasa, completa la auditor\u00eda, commit, push y actualizaci\u00f3n del PR #2, sin merge, GPU ni Discussion.",
+  "unchanged_plan_sha256": "dd4ba2e90618f2c2829d15b0f5c6c200ccdb2ee5ed6cbd67e8e5dec72cc1068e"
+}

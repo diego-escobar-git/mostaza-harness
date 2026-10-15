@@ -1,0 +1,52 @@
+[
+  {
+    "bytes": 514,
+    "path": "approval.json",
+    "sha256": "48652ba7ce29aa5a25794e533c7b64693f7fd1f89f07fb7e525f832a1adfe667"
+  },
+  {
+    "bytes": 1182,
+    "path": "audit.json",
+    "sha256": "850de192f30b7672767c4606a98518d38cdc1355fd945ab0668fca8904fb44e4"
+  },
+  {
+    "bytes": 3771,
+    "path": "compiler-and-fixtures.json",
+    "sha256": "2ba0c1898ac3d90fcfa8b79f873fdbce59b20325ef3410dc736a1476033e1ccc"
+  },
+  {
+    "bytes": 1509,
+    "path": "cpu-fixtures.json",
+    "sha256": "aa1391d4bc3b1afbd0d7e92853abe973aa035fd58f9d901835ebd5058a21c535"
+  },
+  {
+    "bytes": 2470,
+    "path": "implementation-source-inventory.json",
+    "sha256": "6b39d5645aa8324010f20395b16da4e276878bf4928bc4b5396110c6778ae3f7"
+  },
+  {
+    "bytes": 560,
+    "path": "official-setup-access.json",
+    "sha256": "67b43380068a2e36677e166f76bfe80b8060dde1cc7d605ccca3892eacb7d39b"
+  },
+  {
+    "bytes": 3385,
+    "path": "protocol-proposal.md",
+    "sha256": "8de29679aec989aa229f93928c166b269d39b734d1a1bcfcb8cc3eb40ce9549d"
+  },
+  {
+    "bytes": 1505,
+    "path": "readiness.json",
+    "sha256": "49f5213c89b9f78158b783a9dca8cb55f2bbd9c34c6e85da82f084b6fd5bebae"
+  },
+  {
+    "bytes": 6214,
+    "path": "report.md",
+    "sha256": "ff0f05b2ce8eb8f237d78161fc4a13038ba45ef7f9cd7bc21d4cb932df14c124"
+  },
+  {
+    "bytes": 2628,
+    "path": "validation.json",
+    "sha256": "faaa0ee95d889ee1f6706b0ff2dd7924bcc90f5cad40eeec81aae32cf55aff77"
+  }
+]

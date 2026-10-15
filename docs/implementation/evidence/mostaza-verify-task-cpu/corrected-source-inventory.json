@@ -1,0 +1,30 @@
+[
+  {
+    "path": "src/mostaza/evaluation/verify_task_cpu.py",
+    "sha256": "b2c43ac098833170311c95020e46138150ab5488916e2bcc40323af29c8b75f9"
+  },
+  {
+    "path": "scripts/check_verify_task_cpu.py",
+    "sha256": "d15730d5444483c9eb0874e7be881ca81d9f8cabc3cb6ab94c0cc4d5aebc400b"
+  },
+  {
+    "path": "scripts/verify_task_cpu_fixtures.py",
+    "sha256": "fda1ed889a2c6b4636d6d72b6036cebcddce13601d30ded7a999177c49d4decf"
+  },
+  {
+    "path": "tests/unit/test_verify_task_cpu.py",
+    "sha256": "22707242e17b2722041c6cde2d9bacb6b828da212186316976776a5a9a4a435e"
+  },
+  {
+    "path": "tests/integration/test_verify_task_cpu_contract.py",
+    "sha256": "67a1bc54de189f608de8317d54445c5d7ca675329ce96ee021a9325020314f02"
+  },
+  {
+    "path": "docs/specs/verify-task-cpu.md",
+    "sha256": "51a9f392b97d44d6c33d07dad0f36eec4259171268ee996ff589fca5aa5313fa"
+  },
+  {
+    "path": "docs/runbooks/kaggle-execution.md",
+    "sha256": "ca018941c3d65fc169de87bd66af3770ede54e32577916c365cd11b1592a5082"
+  }
+]

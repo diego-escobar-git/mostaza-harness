@@ -1,0 +1,29 @@
+{
+  "scope": "Blocked evidence before approved attempt6 integration",
+  "files": [
+    {
+      "path": "report.md",
+      "sha256": "a5e48070e47775cff8ac3dc7ea63abc0e480036f23d0855f92433030e19dc3db"
+    },
+    {
+      "path": "audit.json",
+      "sha256": "33c08bd7731c6a2c489f63145ab0fd1b816bddf2a0563c0481f619bfd1cafba0"
+    },
+    {
+      "path": "cpu-results.json",
+      "sha256": "88228d386f73db94caa53d116b897406575b97f6b01981f8a8c941e01fd6230c"
+    },
+    {
+      "path": "gate-attempts.json",
+      "sha256": "ae50e8c016803ec06b689052930201f43b0f4f4fbc7d24715d92d60b1f277bf1"
+    },
+    {
+      "path": "raw-inventory.json",
+      "sha256": "4bad0dc4ff73fe0c28e80d9c9b6db152edb6972978bbfcbee1cf3b2b90af37e8"
+    },
+    {
+      "path": "source-inventory.json",
+      "sha256": "48f8f52076dd36e70479a47f83972ddf9cafb6b527c21fd894d650c10a0b3f58"
+    }
+  ]
+}

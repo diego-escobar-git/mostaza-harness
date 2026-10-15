@@ -1,0 +1,69 @@
+{
+  "gate": {
+    "commands": [
+      {
+        "command": "bash scripts/validate.sh",
+        "elapsed_seconds": 38.426052290998996,
+        "exit_code": 0,
+        "log": "results/context-verification-cpu/gate-1.log",
+        "sha256": "17c84750a146cc36d7b28b2a24642e5802eb21c38428885a480109d6fc1a0c47"
+      },
+      {
+        "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+        "elapsed_seconds": 7.321344415999192,
+        "exit_code": 0,
+        "log": "results/context-verification-cpu/gate-2.log",
+        "sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+      },
+      {
+        "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+        "elapsed_seconds": 0.12828566700045485,
+        "exit_code": 0,
+        "log": "results/context-verification-cpu/gate-3.log",
+        "sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+      },
+      {
+        "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+        "elapsed_seconds": 0.6758962919993792,
+        "exit_code": 0,
+        "log": "results/context-verification-cpu/gate-4.log",
+        "sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+      },
+      {
+        "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+        "elapsed_seconds": 0.12561795900001016,
+        "exit_code": 0,
+        "log": "results/context-verification-cpu/gate-5.log",
+        "sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+      },
+      {
+        "command": ".venv/bin/python scripts/check_context_verification.py --check",
+        "elapsed_seconds": 6.4800576669986185,
+        "exit_code": 0,
+        "log": "results/context-verification-cpu/gate-6.log",
+        "sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+      }
+    ],
+    "gpu_evaluations": 0,
+    "status": "PASS"
+  },
+  "gpu_evaluations": 0,
+  "gpu_starts": 0,
+  "independent_audit": {
+    "findings": [],
+    "receipt": "audit.json",
+    "result": "PASS"
+  },
+  "integration_tests": 39,
+  "limitations": [
+    "Exact verifier-process import identity remains unknown",
+    "Read-only dataset inventory denied HTTP403; official setup unavailable",
+    "No new benchmark, policy adherence or guaranteed GPU readiness established"
+  ],
+  "model_inference_calls": 0,
+  "native_verifier_changed": false,
+  "remote_mutations": 0,
+  "status": "PASS_CPU_GATE_GPU_READINESS_BLOCKED",
+  "strict_type_files": 34,
+  "unit_tests": 250
+}

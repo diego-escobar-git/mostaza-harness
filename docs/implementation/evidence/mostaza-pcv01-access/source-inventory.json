@@ -1,0 +1,34 @@
+{
+  "base_commit": "b3d1f11fc588581aa0fc177aa23f02784629058d",
+  "excluded_preexisting_closed_plan_sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5",
+  "files": [
+    {
+      "path": "src/mostaza/evaluation/scorer_contract.py",
+      "sha256": "6dfeec2331f4ea4ad73891b249214c2eef6f386e3650919aeab043699b7bd767"
+    },
+    {
+      "path": "scripts/check_pcv01_scorer_contract.py",
+      "sha256": "254ff59c4caa5b0fc6ad8360c5be83a330a7f98e355c93ce32db7f522094c895"
+    },
+    {
+      "path": "tests/unit/test_scorer_contract.py",
+      "sha256": "3a4e43dacf04d0c517390db843cbeeb9c457e10f5c533e5300c77f504ad5ff86"
+    },
+    {
+      "path": "tests/integration/test_scorer_source_contract.py",
+      "sha256": "502ebea6747f5c11f6ac28690ddf0ef36c0ce1fb0c2df792b9e1cbd2647171ed"
+    },
+    {
+      "path": "docs/specs/pcv01.md",
+      "sha256": "4a53a813361771a1450e3d1146b526fef4c9cea4a7ef16ffef5019e5e3666b1f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6fdb49be671be57868e4aafdaabbc03b75aa945120c9585720199c630adada4c"
+    },
+    {
+      "path": "docs/runbooks/kaggle-execution.md",
+      "sha256": "4c47f7a0ed07ac86184a4c0d0cc60aad05840542fcd39a2d439c36ef82cdac2e"
+    }
+  ]
+}

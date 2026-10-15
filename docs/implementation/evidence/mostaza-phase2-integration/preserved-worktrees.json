@@ -1,0 +1,26 @@
+[
+  {
+    "root": "/Users/diego/.codex/worktrees/mostaza-phase1-foundation/Mostaza-Harness",
+    "head": "e3b57574a9f9ca1aca80039ec401637e0306198d",
+    "status": " M docs/specs/plans/closed/mostaza-phase1-foundation.md\n",
+    "modified_file": "docs/specs/plans/closed/mostaza-phase1-foundation.md",
+    "before_sha256": "650ac5f6d7e3342b05e97f63646bec6634304fc8dc4aae7026e07e5c7bbf1e41",
+    "after_sha256": "650ac5f6d7e3342b05e97f63646bec6634304fc8dc4aae7026e07e5c7bbf1e41"
+  },
+  {
+    "root": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness",
+    "head": "1b86b19f7654212c1d9f95eeca84d0e2a05db16b",
+    "status": " M docs/specs/plans/closed/mostaza-phase2-budget-retrieval.md\n",
+    "modified_file": "docs/specs/plans/closed/mostaza-phase2-budget-retrieval.md",
+    "before_sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5",
+    "after_sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5"
+  },
+  {
+    "root": "/Users/diego/.codex/worktrees/mostaza-phase2-reconciliation/Mostaza-Harness",
+    "head": "7bd3cf29ca6256178c3da1764563794ac4dc79cf",
+    "status": " M docs/specs/plans/closed/mostaza-phase2-reconciliation.md\n",
+    "modified_file": "docs/specs/plans/closed/mostaza-phase2-reconciliation.md",
+    "before_sha256": "a9e99eaac1e6eb50da90cc9a1497b4c8412c2472cff767aa640e825b88481144",
+    "after_sha256": "a9e99eaac1e6eb50da90cc9a1497b4c8412c2472cff767aa640e825b88481144"
+  }
+]

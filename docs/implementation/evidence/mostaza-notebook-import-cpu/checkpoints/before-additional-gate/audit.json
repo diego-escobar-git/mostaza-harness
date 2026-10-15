@@ -1,0 +1,23 @@
+{
+  "verdict": "FIX_REQUIRED",
+  "candidate": {
+    "algorithm": "ORDINARY_CURRENT_DIFF_SHA256_V1",
+    "value": "211a6e5b116730346952dba93d206c5b3849781ac42b00b6067679f64e495b16"
+  },
+  "findings": [
+    {
+      "id": "AUD-004",
+      "issue": "Ambos intentos autorizados fallaron; el código reparado después del gate2 carece de un gate completo satisfactorio. Las53 pruebas enfocadas pasan y no se encontraron otros defectos pendientes. El informe reconoce la cobertura histórica parcial del límite de tamaño y la fuente posterior al gate2.",
+      "severity": "P2",
+      "location": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/notebook-import-cpu/gate-2/receipt.json",
+      "expected": "Doce comandos satisfactorios sobre el código final, conteos26/6/2, limpieza y auditoría independiente final.",
+      "correction": "Obtener autorización explícita para el único gate adicional propuesto antes de habilitarlo o ejecutarlo; conservar ambos intentos y sus contadores."
+    }
+  ],
+  "resolved": [
+    "AUD-001",
+    "AUD-002",
+    "AUD-003",
+    "AUD-005"
+  ]
+}
