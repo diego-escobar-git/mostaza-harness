@@ -101,3 +101,7 @@ bypass from Docker bootstrap. Its offline command is
 `.venv/bin/python scripts/check_pcv01_scorer_contract.py --check`. Public source
 access preserves unknown scorer attestations and blocked GPU readiness; the
 organizer question remains unsent.
+
+## Iteration 2 integration status
+
+See [the integration boundary](docs/integration/phase2-status.md) for the combined source tree, immutable historical reconciliation, and pending CPU/Kaggle research work. Integration does not establish GPU readiness or retrieval efficacy.
