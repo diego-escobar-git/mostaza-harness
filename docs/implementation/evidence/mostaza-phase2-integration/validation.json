@@ -1,0 +1,417 @@
+{
+  "scope": "ordinary approved integration; not a resumed SDD plan",
+  "candidate_commit": "dcd0371196e2a2eeb83551b0816f5c01c8413850",
+  "candidate_tree": "13ecb02b71613a3b6c17d4a2b7be20b8943eb923",
+  "base": "e343692fc6b45585932a3a0ff20a28c3c80ce372",
+  "gates": [
+    {
+      "status": "FAIL",
+      "started_utc": "2026-10-15T15:59:17Z",
+      "candidate_commit": "3581e209dbe49015ea83e32753578b7a2c95013f",
+      "candidate_tree": "6c4f801ed096761bcdcac8935af3b10d221890b0",
+      "base": "e343692fc6b45585932a3a0ff20a28c3c80ce372",
+      "wall_limit_seconds": 1200,
+      "storage_cap_bytes": 2147483648,
+      "baseline_copied_inputs_bytes": 1159549600,
+      "sampled_peak_bytes": 1631129481,
+      "storage_scope": "copied tool/resource inputs plus owned scratch/output/build/cache artifacts; polled, not instantaneous physical peak",
+      "source_inventory_sha256": "ddaf7eeb3098b23b6cdcc2cf1304a80d580c268a27d7ce6403db2dad95732cc0",
+      "invariants": {
+        "original_pr2_files_unchanged_except_two_docs": true,
+        "original_pr3_files_unchanged_except_index": true,
+        "indexed_specs": [
+          "agent-retrieval.md",
+          "budget-retrieval-calibration.md",
+          "context-verification.md",
+          "evaluation.md",
+          "foundation.md",
+          "notebook-import-cpu.md",
+          "pcv01.md",
+          "phase2-reconciliation.md",
+          "requests-import-cpu.md",
+          "verify-task-cpu.md"
+        ]
+      },
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "timeout_seconds": 600,
+          "exit_code": 1,
+          "duration_seconds": 54.050860832998296,
+          "log_sha256": "84c8045c88a4635bdb01cd644c4b8a9039731f6133e88c96c06965bfdad86349",
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          }
+        }
+      ],
+      "automatic_retries": 0,
+      "scope": "ordinary approved integration; CPU fixtures/compiler only; no V/R/N matrices, model/GPU, Kaggle or Discussion",
+      "environment_controls": {
+        "UV_OFFLINE": "true",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTEST_ADDOPTS": "-o tmp_path_retention_policy=failed",
+        "TMPDIR": "/private/tmp/mostaza-integration-nxatv7ur/tmp"
+      },
+      "scratch": "/private/tmp/mostaza-integration-nxatv7ur",
+      "failure": "RuntimeError: Command 1 failed with exit 1",
+      "cleanup_complete": true,
+      "duration_seconds": 54.0987123340019
+    },
+    {
+      "status": "PASS",
+      "started_utc": "2026-10-15T16:09:35Z",
+      "candidate_commit": "dcd0371196e2a2eeb83551b0816f5c01c8413850",
+      "candidate_tree": "13ecb02b71613a3b6c17d4a2b7be20b8943eb923",
+      "base": "e343692fc6b45585932a3a0ff20a28c3c80ce372",
+      "wall_limit_seconds": 1140,
+      "storage_cap_bytes": 2147483648,
+      "baseline_copied_inputs_bytes": 1159549600,
+      "sampled_peak_bytes": 1628830423,
+      "storage_scope": "copied tool/resource inputs plus owned scratch/output/build/cache artifacts; polled, not instantaneous physical peak",
+      "source_inventory_sha256": "7bf48779e35519053755436c6aa8f3c44a03d7d197c4a5983ee4ac950ed4fffb",
+      "invariants": {
+        "original_pr2_files_unchanged_except_docs_and_four_reviewed_tests": true,
+        "original_pr3_files_unchanged_except_index": true,
+        "indexed_specs": [
+          "agent-retrieval.md",
+          "budget-retrieval-calibration.md",
+          "context-verification.md",
+          "evaluation.md",
+          "foundation.md",
+          "notebook-import-cpu.md",
+          "pcv01.md",
+          "phase2-reconciliation.md",
+          "requests-import-cpu.md",
+          "verify-task-cpu.md"
+        ]
+      },
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "timeout_seconds": 600,
+          "exit_code": 0,
+          "duration_seconds": 52.0791086669924,
+          "log_sha256": "944b24b07e85de2b892d18dcccaf1bf731bc7d90e385ec240476d304248a0708",
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests/reconciliation",
+            "-p",
+            "test_phase2_reconciliation.py",
+            "-v"
+          ],
+          "timeout_seconds": 120,
+          "exit_code": 0,
+          "duration_seconds": 0.321130666998215,
+          "log_sha256": "8597d5a0c38a9c27e7affccb918a595560556de70211897b25f165c2f8e04ec8",
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "-B",
+            "-m",
+            "mypy",
+            "--strict",
+            "--cache-dir=/dev/null",
+            "scripts/check_phase2_reconciliation.py",
+            "tests/reconciliation/test_phase2_reconciliation.py"
+          ],
+          "timeout_seconds": 120,
+          "exit_code": 0,
+          "duration_seconds": 0.9340175419929437,
+          "log_sha256": "f9b031e5c45aa702cd4fef028d465551cb20a2c4698e0913c7b00766b20ac4d8",
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "-B",
+            "scripts/check_phase2_reconciliation.py",
+            "--check"
+          ],
+          "timeout_seconds": 300,
+          "exit_code": 0,
+          "duration_seconds": 4.725926625003922,
+          "log_sha256": "ccafe9f13d40ae3adee94edbf6bf33cb9e5f3f5bba662e3da654787f97fbdcad",
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          }
+        },
+        {
+          "argv": [
+            "git",
+            "diff",
+            "--check",
+            "e343692fc6b45585932a3a0ff20a28c3c80ce372",
+            "HEAD"
+          ],
+          "timeout_seconds": 30,
+          "exit_code": 0,
+          "duration_seconds": 0.3085297920042649,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          }
+        }
+      ],
+      "automatic_retries": 0,
+      "prior_failed_gate_seconds": 54.0987123340019,
+      "cumulative_gate_wall_limit_seconds": 1200,
+      "scope": "ordinary approved integration; CPU fixtures/compiler only; no V/R/N matrices, model/GPU, Kaggle or Discussion",
+      "environment_controls": {
+        "UV_OFFLINE": "true",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTEST_ADDOPTS": "-o tmp_path_retention_policy=failed",
+        "TMPDIR": "/private/tmp/mostaza-integration-75yp361y/tmp"
+      },
+      "historical_root_policy": "Explicit original root used only for read-only pin checks; current-root admission must reject; no matrix replay",
+      "scratch": "/private/tmp/mostaza-integration-75yp361y",
+      "failure": null,
+      "cleanup_complete": true,
+      "duration_seconds": 58.463475124997785
+    },
+    {
+      "status": "PASS",
+      "wall_limit_seconds": 600,
+      "timing_scope": "module entry before preflight imports, I/O, hashes and invariants through cleanup and receipt export",
+      "storage_cap_bytes": 2147483648,
+      "storage_scope": "all copied tool/resource inputs, all retained local results, build/cache and unique owned scratch; polled, not instantaneous physical peak",
+      "sampled_peak_bytes": 1386203692,
+      "storage_observations": 56,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "requested_timeout_seconds": 600,
+          "effective_work_limit_seconds": 561.9171696249978,
+          "exit_code": 0,
+          "duration_seconds": 51.94345299999986,
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          },
+          "log_sha256": "9dfa3c292c3a40586c685bca857dc18589dbd20a8921ba0b1c90c8b2dfb6e637"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "-B",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests/reconciliation",
+            "-p",
+            "test_phase2_reconciliation.py",
+            "-v"
+          ],
+          "requested_timeout_seconds": 120,
+          "effective_work_limit_seconds": 120.0,
+          "exit_code": 0,
+          "duration_seconds": 0.31805800000438467,
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          },
+          "log_sha256": "9f18fe6a05659b512e5ed49f7e03b9f65b48487993fee5bed650c519ad976bf9"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "-B",
+            "-m",
+            "mypy",
+            "--strict",
+            "--cache-dir=/dev/null",
+            "scripts/check_phase2_reconciliation.py",
+            "tests/reconciliation/test_phase2_reconciliation.py"
+          ],
+          "requested_timeout_seconds": 120,
+          "effective_work_limit_seconds": 120.0,
+          "exit_code": 0,
+          "duration_seconds": 0.955591457997798,
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          },
+          "log_sha256": "f9b031e5c45aa702cd4fef028d465551cb20a2c4698e0913c7b00766b20ac4d8"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "-B",
+            "scripts/check_phase2_reconciliation.py",
+            "--check"
+          ],
+          "requested_timeout_seconds": 300,
+          "effective_work_limit_seconds": 300.0,
+          "exit_code": 0,
+          "duration_seconds": 4.909392999994452,
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          },
+          "log_sha256": "ccafe9f13d40ae3adee94edbf6bf33cb9e5f3f5bba662e3da654787f97fbdcad"
+        },
+        {
+          "argv": [
+            "git",
+            "diff",
+            "--check",
+            "e343692fc6b45585932a3a0ff20a28c3c80ce372",
+            "HEAD"
+          ],
+          "requested_timeout_seconds": 30,
+          "effective_work_limit_seconds": 30.0,
+          "exit_code": 0,
+          "duration_seconds": 0.3551522920024581,
+          "cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "observation_errors": [],
+            "survivors": [],
+            "survivors_reason": null,
+            "root_exited": true
+          },
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "failure": null,
+      "cleanup_complete": true,
+      "scope": "ordinary approved integration; no V/R/N matrices, model/GPU, Kaggle or Discussion",
+      "automatic_retries": 0,
+      "historical_root": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness",
+      "prior_gate_timing": "gates1/2 exclude preflight; no retrospective total-budget attestation",
+      "base": "e343692fc6b45585932a3a0ff20a28c3c80ce372",
+      "scratch": "/private/tmp/mostaza-integration-wnih5c3e",
+      "candidate_commit": "dcd0371196e2a2eeb83551b0816f5c01c8413850",
+      "candidate_tree": "13ecb02b71613a3b6c17d4a2b7be20b8943eb923",
+      "source_inventory_sha256": "7bf48779e35519053755436c6aa8f3c44a03d7d197c4a5983ee4ac950ed4fffb",
+      "invariants": {
+        "protected_pr2_and_pr3_files_unchanged": true,
+        "indexed_specs": [
+          "agent-retrieval.md",
+          "budget-retrieval-calibration.md",
+          "context-verification.md",
+          "evaluation.md",
+          "foundation.md",
+          "notebook-import-cpu.md",
+          "pcv01.md",
+          "phase2-reconciliation.md",
+          "requests-import-cpu.md",
+          "verify-task-cpu.md"
+        ],
+        "reviewed_exceptions": [
+          "README.md",
+          "docs/specs/README.md",
+          "tests/integration/test_notebook_import_contract.py",
+          "tests/integration/test_phase2.py",
+          "tests/integration/test_requests_import_cpu_contract.py",
+          "tests/integration/test_verify_task_cpu_contract.py"
+        ]
+      },
+      "preflight_duration_seconds": 8.082694999990053,
+      "duration_seconds": 67.3669167909975,
+      "duration_seconds_through_first_export": 67.36715670800186
+    }
+  ],
+  "gate_wall_limit_seconds": 1200,
+  "gpu_execution": "NOT_RUN",
+  "new_v_r_n_matrices": "NOT_RUN",
+  "historical_evidence": "UNCHANGED",
+  "historical_pr2": "1b86b19f7654212c1d9f95eeca84d0e2a05db16b",
+  "historical_pr3": "7bd3cf29ca6256178c3da1764563794ac4dc79cf",
+  "prior_supervised_command_cleanup_wall_seconds": 112.56218745899969,
+  "cumulative_total_gate_wall_seconds": null,
+  "cumulative_total_gate_wall_reason": "Gates1/2 began timing after preflight; those prior preflight durations cannot be reconstructed as measured values.",
+  "gate_timing_coverage": [
+    {
+      "gate": 1,
+      "admissibility": "FAIL",
+      "preflight_duration_seconds": null,
+      "preflight_reason": "Not measured; no total-cap attestation"
+    },
+    {
+      "gate": 2,
+      "admissibility": "COMMANDS_PASS_BUT_FULL_GATE_CAP_UNVERIFIED",
+      "preflight_duration_seconds": null,
+      "preflight_reason": "Not measured; no total-cap attestation"
+    },
+    {
+      "gate": 3,
+      "admissibility": "FULL_GATE_PASS",
+      "wall_limit_seconds": 600,
+      "includes_preflight": true
+    }
+  ],
+  "accepted_gate": 3,
+  "source_inventory_sha256": "7bf48779e35519053755436c6aa8f3c44a03d7d197c4a5983ee4ac950ed4fffb"
+}

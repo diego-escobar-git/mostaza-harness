@@ -1,0 +1,12 @@
+{
+  "status": "FIX_REQUIRED",
+  "candidate_commit": "dcd0371196e2a2eeb83551b0816f5c01c8413850",
+  "findings": [
+    {
+      "id": "INT-AUD-001",
+      "severity": "P1",
+      "issue": "Initial controllers excluded unmeasured preflight from time/storage supervision",
+      "required_fix": "Full cap before all preflight; preserve prior timings as partial, not a retrospective attestation"
+    }
+  ]
+}

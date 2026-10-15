@@ -1,0 +1,241 @@
+"""Full CPU integration gate: timing starts before all preflight I/O."""
+
+from __future__ import annotations
+
+import time
+
+STARTED = time.monotonic()
+TOTAL_SECONDS = 600
+DEADLINE = STARTED + TOTAL_SECONDS
+WORK_STOP = DEADLINE - 30
+
+import hashlib
+import importlib
+import json
+import os
+import shutil
+import stat
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+
+ROOT = Path('/Users/diego/.codex/worktrees/mostaza-phase2-integration/Mostaza-Harness')
+OUTPUT = ROOT / 'results/phase2-integration/gate-3'
+LIMIT = 2 * 1024**3
+sys.path.insert(0, str(ROOT / 'scripts'))
+supervision = importlib.import_module('notebook_import_supervision')
+watchdog = importlib.import_module('check_verify_task_cpu')
+COMMANDS = [
+    (['bash', 'scripts/validate.sh'], 600),
+    (['.venv/bin/python', '-B', '-m', 'unittest', 'discover', '-s', 'tests/reconciliation', '-p', 'test_phase2_reconciliation.py', '-v'], 120),
+    (['.venv/bin/python', '-B', '-m', 'mypy', '--strict', '--cache-dir=/dev/null', 'scripts/check_phase2_reconciliation.py', 'tests/reconciliation/test_phase2_reconciliation.py'], 120),
+    (['.venv/bin/python', '-B', 'scripts/check_phase2_reconciliation.py', '--check'], 300),
+    (['git', 'diff', '--check', 'e343692fc6b45585932a3a0ff20a28c3c80ce372', 'HEAD'], 30),
+]
+
+
+def time_check(work=True):
+    remaining = (WORK_STOP if work else DEADLINE) - time.monotonic()
+    if remaining <= 0:
+        raise TimeoutError('Full gate deadline exhausted, including preflight')
+    return remaining
+
+
+def measure(paths, cap=LIMIT):
+    total = 0
+    for root in paths:
+        time_check()
+        if not root.exists():
+            continue
+        def onerror(error):
+            if not isinstance(error, FileNotFoundError):
+                raise error
+        for directory, _, names in os.walk(root, followlinks=False, onerror=onerror):
+            time_check()
+            for name in names:
+                time_check()
+                try:
+                    info = (Path(directory) / name).lstat()
+                except FileNotFoundError:
+                    continue
+                if stat.S_ISREG(info.st_mode):
+                    total += info.st_size
+                    if total > cap:
+                        raise ValueError('Approved storage cap exceeded')
+    return total
+
+
+class Limits:
+    def __init__(self, receipt):
+        self.receipt = receipt
+        self.scratch = None
+        self.last = float('-inf')
+
+    def paths(self):
+        return [ROOT / '.venv', ROOT / '.tools', ROOT / 'resources', ROOT / 'results', ROOT / 'build', ROOT / 'dist', ROOT / '.mypy_cache', ROOT / '.ruff_cache', *([self.scratch] if self.scratch else [])]
+
+    def check(self, force=False):
+        time_check()
+        if force or time.monotonic() - self.last >= 1:
+            value = measure(self.paths())
+            old = self.receipt['sampled_peak_bytes']
+            self.receipt['sampled_peak_bytes'] = value if old is None else max(old, value)
+            self.receipt['storage_observations'] += 1
+            self.last = time.monotonic()
+        time_check()
+
+
+ACTIVE = None
+
+
+def check():
+    time_check()
+    if ACTIVE is not None:
+        ACTIVE.check()
+
+
+def git(*args):
+    check()
+    result = subprocess.check_output(['git', '--no-optional-locks', *args], cwd=ROOT, text=True, timeout=min(10, time_check())).strip()
+    check()
+    return result
+
+
+def digest_file(path):
+    value = hashlib.sha256()
+    with path.open('rb') as source:
+        while True:
+            check()
+            block = source.read(1024 * 1024)
+            if not block:
+                break
+            value.update(block)
+    return value.hexdigest()
+
+
+def snapshot():
+    records = {}
+    for name in git('ls-files').splitlines():
+        check()
+        path = ROOT / name
+        if path.is_symlink():
+            raise ValueError('Unexpected tracked symlink: ' + name)
+        records[name] = digest_file(path)
+    return records
+
+
+def invariants():
+    original = '1b86b19f7654212c1d9f95eeca84d0e2a05db16b'
+    reconciliation = '7bd3cf29ca6256178c3da1764563794ac4dc79cf'
+    exceptions = {'README.md', 'docs/specs/README.md', 'tests/integration/test_notebook_import_contract.py', 'tests/integration/test_requests_import_cpu_contract.py', 'tests/integration/test_verify_task_cpu_contract.py', 'tests/integration/test_phase2.py'}
+    for commit in (original, reconciliation, 'e343692fc6b45585932a3a0ff20a28c3c80ce372'):
+        git('merge-base', '--is-ancestor', commit, 'HEAD')
+    for name in git('ls-tree', '-r', '--name-only', original).splitlines():
+        if name not in exceptions and git('rev-parse', original + ':' + name) != git('rev-parse', 'HEAD:' + name):
+            raise ValueError('Original PR2 file changed: ' + name)
+    for name in git('diff', '--name-only', '60ad0cec85bb36a1e65609ca2b1a743ba087384d', reconciliation).splitlines():
+        if name != 'docs/specs/README.md' and git('rev-parse', reconciliation + ':' + name) != git('rev-parse', 'HEAD:' + name):
+            raise ValueError('Original PR3 artifact changed: ' + name)
+    specs = sorted(p.name for p in (ROOT / 'docs/specs').glob('*.md') if p.name != 'README.md')
+    index = (ROOT / 'docs/specs/README.md').read_text()
+    if len(specs) != 10 or any(index.count('](' + p + ')') != 1 for p in specs):
+        raise ValueError('Specification index differs')
+    return {'protected_pr2_and_pr3_files_unchanged': True, 'indexed_specs': specs, 'reviewed_exceptions': sorted(exceptions)}
+
+
+def main():
+    global ACTIVE
+    if OUTPUT.exists():
+        raise ValueError('Fresh output required; automatic replay forbidden')
+    receipt = {'status': 'RUNNING', 'wall_limit_seconds': TOTAL_SECONDS,
+               'timing_scope': 'module entry before preflight imports, I/O, hashes and invariants through cleanup and receipt export',
+               'storage_cap_bytes': LIMIT, 'storage_scope': 'all copied tool/resource inputs, all retained local results, build/cache and unique owned scratch; polled, not instantaneous physical peak',
+               'sampled_peak_bytes': None, 'storage_observations': 0, 'commands': [], 'failure': None, 'cleanup_complete': False,
+               'scope': 'ordinary approved integration; no V/R/N matrices, model/GPU, Kaggle or Discussion', 'automatic_retries': 0,
+               'historical_root': '/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness',
+               'prior_gate_timing': 'gates1/2 exclude preflight; no retrospective total-budget attestation',
+               'base': 'e343692fc6b45585932a3a0ff20a28c3c80ce372'}
+    ACTIVE = Limits(receipt)
+    scratch = None
+    def persist():
+        (OUTPUT / 'gate.json').write_text(json.dumps(receipt, indent=2) + '\n')
+    try:
+        # Observe all existing owned inputs before any product preflight/hash work.
+        ACTIVE.check(force=True)
+        OUTPUT.mkdir(parents=True, exist_ok=False)
+        scratch = Path(tempfile.mkdtemp(prefix='mostaza-integration-', dir='/private/tmp'))
+        ACTIVE.scratch = scratch
+        (scratch / 'owner.json').write_text(json.dumps({'root': str(ROOT), 'output': str(OUTPUT)}))
+        temp = scratch / 'tmp'
+        temp.mkdir()
+        receipt['scratch'] = str(scratch)
+        ACTIVE.check(force=True)
+        receipt['candidate_commit'] = git('rev-parse', 'HEAD')
+        receipt['candidate_tree'] = git('rev-parse', 'HEAD^{tree}')
+        before = snapshot()
+        receipt['source_inventory_sha256'] = hashlib.sha256(json.dumps(before, sort_keys=True).encode()).hexdigest()
+        receipt['invariants'] = invariants()
+        (OUTPUT / 'source-inventory.json').write_text(json.dumps(before, indent=2) + '\n')
+        check()
+        receipt['preflight_duration_seconds'] = time.monotonic() - STARTED
+        env = dict(os.environ)
+        env.update(TMPDIR=str(temp), UV_OFFLINE='true', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', PYTHONDONTWRITEBYTECODE='1', PYTEST_ADDOPTS='-o tmp_path_retention_policy=failed', MOSTAZA_HISTORICAL_PHASE2_ROOT=receipt['historical_root'])
+        persist()
+        for i, (argv, maximum) in enumerate(COMMANDS, 1):
+            check()
+            now = time.monotonic()
+            cutoff = min(WORK_STOP, now + maximum)
+            step = {'argv': argv, 'requested_timeout_seconds': maximum, 'effective_work_limit_seconds': cutoff-now}
+            receipt['commands'].append(step)
+            with (OUTPUT / f'command-{i}.log').open('wb') as log:
+                process = subprocess.Popen(argv, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
+                result = supervision.supervise(process, {}, watchdog, cutoff, min(DEADLINE-5, cutoff+25), check, OUTPUT / f'command-{i}-supervision.json')
+            step.update(exit_code=result['exit_code'], duration_seconds=time.monotonic()-now, cleanup=result['process_cleanup'], log_sha256=digest_file(OUTPUT / f'command-{i}.log'))
+            persist()
+            if step['exit_code'] != 0:
+                raise RuntimeError(f'Command{i} failed with exit{step["exit_code"]}')
+        if snapshot() != before:
+            raise ValueError('Tracked source drift')
+        ACTIVE.check(force=True)
+        receipt['status'] = 'PASS'
+    except Exception as error:
+        receipt.update(status='FAIL', failure=f'{type(error).__name__}: {error}')
+    finally:
+        try:
+            time_check(work=False)
+            table = supervision.read_process_table(DEADLINE-3, [])
+            excluded = {os.getpid()}
+            parent = os.getppid()
+            while parent in table and parent not in excluded:
+                excluded.add(parent)
+                parent = table[parent][0]
+            live = [pid for pid, (_, _, command) in table.items() if pid not in excluded and (str(ROOT) in command or (scratch and str(scratch) in command))]
+            if live:
+                raise RuntimeError('Owned process exit not proven: ' + str(live))
+            if scratch:
+                if scratch.is_symlink() or not (scratch / 'owner.json').is_file():
+                    raise ValueError('Scratch ownership changed')
+                shutil.rmtree(scratch)
+            receipt['cleanup_complete'] = scratch is None or not scratch.exists()
+        except Exception as error:
+            receipt.update(status='FAIL', cleanup_error=f'{type(error).__name__}: {error}')
+        OUTPUT.mkdir(parents=True, exist_ok=True)
+        receipt['duration_seconds'] = time.monotonic()-STARTED
+        if receipt['duration_seconds'] > TOTAL_SECONDS:
+            receipt.update(status='FAIL', failure='Total deadline exceeded')
+        persist()
+        finished = time.monotonic()-STARTED
+        receipt['duration_seconds_through_first_export'] = finished
+        if finished > TOTAL_SECONDS:
+            receipt.update(status='FAIL', failure='Total deadline exceeded during export')
+        persist()
+        if time.monotonic() > DEADLINE:
+            receipt.update(status='FAIL', failure='Final receipt export exceeded deadline')
+            persist()
+    print(json.dumps({k:receipt[k] for k in ('status','duration_seconds','preflight_duration_seconds','sampled_peak_bytes','failure','cleanup_complete') if k in receipt}))
+    return 0 if receipt['status']=='PASS' else 1
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

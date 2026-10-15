@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "findings": [],
+  "candidate": {
+    "before_commit": "dcd0371196e2a2eeb83551b0816f5c01c8413850",
+    "before_tree": "13ecb02b71613a3b6c17d4a2b7be20b8943eb923",
+    "after_commit": "dcd0371196e2a2eeb83551b0816f5c01c8413850",
+    "after_tree": "13ecb02b71613a3b6c17d4a2b7be20b8943eb923",
+    "base": "e343692fc6b45585932a3a0ff20a28c3c80ce372"
+  },
+  "content_fingerprint_excluding_future_audit_json": "43d9c49b4465f8bfd741f1f5ffd08973bd2e983d42a71a570163c91e7ca0bd04",
+  "evidence": {
+    "gate3": "PASS; 67.367157s through first export, including 8.082695s preflight; 600s end-to-end cap; sampled peak 1386203692 bytes; 56 storage observations; cleanup confirmed",
+    "validation": "378 unit, 120 integration, 20 reconciliation tests; five commands exited 0",
+    "int_aud_001": "RESOLVED: gates 1/2 are explicitly partial supervised timings with null preflight; gate 3 is the sole accepted full-cap gate",
+    "preservation": "314 source-inventory hashes verified; raw receipts verified; all three retained worktree dirty-plan hashes match recorded values; tracked source unchanged during audit"
+  }
+}
