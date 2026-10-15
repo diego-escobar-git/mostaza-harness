@@ -4,19 +4,31 @@ import ast
 import json
 from pathlib import Path
 
+import pytest
+
 from mostaza.evaluation.verify_task_cpu import CASES, validate_pins
 
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def test_cpu_driver_retains_direct_native_backend_and_pinned_inputs():
+def test_cpu_driver_retains_direct_native_backend_and_pinned_inputs(
+    historical_phase2_root,
+):
     manifest = json.loads(
         (
             ROOT
             / "docs/implementation/evidence/mostaza-verify-task-cpu/prerequisites.json"
         ).read_text()
     )
-    validate_pins(ROOT, manifest)
+    validate_pins(historical_phase2_root, manifest)
+    with pytest.raises(
+        ValueError,
+        match=(
+            r"Missing/changed immutable input: docs/specs/plans/closed/"
+            r"mostaza-phase2-budget-retrieval\.md"
+        ),
+    ):
+        validate_pins(ROOT, manifest)
     source = (ROOT / "scripts/verify_task_cpu_fixtures.py").read_text()
     tree = ast.parse(source)
     calls = [node for node in ast.walk(tree) if isinstance(node, ast.Call)]

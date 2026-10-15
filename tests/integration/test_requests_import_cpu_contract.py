@@ -5,6 +5,8 @@ import re
 import sys
 from pathlib import Path
 
+import pytest
+
 from mostaza.evaluation.requests_import_cpu import EVIDENCE, immutable_inputs
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -22,8 +24,18 @@ def load_script(name, monkeypatch):
     return module
 
 
-def test_frozen_native_and_vcpu01_inputs_and_exact_gate(monkeypatch):
-    immutable_inputs(ROOT)
+def test_frozen_native_and_vcpu01_inputs_and_exact_gate(
+    monkeypatch, historical_phase2_root
+):
+    immutable_inputs(historical_phase2_root)
+    with pytest.raises(
+        ValueError,
+        match=(
+            r"Missing/changed immutable input: docs/specs/plans/closed/"
+            r"mostaza-phase2-budget-retrieval\.md"
+        ),
+    ):
+        immutable_inputs(ROOT)
     gate = load_script("run_requests_import_cpu_gate", monkeypatch)
     plan = (ROOT / EVIDENCE / "plan-for-approval.md").read_text()
     commands = re.search(r"```sh\n(.*?)```", plan, re.S).group(1).strip().splitlines()

@@ -5,12 +5,18 @@ from __future__ import annotations
 import ast
 import importlib.util
 import json
+import subprocess
 from pathlib import Path
 from typing import Any
 
 import pytest
 
-from mostaza.evaluation.notebook_import_candidate import NOTEBOOK
+from mostaza.evaluation.notebook_import_candidate import (
+    MODULE,
+    NOTEBOOK,
+    build_notebook,
+    payload_of,
+)
 from mostaza.evaluation.notebook_import_cpu import candidate_contract
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -27,8 +33,42 @@ def load_script(name: str, monkeypatch: pytest.MonkeyPatch) -> Any:
     return module
 
 
-def test_blocked_candidate_contract() -> None:
-    assert candidate_contract(ROOT)["status"] == "PASS_BLOCKED_NOTEBOOK_CONTRACT"
+def test_blocked_candidate_contract(historical_phase2_root: Path) -> None:
+    # Positive historical admission never authorizes this combined checkout.
+    assert candidate_contract(historical_phase2_root)["status"] == (
+        "PASS_BLOCKED_NOTEBOOK_CONTRACT"
+    )
+    with pytest.raises(ValueError, match=r"Immutable file changed: README\.md"):
+        candidate_contract(ROOT)
+
+
+def test_current_notebook_rebuilds_from_unchanged_git_payload() -> None:
+    committed = subprocess.check_output(
+        ["git", "show", "1b86b19f7654212c1d9f95eeca84d0e2a05db16b:" + NOTEBOOK],
+        cwd=ROOT,
+        timeout=10,
+    )
+    actual = (ROOT / NOTEBOOK).read_bytes()
+    assert actual == committed == build_notebook(ROOT)
+    notebook = json.loads(actual)
+    assert notebook["metadata"]["kaggle"] == {
+        "isGpuEnabled": False,
+        "isInternetEnabled": False,
+    }
+    for cell in notebook["cells"]:
+        if cell["cell_type"] == "code":
+            assert cell["outputs"] == [] and cell["execution_count"] is None
+            ast.parse("".join(cell["source"]), feature_version=(3, 12))
+    for name, payload in payload_of(notebook).items():
+        if name.endswith(".py"):
+            ast.parse(payload.decode(), feature_version=(3, 12))
+        if name == MODULE:
+            source = subprocess.check_output(
+                ["git", "show", "1b86b19f7654212c1d9f95eeca84d0e2a05db16b:" + name],
+                cwd=ROOT,
+                timeout=10,
+            )
+            assert payload == source == (ROOT / name).read_bytes()
 
 
 def test_preflight_root_available_without_later_cell() -> None:

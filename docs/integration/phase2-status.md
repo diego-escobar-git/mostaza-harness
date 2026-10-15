@@ -15,3 +15,11 @@ The integration gate exercises local CPU unit/integration fixtures, package/comp
 GPU readiness remains false. Native macOS/Python3.13 CPU diagnostics do not establish Linux/native Python3.12 portability, private Kaggle scorer parity, a full notebook/model/agent loop, a Kaggle task score, or hybrid retrieval efficacy. Those remain separate follow-up work with fresh scope and authorization. Missing telemetry remains null with reasons.
 
 No GPU, Kaggle session mutation, notebook publication, submission, Discussion, verifier modification, model download or service change is authorized by this integration. Original experiments, agent payloads, native verifier and historical evidence remain unchanged.
+
+## Historical test prerequisites
+
+The V/R/N evidence manifests bind their original worktree and its retained unpublished closed-plan bytes. Set `MOSTAZA_HISTORICAL_PHASE2_ROOT` to the exact absolute root recorded in those manifests before repository integration tests. The fixture verifies the recorded path, original PR2 HEAD, ancestry, pins and the sole expected closed-plan modification without writing or copying it. Missing or contaminated historical inputs fail; they are never skipped or used to authorize another run.
+
+Historical pin checks remain positive in that retained root and reject the integrated checkout. Current notebook bytes/payload are checked independently against Git and the local builder. The phase2 verifier recomputes current compiler/resource/trace components and rejects the historical readiness identity; only operator command paths are normalized in memory to prove snapshot equivalence. Original guards, native verification and historical readiness artifacts are unchanged. This is not clean-clone portability or a new native matrix evaluation.
+
+The first integration gate stopped after54.0987s:378 unit tests and115 integration tests passed; four integration tests failed because historical pins/operator paths were applied to the current checkout. Cleanup completed. Test-only repairs preserve both historical positives and current fail-closed assertions. The new complete gate uses a fresh candidate and output path; cumulative executed gate wall allowance remains at most1200s, with no automatic retries.

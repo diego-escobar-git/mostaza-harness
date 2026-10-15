@@ -1,5 +1,6 @@
 """AC-7/AC-9/AC-10: authentic local readiness, compiler and tamper rejection."""
 
+import hashlib
 import importlib.util
 import json
 import sys
@@ -8,7 +9,13 @@ from pathlib import Path
 import pytest
 
 from mostaza.evaluation.contracts import canonical_json
-from mostaza.evaluation.phase2 import EVIDENCE, build_notebook, check_notebook
+from mostaza.evaluation.phase2 import (
+    EVIDENCE,
+    build_notebook,
+    check_notebook,
+    operator_commands,
+    readiness,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -24,13 +31,28 @@ def checker():
     return module
 
 
-def test_ac10_actual_readonly_gate_compiles_all_variants_and_replays_evidence():
+def test_ac10_actual_recompute_rejects_historical_readiness_identity(
+    historical_phase2_root,
+):
     paths = [
         ROOT / "notebooks/mostaza-phase2-budget-retrieval.ipynb",
         *sorted((ROOT / EVIDENCE).iterdir()),
     ]
     before = {p: p.read_bytes() for p in paths}
-    ready = checker().verify(ROOT, ROOT / "experiments/cohort.json", ROOT / EVIDENCE)
+    # verify recomputes real local compiler/resource/trace components first.
+    # Its historical readiness must still reject the new operator paths.
+    with pytest.raises(ValueError, match="Readiness differs"):
+        checker().verify(ROOT, ROOT / "experiments/cohort.json", ROOT / EVIDENCE)
+    ready = readiness(ROOT)
+    frozen = json.loads((ROOT / EVIDENCE / "readiness.json").read_text())
+    assert frozen["operator_commands"] == operator_commands(historical_phase2_root)
+    assert ready["operator_commands"] == operator_commands(ROOT)
+    assert ready["operator_commands"] != frozen["operator_commands"]
+    normalized = dict(ready)
+    normalized["operator_commands"] = frozen["operator_commands"]
+    assert normalized == frozen
+    for name, expected in frozen["source_sha256"].items():
+        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected
     assert ready["real_evaluation"] == "NOT_RUN"
     assert ready["platform_enforcement"]["status"] == "BLOCKED"
     assert {p: p.read_bytes() for p in paths} == before
