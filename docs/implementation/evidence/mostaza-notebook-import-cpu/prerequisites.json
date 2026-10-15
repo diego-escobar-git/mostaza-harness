@@ -1,0 +1,1278 @@
+{
+  "environment": {
+    "alternate_python": "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12",
+    "alternate_version_observed": "3.12.8",
+    "colima_status": "not running; read only status",
+    "docker_images": "unavailable: socket permission denied; no retry/start",
+    "historical_kaggle": "Linux/Python3.12.13/pytest8.4.2",
+    "linux_runtime_portability": "NOT_TESTED",
+    "native": "macOS ARM/Python3.13.15/pytest9.1.1"
+  },
+  "external_pins": [
+    {
+      "bytes": 37402474,
+      "path": "resources/official/snapshots/requests_7205.tgz",
+      "sha256": "42dc3d360f842a5c7a66d0008ac05447fcd807dc33ee8cc18d2f2d4876283106"
+    },
+    {
+      "bytes": 316167392,
+      "path": "resources/official/snapshots/fastapi_15589.tgz",
+      "sha256": "ebaf671c28bccb85aa9d8a85735019b4daa6d78d541a679288c64eed88dc76f0"
+    },
+    {
+      "bytes": 90568092,
+      "path": "resources/official/snapshots/rich_3061.tgz",
+      "sha256": "f32c9ed11538db2bf049314ff7c8f08c01ca23006bbd994c25ad72c2815fe905"
+    },
+    {
+      "bytes": 119670,
+      "path": "resources/official/swegemma-0.2.11-py3-none-any.whl",
+      "sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3"
+    },
+    {
+      "bytes": 25197,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/evaluate.py",
+      "sha256": "96a46f49267ffcf861f7f90b98efbe828d03f27553ceefce745819028589de1e"
+    },
+    {
+      "bytes": 49745,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/deduplication.py",
+      "sha256": "f8353a8da887fc45823b9174f4578cd816b341d52c3a074964c1c2310af1573e"
+    },
+    {
+      "bytes": 46695,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/harness/agent_runner.py",
+      "sha256": "4d7eccabd203c26f7c39e882684d2fd851f383f6a5c76c4a75b0e559cd5d6a18"
+    },
+    {
+      "bytes": 27196,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/harness/verification.py",
+      "sha256": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa"
+    },
+    {
+      "bytes": 40661,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/harness/container_setup.py",
+      "sha256": "3192acdce35f2d0bd0b191186851b46c251390af16b7f139a1640e16fb1d862c"
+    },
+    {
+      "bytes": 21429,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/sandbox/subprocess.py",
+      "sha256": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2"
+    },
+    {
+      "bytes": 7750,
+      "path": ".tools/official/lib/python3.13/site-packages/swegemma/config.py",
+      "sha256": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b"
+    }
+  ],
+  "frozen_existing_files": [
+    {
+      "bytes": 587,
+      "path": ".gitignore",
+      "sha256": "45ec570e7165a958655f7a3a955fb206e5c6478b48d4c0320cc7cb363ac3a0a2"
+    },
+    {
+      "bytes": 8,
+      "path": ".python-version",
+      "sha256": "861b3dd8083d28f336ef70f6755bc399538ddad627b1d095820ca34cb953cf14"
+    },
+    {
+      "bytes": 11358,
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 5690,
+      "path": "README.md",
+      "sha256": "6fdb49be671be57868e4aafdaabbc03b75aa945120c9585720199c630adada4c"
+    },
+    {
+      "bytes": 3041,
+      "path": "docs/architecture.md",
+      "sha256": "62935a9775c2fce4a93e11e96bbcdf130dfe3b0653cd920e3b706567bf561d89"
+    },
+    {
+      "bytes": 18111,
+      "path": "docs/experiments.md",
+      "sha256": "c2e4771d79945e1700dc6408b264d0878fbe6c032ae2f568dd8ba9b8faa9669b"
+    },
+    {
+      "bytes": 514,
+      "path": "docs/implementation/evidence/mostaza-context-verification/approval.json",
+      "sha256": "48652ba7ce29aa5a25794e533c7b64693f7fd1f89f07fb7e525f832a1adfe667"
+    },
+    {
+      "bytes": 1182,
+      "path": "docs/implementation/evidence/mostaza-context-verification/audit.json",
+      "sha256": "850de192f30b7672767c4606a98518d38cdc1355fd945ab0668fca8904fb44e4"
+    },
+    {
+      "bytes": 1437,
+      "path": "docs/implementation/evidence/mostaza-context-verification/closure-inventory.json",
+      "sha256": "5e93faf15c2f5f4aca2382592be00053118463855db0be8a7ac0dd5eeeceb5e2"
+    },
+    {
+      "bytes": 3771,
+      "path": "docs/implementation/evidence/mostaza-context-verification/compiler-and-fixtures.json",
+      "sha256": "2ba0c1898ac3d90fcfa8b79f873fdbce59b20325ef3410dc736a1476033e1ccc"
+    },
+    {
+      "bytes": 1509,
+      "path": "docs/implementation/evidence/mostaza-context-verification/cpu-fixtures.json",
+      "sha256": "aa1391d4bc3b1afbd0d7e92853abe973aa035fd58f9d901835ebd5058a21c535"
+    },
+    {
+      "bytes": 2470,
+      "path": "docs/implementation/evidence/mostaza-context-verification/implementation-source-inventory.json",
+      "sha256": "6b39d5645aa8324010f20395b16da4e276878bf4928bc4b5396110c6778ae3f7"
+    },
+    {
+      "bytes": 560,
+      "path": "docs/implementation/evidence/mostaza-context-verification/official-setup-access.json",
+      "sha256": "67b43380068a2e36677e166f76bfe80b8060dde1cc7d605ccca3892eacb7d39b"
+    },
+    {
+      "bytes": 3385,
+      "path": "docs/implementation/evidence/mostaza-context-verification/protocol-proposal.md",
+      "sha256": "8de29679aec989aa229f93928c166b269d39b734d1a1bcfcb8cc3eb40ce9549d"
+    },
+    {
+      "bytes": 1505,
+      "path": "docs/implementation/evidence/mostaza-context-verification/readiness.json",
+      "sha256": "49f5213c89b9f78158b783a9dca8cb55f2bbd9c34c6e85da82f084b6fd5bebae"
+    },
+    {
+      "bytes": 6214,
+      "path": "docs/implementation/evidence/mostaza-context-verification/report.md",
+      "sha256": "ff0f05b2ce8eb8f237d78161fc4a13038ba45ef7f9cd7bc21d4cb932df14c124"
+    },
+    {
+      "bytes": 2628,
+      "path": "docs/implementation/evidence/mostaza-context-verification/validation.json",
+      "sha256": "faaa0ee95d889ee1f6706b0ff2dd7924bcc90f5cad40eeec81aae32cf55aff77"
+    },
+    {
+      "bytes": 711,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/approval.json",
+      "sha256": "3d5644736c3e5f67ddd501ee3dc8ed71b7e7c35e6b7e5ae56d3ac019fc48043b"
+    },
+    {
+      "bytes": 970,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/audit.json",
+      "sha256": "d63c620cec9f1bfafdbc1f7e25a0cbfcfa5d3783850f03b5c2e8f5dc790f92e8"
+    },
+    {
+      "bytes": 3517,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/closure-inventory.json",
+      "sha256": "19a8a69d18aad685aebc901d022007ad02cff1a4e2c4b5afab837aa7a1c60ef5"
+    },
+    {
+      "bytes": 5734,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/contract-review.json",
+      "sha256": "639aaf648eaee6c52b07dfb13387eee574d42fcf09f256ca1dd6ca15d869ee4c"
+    },
+    {
+      "bytes": 8941,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/cpu-parity.json",
+      "sha256": "14085a66d0aa95b80e2c2080941e00a9e41cd490d2cc88888b0507e48a2adf1b"
+    },
+    {
+      "bytes": 3320,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/investigation.json",
+      "sha256": "652f9e0d2b169f8784fcec4850b395e527576e600f75447905669154862f2377"
+    },
+    {
+      "bytes": 2565,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/organizer-question-draft.md",
+      "sha256": "acad02faeaf39680c8d0494cf7178800e4a5e10a1ee10484a8964693727cac47"
+    },
+    {
+      "bytes": 129,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/organizer-status.json",
+      "sha256": "6b9b09c2365b32cedb0019c56ab7d1301c746c5b4492dbdd20257ed7acac85ab"
+    },
+    {
+      "bytes": 12900,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/plan-for-approval.md",
+      "sha256": "44cd201c632a5447452b8456ea50d5f0f2b34facaff7ff870e0afcc164dacd32"
+    },
+    {
+      "bytes": 2323,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/public-sources.json",
+      "sha256": "6342b675acb6a88f34a777b2a0cbc47eecc00fa3950b4c6d9b587c7e1ca20efa"
+    },
+    {
+      "bytes": 3202,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/raw-inventory.json",
+      "sha256": "a7f6699a101ac9ec9a61e5740298e1490a25ff98093a07b9a0d20dd508de8a9d"
+    },
+    {
+      "bytes": 9739,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/report.md",
+      "sha256": "fb7cebeaaca7949321722a57d4c1fb35a84af8ab98ec6e0a0d97d895868c94a7"
+    },
+    {
+      "bytes": 1214,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/source-inventory.json",
+      "sha256": "f2998363f2fa0974c73a351c834ec2e94dc1a24149a6df794536b9c24ad94c67"
+    },
+    {
+      "bytes": 3306,
+      "path": "docs/implementation/evidence/mostaza-pcv01-access/validation.json",
+      "sha256": "559c8e3b90d895cc6a18436e552d99f336a94ef7cbaed70b0b960923e2714da4"
+    },
+    {
+      "bytes": 727,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/approval.json",
+      "sha256": "16d8ec1b97c04fe996d11f375e0af8965b3a5310e055f3c017067e4ec99ce8eb"
+    },
+    {
+      "bytes": 1212,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/audit.json",
+      "sha256": "c582f23d459155c24fcd54155ddc9b2e882b895b657afa19a4bcd82b459ede9e"
+    },
+    {
+      "bytes": 2833,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/closure-inventory.json",
+      "sha256": "29920521c8a0e947a298192c341db781a7909566dbfa2fdad467b7aac555e7d5"
+    },
+    {
+      "bytes": 2318,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/compatibility.json",
+      "sha256": "1f9318af3306e2dee569d60edab2bc6f7b35f3aa2b9e0b9f39f521e7dbadbdbe"
+    },
+    {
+      "bytes": 48043,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/cpu-controls.json",
+      "sha256": "f97ae254100021b515caeb4bdbc00dc23dd0452fca594313da9d35adb959939c"
+    },
+    {
+      "bytes": 31997,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/raw-inventory.json",
+      "sha256": "784c601662109c17e20c53160b7bdb676e747fccdad230884b34daa388c8c3b3"
+    },
+    {
+      "bytes": 9230,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/report.md",
+      "sha256": "eb69ebb63a18fc76f10bb68a2bab2f7bd52a4ddfa87028540530336546339d3d"
+    },
+    {
+      "bytes": 1067,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/source-inventory.json",
+      "sha256": "70ff243c7e58c1850ef7ddb999dea17bbf5980b19b917815c5b5301eebc9927d"
+    },
+    {
+      "bytes": 2835,
+      "path": "docs/implementation/evidence/mostaza-pcv01-cpu/validation.json",
+      "sha256": "8fc305ce10ca11792bc16e26a2cb95b8721c8a7088581152191d6e84f4b7ffa4"
+    },
+    {
+      "bytes": 19484,
+      "path": "docs/implementation/evidence/mostaza-phase1-foundation/comparison.json",
+      "sha256": "ab87b9880311dc4815af8362712f031505aa9ba7566f60b5d37f0716a808aa7a"
+    },
+    {
+      "bytes": 25424,
+      "path": "docs/implementation/evidence/mostaza-phase1-foundation/official-validation.json",
+      "sha256": "6b083bfbbc9d9bab4dd22a5fa02666b9682e4cdf659db7628804c1b919f24756"
+    },
+    {
+      "bytes": 23377,
+      "path": "docs/implementation/evidence/mostaza-phase1-foundation/paired-results.jsonl",
+      "sha256": "05096901634f8770de3d8e2d1720a1fa3831ae71caaf6ce4fe216eecbf45ab5d"
+    },
+    {
+      "bytes": 9219,
+      "path": "docs/implementation/evidence/mostaza-phase1-foundation/report.md",
+      "sha256": "b15aef99c3aae5d779fd60adc7965e9848a2275e4423525cb35da58af092f403"
+    },
+    {
+      "bytes": 27381,
+      "path": "docs/implementation/evidence/mostaza-phase1-foundation/resource-review.json",
+      "sha256": "57f5980b4c4a1b23f86af1c14846bb26a2908796ec4296a71dca820219d40bcc"
+    },
+    {
+      "bytes": 65937,
+      "path": "docs/implementation/evidence/mostaza-phase2-budget-retrieval/comparison.json",
+      "sha256": "78d1ffcd28ba312095d19c1329db92273ec0fd46e3a286384d11161703c0c327"
+    },
+    {
+      "bytes": 5191,
+      "path": "docs/implementation/evidence/mostaza-phase2-budget-retrieval/official-validation.json",
+      "sha256": "44d2580ed9a9c76d5ea7539423d6c85ebcfdcc06c16929ae9c095212b9c2eed0"
+    },
+    {
+      "bytes": 8451,
+      "path": "docs/implementation/evidence/mostaza-phase2-budget-retrieval/readiness.json",
+      "sha256": "fda3d9b9a2c08dc973ba64a7ebac62cb45a9927e616f3528bdac3214bdf5935d"
+    },
+    {
+      "bytes": 5056,
+      "path": "docs/implementation/evidence/mostaza-phase2-budget-retrieval/report.md",
+      "sha256": "51f43590a496ae011aec55fa30beee18e42d18724c97454329fb1e485415f4f9"
+    },
+    {
+      "bytes": 6200,
+      "path": "docs/implementation/evidence/mostaza-phase2-budget-retrieval/resource-review.json",
+      "sha256": "2beea775006a5bfcfda58839801c0b4d477f76f945e39a8bf2f69cecf4273797"
+    },
+    {
+      "bytes": 198112,
+      "path": "docs/implementation/evidence/mostaza-phase2-budget-retrieval/trace-diagnosis.json",
+      "sha256": "b38d4a5d5eeeae6411c5c5604afa46f214e7efac05c13aec5e6a2d1f47c91f70"
+    },
+    {
+      "bytes": 7385,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-run/acquisition.json",
+      "sha256": "57995512309e61af3e823832701b7d1a6288dcaff0fadb6a32c04a98b8363360"
+    },
+    {
+      "bytes": 1496,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-run/audit.json",
+      "sha256": "e9f39839c357f3ca35444ce13ff6fd61b677ab1202ab451781cb9dfe3c2fc08f"
+    },
+    {
+      "bytes": 3103,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-run/evaluation-records.json",
+      "sha256": "bbbcdd2bc459f460f6cc12e055210ab1680c5613b8bd9dcae2f7e065e443b888"
+    },
+    {
+      "bytes": 5636,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-run/report.md",
+      "sha256": "50f2f09c713b3101573bb9c589f30d60b1d5e48c41a26baaf0a936a94039e7d5"
+    },
+    {
+      "bytes": 1349,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-run/startup-environment-delta.json",
+      "sha256": "8680026534870dbacb64863855b05fa20d3cc235f21b9262b73e941c0d008964"
+    },
+    {
+      "bytes": 1205,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-run/validation.json",
+      "sha256": "d2bb649cc07996a16cd1156dfbfb9b628ee7ceaaa41fe856bbc38fba33de6f5f"
+    },
+    {
+      "bytes": 1682,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-startup/audit.json",
+      "sha256": "08fb76399e6c2eeeb21e7402fb49850eea9a1fae9e968fb09e3ce1c135735056"
+    },
+    {
+      "bytes": 3498,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-startup/investigation.json",
+      "sha256": "c41ddb88516368707d1da6a7728c06e777d811fb1ca174867f542045686b5b88"
+    },
+    {
+      "bytes": 618,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-startup/local-native-validation.json",
+      "sha256": "32682c150651cef2332fe29745f7fbe8f6bcd6acf7f0e440399664a6fbddffa7"
+    },
+    {
+      "bytes": 3115,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-startup/quota-proposal.json",
+      "sha256": "9d07feb1bff467dc55bc4f610a6fe4b1d7b3d1dd44fb2d3846974d1e8cefd0dd"
+    },
+    {
+      "bytes": 2565,
+      "path": "docs/implementation/evidence/mostaza-phase2-observed-startup/validation.json",
+      "sha256": "152fe6c20e9eaf80dd09678ec335fd157e497415958531d7693dc5bfef0377d4"
+    },
+    {
+      "bytes": 1147,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/closure-inventory.json",
+      "sha256": "3f706b97dd15098a172c996b577c4ad1ef5646a7078dec5c6a49faf1b3b3e0e0"
+    },
+    {
+      "bytes": 9125,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/correction-plan.md",
+      "sha256": "fbc953755141be8d68fb7feaba1d0aa973808b7bc17c4e1eaf646bfbc0427747"
+    },
+    {
+      "bytes": 2808,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/cpu-replay.json",
+      "sha256": "fa6ca488867abe2fc215e659a5f353864b30798593c5341b7b1fbb31d65d15ee"
+    },
+    {
+      "bytes": 2003,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/import-replay.json",
+      "sha256": "4d244c8049a859228c28d6ac3f035ce324361a453ca4d8b8662537557e2fe4db"
+    },
+    {
+      "bytes": 10401,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/report.md",
+      "sha256": "48da9234d9e9b935b6f6c5bcfeab831f5ee0a969d721c5d2af2f3f31a04bbc15"
+    },
+    {
+      "bytes": 1411,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/reproduction-inventory.json",
+      "sha256": "c69ce351462d5a1ee23809c20b6a03c2c6485ea0fd3fbe7d10c3e27ab98b80f2"
+    },
+    {
+      "bytes": 1401,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/retrieval-replay.json",
+      "sha256": "4b473570cc51ed932659d100281458f492dbdfc571399307c2011b4ef1c1efa0"
+    },
+    {
+      "bytes": 25181,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/trace-evidence.json",
+      "sha256": "84ea26ace62cf0d058aedf12987ecb4792637b6ecbd9a580c04218279497ceda"
+    },
+    {
+      "bytes": 1647,
+      "path": "docs/implementation/evidence/mostaza-phase2-postrun-diagnosis/validation.json",
+      "sha256": "ee48fa34cd7801720d559ffb1a33f52ad883c1ecf7bf76b957dcdbe7af217ec4"
+    },
+    {
+      "bytes": 2879,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/audit.json",
+      "sha256": "e7c6bd224f495f7669c983db87e3ab2048e462abcebbbb4354982e73de77803e"
+    },
+    {
+      "bytes": 1848,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/closure-inventory.json",
+      "sha256": "deca8613d606fbc39ef2684dda4dfdf653f7b5a4fc752445b3dfe1c3ac33d7f4"
+    },
+    {
+      "bytes": 2486,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/environment-comparison.json",
+      "sha256": "d6418593ed54f717eab44ec62e4c96e260214a7eee0d5ab808a7a0e04346f803"
+    },
+    {
+      "bytes": 3923,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/manifest.json",
+      "sha256": "5674d269501d48806440f1b75496a96484a2d80836b606fc6402e6d2bd3f32d6"
+    },
+    {
+      "bytes": 1380,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/native-builders.json",
+      "sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+    },
+    {
+      "bytes": 618,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/native-lifecycle.json",
+      "sha256": "32682c150651cef2332fe29745f7fbe8f6bcd6acf7f0e440399664a6fbddffa7"
+    },
+    {
+      "bytes": 1656,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/official-review.json",
+      "sha256": "7cace71126d0ddf9e22278b719546a7e1817ded94d2ae4e367006e611355036a"
+    },
+    {
+      "bytes": 3498,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/quota-proposal.json",
+      "sha256": "3b1168c2a1623982ba7e5a38691d815848004840556eda73232b31ef6127a3bc"
+    },
+    {
+      "bytes": 9045,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/report.md",
+      "sha256": "dd277f45b8893915a97a3ff27c7a22aeaffc64a3e59dca0146d0ff740335b38c"
+    },
+    {
+      "bytes": 2238,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-correction/validation.json",
+      "sha256": "bbd201dcd8ccc52f7801595204515a436ca68db5618b1a0c2ba07bef9b0fda71"
+    },
+    {
+      "bytes": 9907,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/E0-B180-derived-manifest.json",
+      "sha256": "6a536462ebfab50a39189d4fd1c739231d4dd9e706463c8c0fd251be28ded52d"
+    },
+    {
+      "bytes": 9907,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/E1-B180-derived-manifest.json",
+      "sha256": "e109b4382a54bd3c16814e3cf2ec50e41bdbc7ccc21a61cae2f4d02c015f0c17"
+    },
+    {
+      "bytes": 13859,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/acquisition.json",
+      "sha256": "fd7390ac92c20c7cd2745d329fcea8fffa40ecec771d31493ef44ffaecf5fda4"
+    },
+    {
+      "bytes": 1575,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/audit.json",
+      "sha256": "0ec99bf7e6ee1a79555e342d1cdb96867436f1f9ca085cda4ee9bfea6aa3ad54"
+    },
+    {
+      "bytes": 1581,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/closure-inventory.json",
+      "sha256": "07c1a82405ec7d65a9e9b3cd880076a3a526a72956307a3b5f5aaf9bab73f8d5"
+    },
+    {
+      "bytes": 20301,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/comparison.json",
+      "sha256": "ad3ee101a45d0790e481a27599f818bf21db128661b317d1498636036b9b91c9"
+    },
+    {
+      "bytes": 30248,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/evaluation-records.json",
+      "sha256": "3932cf29e2cf65fec10d9babbffb5078bbe6f5ef7a01940467a0f029d3c78b5e"
+    },
+    {
+      "bytes": 9515,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/paired-report.md",
+      "sha256": "89b35b491215002942f12208d3bc7f95e116dd6c1bf789a71b45a21e83648ecc"
+    },
+    {
+      "bytes": 10691,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+      "sha256": "4df1c9f96de0b99b1ebde9168e809f3e679dd7edb0f33da71ff3642cf07450fa"
+    },
+    {
+      "bytes": 10672,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/report.md",
+      "sha256": "8779db031c4fd7bb39ae21b33547c14fcb539eab00a37a5ecd9ff5b66c061f79"
+    },
+    {
+      "bytes": 39614,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/trace-observations.json",
+      "sha256": "eeddc816a685d216ab0b9260725159e54f326cd97318ad4a013e44a71b16c409"
+    },
+    {
+      "bytes": 1233,
+      "path": "docs/implementation/evidence/mostaza-phase2-startup-run/validation.json",
+      "sha256": "6871773b2485f1c7f0ce732a190e74a0e1c48b185fce1de7592361574f568c0b"
+    },
+    {
+      "bytes": 573,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/approval.json",
+      "sha256": "9dbba8e9ea331a38d8fbbcdbfab7ab3475a7bb8c304325709f69b5b295de84fa"
+    },
+    {
+      "bytes": 1381,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/audit.json",
+      "sha256": "827221e0d03bf190405ecba12f4255ed08dfa72811a9bfcda3745f5159f578b2"
+    },
+    {
+      "bytes": 1168,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/corrected-source-inventory.json",
+      "sha256": "d49be6cba72d0e20240d45904167b12f7ef1aa8943e68f84f791611797b0964c"
+    },
+    {
+      "bytes": 821,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/corrective-attempt.json",
+      "sha256": "c23c5a30de46034fdec8e765266cd01427f5abae0fee89876a883b9be80bd346"
+    },
+    {
+      "bytes": 102353,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/cpu-results.json",
+      "sha256": "adb237a8a3a070f8dfb8508eeef689789390c34c7ed1a83a5d9bb86b97003540"
+    },
+    {
+      "bytes": 21034,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/gate-attempts.json",
+      "sha256": "2a2996e5b229e56a4436c067d8581f5c6af97e03be37d092b16bd9b2b3e6ed6d"
+    },
+    {
+      "bytes": 18924,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/plan-for-approval.md",
+      "sha256": "980590637f5d249ffc5002bb449db8901fa694d0a6b73df711b8703d8d3bec1d"
+    },
+    {
+      "bytes": 257,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/pre-gate-audit.json",
+      "sha256": "c4d1af07dde40aa59ce1f7478e82fa384bcdb90d906651ac220096296e85fd6b"
+    },
+    {
+      "bytes": 7501,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/prerequisites.json",
+      "sha256": "838a3e05efff930fc22edd186526f240fd875ff570f892de04daa58d4b60c0b4"
+    },
+    {
+      "bytes": 56407,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/raw-inventory.json",
+      "sha256": "d5f5dbba7fe9d0dde3d3a64d31813158756c49fff9b34c0f19294bc000fc6610"
+    },
+    {
+      "bytes": 7472,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/report.md",
+      "sha256": "db04dbfea96a63a49ea00ff31a0adcfcc176fbc51a35c7be0d70f1545ba03c4b"
+    },
+    {
+      "bytes": 1168,
+      "path": "docs/implementation/evidence/mostaza-requests-import-cpu/tested-source-inventory.json",
+      "sha256": "cefe0d6da9f18f8f118739c2642f78a336378225617706d38599081ccc74682b"
+    },
+    {
+      "bytes": 551,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/additional-attempt-approval.json",
+      "sha256": "66cf14e4bf0b86965a3cd4d5442ae14398300757de37ce69fc76e482a1d2e151"
+    },
+    {
+      "bytes": 566,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/approval.json",
+      "sha256": "a99dda3f3b7f7174abefc99480694221ef933522e0aca6d9dedf5b05cd90b1db"
+    },
+    {
+      "bytes": 1069,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/audit.json",
+      "sha256": "51f2f32116a1ad56ca1507fed383cdd70c4d133063e87ae73b5e3e3f25c73853"
+    },
+    {
+      "bytes": 1195,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/checkpoints/before-additional-attempt/audit.json",
+      "sha256": "cbb74b948de52b59665ef0a0e9dc8cb5472024460775730026fdf5f7f05557c0"
+    },
+    {
+      "bytes": 6819,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/checkpoints/before-additional-attempt/gate-attempts.json",
+      "sha256": "e1f863135a944f22d61701d5e4452cac75ba5157e81dc4633e3bc26a7722cfa9"
+    },
+    {
+      "bytes": 18737,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/checkpoints/before-additional-attempt/raw-inventory.json",
+      "sha256": "697b88c865e724dca77a8782362a174cf239190ce03b1cafd0c854571b690b96"
+    },
+    {
+      "bytes": 4662,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/checkpoints/before-additional-attempt/report.md",
+      "sha256": "549e71cd31b3ccc739835ac02012a984b4ef0e2af60169e6541331640900a7bc"
+    },
+    {
+      "bytes": 999,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/corrected-source-inventory.json",
+      "sha256": "c01d4b96045e2d13d9625a2bc8b67d183e47f57976855660d2ccd3beee06aad5"
+    },
+    {
+      "bytes": 38335,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/cpu-results.json",
+      "sha256": "3f8a00e13d751a47995c5084e78f5a143a9b53e991edfdc26f68fab71f4d201e"
+    },
+    {
+      "bytes": 10199,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/gate-attempts.json",
+      "sha256": "dcd856f0c78012e6bdf87463246f2b26a1ed20ccdbb53340dcaea5be265470ce"
+    },
+    {
+      "bytes": 17828,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/plan-for-approval.md",
+      "sha256": "dd4ba2e90618f2c2829d15b0f5c6c200ccdb2ee5ed6cbd67e8e5dec72cc1068e"
+    },
+    {
+      "bytes": 3133,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/prerequisites.json",
+      "sha256": "6d05387aec1d9f52d93bc09a5a517d3a284b0afdfa21e0b3a3c57c847e613c88"
+    },
+    {
+      "bytes": 33574,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/raw-inventory.json",
+      "sha256": "7e109479fd4f9fa0fc0c79ee33e3479860e7e56feaa73cfffe012542ced5edcb"
+    },
+    {
+      "bytes": 7306,
+      "path": "docs/implementation/evidence/mostaza-verify-task-cpu/report.md",
+      "sha256": "973bd3e41c2c61771ff65bfa7f9d72b5f99edb4835e24e88e24144ed6dd95b4b"
+    },
+    {
+      "bytes": 22174,
+      "path": "docs/kaggle-setup.md",
+      "sha256": "c7c45701484ec69ac5a7b353c1d1a5ba3cdc082bd833be8c6f4d3e853450aa6a"
+    },
+    {
+      "bytes": 1988,
+      "path": "docs/research-proposal.md",
+      "sha256": "294162495da1ab44315c1b3da88296298947f9a479628144fa6de6601a881700"
+    },
+    {
+      "bytes": 797,
+      "path": "docs/specs/README.md",
+      "sha256": "d418324eade51c3520880bab3c768d28c8713f3de0a78be2974b74c2dbbe54db"
+    },
+    {
+      "bytes": 4175,
+      "path": "docs/specs/agent-retrieval.md",
+      "sha256": "0c17913fe07e776b1991e08b62781dab4d66ce727360ae5bcc684dbf7fc1dc20"
+    },
+    {
+      "bytes": 8626,
+      "path": "docs/specs/budget-retrieval-calibration.md",
+      "sha256": "b1e8eddef48a6bc770899ce6bd61c4f29fa81bf1024f9c637609d1b53a28c0c6"
+    },
+    {
+      "bytes": 3670,
+      "path": "docs/specs/context-verification.md",
+      "sha256": "61f78bb9dbea3c449d1bbccf97c02b056ba4cb21a7aded0e35953c242d8a4866"
+    },
+    {
+      "bytes": 4340,
+      "path": "docs/specs/evaluation.md",
+      "sha256": "91b7b07765f7c26f3d09ad2dac95ddf0fba96c448fa48cc68eee10aa40ebb799"
+    },
+    {
+      "bytes": 2414,
+      "path": "docs/specs/foundation.md",
+      "sha256": "da4e829be5a736c94b675215d927cb7b54945d23096d91a2a09b0e2196bd817f"
+    },
+    {
+      "bytes": 7141,
+      "path": "docs/specs/pcv01.md",
+      "sha256": "4a53a813361771a1450e3d1146b526fef4c9cea4a7ef16ffef5019e5e3666b1f"
+    },
+    {
+      "bytes": 119969,
+      "path": "docs/specs/plans/closed/mostaza-phase1-foundation.md",
+      "sha256": "3c1dac1248e913c2cfd81647437c3e5558abedcb62a5579923bf4d08c376a373"
+    },
+    {
+      "bytes": 71825,
+      "path": "docs/specs/plans/closed/mostaza-phase2-budget-retrieval.md",
+      "sha256": "5457a535f1e8457789d73ef38f0346c04ded2d18424a172e12d7b3ed6e66a8d5"
+    },
+    {
+      "bytes": 1492,
+      "path": "docs/specs/requests-import-cpu.md",
+      "sha256": "46b0ef1c66305a2bcfc4a1b57b647b09b7ac03d2d830370dfc998a7266fdf6b8"
+    },
+    {
+      "bytes": 1589,
+      "path": "docs/specs/verify-task-cpu.md",
+      "sha256": "51a9f392b97d44d6c33d07dad0f36eec4259171268ee996ff589fca5aa5313fa"
+    },
+    {
+      "bytes": 5269,
+      "path": "experiments/E0-B180/manifest.json",
+      "sha256": "400fa15b41cbe497d0c758b48cf10602a0563ea6bc60382266869a0c0e0bed88"
+    },
+    {
+      "bytes": 5269,
+      "path": "experiments/E0-B300/manifest.json",
+      "sha256": "fad16d4d5e21df8aae052a55522d4b7fa230dfcea639aee1fa18170a708ac3b8"
+    },
+    {
+      "bytes": 3809,
+      "path": "experiments/E0-C8K-Q1/manifest.json",
+      "sha256": "64c7cede79192011206be38fc51f735db725d6b41df98287f6d82b53580ccd6c"
+    },
+    {
+      "bytes": 2366,
+      "path": "experiments/E0-C8K/manifest.json",
+      "sha256": "c72f23a7b58637b535d5d639ff86648361eab80d2c512b387e726ae54d1c4422"
+    },
+    {
+      "bytes": 4694,
+      "path": "experiments/E0-baseline/manifest.json",
+      "sha256": "69d25543cdca0dd803f05a8658b32797e8a78c979a0e9c7c42dd303d3e9610b5"
+    },
+    {
+      "bytes": 6046,
+      "path": "experiments/E1-B180/manifest.json",
+      "sha256": "58409d7a173dfcc1f6892fbc95f0d94c5ea55d3a7513935b7040d3e7c08fa464"
+    },
+    {
+      "bytes": 6046,
+      "path": "experiments/E1-B300/manifest.json",
+      "sha256": "2bad3f9ae84eb411d247542a4712ecbbef6206d5be564404d9b56d9a5e20ef9f"
+    },
+    {
+      "bytes": 9827,
+      "path": "experiments/E1-C8K-Q1-R1/manifest.json",
+      "sha256": "986597efd062d08ec01d3a03017f65b8f8f73138c55c05c6a2d91dcf4127c45a"
+    },
+    {
+      "bytes": 3817,
+      "path": "experiments/E1-C8K-Q1/manifest.json",
+      "sha256": "c7e5b3900a67e6df6565cb85ca31a53d2c20002715a69514a2a14dbcdedfe4f8"
+    },
+    {
+      "bytes": 2374,
+      "path": "experiments/E1-C8K/manifest.json",
+      "sha256": "7c3f20bdbab2042f6a65a6558d1923f6d63271311b5fc27972b101c8accb807e"
+    },
+    {
+      "bytes": 11677,
+      "path": "experiments/E1-R180/manifest.json",
+      "sha256": "8204b9f04e4bc0f78c05271168a68cb500664abb539a2b06210821e0daab5b59"
+    },
+    {
+      "bytes": 5504,
+      "path": "experiments/E1-hybrid-retrieval/manifest.json",
+      "sha256": "8cba982f0f4e47049df09dee57d4e95bb0a3ce78ed511906228e9375251038db"
+    },
+    {
+      "bytes": 1773,
+      "path": "experiments/cohort.json",
+      "sha256": "1ee1eef565392ee98efb2a4aa6398c79611a6e95d61def165410f2aaee918a09"
+    },
+    {
+      "bytes": 271023,
+      "path": "experiments/kaggle-run.ipynb",
+      "sha256": "38d858f9bafddaf7df8d3653a56d95ed85ab3a596b8157702e67964fea7c74c0"
+    },
+    {
+      "bytes": 221550,
+      "path": "notebooks/mostaza-context-verification.ipynb",
+      "sha256": "2fe6aafade2e0c11cf195a648462596651c59e9c5e2c92e750d750807df3f85f"
+    },
+    {
+      "bytes": 185846,
+      "path": "notebooks/mostaza-phase2-budget-retrieval.ipynb",
+      "sha256": "02d410a2cec6d833426eed6cd8fcfee43d8b16c8e537592e92a87ec32cc0c4c2"
+    },
+    {
+      "bytes": 207356,
+      "path": "notebooks/mostaza-phase2-observed.ipynb",
+      "sha256": "a50664fae097d1c79d2b3b724cb3524e0ad85cbde53cae175e0d2cfdc7494d95"
+    },
+    {
+      "bytes": 219722,
+      "path": "notebooks/mostaza-phase2-startup-corrected.ipynb",
+      "sha256": "127ad5adec71cd25d8da80afbcb78cc8f1a899a9dcca2ba9a58af51900e4cf1b"
+    },
+    {
+      "bytes": 852,
+      "path": "pyproject.toml",
+      "sha256": "f918c4674467ca9472dff0f2be3f16c5472244e641a9511aca9359c5d1e591a7"
+    },
+    {
+      "bytes": 13757,
+      "path": "resources/manifest.json",
+      "sha256": "d6e6e7671d63c21ec4d7fc7c97e56ec32733a3aeb6070cf483c22b5dc79cd5e9"
+    },
+    {
+      "bytes": 0,
+      "path": "results/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 9876,
+      "path": "scripts/check_context_verification.py",
+      "sha256": "ec5e6c0e60374612eab43c27018f304c90bfcca6ffd8e1732c5cca8fde2886ea"
+    },
+    {
+      "bytes": 6596,
+      "path": "scripts/check_evidence.py",
+      "sha256": "bf1354aea7853263d77855f0a388a769ad2ed1e4e3301cedf35e38605f60be80"
+    },
+    {
+      "bytes": 9100,
+      "path": "scripts/check_official.py",
+      "sha256": "9a391ff31b750f3067685ec523149332cb7c32747748a65e2bee1c831397e9db"
+    },
+    {
+      "bytes": 8210,
+      "path": "scripts/check_pcv01.py",
+      "sha256": "723e3813076a8fd22dd9bf5e84553c51d27befec85c60e37a283894d59db3a57"
+    },
+    {
+      "bytes": 497,
+      "path": "scripts/check_pcv01_scorer_contract.py",
+      "sha256": "254ff59c4caa5b0fc6ad8360c5be83a330a7f98e355c93ce32db7f522094c895"
+    },
+    {
+      "bytes": 4332,
+      "path": "scripts/check_phase2.py",
+      "sha256": "3e4b35ad19e6f88a54879ff44136a08e6e5fb49441d93ced9fef70ca260e0cee"
+    },
+    {
+      "bytes": 5184,
+      "path": "scripts/check_requests_import_cpu.py",
+      "sha256": "b47b6b4921541649640af6cea7754c19e1f92bba3e8fc7ad8eef59c45e97b739"
+    },
+    {
+      "bytes": 3078,
+      "path": "scripts/check_startup_configuration.py",
+      "sha256": "af3ce21735a03b6d0676682925cc8ef0e374fa80e65cd05628948883611466c5"
+    },
+    {
+      "bytes": 4535,
+      "path": "scripts/check_startup_observation.py",
+      "sha256": "816d63f65af414b152e64ef0d8e0004e451cd203c4e3a6eddbcd5f0aef8352b8"
+    },
+    {
+      "bytes": 8434,
+      "path": "scripts/check_verify_task_cpu.py",
+      "sha256": "d15730d5444483c9eb0874e7be881ca81d9f8cabc3cb6ab94c0cc4d5aebc400b"
+    },
+    {
+      "bytes": 13278,
+      "path": "scripts/context_cpu_fixtures.py",
+      "sha256": "52bfc78dbeba7e51ba5d653cbb7c4ee31b5da941bb130984a454878972187969"
+    },
+    {
+      "bytes": 827,
+      "path": "scripts/fetch_resources.py",
+      "sha256": "7f4dfc8254fd4e289bcdea9c9fa30078d0e912a1c4e248366abf4786f2eaa341"
+    },
+    {
+      "bytes": 264,
+      "path": "scripts/package.sh",
+      "sha256": "62a83029a7c8c4419382fd6eb1497a39b4f2863089a2527c3fea034d6df93907"
+    },
+    {
+      "bytes": 15447,
+      "path": "scripts/pcv01_cpu_fixtures.py",
+      "sha256": "7a27e92cf83422d19f720f19eaecc8cb6d520d17c4a1bb57caea436f565e0488"
+    },
+    {
+      "bytes": 1653,
+      "path": "scripts/prepare_context_verification.py",
+      "sha256": "dbb06ecfcc708d0b2ec01c06d9e217fdf88a00d83e64f90fc10ece3cdce1eb1a"
+    },
+    {
+      "bytes": 1720,
+      "path": "scripts/prepare_observed_phase2.py",
+      "sha256": "b1e2bf6b12e62d5278b185c119c8eb04ecb9dbfa6d27f939256e1686700edf07"
+    },
+    {
+      "bytes": 2355,
+      "path": "scripts/prepare_phase2.py",
+      "sha256": "0c30e2e1eeddd70d609f4cfc63073b79d18004e43746dbbeddbbd5061fd5f240"
+    },
+    {
+      "bytes": 1749,
+      "path": "scripts/prepare_startup_phase2.py",
+      "sha256": "b0fce3fa7f007727a3483945598ae1769473a69366ddef90ff57477667dfc542"
+    },
+    {
+      "bytes": 12915,
+      "path": "scripts/requests_import_cpu_fixtures.py",
+      "sha256": "e52c5e80b1bb285c855e1d4537457d9efa33b4d656929dabcc8ac1c0474806e7"
+    },
+    {
+      "bytes": 531,
+      "path": "scripts/run_experiment.sh",
+      "sha256": "c0a58bc5eedfd8c843b984a429a5ded08a933799b8617f9fa083250f6444f77f"
+    },
+    {
+      "bytes": 9568,
+      "path": "scripts/run_requests_import_cpu_gate.py",
+      "sha256": "cfd8c2118ec42b701fe0290465edd033693a9f4cfc5fe05fb561cb6955fd8601"
+    },
+    {
+      "bytes": 737,
+      "path": "scripts/setup.sh",
+      "sha256": "40537deb14ca5cf30e56e9c080fab2d30eb55cc0a96ef59169e8e3013d49f181"
+    },
+    {
+      "bytes": 1228,
+      "path": "scripts/validate.sh",
+      "sha256": "346a3669a40627a0d80bc309c2ed1dc8bb8a7c6212a37faac3ca62e8c3ddac62"
+    },
+    {
+      "bytes": 12312,
+      "path": "scripts/verify_task_cpu_fixtures.py",
+      "sha256": "fda1ed889a2c6b4636d6d72b6036cebcddce13601d30ded7a999177c49d4decf"
+    },
+    {
+      "bytes": 160,
+      "path": "src/mostaza/__init__.py",
+      "sha256": "e6e7452e239f7a03d6645be265792ed103fcc93b27da4e1f2b982aa8af018d3c"
+    },
+    {
+      "bytes": 78,
+      "path": "src/mostaza/evaluation/__init__.py",
+      "sha256": "2106119b057d082ec60e8a8e21aef6fcc3f7d63a3ff4d0e177ddbac3db9efcac"
+    },
+    {
+      "bytes": 18879,
+      "path": "src/mostaza/evaluation/browser_supervision.py",
+      "sha256": "8900bc6017cac46d079a6cfe3e329a34c9c0105766b0d592c476464f7306d8f5"
+    },
+    {
+      "bytes": 7062,
+      "path": "src/mostaza/evaluation/context_candidate.py",
+      "sha256": "6e0d89b7f840a02822e13229f2e6363dcfb817d9407f1d7f4145dc49fa8b4976"
+    },
+    {
+      "bytes": 5216,
+      "path": "src/mostaza/evaluation/context_diagnostics.py",
+      "sha256": "bc7ffad7d20f93761a5f0db1a306505cddd32386a9b5c25a57a2d87d7b1a43af"
+    },
+    {
+      "bytes": 7054,
+      "path": "src/mostaza/evaluation/context_variants.py",
+      "sha256": "3728896e6a974c30bbaa8a890d9a512f21340642ea7ff19fa871be95653ba52e"
+    },
+    {
+      "bytes": 12594,
+      "path": "src/mostaza/evaluation/contracts.py",
+      "sha256": "b8500c062a3e81b7bc0fb6051e72cc4af07689fc1cf2f8dc60f8c58a8c87e7d3"
+    },
+    {
+      "bytes": 31374,
+      "path": "src/mostaza/evaluation/import_results.py",
+      "sha256": "9205c08f6db52ae6b178923e72753b2d0ad4f93b0fecd2ef5ec84390c518bfb6"
+    },
+    {
+      "bytes": 35980,
+      "path": "src/mostaza/evaluation/phase2.py",
+      "sha256": "efd71b1c73a07a267b6a4a2f42ef5f8dcec4c2e9651c8a71879619265aeb8c7b"
+    },
+    {
+      "bytes": 9607,
+      "path": "src/mostaza/evaluation/pytest_origin_receipt.py",
+      "sha256": "3f2e0355dbe7b40b308bc900a8858316441b8113040899b918c9f62931883ddb"
+    },
+    {
+      "bytes": 9704,
+      "path": "src/mostaza/evaluation/requests_import_cpu.py",
+      "sha256": "977a71b450dc0edb5d5534715c2d180d09847a42d53947316e24a376ebd8d0f3"
+    },
+    {
+      "bytes": 12355,
+      "path": "src/mostaza/evaluation/runner.py",
+      "sha256": "5f56dfd22e339ac72ae6c93b0b43c4229f92959b5fc28cda1f531d952b229770"
+    },
+    {
+      "bytes": 16419,
+      "path": "src/mostaza/evaluation/scorer_contract.py",
+      "sha256": "6dfeec2331f4ea4ad73891b249214c2eef6f386e3650919aeab043699b7bd767"
+    },
+    {
+      "bytes": 6333,
+      "path": "src/mostaza/evaluation/startup_candidate.py",
+      "sha256": "442dd5861a93c8813597f64bb9a510fd555f7655917c806d3edb1a501d2903d2"
+    },
+    {
+      "bytes": 5924,
+      "path": "src/mostaza/evaluation/startup_configuration.py",
+      "sha256": "2f1eecd8dae553b4246b1738cdaf63455d3be79e5f3b35b86c4ee02fac1726c0"
+    },
+    {
+      "bytes": 8757,
+      "path": "src/mostaza/evaluation/startup_observation.py",
+      "sha256": "4339904ff43c1611e71cbc6d9f388e11661acf82743216ac4fe2bb8c2d7338da"
+    },
+    {
+      "bytes": 8061,
+      "path": "src/mostaza/evaluation/supervision_monitor.py",
+      "sha256": "c19356d047cc3fa75b63605a122e34c74a877ee4b437b7a557645644584e0c80"
+    },
+    {
+      "bytes": 8980,
+      "path": "src/mostaza/evaluation/tasks.py",
+      "sha256": "eab3240c3ddc78114b849b81b8944a74daadd6da7e1859e7bfa99455e6a8dc91"
+    },
+    {
+      "bytes": 4815,
+      "path": "src/mostaza/evaluation/verification_origin.py",
+      "sha256": "c97a53eecab4929b57f95b38059b857152db64b65ff5ad5138dfcd34d0a152d1"
+    },
+    {
+      "bytes": 10657,
+      "path": "src/mostaza/evaluation/verify_task_cpu.py",
+      "sha256": "b2c43ac098833170311c95020e46138150ab5488916e2bcc40323af29c8b75f9"
+    },
+    {
+      "bytes": 21464,
+      "path": "src/mostaza/packaging.py",
+      "sha256": "b1944c8e7dd66036cfc9679f0dca66386c2c30a5e2066cf2d559680b90ec029f"
+    },
+    {
+      "bytes": 69,
+      "path": "src/mostaza/research/__init__.py",
+      "sha256": "f9bbf774dea93e1ddfc7a00710fbe737cfb2e1404fbb7b83857cbb24e0051059"
+    },
+    {
+      "bytes": 8914,
+      "path": "src/mostaza/research/metrics.py",
+      "sha256": "6c98c1523c905cd3646b4ac6dd9d198d1abe58e0c5cbf75c57d1f156f76865dc"
+    },
+    {
+      "bytes": 6380,
+      "path": "src/mostaza/research/report.py",
+      "sha256": "5dde63e31be85222c8191f3b150fc7d9a4d6969da4d255f4e2b453251283d9cd"
+    },
+    {
+      "bytes": 29256,
+      "path": "src/mostaza/research/trace_diagnostics.py",
+      "sha256": "af9834e18f1cfacb5a2bf3705994e31ec61cde829d864bfdb811186733e0686d"
+    },
+    {
+      "bytes": 5013,
+      "path": "src/mostaza/resources.py",
+      "sha256": "b3b628f0b40e5303d18b412664fc2f542088983838ed003960cb0886ef41530c"
+    },
+    {
+      "bytes": 410,
+      "path": "submission/agent.yaml",
+      "sha256": "63231bec8724cb68d0a3d139403cfe2c8c80cddf3edfcb0e971dc38110ae2afc"
+    },
+    {
+      "bytes": 232,
+      "path": "submission/eval_config.yaml",
+      "sha256": "adb486b67535fa59b427b79d44dafc131176f1f1964d184e16046ed520ede02d"
+    },
+    {
+      "bytes": 4109,
+      "path": "submission/prompts/baseline.md",
+      "sha256": "4841635e2176986bef18dd6fca44c4757795894506a1db88c30975057884e140"
+    },
+    {
+      "bytes": 6027,
+      "path": "submission/prompts/hybrid-recovery.md",
+      "sha256": "dc303ac516a09bbff118253f9bb90542d02cba0e6055af37754fb53a59b6fae5"
+    },
+    {
+      "bytes": 6448,
+      "path": "submission/prompts/hybrid-retrieval.md",
+      "sha256": "c6ecb762f46ae76ad4cc18a6559706822c559fc110152acc88539a48d7b5be0e"
+    },
+    {
+      "bytes": 776,
+      "path": "tests/integration/test_context_native_contract.py",
+      "sha256": "adaf8c85257d0f5d262f16e3996fa536d4a6e0e6ac5f365631edb59f34f3e88b"
+    },
+    {
+      "bytes": 6552,
+      "path": "tests/integration/test_official_contract.py",
+      "sha256": "7eeb0a0a4c9e65ed2790969bfe09f907014a67aa1c14221321e686fd2522c818"
+    },
+    {
+      "bytes": 849,
+      "path": "tests/integration/test_pcv01_cpu_contract.py",
+      "sha256": "73352deb0dc380cd18247b554723afe57944879860d898c731ba1c633ece442c"
+    },
+    {
+      "bytes": 3242,
+      "path": "tests/integration/test_phase2.py",
+      "sha256": "57f08b3f08bd74a8050afcf479c3ae712231c111fc92e79691502c221c52cd86"
+    },
+    {
+      "bytes": 22314,
+      "path": "tests/integration/test_pipeline.py",
+      "sha256": "1e8c856e8249b536a184c9b8aba98c0b2c2f838460ef6c7d713f6ce9a0af861a"
+    },
+    {
+      "bytes": 4084,
+      "path": "tests/integration/test_requests_import_cpu_contract.py",
+      "sha256": "ab92eae9cf29a3abc8ac463f2adb39df6fffb7f88532e0381499fd0609608c24"
+    },
+    {
+      "bytes": 5427,
+      "path": "tests/integration/test_retrieval_contract.py",
+      "sha256": "0d309a3ed50167b05cb3a22da627b9b501e54d2e0e29a5afa3f52c12ee656819"
+    },
+    {
+      "bytes": 999,
+      "path": "tests/integration/test_scorer_source_contract.py",
+      "sha256": "502ebea6747f5c11f6ac28690ddf0ef36c0ce1fb0c2df792b9e1cbd2647171ed"
+    },
+    {
+      "bytes": 3474,
+      "path": "tests/integration/test_verify_task_cpu_contract.py",
+      "sha256": "67a1bc54de189f608de8317d54445c5d7ca675329ce96ee021a9325020314f02"
+    },
+    {
+      "bytes": 7860,
+      "path": "tests/unit/test_browser_supervision.py",
+      "sha256": "6305ea3e4c889a376719f111ed75126ead28d21a60e00d1c41ac8c659bb98804"
+    },
+    {
+      "bytes": 7921,
+      "path": "tests/unit/test_context_verification.py",
+      "sha256": "22ca464dacba03d03ceeae6b66ef66cdbaacf831f613d839296e67d98b423ac6"
+    },
+    {
+      "bytes": 2654,
+      "path": "tests/unit/test_foundation.py",
+      "sha256": "27b2ada7e9f1d730eede8a0c7ce53be53e92f3c902baa8261ab13f67bd3b6c97"
+    },
+    {
+      "bytes": 5910,
+      "path": "tests/unit/test_metrics.py",
+      "sha256": "7564c8f8ef25fbc997bf60c7865c7ce002c6703bfab6757c26ac4c273136d31e"
+    },
+    {
+      "bytes": 14282,
+      "path": "tests/unit/test_packaging.py",
+      "sha256": "5f81133208564d52b3ac995b241812d6551bca2a36fcda74e740c23b31f59972"
+    },
+    {
+      "bytes": 5151,
+      "path": "tests/unit/test_phase2.py",
+      "sha256": "edb1432e40392f62d2cd84399dd1d22f37ec429ef84504b67bfda050c34cc127"
+    },
+    {
+      "bytes": 7179,
+      "path": "tests/unit/test_pytest_origin_receipt.py",
+      "sha256": "2a1816dc16ab257a0c54e6029d5dfd5b4a525405f4f2a91af3a67ac994404745"
+    },
+    {
+      "bytes": 6060,
+      "path": "tests/unit/test_requests_import_cpu.py",
+      "sha256": "0981782ee090494266e26961b38f986ee80b996e9ee7bbdcb3839adb4841664d"
+    },
+    {
+      "bytes": 12015,
+      "path": "tests/unit/test_results.py",
+      "sha256": "99e64500c2072d86b64923ba9d70e9b8e72194e32b4198531d0aab62d9e2a097"
+    },
+    {
+      "bytes": 5751,
+      "path": "tests/unit/test_retrieval_policy.py",
+      "sha256": "ff1cb3caf80a68f5cd0b6fdd8c62aeae005183189cc5d2a68e388282e3b23ad4"
+    },
+    {
+      "bytes": 5186,
+      "path": "tests/unit/test_scorer_contract.py",
+      "sha256": "3a4e43dacf04d0c517390db843cbeeb9c457e10f5c533e5300c77f504ad5ff86"
+    },
+    {
+      "bytes": 7386,
+      "path": "tests/unit/test_startup_configuration.py",
+      "sha256": "547822bfd377f542d5a877f506947f82735f11c31273493d3a90a54ad045c576"
+    },
+    {
+      "bytes": 4059,
+      "path": "tests/unit/test_startup_observation.py",
+      "sha256": "6f2d9215dd72c74cdabf53744845453298191be4944819608de165ccb0483e61"
+    },
+    {
+      "bytes": 5964,
+      "path": "tests/unit/test_task_isolation.py",
+      "sha256": "2874980848dd6f5a3407360eaa2c7cefb3427a6b87b16ae384b970e3ee8292bd"
+    },
+    {
+      "bytes": 18838,
+      "path": "tests/unit/test_trace_diagnostics.py",
+      "sha256": "13063af3b9184cd5bf4f436c95eed80d9366ef2644fcec0b66fb556e08173318"
+    },
+    {
+      "bytes": 6168,
+      "path": "tests/unit/test_verify_task_cpu.py",
+      "sha256": "22707242e17b2722041c6cde2d9bacb6b828da212186316976776a5a9a4a435e"
+    },
+    {
+      "bytes": 28340,
+      "path": "uv.lock",
+      "sha256": "83aad5c31df4ede0c8abfd34ee61e4e1f7396f7cdad754ccfe1ad9856daa4e4e"
+    }
+  ],
+  "head": "bcec689aadc9be0801de6b1c7e560d776e17299e",
+  "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+  "planning_actions": {
+    "gpu_actions": 0,
+    "kaggle_actions": 0,
+    "new_native_verifications": 0,
+    "new_portability_probes": 0,
+    "new_setup_probes": 0
+  },
+  "pr": {
+    "base": "develop",
+    "head": "bcec689aadc9be0801de6b1c7e560d776e17299e",
+    "number": 2,
+    "state": "OPEN"
+  },
+  "prior_protocol": "R-IMPORT-CPU-01; both authorized gates consumed; proposed budget is new",
+  "project_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness",
+  "proposed_budget": {
+    "artifact_bytes_max": 1073741824,
+    "attempts_max": 2,
+    "gate_wall_seconds": 1200,
+    "native_verifications_per_gate": 26,
+    "setup_probes_per_gate": 6,
+    "stdlib_probes_per_gate": 2
+  },
+  "runbook_prefix": {
+    "bytes": 47345,
+    "path": "docs/runbooks/kaggle-execution.md",
+    "sha256": "1cab84b9de241326e0a353b6ca97394a70cc474bf99d4e0e9b0286226e41436e"
+  },
+  "source_review": {
+    "existing_notebook_and_runner_require_standalone": true,
+    "native_evaluator_forwards_same_tuple_to_agent_and_verifier": true,
+    "native_fallback_has_priority": true,
+    "original_cohort_reconstruction_digests_match_current_acquired_archives": true,
+    "private_scorer_parity": null
+  },
+  "status": "PROPOSED_NOT_EXECUTED"
+}

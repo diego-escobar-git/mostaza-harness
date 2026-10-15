@@ -1,0 +1,903 @@
+{
+  "additional_gate_authorized": false,
+  "attempts": [
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": null,
+            "completed": 8,
+            "native_start_lower_bound": 8,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": null
+          },
+          {
+            "assessed": 11,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11
+          }
+        ],
+        "native_total": {
+          "assessed": null,
+          "completed": 19,
+          "started": 20,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "setup": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "attempt": 1,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-cb58d521-5988-45e4-93c9-7a5104d94952",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/e99df605-1563-4828-b595-748f1a547c79"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-fba21b9f-8555-49b6-8dc0-b4d385e95647"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 78.68157441700168,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/01.log",
+          "log_sha256": "9ff3555f7bc9cc56ab16a147d0b740b5f3fd1cda763bb69dd25fef7933f5f63f"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 19.00891520899677,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.33770225000262144,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926"
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 1.7196907500001544,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.34075804200256243,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 17.451422792000812,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 19.81391900000017,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/07.log",
+          "log_sha256": "0ded1a3eb1649f449f5afbc7e0e47157bd3735f3fa50169953646f08b4713cd7"
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 2.9058841669975664,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da"
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 58.19293079199997,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-1/09.log",
+          "log_sha256": "54d1deae13dd90b933f1e52b24cf7facb4982da8161ae95d9f54940633494f66"
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 49.98971087500104,
+          "exit_code": null,
+          "exit_code_reason": "PermissionError: [Errno 1] Operation not permitted",
+          "log": "results/notebook-import-cpu/gate-1/10.log",
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "duration_seconds": 253.49931737500083,
+      "failure": "PermissionError: [Errno 1] Operation not permitted",
+      "maximum_attempts": 2,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 324568386,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [
+          {
+            "assessed": 9,
+            "assessed_reason": null,
+            "completed": 9,
+            "native_start_lower_bound": 9,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407",
+            "started": 9,
+            "started_reason": null,
+            "worker_starts": 9,
+            "worker_starts_reason": null
+          },
+          {
+            "assessed": 11,
+            "assessed_reason": null,
+            "completed": 11,
+            "native_start_lower_bound": 11,
+            "raw_path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162",
+            "started": 11,
+            "started_reason": null,
+            "worker_starts": 11,
+            "worker_starts_reason": null
+          }
+        ],
+        "native_total": {
+          "assessed": 20,
+          "assessed_reason": null,
+          "completed": 21,
+          "started": 21,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 0,
+          "completed": 1,
+          "started": 1
+        },
+        "setup": {
+          "assessed": 0,
+          "completed": 1,
+          "started": 1
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "attempt": 2,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/L03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R00-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R01-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-U/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-U/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-B/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407/R02-B/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V02/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V03/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V03/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V04/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V04/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V05/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V05/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V06/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V06/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V07/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V07/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V08/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/V08/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R00/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R00/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R01/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R01/sandboxes"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R02/fixture"
+            },
+            {
+              "complete": true,
+              "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162/R02/sandboxes"
+            }
+          ],
+          "roots": [
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/requests-import-cpu/matrix-0cebb313-54ba-4cbe-b2eb-64534e662407",
+            "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/verify-task-cpu/ec2a3e07-df26-49ab-97de-53bb3eee8162"
+          ],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 57.25794737499746,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/01.log",
+          "log_sha256": "d5adea4ed2e4b4239fdd7472fef53acf7c967f3820eaebda00e7e43f1c5d0303",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_phase2.py",
+            "--check",
+            "--cohort",
+            "experiments/cohort.json"
+          ],
+          "command": ".venv/bin/python scripts/check_phase2.py --check --cohort experiments/cohort.json",
+          "duration_seconds": 10.420260250000865,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/02.log",
+          "log_sha256": "4a83392cd979f6f401221451c87a01c1bd37c76a7fe707f855d4d68f5e750426",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/prepare_startup_phase2.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/prepare_startup_phase2.py --check",
+          "duration_seconds": 0.3303095410010428,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/03.log",
+          "log_sha256": "bcff401ddbc59cd751ba84cd8e5649f7be5f65c373ea33647f677a354bdef926",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_startup_configuration.py"
+          ],
+          "command": ".tools/official/bin/python scripts/check_startup_configuration.py",
+          "duration_seconds": 1.1006937919992197,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/04.log",
+          "log_sha256": "19cc2924d8603cfa9496b675a017a19ef44d975d667be4fe5b34868fb6b5fb39",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python docs/implementation/evidence/mostaza-phase2-startup-run/recompute.py --check",
+          "duration_seconds": 0.33238512499883655,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/05.log",
+          "log_sha256": "e37403998a9614a322f9950df15dbc42ebe3658e7b7c6271a84406896c4d5f83",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_context_verification.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_context_verification.py --check",
+          "duration_seconds": 9.380571833000431,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/06.log",
+          "log_sha256": "46347cd57c6a24ed5d2c59afdd7fa66c02263f6dd3aa16175aaaab7a16d78100",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01.py --check",
+          "duration_seconds": 10.465126708000753,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/07.log",
+          "log_sha256": "01593911146cdf8edbe0f5f7fd1ee28f19b1b9bc5a12120fe6e0deeabf3ca1f6",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".venv/bin/python",
+            "scripts/check_pcv01_scorer_contract.py",
+            "--check"
+          ],
+          "command": ".venv/bin/python scripts/check_pcv01_scorer_contract.py --check",
+          "duration_seconds": 1.538972249996732,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/08.log",
+          "log_sha256": "373f189cbec06588d24454e40c87077a437b4c00dc46ab8cacde7af0603795da",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_verify_task_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_verify_task_cpu.py --check",
+          "duration_seconds": 37.243092541000806,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/09.log",
+          "log_sha256": "9d5b647bb981456a6c17ba3a74111b7d81c1e26961e9545aac5fbc806e2f1aed",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_requests_import_cpu.py",
+            "--check"
+          ],
+          "command": ".tools/official/bin/python scripts/check_requests_import_cpu.py --check",
+          "duration_seconds": 32.896832874997926,
+          "exit_code": 0,
+          "log": "results/notebook-import-cpu/gate-2/10.log",
+          "log_sha256": "50f44d72b4713206a047166132d6a4a1ca56dbee4dc57e4fc38026ab1fe787e1",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        },
+        {
+          "argv": [
+            ".tools/official/bin/python",
+            "scripts/check_notebook_import_cpu.py",
+            "--check",
+            "--output",
+            "results/notebook-import-cpu/gate-2/matrix"
+          ],
+          "command": ".tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-2/matrix",
+          "duration_seconds": 7.404852708001272,
+          "exit_code": 1,
+          "log": "results/notebook-import-cpu/gate-2/11.log",
+          "log_sha256": "242e1d5631a06bf49313f8b633f290df94eb80b52f2681f9e527ea21db3480d2",
+          "process_cleanup": {
+            "complete": true,
+            "signal_errors": [],
+            "survivors": []
+          }
+        }
+      ],
+      "duration_seconds": 171.20347295899774,
+      "failure": "ValueError: Gate command failed: .tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-2/matrix",
+      "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/run_notebook_import_cpu_gate.py\", line 286, in run\n    raise ValueError(\"Gate command failed: \" + command)\nValueError: Gate command failed: .tools/official/bin/python scripts/check_notebook_import_cpu.py --check --output results/notebook-import-cpu/gate-2/matrix\n",
+      "maximum_attempts": 2,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 293128318,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    },
+    {
+      "actual_counts": {
+        "legacy_native": [],
+        "native_total": {
+          "assessed": 0,
+          "assessed_reason": null,
+          "completed": 0,
+          "started": 0,
+          "started_reason": null
+        },
+        "new_native": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "setup": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        },
+        "stdlib": {
+          "assessed": 0,
+          "completed": 0,
+          "started": 0
+        }
+      },
+      "additional_authorization": {
+        "approval_sha256": "40948a4bba9ab941e10c4df9c2a99074dd1047a832f8dfa621eb9b1d636dbcbd",
+        "attempt": 3,
+        "maximum_additional_attempts": 1,
+        "ordinary_maximum_attempts": 2,
+        "prior_receipts": [
+          {
+            "path": "results/notebook-import-cpu/gate-1/receipt.json",
+            "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+          },
+          {
+            "path": "results/notebook-import-cpu/gate-2/receipt.json",
+            "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+          }
+        ],
+        "proposal_sha256": "1dc7f539b490ad8c30bf31e999f9e1713eab2805b274cb3f53365fe3a5450ec1",
+        "repair_sha256": "d5e5cbcf188f6687548052a97bdde7dbec37812a31705a358d00cba6a7da770c"
+      },
+      "attempt": 3,
+      "automatic_retries": false,
+      "cleanup": [
+        {
+          "attempted": true,
+          "complete_for_observed_roots": true,
+          "records": [],
+          "roots": [],
+          "scope": "Only temporary fixture/sandboxes in observed worker output roots"
+        },
+        {
+          "complete": true,
+          "path": "/private/tmp/mostaza-notebook-import-4579f8a6-5bbe-4ee4-8625-240d701fa6b0"
+        }
+      ],
+      "cleanup_reserve_seconds": 30,
+      "commands": [
+        {
+          "argv": [
+            "bash",
+            "scripts/validate.sh"
+          ],
+          "command": "bash scripts/validate.sh",
+          "duration_seconds": 5.361622541000543,
+          "exit_code": null,
+          "exit_code_reason": "ValueError: Whole CPU gate artifact ceiling",
+          "log": "results/notebook-import-cpu/gate-3/01.log",
+          "log_sha256": "4d9b51ae51932d7769f532b5aa7679d0a77326cd37d6318bfb7fb39905f19f9d"
+        }
+      ],
+      "duration_seconds": 6.929505082996911,
+      "failure": "ValueError: Whole CPU gate artifact ceiling",
+      "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/run_notebook_import_cpu_gate.py\", line 319, in run\n    raise ValueError(\"Whole CPU gate artifact ceiling\")\nValueError: Whole CPU gate artifact ceiling\n",
+      "host_temporary_root": "/private/tmp/mostaza-notebook-import-4579f8a6-5bbe-4ee4-8625-240d701fa6b0/host-tmp",
+      "maximum_attempts": 3,
+      "maximum_native_invocations": 26,
+      "maximum_setup_probes": 6,
+      "maximum_stdlib_probes": 2,
+      "passed": false,
+      "physical_instantaneous_peak_bytes": null,
+      "physical_peak_reason": "Polling cannot guarantee instantaneous physical peak",
+      "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+      "sampled_peak_bytes": 1405596992,
+      "sampled_peak_scope": "Polled owned output/scratch bytes; includes prior retained CPU results",
+      "wall_limit_seconds": 1200,
+      "work_deadline_seconds": 1170
+    }
+  ],
+  "gate3_observed_cap_exceeded": true,
+  "gate3_sampled_bytes": 1405596992,
+  "original_cap_bytes": 1073741824,
+  "retained_native_results": 40,
+  "setup_started": 1,
+  "status": "ALL_THREE_AUTHORIZED_ATTEMPTS_CONSUMED",
+  "stdlib_started": 0,
+  "total_gate_wall_seconds": 431.6322954169955,
+  "total_native_started": 41
+}

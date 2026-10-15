@@ -1,0 +1,283 @@
+{
+  "gpu_readiness": false,
+  "host_retention_policy_active": false,
+  "latest_gate_attempt": 3,
+  "linux_runtime_portability": "NOT_TESTED",
+  "new_matrix_summary": {
+    "candidate_contract": {
+      "gpu_readiness": false,
+      "native_agent_loop_executed": false,
+      "payload_count": 15,
+      "status": "PASS_BLOCKED_NOTEBOOK_CONTRACT"
+    },
+    "cpu_time_reason": "Wall-clock measurements only",
+    "cpu_time_seconds": null,
+    "duration_seconds": 6.5588352080012555,
+    "failure": "ValueError: Missing ordered sys.path",
+    "failure_traceback": "Traceback (most recent call last):\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/scripts/check_notebook_import_cpu.py\", line 94, in run\n    {**assess_case(row, home), \"process_cleanup\": process_cleanup}\n       ~~~~~~~~~~~^^^^^^^^^^^\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/src/mostaza/evaluation/notebook_import_cpu.py\", line 144, in assess_case\n    or not bound(events[0], expected, case_home)\n           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/src/mostaza/evaluation/requests_import_cpu.py\", line 132, in bound\n    raise ValueError(\"Missing ordered sys.path\")\nValueError: Missing ordered sys.path\n",
+    "gpu_readiness": false,
+    "linux_runtime_portability": "NOT_TESTED",
+    "native_completed": 1,
+    "native_results_present": 1,
+    "native_started": 1,
+    "portable_inputs": [
+      "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/notebook-import-cpu/gate-2/matrix/L01/portable/input.json",
+      "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/results/notebook-import-cpu/gate-2/matrix/R00/portable/input.json"
+    ],
+    "private_scorer_parity": null,
+    "private_scorer_parity_reason": "No Kaggle/private scorer execution",
+    "real_evaluations": "NOT_RUN",
+    "results": [],
+    "rows_assessed": 0,
+    "setup_assessed": 0,
+    "setup_completed": 1,
+    "setup_started": 1,
+    "status": "BLOCKED"
+  },
+  "new_native_calls_gate3": 0,
+  "not_run": [
+    "N-L02",
+    "N-L03",
+    "N-R00",
+    "N-R01",
+    "N-R02",
+    "stdlib-generic",
+    "stdlib-requests"
+  ],
+  "post_gate_native_calls": 0,
+  "private_scorer_parity": null,
+  "private_scorer_parity_reason": "No actual Kaggle scorer execution",
+  "real_evaluations": "NOT_RUN",
+  "resource_gate_proposal": "resource-gate-plan.md",
+  "retained_first_row": {
+    "agent_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cleanup_complete": true,
+    "conditions": {
+      "backend": "subprocess",
+      "concurrency": 1,
+      "timeout_seconds": 30,
+      "verification_timeout_seconds": 30
+    },
+    "duration_seconds": 4.807305250000354,
+    "events": [
+      {
+        "alias_target": "src/cpu_import_product",
+        "coverage": "actual_pytest_owned_import_layout_cpu",
+        "cwd": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace",
+        "executable": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/venv/bin/python3",
+        "fingerprint_algorithm": "cpu-code-json-v1",
+        "function_canonical": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace/src/cpu_import_product/__init__.py",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "function_module": "cpu_import_product",
+        "function_raw": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace/cpu_import_product/__init__.py",
+        "module_canonical": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace/src/cpu_import_product/__init__.py",
+        "module_raw": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace/cpu_import_product/__init__.py",
+        "module_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "node": "test_required",
+        "outcome": "assertion_failed",
+        "pair": "L01",
+        "parent_canonical": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace/src/cpu_import_product/__init__.py",
+        "parent_raw": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace/cpu_import_product/__init__.py",
+        "parent_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "pid": 550,
+        "ppid": 549,
+        "public_version": null,
+        "public_version_reason": "Public package exposes no version",
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "sys_path": [
+          "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_24e86684-fac/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ]
+      }
+    ],
+    "expected": {
+      "allowed_product_paths": [
+        "src/cpu_import_product/__init__.py",
+        "cpu_import_product/__init__.py"
+      ],
+      "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+      "function": "evaluate",
+      "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+      "module": "cpu_import_product",
+      "nodes": [
+        "test_required"
+      ],
+      "package": "cpu_import_product",
+      "pair": "L01",
+      "parent_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+      "pytest": "9.1.1",
+      "python": "3.13.15",
+      "relative_file": "src/cpu_import_product/__init__.py"
+    },
+    "host_module_file": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/traslado \u00f1/host/src/mostaza/__init__.py",
+    "id": "L01",
+    "launch_cwd": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/otro cwd \u00f1",
+    "layout": {
+      "alias": "cpu_import_product",
+      "derived_prebootstrap_tree": "f5dac4ae28455e57d3d04123b1fb702a4ab9a7bc",
+      "mode": "120000",
+      "patch_sha256": "c312a289a9153dc146845751b47571ee98fc91d671df0f61270cbe39c5cb9c2c",
+      "source_tree": "c32241fba2f60c123300ccc962706b3bd3bcd456",
+      "target": "src/cpu_import_product"
+    },
+    "manager_class": "SubprocessManager",
+    "mock_bypass": false,
+    "native_result": {
+      "agent_patch": "",
+      "cost_usd": 0.0,
+      "duration_seconds": 4.7502530830024625,
+      "error_message": null,
+      "metadata": {},
+      "repo": "mostaza/owned_src_layout",
+      "resolved": false,
+      "status": "SUCCESS",
+      "task_id": "import_cpu_L01",
+      "task_index": null,
+      "test_exit_code": 1,
+      "test_output": "STDOUT:\nF                                                                        [100%]\n=================================== FAILURES ===================================\n________________________________ test_required _________________________________\n\n    def test_required():\n        def check(function, matches):\n            assert matches, \"intended workspace package not imported\"\n            assert function() == 1\n>       observe(\"test_required\", check)\n\ntest_mostaza_import_diagnostic.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_mostaza_import_diagnostic.py:63: in observe\n    action(function, matches)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nfunction = <function evaluate at 0x10a5ad440>, matches = True\n\n    def check(function, matches):\n        assert matches, \"intended workspace package not imported\"\n>       assert function() == 1\nE       assert 0 == 1\nE        +  where 0 = <function evaluate at 0x10a5ad440>()\n\ntest_mostaza_import_diagnostic.py:82: AssertionError\n=========================== short test summary info ============================\nFAILED test_mostaza_import_diagnostic.py::test_required - assert 0 == 1\n1 failed in 0.02s\n\nSTDERR:\n",
+      "tool_calls": 0,
+      "total_llm_calls": 0,
+      "total_tokens": 0,
+      "trace": null,
+      "trace_path": null
+    },
+    "native_verifier_changed": false,
+    "raw_junit": null,
+    "raw_junit_reason": "Native cleanup consumes/removes JUnit",
+    "relocated_host": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/traslado \u00f1/host",
+    "resolver_tuple": [
+      "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/inputs/base_snapshots/base_mostaza_owned_src_layout.tgz",
+      "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/inputs/base_snapshots/base_mostaza_owned_src_layout.tgz",
+      "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/inputs/patches/cpu_owned_layout.patch"
+    ],
+    "setup_baseline_alias": "120000 blob 87bd1f990efc001e13f27844c16bd7ca088afb4c\tcpu_import_product\n",
+    "setup_events": [
+      {
+        "alias_target": "src/cpu_import_product",
+        "coverage": "actual_pytest_owned_import_layout_cpu",
+        "cwd": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace",
+        "executable": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/venv/bin/python3",
+        "fingerprint_algorithm": "cpu-code-json-v1",
+        "function_canonical": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace/src/cpu_import_product/__init__.py",
+        "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+        "function_module": "cpu_import_product",
+        "function_raw": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace/cpu_import_product/__init__.py",
+        "module_canonical": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace/src/cpu_import_product/__init__.py",
+        "module_raw": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace/cpu_import_product/__init__.py",
+        "module_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "node": "setup",
+        "outcome": "passed",
+        "pair": "L01",
+        "parent_canonical": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace/src/cpu_import_product/__init__.py",
+        "parent_raw": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace/cpu_import_product/__init__.py",
+        "parent_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+        "pid": 275,
+        "ppid": 142,
+        "public_version": null,
+        "public_version_reason": "Public package exposes no version",
+        "pytest": "9.1.1",
+        "python": "3.13.15",
+        "sys_path": [
+          "",
+          "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/workspace",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+          "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/sandboxes/swegemma_sandbox_6bd409a8-b06/venv/lib/python3.13/site-packages",
+          "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages",
+          "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/site-packages"
+        ]
+      }
+    ],
+    "setup_expected": {
+      "allowed_product_paths": [
+        "src/cpu_import_product/__init__.py",
+        "cpu_import_product/__init__.py"
+      ],
+      "file_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+      "function": "evaluate",
+      "function_fingerprint": "5a93471d1a1baf91f9ffa1ddaeead4ca4f5bc1c48385d6a2cee3e7377fefd962",
+      "module": "cpu_import_product",
+      "nodes": [
+        "test_required"
+      ],
+      "package": "cpu_import_product",
+      "pair": "L01",
+      "parent_sha256": "894f8d9fb962a74e27abeedb1a3e89f9dd144c9903783167f2d321b403102730",
+      "pytest": "9.1.1",
+      "python": "3.13.15",
+      "relative_file": "src/cpu_import_product/__init__.py"
+    },
+    "setup_steps": [
+      "setup_container_wheels",
+      "extract_snapshot",
+      "setup_git_exclude",
+      "install_editable_package",
+      "install_test_dependencies",
+      "setup_workspace_test_config",
+      "setup_baseline_commit"
+    ],
+    "setup_working_diff": "",
+    "test_patch_sha256": "d9afe0bd0cba42b951e28cebc2e6a28084a3f432e050593233979c1d556c56a7",
+    "view": {
+      "fixture": true,
+      "layout": {
+        "alias": "cpu_import_product",
+        "derived_prebootstrap_tree": "f5dac4ae28455e57d3d04123b1fb702a4ab9a7bc",
+        "mode": "120000",
+        "patch_sha256": "c312a289a9153dc146845751b47571ee98fc91d671df0f61270cbe39c5cb9c2c",
+        "source_tree": "c32241fba2f60c123300ccc962706b3bd3bcd456",
+        "target": "src/cpu_import_product"
+      },
+      "native_sources": {
+        "config.py": "0cf65965d713a883eaf779652979e281f1fbd3d24707f1bd7e91e054c5069f0b",
+        "deduplication.py": "f8353a8da887fc45823b9174f4578cd816b341d52c3a074964c1c2310af1573e",
+        "evaluate.py": "96a46f49267ffcf861f7f90b98efbe828d03f27553ceefce745819028589de1e",
+        "harness/agent_runner.py": "4d7eccabd203c26f7c39e882684d2fd851f383f6a5c76c4a75b0e559cd5d6a18",
+        "harness/container_setup.py": "3192acdce35f2d0bd0b191186851b46c251390af16b7f139a1640e16fb1d862c",
+        "harness/verification.py": "99e2a5fdab2be2b5e0388de29080da9d6e7003cf8b53299cda790464f4ecd2aa",
+        "sandbox/subprocess.py": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2"
+      },
+      "policy_sha256": "f23973d9b10f1b1647eb12d74e5ed5dcce7f6a2acb743a66af5c3f0b28a68ae5",
+      "root": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/inputs",
+      "source_root": "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/source",
+      "tasks": {
+        "cpu_owned_layout": [
+          {
+            "bytes": 12799,
+            "path": "base_snapshots/base_mostaza_owned_src_layout.tgz",
+            "role": "effective",
+            "sha256": "e6c1dc1401280c332559cecbd7540436eedd2a24c6f8b50afb9c078e650fce6c"
+          },
+          {
+            "bytes": 12799,
+            "path": "base_snapshots/base_mostaza_owned_src_layout.tgz",
+            "role": "base",
+            "sha256": "e6c1dc1401280c332559cecbd7540436eedd2a24c6f8b50afb9c078e650fce6c"
+          },
+          {
+            "bytes": 179,
+            "path": "patches/cpu_owned_layout.patch",
+            "role": "delta",
+            "sha256": "c312a289a9153dc146845751b47571ee98fc91d671df0f61270cbe39c5cb9c2c"
+          }
+        ]
+      }
+    },
+    "worker_sys_path": [
+      "/private/tmp/mostaza-notebook-import-61156e75-759a-46f6-8081-8d2d5f09c975/L01/traslado \u00f1/host/src",
+      "/Users/diego/.pyenv/versions/3.13.15/lib/python313.zip",
+      "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13",
+      "/Users/diego/.pyenv/versions/3.13.15/lib/python3.13/lib-dynload",
+      "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness/.tools/official/lib/python3.13/site-packages"
+    ]
+  },
+  "retained_row_is_not_controller_assessed": true,
+  "status": "BLOCKED_ADDITIONAL_GATE_CONSUMED"
+}

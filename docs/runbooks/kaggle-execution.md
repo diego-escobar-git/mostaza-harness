@@ -760,3 +760,103 @@ and actual pytest process/runtime. Installed distribution metadata and imported
 public package version are separate facts. Behavioral failures with correct binding
 are valid diagnostics; do not manufacture an E1 success. CPU binding validation
 does not authorize real Kaggle use, scorer changes, GPU, submissions or outreach.
+
+
+## N-IMPORT-CPU-01: portable host layout preparation
+
+Use the new mostaza-notebook-import-cpu.ipynb candidate only after a separate
+future launch authorization; it remains blocked with GPU/network disabled.
+The host-only requests-layout-v1 input view uses the official base-plus-delta
+route, shared by agent setup and verification. Never inject a verifier-only fix.
+Preserve original snapshots and bind the native resolver tuple and layout tree
+separately in mostaza.notebook-layout-evaluation/v1; parent_binding does not
+describe the actual derived input. Reject drift before evaluator/each dispatch.
+
+Local commands and limits are in
+[the approved CPU plan](../implementation/evidence/mostaza-notebook-import-cpu/plan-for-approval.md).
+Run the twelve-command gate only through run_notebook_import_cpu_gate.py.
+Native CPU coverage is macOS/Python3.13; Python3.12 probes validate transport
+and generic imports only. Host payload/cwd relocation includes spaces/Unicode;
+native sandbox paths are ASCII. No full notebook/agent/model/Linux execution is
+claimed. Local PASS cannot confirm private scorer parity or enable GPU readiness.
+
+Current N-IMPORT checkpoint: both approved CPU gate attempts are consumed and
+neither passed completely. The sys.path receipt interpretation and owned TMPDIR
+coverage repairs have focused non-native validation only. Do not execute another
+gate or publish this follow-up until an additional allowance is explicitly approved.
+See the [blocked report](../implementation/evidence/mostaza-notebook-import-cpu/report.md)
+and its separately proposed additional gate. No attempt/counter reset.
+
+The separately approved gate3 was consumed by an observed1GiB cap failure in
+host unit-test temporary retention, before native calls. Keep that failure.
+The proposed host-only pytest retention policy is inactive and does not alter
+verification; see resource-gate-plan.md in the notebook-import evidence directory.
+No further gate is implied by unused native-call headroom.
+
+
+### N-IMPORT CPU fourth-attempt checkpoint
+
+The separately approved attempt4 is consumed: commands1–10 passed and the new
+three generic setup/verification controls were accepted; Requests R00 stopped in
+host preparation before setup/native dispatch. Total144.3997s,23native calls,
+3setup probes,0stdlib probes; polled420152916bytes below1GiB and scoped cleanup
+complete. Host pytest retention was confined to command1 and solved the cap issue.
+
+A read-only archive/index comparison and host-only extraction identified that
+Python tarfile.data_filter removes a trailing slash from a tracked certificate
+symlink. The host proof now preserves only this exact safe trailing-separator
+spelling AFTER data_filter checks, requiring identical in-root resolution and
+rejecting other normalization. Original clean index/worktree/delta checks remain.
+80 focused non-native tests and a real Requests host source proof pass; the
+regenerated notebook remains blocked and has not had corrected native validation.
+See evidence/mostaza-notebook-import-cpu/report.md and gate4-source-diagnosis.json.
+All four receipts remain immutable. No unused invocation headroom authorizes a
+rerun; proposed gate5 needs separate approval before admission is enabled. No
+native verifier, GPU, Kaggle session, publication or Discussion change occurred.
+
+
+### N-IMPORT CPU fifth-attempt checkpoint and process observation
+
+Attempt5 is consumed: ten historical commands and three generic plus Requests
+baseline setup/verification controls were accepted. The Requests source-link
+repair reached real snapshot imports in both phases. R01/R02 and3.12 transport
+remain incomplete. Gate5 had24native calls,4setup,0stdlib,215.9226wall seconds and
+539910575polled bytes. The OUTER ps observer exceeded its frozen2s read limit;
+the OS delay cause is unknown. Owned scratch was removed and later read-only ps
+found0matching workers. Missing command11 cleanup telemetry stays null with reason.
+
+Prepared own observer/cleanup helpers are INACTIVE. They bound reads/waits by shared
+deadlines, record unavailable observations as unknown, preserve strict process
+ownership and still terminate the owned live Popen root if discovery fails.101
+focused non-native tests pass, including a benign own-process termination control.
+Future integration must keep work1170/cleanup1200 separate, respect row90 including
+cleanup, throttle process discovery without skipping artifact/deadline checks,
+and retain original plus cleanup errors. Historical2s observers remain unchanged.
+See evidence/mostaza-notebook-import-cpu/supervision-gate-plan.md. It requires new
+approval before attempt6 admission/activation; no existing allowance is reusable.
+
+
+### N-IMPORT CPU completion checkpoint — attempt6 gate PASS
+
+The separately authorized twelve-command attempt6 passed in211.3903wall seconds:
+378unit/119integration tests, lint/format/typecheck56files, build/compiler/historical
+checks and26native+6setup+2stdlib invocations, all completed/assessed. Requests
+baseline and retainedE0/E1 patches imported snapshot code in both native phases;
+E1 passed five own diagnostic nodes, while baseline/E0 retained their expected
+behavior failures. This is not a Kaggle score or hybrid retrieval claim.
+
+The source-link normalization repair and bounded process observer/cleanup are now
+integrated. Work1170 and total1200 deadlines are separate; new rows include final
+assessment/export/fixture cleanup inside90s. Own observations are at most1Hz,
+with0.2s cap/deadline checks between reads,5s-or-remaining-budget read limits,
+conservative error telemetry and termination of the owned Popen on observation
+failure. Persistence failure and PID reuse are fault-tested.289own read records
+were available; cleanup completed. Polled peak556434407bytes stayed below1GiB.
+
+Python3.12.8 validation covered stdlib layout/transport and generic import only;
+Requests imports/native verification remain macOS/Python3.13 coverage. No full
+notebook, model or agent loop, Linux run or private scorer was executed. Readiness
+remains false. All six gate allowances are consumed; attempt7 is not enabled.
+See mostaza-notebook-import-cpu/report.md, audit.json and the pinned approval/gate
+receipts for the final evidence. Commit/push/update PR2 requires independent audit
+PASS; no merge, GPU, Kaggle publication/submission or Discussion is implied.

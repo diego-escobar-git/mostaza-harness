@@ -1,0 +1,34 @@
+{
+  "status": "APPROVED",
+  "authorization": "Autorizo el único intento 5 con la corrección y los límites propuestos. Tras PASS y auditoría satisfactoria, completa commit, push y actualización del PR #2, sin merge, GPU, Discussion ni cambios al verificador.",
+  "proposal_sha256": "85c5fc864ea90e27fcead149649f22bf662543b10509da3ff9623d030a364337",
+  "repair_sha256": "9df0226dfe643b4ddc8e93798cbb75d550955b7d761cdae3a5eeab0c63ea2124",
+  "prior_receipts": [
+    {
+      "path": "results/notebook-import-cpu/gate-1/receipt.json",
+      "sha256": "32938677eb561d9cadeb0d4b93845a9d0f9cbf693fdfddf5f8e570fac40d8b28"
+    },
+    {
+      "path": "results/notebook-import-cpu/gate-2/receipt.json",
+      "sha256": "1c67f391a1f69545b97aacc10a99c014a438241b04ea59c0adbafaf411f24fe5"
+    },
+    {
+      "path": "results/notebook-import-cpu/gate-3/receipt.json",
+      "sha256": "5d5510b1c179042abe826368c5a4c26a0371facd94fdcf57104b95b9db4eeada"
+    },
+    {
+      "path": "results/notebook-import-cpu/gate-4/receipt.json",
+      "sha256": "648425f80a7bb244cad9f3f48401034816cf9f0b754654630743e3f38e81429f"
+    }
+  ],
+  "limits": {
+    "attempt": 5,
+    "maximum_additional_attempts": 1,
+    "native_verifications": 26,
+    "setup_probes": 6,
+    "stdlib_probes": 2,
+    "wall_seconds": 1200,
+    "artifact_bytes": 1073741824,
+    "automatic_retries": false
+  }
+}

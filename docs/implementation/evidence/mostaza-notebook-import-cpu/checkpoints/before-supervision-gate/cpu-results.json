@@ -1,0 +1,88 @@
+{
+  "R01_state": "Preparation dispatched; no setup-started/native-started marker",
+  "command11_process_cleanup": null,
+  "command11_process_cleanup_reason": "Raw receipt exception path omitted per-command cleanup outcome; later independent read-only ps confirmed no matching workers, owned scratch removal recorded",
+  "gate5_native_started": 24,
+  "gate5_receipt": "results/notebook-import-cpu/gate-5/receipt.json",
+  "gate5_setup_started": 4,
+  "gate5_stdlib_started": 0,
+  "gpu_readiness": false,
+  "latest_gate_attempt": 5,
+  "linux_runtime_portability": "NOT_TESTED",
+  "matrix_final_summary": null,
+  "matrix_final_summary_reason": "Outer supervisor terminated command11 after ps read timeout; per-row raw records and assessment markers retained, no aggregate rebuilt as runtime output",
+  "new_rows": [
+    {
+      "controller_assessed": true,
+      "id": "N-L01",
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "setup_coverage": "actual_native_setup_import_cpu",
+      "setup_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/L01/sandboxes/swegemma_sandbox_e0e59444-a6a/workspace/src/cpu_import_product/__init__.py",
+      "test_exit_code": 1,
+      "verification_coverage": "actual_pytest_owned_import_layout_cpu",
+      "verification_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/L01/sandboxes/swegemma_sandbox_a6f21f7c-526/workspace/src/cpu_import_product/__init__.py"
+    },
+    {
+      "controller_assessed": true,
+      "id": "N-L02",
+      "native_resolved": true,
+      "node_outcomes": {
+        "test_required": "passed"
+      },
+      "setup_coverage": "actual_native_setup_import_cpu",
+      "setup_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/L02/sandboxes/swegemma_sandbox_42e73ed6-bc3/workspace/src/cpu_import_product/__init__.py",
+      "test_exit_code": 0,
+      "verification_coverage": "actual_pytest_owned_import_layout_cpu",
+      "verification_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/L02/sandboxes/swegemma_sandbox_3d7a0a23-891/workspace/src/cpu_import_product/__init__.py"
+    },
+    {
+      "controller_assessed": true,
+      "id": "N-L03",
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_required": "assertion_failed"
+      },
+      "setup_coverage": "actual_native_setup_import_cpu",
+      "setup_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/L03/sandboxes/swegemma_sandbox_60f7128b-640/workspace/src/cpu_import_product/__init__.py",
+      "test_exit_code": 1,
+      "verification_coverage": "actual_pytest_owned_import_layout_cpu",
+      "verification_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/L03/sandboxes/swegemma_sandbox_aba65115-1d5/workspace/src/cpu_import_product/__init__.py"
+    },
+    {
+      "controller_assessed": true,
+      "id": "N-R00",
+      "native_resolved": false,
+      "node_outcomes": {
+        "test_empty_default": "assertion_failed",
+        "test_empty_machine": "assertion_failed",
+        "test_missing": "passed",
+        "test_origin_binding": "passed",
+        "test_valid": "passed"
+      },
+      "setup_coverage": "actual_native_setup_import_cpu",
+      "setup_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/R00/sandboxes/swegemma_sandbox_319d7905-9d5/workspace/src/requests/utils.py",
+      "test_exit_code": 1,
+      "verification_coverage": "actual_pytest_owned_import_layout_cpu",
+      "verification_source": "/private/tmp/mostaza-notebook-import-14a8f5f5-3c74-476f-912a-bb4eea668b99/R00/sandboxes/swegemma_sandbox_17c2ecdb-d03/workspace/src/requests/utils.py"
+    }
+  ],
+  "not_run": [
+    "N-R01 setup/native",
+    "N-R02 setup/native",
+    "Python3.12 generic transport",
+    "Python3.12 Requests transport"
+  ],
+  "post_gate_native_calls": 0,
+  "post_gate_setup_probes": 0,
+  "post_gate_stdlib_transport_probes": 0,
+  "prepared_bounded_cleanup_active": false,
+  "prepared_observer_active": false,
+  "private_scorer_parity": null,
+  "private_scorer_parity_reason": "No actual Kaggle scorer execution",
+  "proposed_correction": "supervision-gate-plan.md (not authorized)",
+  "real_evaluations": "NOT_RUN",
+  "status": "BLOCKED_GATE5_CONSUMED"
+}

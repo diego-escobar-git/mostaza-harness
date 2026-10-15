@@ -1,0 +1,27 @@
+{
+  "status": "PRE_GATE_FINDINGS_CLOSED",
+  "gate_attempts_consumed": 0,
+  "findings": [
+    {
+      "id": "AUD-001",
+      "severity": "P1",
+      "repair": "Use STARTUP_OBSERVER.root before RUN_ROOT exists; AST order contract"
+    },
+    {
+      "id": "AUD-002",
+      "severity": "P2",
+      "repair": "Native resolver source-only tiny three-task views; reject fallback, extra/changed delta/base/original, overridden tuple, parent-as-actual and symlinks"
+    },
+    {
+      "id": "AUD-003",
+      "severity": "P2",
+      "repair": "Persistent setup/native/stdlib start, complete and assessment markers; partial stdlib summaries and outer actual counts; null reason for missing frozen legacy telemetry"
+    }
+  ],
+  "focused_validation": {
+    "tests": "39 passed, non-native only",
+    "lint": "PASS new source and notebook",
+    "typecheck": "PASS,55 files"
+  },
+  "independent_review": "AUD-001/002/003 closed; no additional blocker; final audit pending real gate"
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Byte-exact blocked evidence before authorized attempt4 activation",
+  "files": [
+    {
+      "path": "report.md",
+      "sha256": "1f0bc0e8da6cc3adcb9cb8f3e6383c1334f69ca32fe39fc09ffb7be5a8f48311"
+    },
+    {
+      "path": "audit.json",
+      "sha256": "6084a82b4a07acce1c063289600ab369b722a8fb63970c8425c3b3e6a5f17181"
+    },
+    {
+      "path": "cpu-results.json",
+      "sha256": "45bc762c9742e1f8549165532b757b9c71abe86177fb219ce9b10b94980abba7"
+    },
+    {
+      "path": "gate-attempts.json",
+      "sha256": "14a54666e3f45dac08374cbbed68a213f80882b23e941ecd4d1c7353cf2f39de"
+    },
+    {
+      "path": "raw-inventory.json",
+      "sha256": "f5cce90ee98a838f613f4ecfe1f7734e5dbfa3a062a9a0706c0221096fbde2f2"
+    },
+    {
+      "path": "source-inventory.json",
+      "sha256": "5841a3f632733c2ecac7987cfc329cc46b4e0426f5b8170e246e9e372444bc3a"
+    }
+  ]
+}

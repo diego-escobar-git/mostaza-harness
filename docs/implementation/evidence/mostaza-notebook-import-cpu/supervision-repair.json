@@ -1,0 +1,12 @@
+{
+  "failure": "Outer frozen process_table ps read exceeded2s; OS delay cause unknown",
+  "frozen_source": "scripts/check_verify_task_cpu.py:51-59",
+  "integration_status": "Not wired; current outer/inner/stop_group still use frozen2s reader. Attempt6 CLI/admission rejected",
+  "native_after_gate5": 0,
+  "prepared_cleanup": "stop_group_bounded; terminate still-live owned Popen session on snapshot failure, strict child identity, bounded reads/waits, no group0 signal, truthful CleanupIncomplete receipt on unavailable exit proof",
+  "prepared_read": "scripts/notebook_import_supervision.py::read_process_table, timeout=min(5,shared deadline remaining), no retry, telemetry; unavailable is null with reason, not empty success",
+  "process_sampling_before": "Outer and own inner matrix query full ps on every0.2s loop; actual successful rate not measured",
+  "setup_after_gate5": 0,
+  "status": "PREPARED_NOT_ACTIVE",
+  "stdlib_after_gate5": 0
+}

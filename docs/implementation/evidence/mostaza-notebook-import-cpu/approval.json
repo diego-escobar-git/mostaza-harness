@@ -1,0 +1,9 @@
+{
+  "status": "APPROVED",
+  "plan_sha256": "c191d99f6b4be5c358cc9a995dca7f628f55291abc5ef09a9f30bb9446bd7aae",
+  "authorization": "User approved N-IMPORT-CPU-01, exact gate and CPU limits; implementation, validation, independent audit/corrections, commit/push/update PR2 after PASS. No merge, GPU, Discussion or verifier changes.",
+  "maximum_gate_attempts": 2,
+  "native_verifications_per_gate": 26,
+  "setup_probes_per_gate": 6,
+  "stdlib_probes_per_gate": 2
+}
