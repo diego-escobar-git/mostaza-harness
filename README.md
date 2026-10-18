@@ -1,5 +1,36 @@
 # Mostaza Harness
 
+## Run locally and package for Kaggle
+
+Edit `submission/agent.yaml`, `submission/eval_config.yaml` and the prompt selected
+by `instruction`. The local runner and Kaggle ZIP use this same directory.
+
+```bash
+bash scripts/setup_local.sh
+# First setup only: copy .env.example to .env and set MOSTAZA_DATA_DIR.
+bash scripts/harness.sh run --task requests_7205
+bash scripts/harness.sh pack
+```
+
+`MOSTAZA_DATA_DIR` points to the official directory containing `tasks.jsonl` and
+`snapshots/`. Reuse downloaded competition data. Ollama must be running; the
+default is the installed `gemma4:e4b` model at `http://127.0.0.1:11434/v1`.
+Use `--model NAME` to select another installed model with tool calling.
+The official `swegemma` evaluator runs one task with its subprocess backend;
+results appear under `results/local/`.
+
+`pack` compiles the agent with the official compiler and writes
+`dist/submission.zip` and `dist/submission.ipynb`, replacing the previous generated
+files. Create a notebook from the competition page and import `submission.ipynb`.
+Keep GPU and Internet disabled, then Save Version with Run All. The notebook
+writes `/kaggle/working/submission.zip` for the competition submission workflow.
+The ZIP contains only the agent,
+evaluation settings and included prompts. Local Ollama settings and task data
+stay outside it. Kaggle uses the competition model declared in `agent.yaml`;
+Ollama is the development backend. Packaging does not launch or submit to Kaggle.
+
+The sections below retain the existing research and experiment procedures.
+
 Mostaza studies whether adaptive hybrid code retrieval helps a small language
 model solve software engineering issues with less exploration. Local Python code
 supports development and analysis. Competition agents run through the official
