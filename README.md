@@ -1,5 +1,54 @@
 # Mostaza Harness
 
+## Run locally and package for Kaggle
+
+Edit `submission/agent.yaml`, `submission/eval_config.yaml` and the prompt selected
+by `instruction`. The local runner and Kaggle ZIP use this same directory.
+
+```bash
+# First setup only: copy .env.example to .env and configure the paths below.
+bash scripts/setup_local.sh
+bash scripts/harness.sh run --task requests_7205
+bash scripts/harness.sh pack
+```
+
+`MOSTAZA_DATA_DIR` points to the official directory containing `tasks.jsonl` and
+`snapshots/`. Reuse downloaded competition data. To reuse the installed official
+environment, set `MOSTAZA_PYTHON` in `.env` to its absolute `bin/python` path;
+setup validates its package versions without reinstalling or rebinding it.
+Quote paths containing spaces: the shell entrypoints source `.env`.
+
+In LM Studio, load the existing Gemma 4 12B model and enable its OpenAI-compatible
+local server on `127.0.0.1:1234`. The requested `/gemma-4-12b` is exposed as
+`google/gemma-4-12b`. The defaults are `MOSTAZA_MODEL=google/gemma-4-12b` and
+`MOSTAZA_API_BASE=http://127.0.0.1:1234/v1`; configure these in `.env` or use
+`--model` and `--endpoint`. Each run checks `/models` for that exact identifier
+and fails explicitly if the server or model is unavailable. No model is downloaded.
+If server authentication is enabled, set the actual local token in
+`MOSTAZA_API_KEY`; keep it outside `submission/`. Otherwise leave it unset: the
+official OpenAI adapter receives the neutral non-secret `local-no-auth` placeholder
+because it requires a nonempty key. Catalog checks send no placeholder token.
+
+The official `swegemma` evaluator runs one task with its subprocess backend;
+concurrency is 1 and results appear under `results/local/`. The current agent
+limits remain 60 seconds per command, 10 tool calls, one session minute and 50
+turns, with the official 300-second verification timeout. A task timeout or FAIL
+does not demonstrate agent effectiveness; inspect its native results and traces
+separately from connection or environment failures.
+
+`pack` compiles the agent with the official compiler and writes
+`dist/submission.zip` and `dist/submission.ipynb`, replacing the previous generated
+files. Create a notebook from the competition page and import `submission.ipynb`.
+Keep GPU and Internet disabled, then Save Version with Run All. The notebook
+writes `/kaggle/working/submission.zip` for the competition submission workflow.
+The ZIP contains only the agent,
+evaluation settings and included prompts. Local endpoint/authentication settings and task data
+stay outside it. Kaggle uses the competition model declared in `agent.yaml`;
+LM Studio is the development backend. Packaging does not launch or submit to Kaggle,
+and local validation does not establish Kaggle acceptance or score.
+
+The sections below retain the existing research and experiment procedures.
+
 Mostaza studies whether adaptive hybrid code retrieval helps a small language
 model solve software engineering issues with less exploration. Local Python code
 supports development and analysis. Competition agents run through the official

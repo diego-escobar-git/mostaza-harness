@@ -10,3 +10,4 @@
 - [requests-import-cpu](requests-import-cpu.md) — paired CPU validation of Requests snapshot imports.
 - [notebook-import-cpu](notebook-import-cpu.md) — CPU notebook input transport, import witnesses and bounded supervision.
 - [phase2-reconciliation](phase2-reconciliation.md) — pinned iteration-2 evidence reconciliation and bounded pending roadmap.
+- [local-lmstudio-kaggle](local-lmstudio-kaggle.md) — local LM Studio execution and same-source Kaggle ZIP/notebook delivery.
