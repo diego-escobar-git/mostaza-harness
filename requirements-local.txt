@@ -1,0 +1,6 @@
+-e .
+google-adk==1.36.1
+pytest==8.4.2
+./resources/official/adk_submission-0.2.13-py3-none-any.whl
+./resources/official/adk_eval_core-0.1.0-py3-none-any.whl
+./resources/official/swegemma-0.2.11-py3-none-any.whl
