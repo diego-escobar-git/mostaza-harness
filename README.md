@@ -31,8 +31,11 @@ because it requires a nonempty key. Catalog checks send no placeholder token.
 
 The official `swegemma` evaluator runs one task with its subprocess backend;
 concurrency is 1 and results appear under `results/local/`. The current agent
-limits remain 60 seconds per command, 10 tool calls, one session minute and 50
-turns, with the official 300-second verification timeout. A task timeout or FAIL
+limits are 60 seconds per command, 20 tool calls, five session minutes and 50
+turns, with 16384 output tokens, default reasoning and the official 300-second
+verification timeout. Local agent commands and verification prioritize the
+snapshot's Python sources; `requirements-local.txt` includes the Requests
+`httpbin` fixtures. A task timeout or FAIL
 does not demonstrate agent effectiveness; inspect its native results and traces
 separately from connection or environment failures.
 
