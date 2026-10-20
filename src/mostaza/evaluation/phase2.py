@@ -16,7 +16,7 @@ from mostaza.evaluation.contracts import canonical_json, require, sha256
 from mostaza.evaluation.import_results import retained_path
 from mostaza.packaging import VARIANTS, archive_bytes, configuration_files
 
-NOTEBOOK = "notebooks/mostaza-phase2-budget-retrieval.ipynb"
+NOTEBOOK = "notebooks/mostaza-phase2-preparation.ipynb"
 EVIDENCE = "docs/implementation/evidence/mostaza-phase2-budget-retrieval"
 HOST_MODULES = (
     "src/mostaza/__init__.py",

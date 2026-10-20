@@ -5,6 +5,7 @@ from pathlib import Path
 import pytest
 
 from mostaza.packaging import (
+    HISTORICAL_SUBMISSION,
     MODEL,
     PackagingError,
     collect_submission,
@@ -103,7 +104,7 @@ def test_ac1_authentic_e0_derivation_preserves_official_conditions() -> None:
     )
     source = yaml.load(resources["starter_agent"].read_text(), Loader=IncludeLoader)
     derived = yaml.load(
-        (ROOT / "submission/agent.yaml").read_text(), Loader=IncludeLoader
+        (ROOT / HISTORICAL_SUBMISSION / "agent.yaml").read_text(), Loader=IncludeLoader
     )
     expected = dict(source)
     expected.pop("adapter")
@@ -115,18 +116,18 @@ def test_ac1_authentic_e0_derivation_preserves_official_conditions() -> None:
     assert derived == expected
     assert len(derived["tools"]) == 9
     assert derived["model"] == MODEL
-    assert (ROOT / "submission/eval_config.yaml").read_bytes() == resources[
-        "starter_eval"
-    ].read_bytes()
+    assert (
+        ROOT / HISTORICAL_SUBMISSION / "eval_config.yaml"
+    ).read_bytes() == resources["starter_eval"].read_bytes()
     manifest = json.loads((ROOT / "experiments/E0-baseline/manifest.json").read_text())
     assert manifest["baseline_source_sha256"] == sha256(resources["starter_agent"])
     assert manifest["source_prompt_sha256"] == sha256(resources["starter_prompt"])
     assert manifest["source_sampling_sha256"] == sha256(resources["starter_sampling"])
     assert manifest["source_eval_sha256"] == sha256(resources["starter_eval"])
     shared = manifest["derivation"]["changes"][-1]["added_text"].encode()
-    assert (ROOT / "submission/prompts/baseline.md").read_bytes() == resources[
-        "starter_prompt"
-    ].read_bytes() + shared
+    assert (
+        ROOT / HISTORICAL_SUBMISSION / "prompts/baseline.md"
+    ).read_bytes() == resources["starter_prompt"].read_bytes() + shared
     assert manifest["generation_parameters"] == expected["generate_content_config"]
     assert (
         manifest["budgets"]
@@ -153,11 +154,11 @@ def test_ac5_authentic_e0_archive_compiles_and_reproduces(tmp_path: Path) -> Non
         }
         assert (
             archive.read("eval_config.yaml")
-            == (ROOT / "submission/eval_config.yaml").read_bytes()
+            == (ROOT / HISTORICAL_SUBMISSION / "eval_config.yaml").read_bytes()
         )
         assert (
             archive.read("prompts/baseline.md")
-            == (ROOT / "submission/prompts/baseline.md").read_bytes()
+            == (ROOT / HISTORICAL_SUBMISSION / "prompts/baseline.md").read_bytes()
         )
 
 
@@ -180,5 +181,5 @@ def test_phase2_ac2_native_budget_and_all_variant_compilation(tmp_path: Path) ->
             }
             assert (
                 archive.read(m["prompt"])
-                == (ROOT / "submission" / m["prompt"]).read_bytes()
+                == (ROOT / HISTORICAL_SUBMISSION / m["prompt"]).read_bytes()
             )

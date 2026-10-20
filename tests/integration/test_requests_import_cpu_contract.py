@@ -24,6 +24,7 @@ def load_script(name, monkeypatch):
     return module
 
 
+@pytest.mark.historical_evidence
 def test_frozen_native_and_vcpu01_inputs_and_exact_gate(
     monkeypatch, historical_phase2_root
 ):

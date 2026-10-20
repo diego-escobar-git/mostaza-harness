@@ -12,6 +12,7 @@ from typing import Any
 import yaml
 
 from mostaza.packaging import (
+    HISTORICAL_SUBMISSION,
     Include,
     IncludeDumper,
     IncludeLoader,
@@ -64,9 +65,11 @@ def prompt(root: Path, configuration: str) -> bytes:
         raise PackagingError("Unknown context configuration")
     arm = configuration[:2]
     base = load_manifest(root, arm + "-B180")
-    text = (root / "submission" / str(base["prompt"])).read_text()
+    text = (root / HISTORICAL_SUBMISSION / str(base["prompt"])).read_text()
     if configuration.endswith("-R1"):
-        recovery = (root / "submission/prompts/hybrid-recovery.md").read_text()
+        recovery = (
+            root / HISTORICAL_SUBMISSION / "prompts/hybrid-recovery.md"
+        ).read_text()
         before, rest = recovery.split("### 2. Implement the Solution Directly", 1)
         text = (
             before.rstrip()
@@ -97,7 +100,7 @@ def expected_manifest(root: Path, configuration: str) -> dict[str, Any]:
         "Q1 targeted assertions; no repair loop" if quality else base["repair_policy"]
     )
     shared["cohort_sha256"] = digest((root / "experiments/cohort.json").read_bytes())
-    original = (root / "submission" / base["prompt"]).read_bytes()
+    original = (root / HISTORICAL_SUBMISSION / base["prompt"]).read_bytes()
     text = prompt(root, configuration)
     return {
         "schema_version": 1,

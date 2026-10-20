@@ -4,17 +4,21 @@ import json
 import subprocess
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+import pytest
 
 
-def test_public_bootstrap_contract_does_not_promote_scorer_readiness():
+@pytest.mark.historical_evidence
+def test_public_bootstrap_contract_does_not_promote_scorer_readiness(
+    historical_phase2_root: Path,
+):
+    root = historical_phase2_root
     process = subprocess.run(
         [
-            str(ROOT / ".venv/bin/python"),
-            str(ROOT / "scripts/check_pcv01_scorer_contract.py"),
+            str(root / ".venv/bin/python"),
+            str(root / "scripts/check_pcv01_scorer_contract.py"),
             "--check",
         ],
-        cwd=ROOT,
+        cwd=root,
         capture_output=True,
         text=True,
         timeout=60,

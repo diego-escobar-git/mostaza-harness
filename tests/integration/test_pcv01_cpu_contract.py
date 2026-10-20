@@ -4,17 +4,21 @@ import json
 import subprocess
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+import pytest
 
 
-def test_pcv01_actual_pytest_process_and_payload_isolation():
+@pytest.mark.historical_evidence
+def test_pcv01_actual_pytest_process_and_payload_isolation(
+    historical_phase2_root: Path,
+):
+    root = historical_phase2_root
     result = subprocess.run(
         [
-            str(ROOT / ".venv/bin/python"),
-            str(ROOT / "scripts/check_pcv01.py"),
+            str(root / ".venv/bin/python"),
+            str(root / "scripts/check_pcv01.py"),
             "--check",
         ],
-        cwd=ROOT,
+        cwd=root,
         capture_output=True,
         text=True,
         timeout=240,

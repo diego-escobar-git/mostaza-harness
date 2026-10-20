@@ -39,6 +39,17 @@ snapshot's Python sources; `requirements-local.txt` includes the Requests
 does not demonstrate agent effectiveness; inspect its native results and traces
 separately from connection or environment failures.
 
+Historical E0/E1 experiments load their frozen agent, evaluation settings and
+prompts from `experiments/historical-submission/`, retained from commit
+`74b58bc`. Their manifests still validate the original conditions and prompt
+hashes. Editing `submission/` changes local development and delivery packaging
+without changing those historical experiments; context variants also derive from
+the frozen inputs.
+Regenerating the phase-2 preparation writes
+`notebooks/mostaza-phase2-preparation.ipynb`; the original preparation, observed
+and startup notebooks remain historical snapshots. Generated preparations keep
+GPU and Internet disabled and require their existing execution authorization.
+
 `pack` compiles the agent with the official compiler and writes
 `dist/submission.zip` and `dist/submission.ipynb`, replacing the previous generated
 files. Create a notebook from the competition page and import `submission.ipynb`.
@@ -92,6 +103,13 @@ Kaggle evidence. It fails when those prerequisites are missing. Local unit tests
 and fixtures demonstrate tooling behavior; compiler-only validation demonstrates
 configuration acceptance; only sourced Kaggle runs demonstrate actual Gemma task
 execution. Passing the local checks does not complete the benchmark.
+
+Integration checks marked `historical_evidence` require
+`MOSTAZA_HISTORICAL_PHASE2_ROOT` to point to the retained, immutable evidence
+checkout. They deliberately fail when that prerequisite is absent; current files
+cannot substitute for historical evidence. To check the current integration
+separately, run `pytest tests/integration -m 'not historical_evidence'`. The full
+validation script continues to require the historical checks and real evidence.
 
 ## Layout and research
 

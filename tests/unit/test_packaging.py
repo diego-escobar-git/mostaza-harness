@@ -382,17 +382,28 @@ def test_ac5_pending_arm_is_rejected_after_resources_available(
 def test_phase2_ac1_immutable_sources_and_budget_closure(config: str) -> None:
     import yaml
 
-    from mostaza.packaging import BUDGETS, configuration_files, load_manifest
+    from mostaza.packaging import (
+        BUDGETS,
+        HISTORICAL_SUBMISSION,
+        configuration_files,
+        load_manifest,
+    )
 
     root = Path(__file__).resolve().parents[2]
-    paths = [root / "submission/agent.yaml", root / "submission/eval_config.yaml"]
+    paths = [
+        root / directory / name
+        for directory in ("submission", HISTORICAL_SUBMISSION)
+        for name in ("agent.yaml", "eval_config.yaml")
+    ]
     before = [path.read_bytes() for path in paths]
     m = load_manifest(root, config)
     files = configuration_files(root, config)
     assert yaml.safe_load(files["eval_config.yaml"]) == {
         "evaluation": BUDGETS[m["budget_family"]]
     }
-    assert files[m["prompt"]] == (root / "submission" / m["prompt"]).read_bytes()
+    assert (
+        files[m["prompt"]] == (root / HISTORICAL_SUBMISSION / m["prompt"]).read_bytes()
+    )
     assert [path.read_bytes() for path in paths] == before
     assert set(files) == {"agent.yaml", "eval_config.yaml", m["prompt"]}
 

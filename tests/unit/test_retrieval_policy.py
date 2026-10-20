@@ -6,7 +6,7 @@ from pathlib import Path
 
 import yaml
 
-from mostaza.packaging import IncludeLoader, collect_submission
+from mostaza.packaging import HISTORICAL_SUBMISSION, IncludeLoader, collect_submission
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -36,7 +36,7 @@ def test_ac2_ac4_actual_treatment_isolation() -> None:
     ):
         assert e0[field] == e1[field], field
     config0, config1 = [
-        collect_submission(ROOT / "submission", m["prompt"]) for m in (e0, e1)
+        collect_submission(ROOT / HISTORICAL_SUBMISSION, m["prompt"]) for m in (e0, e1)
     ]
     yaml0, yaml1 = [
         yaml.load(c["agent.yaml"], Loader=IncludeLoader) for c in (config0, config1)
@@ -72,7 +72,7 @@ def test_ac2_ac3_ac6_prompt_records_native_policy_limits() -> None:
         "two_hop_requires_evidence": True,
         "parameters_basis": "conservative pilot policy, not learned optima",
     }
-    prompt = (ROOT / "submission" / e1["prompt"]).read_text()
+    prompt = (ROOT / HISTORICAL_SUBMISSION / e1["prompt"]).read_text()
     for requirement in (
         "max_neighbors=10",
         "k=5",
@@ -109,7 +109,9 @@ def test_phase2_ac1_calibration_pair_rendered_conditions() -> None:
         for m, files in zip(manifests, closures, strict=True):
             assert (
                 files[m["prompt"]]
-                == (ROOT / "submission" / manifest(m["arm"])["prompt"]).read_bytes()
+                == (
+                    ROOT / HISTORICAL_SUBMISSION / manifest(m["arm"])["prompt"]
+                ).read_bytes()
             )
 
 

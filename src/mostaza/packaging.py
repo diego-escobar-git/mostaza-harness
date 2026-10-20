@@ -35,6 +35,7 @@ TOOLS = frozenset(
         "get_code_subgraph",
     }
 )
+HISTORICAL_SUBMISSION = "experiments/historical-submission"
 EXPERIMENTS = {"E0": "E0-baseline", "E1": "E1-hybrid-retrieval"}
 VARIANTS = ("E0-B180", "E1-B180", "E0-B300", "E1-B300", "E1-R180")
 EXPERIMENTS.update({config: config for config in VARIANTS})
@@ -444,7 +445,7 @@ def load_manifest(root: Path, experiment: str) -> dict[str, Any]:
         )
         if manifest.get("prompt") != expected_prompt:
             raise PackagingError("Variant prompt selection differs")
-        if sha256(root / "submission" / expected_prompt) != manifest.get(
+        if sha256(root / HISTORICAL_SUBMISSION / expected_prompt) != manifest.get(
             "prompt_sha256"
         ):
             raise PackagingError("Variant prompt hash differs")
@@ -454,8 +455,8 @@ def load_manifest(root: Path, experiment: str) -> dict[str, Any]:
         ):
             raise PackagingError("Budget calibration prompt changed")
         if experiment == "E1-R180":
-            original = (root / "submission" / base["prompt"]).read_bytes()
-            recovery = (root / "submission" / expected_prompt).read_bytes()
+            original = (root / HISTORICAL_SUBMISSION / base["prompt"]).read_bytes()
+            recovery = (root / HISTORICAL_SUBMISSION / expected_prompt).read_bytes()
             before, tail = original.split(b"### 1. ", 1)
             _, after = tail.split(b"### 2. Implement the Solution Directly", 1)
             rb, rt = recovery.split(b"### 1. ", 1)
@@ -482,19 +483,24 @@ def load_manifest(root: Path, experiment: str) -> dict[str, Any]:
 def configuration_files(root: Path, experiment: str) -> dict[str, bytes]:
     """Select a closure and overlay budgets in memory, preserving source bytes."""
     manifest = load_manifest(root, experiment)
-    files = collect_submission(root / "submission", manifest["prompt"])
+    files = collect_submission(root / HISTORICAL_SUBMISSION, manifest["prompt"])
+    agent = yaml.load(files["agent.yaml"], Loader=IncludeLoader)
+    if (
+        agent["model"] != manifest["model"]
+        or agent["tools"] != manifest["tools"]
+        or agent["generate_content_config"] != manifest["generation_parameters"]
+    ):
+        raise PackagingError("Agent conditions differ from historical manifest")
+    if (
+        hashlib.sha256(files[manifest["prompt"]]).hexdigest()
+        != manifest["prompt_sha256"]
+    ):
+        raise PackagingError("Historical prompt hash differs")
+    evaluation = yaml.safe_load(files["eval_config.yaml"])
+    base = load_manifest(root, manifest["arm"]) if experiment in VARIANTS else manifest
+    if evaluation != {"evaluation": base["budgets"]}:
+        raise PackagingError("Frozen historical evaluation config changed")
     if experiment in VARIANTS:
-        agent = yaml.load(files["agent.yaml"], Loader=IncludeLoader)
-        if (
-            agent["model"] != manifest["model"]
-            or agent["tools"] != manifest["tools"]
-            or agent["generate_content_config"] != manifest["generation_parameters"]
-        ):
-            raise PackagingError("Agent conditions differ from variant manifest")
-        evaluation = yaml.safe_load(files["eval_config.yaml"])
-        base = load_manifest(root, manifest["arm"])
-        if evaluation != {"evaluation": base["budgets"]}:
-            raise PackagingError("Frozen source evaluation config changed")
         evaluation["evaluation"] = manifest["budgets"]
         files["eval_config.yaml"] = yaml.safe_dump(evaluation, sort_keys=True).encode()
     return files
