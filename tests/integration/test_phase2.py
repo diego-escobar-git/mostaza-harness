@@ -11,6 +11,7 @@ import pytest
 from mostaza.evaluation.contracts import canonical_json
 from mostaza.evaluation.phase2 import (
     EVIDENCE,
+    NOTEBOOK,
     build_notebook,
     check_notebook,
     operator_commands,
@@ -31,6 +32,7 @@ def checker():
     return module
 
 
+@pytest.mark.historical_evidence
 def test_ac10_actual_recompute_rejects_historical_readiness_identity(
     historical_phase2_root,
 ):
@@ -100,7 +102,7 @@ def test_ac10_notebook_tamper_rejected_without_executing_cells(monkeypatch):
     forged["cells"][1]["source"] = ["ALLOW_GPU = True\n"]
 
     def read(path):
-        if path == ROOT / "notebooks/mostaza-phase2-budget-retrieval.ipynb":
+        if path == ROOT / NOTEBOOK:
             return canonical_json(forged)
         return original(path)
 

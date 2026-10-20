@@ -28,6 +28,7 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests/unit", "tests/integration"]
 addopts = "--strict-markers"
+markers = ["historical_evidence: requires the retained immutable phase-2 evidence checkout"]
 
 [tool.ruff]
 target-version = "py313"

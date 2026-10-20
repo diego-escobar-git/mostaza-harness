@@ -11,6 +11,7 @@ from mostaza.evaluation.verify_task_cpu import CASES, validate_pins
 ROOT = Path(__file__).resolve().parents[2]
 
 
+@pytest.mark.historical_evidence
 def test_cpu_driver_retains_direct_native_backend_and_pinned_inputs(
     historical_phase2_root,
 ):

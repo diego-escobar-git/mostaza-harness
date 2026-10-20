@@ -15,6 +15,10 @@ from pathlib import Path
 
 import yaml
 
+from mostaza.evaluation.local_imports import (
+    snapshot_agent_imports,
+    snapshot_verification_imports,
+)
 from mostaza.packaging import archive_bytes, collect_submission, compile_directory
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -221,7 +225,8 @@ def main() -> int:
                     arguments.extend(("--" + key.replace("_", "-"), str(values[key])))
         print(f"Local model: {args.model} (LM Studio catalog verified)", flush=True)
         print(f"Results: {result_dir.resolve()}", flush=True)
-        return int(evaluate(arguments))
+        with snapshot_verification_imports(), snapshot_agent_imports():
+            return int(evaluate(arguments))
 
 
 if __name__ == "__main__":

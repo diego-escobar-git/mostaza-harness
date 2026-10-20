@@ -33,6 +33,7 @@ def load_script(name: str, monkeypatch: pytest.MonkeyPatch) -> Any:
     return module
 
 
+@pytest.mark.historical_evidence
 def test_blocked_candidate_contract(historical_phase2_root: Path) -> None:
     # Positive historical admission never authorizes this combined checkout.
     assert candidate_contract(historical_phase2_root)["status"] == (
