@@ -55,11 +55,41 @@ GPU and Internet disabled and require their existing execution authorization.
 files. Create a notebook from the competition page and import `submission.ipynb`.
 Keep GPU and Internet disabled, then Save Version with Run All. The notebook
 writes `/kaggle/working/submission.zip` for the competition submission workflow.
-The ZIP contains only the agent,
-evaluation settings and included prompts. Local endpoint/authentication settings and task data
+The ZIP contains only the agent, evaluation settings, included prompts and the
+allowlisted search-code skill with its standalone script. Local endpoint/authentication settings and task data
 stay outside it. Kaggle uses the competition model declared in `agent.yaml`;
 LM Studio is the development backend. Packaging does not launch or submit to Kaggle,
 and local validation does not establish Kaggle acceptance or score.
+
+The active agent uses six native tools and the official search-code skill. Load
+`search-code` and run its `scripts/search_code.py` bootstrap through
+`run_skill_script` with an explicit absolute workspace root. Bootstrap returns a
+quoted command for later `run_command` searches. The CLI supports `search`,
+`neighbors`, `subgraph` and `status`; every call refreshes changed source files.
+Lexical retrieval replaces vector similarity. Ambiguous or dynamic dependencies
+remain unresolved. If indexing is unavailable, use bounded `grep -n -F` searches.
+Results fit 4500 characters; default search returns eight entries, maximum twenty.
+Graph expansion defaults to one hop and is capped at two. The cache stays outside
+the workspace and submitted patch.
+
+Skill discovery/load helpers consumed zero native calls in the deterministic
+pinned-runtime witness; script bootstrap consumed one native call. Bootstrap and
+cold indexing also consume the unchanged five-minute wall-clock budget. The
+20-call limit is enforced by the official runtime for subsequent commands.
+
+`scripts/check_search_code.py --check --source-assets ABSOLUTE_SOURCE_CHECKOUT
+--official-python ABSOLUTE_OFFICIAL_PYTHON --python312 ABSOLUTE_PYTHON312
+--evidence-dir docs/implementation/evidence/2026-10-20-search-code` runs all
+repository checks and five source-only snapshot benchmarks without inference.
+Set `PYTHONPATH` to this checkout's absolute `src` and
+`MOSTAZA_HISTORICAL_PHASE2_ROOT` to the retained historical checkout. Cold, warm
+and refresh limits are 45, 3 and 10 seconds; child RSS and SQLite limits are
+256 MiB and 128 MiB. Reports preserve failed checks and missing prerequisites,
+and the command exits nonzero until the full gate passes. Local CPU measurements
+and source-reviewed Docker path mapping do not establish Kaggle repair efficacy.
+The original phase-2 retained checkout and phase-1 raw packet are currently
+missing; full historical validation requires their original pinned identities.
+They must not be reconstructed or replaced with generated summaries.
 
 The sections below retain the existing research and experiment procedures.
 

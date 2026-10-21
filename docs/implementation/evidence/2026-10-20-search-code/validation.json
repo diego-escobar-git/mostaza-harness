@@ -1,0 +1,289 @@
+{
+  "checks": [
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "format",
+      "output_tail": "166 files already formatted\n",
+      "seconds": 0.07860725000500679,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "lint",
+      "output_tail": "All checks passed!\n",
+      "seconds": 0.037042625015601516,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "mypy",
+        "src",
+        "scripts"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "types",
+      "output_tail": "Success: no issues found in 60 source files\n",
+      "seconds": 0.2603790840366855,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/unit"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "unit",
+      "output_tail": "........................................................................ [  6%]\n........................................................................ [ 13%]\n........................................................................ [ 19%]\n........................................................................ [ 26%]\n........................................................................ [ 32%]\n........................................................................ [ 39%]\n........................................................................ [ 45%]\n........................................................................ [ 52%]\n........................................................................ [ 58%]\n........................................................................ [ 65%]\n........................................................................ [ 71%]\n........................................................................ [ 78%]\n........................................................................ [ 84%]\n........................................................................ [ 91%]\n........................................................................ [ 97%]\n.........................                                                [100%]\n1105 passed in 162.29s (0:02:42)\n",
+      "seconds": 162.56487387500238,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/integration"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "integration",
+      "output_tail": "........................................................................ [ 58%]\n...................................................                      [100%]\n123 passed in 163.69s (0:02:43)\n",
+      "seconds": 163.96758487506304,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "build",
+        "--no-isolation",
+        "--outdir",
+        "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/dist",
+        "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/project"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "build",
+      "output_tail": "/evaluation/runner.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/tasks.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/context_diagnostics.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/notebook_import.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/context_variants.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/notebook_import_cpu.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/local_imports.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/__init__.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/requests_import_cpu.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/verification_origin.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/startup_candidate.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/context_candidate.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/supervision_monitor.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/scorer_contract.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/startup_configuration.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/contracts.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/notebook_import_candidate.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/import_results.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/phase2.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/verify_task_cpu.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/browser_supervision.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/resources.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza\nrunning install_egg_info\nCopying src/mostaza_harness.egg-info to build/bdist.macosx-27.0-arm64/wheel/./mostaza_harness-0.1.0-py3.13.egg-info\nrunning install_scripts\ncreating build/bdist.macosx-27.0-arm64/wheel/mostaza_harness-0.1.0.dist-info/WHEEL\ncreating '/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/dist/.tmp-8om_5gbi/mostaza_harness-0.1.0-py3-none-any.whl' and adding 'build/bdist.macosx-27.0-arm64/wheel' to it\nadding 'mostaza/__init__.py'\nadding 'mostaza/development.py'\nadding 'mostaza/packaging.py'\nadding 'mostaza/resources.py'\nadding 'mostaza/evaluation/__init__.py'\nadding 'mostaza/evaluation/browser_supervision.py'\nadding 'mostaza/evaluation/context_candidate.py'\nadding 'mostaza/evaluation/context_diagnostics.py'\nadding 'mostaza/evaluation/context_variants.py'\nadding 'mostaza/evaluation/contracts.py'\nadding 'mostaza/evaluation/import_results.py'\nadding 'mostaza/evaluation/local_imports.py'\nadding 'mostaza/evaluation/notebook_import.py'\nadding 'mostaza/evaluation/notebook_import_candidate.py'\nadding 'mostaza/evaluation/notebook_import_cpu.py'\nadding 'mostaza/evaluation/phase2.py'\nadding 'mostaza/evaluation/pytest_origin_receipt.py'\nadding 'mostaza/evaluation/requests_import_cpu.py'\nadding 'mostaza/evaluation/runner.py'\nadding 'mostaza/evaluation/scorer_contract.py'\nadding 'mostaza/evaluation/startup_candidate.py'\nadding 'mostaza/evaluation/startup_configuration.py'\nadding 'mostaza/evaluation/startup_observation.py'\nadding 'mostaza/evaluation/supervision_monitor.py'\nadding 'mostaza/evaluation/tasks.py'\nadding 'mostaza/evaluation/verification_origin.py'\nadding 'mostaza/evaluation/verify_task_cpu.py'\nadding 'mostaza/research/__init__.py'\nadding 'mostaza/research/metrics.py'\nadding 'mostaza/research/report.py'\nadding 'mostaza/research/trace_diagnostics.py'\nadding 'mostaza_harness-0.1.0.dist-info/licenses/LICENSE'\nadding 'mostaza_harness-0.1.0.dist-info/METADATA'\nadding 'mostaza_harness-0.1.0.dist-info/WHEEL'\nadding 'mostaza_harness-0.1.0.dist-info/top_level.txt'\nadding 'mostaza_harness-0.1.0.dist-info/RECORD'\nremoving build/bdist.macosx-27.0-arm64/wheel\nSuccessfully built mostaza_harness-0.1.0.tar.gz and mostaza_harness-0.1.0-py3-none-any.whl\n* Getting build dependencies for sdist...\n* Building sdist...\n* Building wheel from sdist\n* Getting build dependencies for wheel...\n* Building wheel...\nwarning: build_py: byte-compiling is disabled, skipping.\n\nwarning: install_lib: byte-compiling is disabled, skipping.\n\n",
+      "seconds": 1.0603918749839067,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "scripts/check_official.py",
+        "--check",
+        "--experiments",
+        "E0",
+        "E1",
+        "--compiler-python",
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.tools/official/bin/python"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "official-historical",
+      "output_tail": "ing build/lib/mostaza/evaluation/tasks.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/context_diagnostics.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/notebook_import.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/context_variants.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/notebook_import_cpu.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/local_imports.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/__init__.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/requests_import_cpu.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/verification_origin.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/startup_candidate.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/context_candidate.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/supervision_monitor.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/scorer_contract.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/startup_configuration.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/contracts.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/notebook_import_candidate.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/import_results.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/phase2.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/verify_task_cpu.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/evaluation/browser_supervision.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza/evaluation\ncopying build/lib/mostaza/resources.py -> build/bdist.macosx-27.0-arm64/wheel/./mostaza\nrunning install_egg_info\nCopying src/mostaza_harness.egg-info to build/bdist.macosx-27.0-arm64/wheel/./mostaza_harness-0.1.0-py3.13.egg-info\nrunning install_scripts\ncreating build/bdist.macosx-27.0-arm64/wheel/mostaza_harness-0.1.0.dist-info/WHEEL\ncreating '/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-official-check-en6p1s4x/.tmp-i59lqk5g/mostaza_harness-0.1.0-py3-none-any.whl' and adding 'build/bdist.macosx-27.0-arm64/wheel' to it\nadding 'mostaza/__init__.py'\nadding 'mostaza/development.py'\nadding 'mostaza/packaging.py'\nadding 'mostaza/resources.py'\nadding 'mostaza/evaluation/__init__.py'\nadding 'mostaza/evaluation/browser_supervision.py'\nadding 'mostaza/evaluation/context_candidate.py'\nadding 'mostaza/evaluation/context_diagnostics.py'\nadding 'mostaza/evaluation/context_variants.py'\nadding 'mostaza/evaluation/contracts.py'\nadding 'mostaza/evaluation/import_results.py'\nadding 'mostaza/evaluation/local_imports.py'\nadding 'mostaza/evaluation/notebook_import.py'\nadding 'mostaza/evaluation/notebook_import_candidate.py'\nadding 'mostaza/evaluation/notebook_import_cpu.py'\nadding 'mostaza/evaluation/phase2.py'\nadding 'mostaza/evaluation/pytest_origin_receipt.py'\nadding 'mostaza/evaluation/requests_import_cpu.py'\nadding 'mostaza/evaluation/runner.py'\nadding 'mostaza/evaluation/scorer_contract.py'\nadding 'mostaza/evaluation/startup_candidate.py'\nadding 'mostaza/evaluation/startup_configuration.py'\nadding 'mostaza/evaluation/startup_observation.py'\nadding 'mostaza/evaluation/supervision_monitor.py'\nadding 'mostaza/evaluation/tasks.py'\nadding 'mostaza/evaluation/verification_origin.py'\nadding 'mostaza/evaluation/verify_task_cpu.py'\nadding 'mostaza/research/__init__.py'\nadding 'mostaza/research/metrics.py'\nadding 'mostaza/research/report.py'\nadding 'mostaza/research/trace_diagnostics.py'\nadding 'mostaza_harness-0.1.0.dist-info/licenses/LICENSE'\nadding 'mostaza_harness-0.1.0.dist-info/METADATA'\nadding 'mostaza_harness-0.1.0.dist-info/WHEEL'\nadding 'mostaza_harness-0.1.0.dist-info/top_level.txt'\nadding 'mostaza_harness-0.1.0.dist-info/RECORD'\nremoving build/bdist.macosx-27.0-arm64/wheel\nSuccessfully built mostaza_harness-0.1.0.tar.gz and mostaza_harness-0.1.0-py3-none-any.whl\nOfficial compiler-only validation and reproducible archives passed. Real Kaggle evidence is separate.\n* Getting build dependencies for sdist...\n* Building sdist...\n* Building wheel from sdist\n* Getting build dependencies for wheel...\n* Building wheel...\nwarning: build_py: byte-compiling is disabled, skipping.\n\nwarning: install_lib: byte-compiling is disabled, skipping.\n\n",
+      "seconds": 13.310588916996494,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "scripts/check_evidence.py",
+        "--require-real-paired",
+        "--cohort",
+        "experiments/cohort.json",
+        "--evidence-dir",
+        "docs/implementation/evidence/mostaza-phase1-foundation"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "paired-evidence",
+      "output_tail": "Verified real paired evidence and deterministic report\n",
+      "seconds": 0.15675454202573746,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "standalone-lint",
+      "output_tail": "All checks passed!\n",
+      "seconds": 0.07035629102028906,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/integration/test_search_code_official.py::test_search_code_ac2_python312_absolute_workspace_with_spaces"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "python312",
+      "output_tail": ".                                                                        [100%]\n1 passed in 0.22s\n",
+      "seconds": 0.41079662495758384,
+      "skipped_tests": 0,
+      "status": "PASS"
+    },
+    {
+      "argv": [
+        "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/integration/test_search_code_official.py"
+      ],
+      "cwd": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+      "exit_code": 0,
+      "failure_lines": [],
+      "id": "official-active",
+      "output_tail": "...                                                                      [100%]\n3 passed in 9.77s\n",
+      "seconds": 9.928462540963665,
+      "skipped_tests": 0,
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "MOSTAZA_HISTORICAL_PHASE2_ROOT": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/src"
+  },
+  "limitations": [
+    "Local CPU only",
+    "Docker source reviewed; Docker not executed",
+    "Kaggle and model efficacy not executed"
+  ],
+  "official_witness": {
+    "bootstrap_native_calls": 1,
+    "budgets": {
+      "max_time_minutes": 5,
+      "max_tool_calls": 20,
+      "max_turns": 50,
+      "timeout_seconds": 60
+    },
+    "docker_command_sha256": "e32d0533ad4627e614d8360947f08f5817fc7f750197773675f909a99fddacfa",
+    "docker_execution": "NOT_RUN",
+    "helper_native_calls": 0,
+    "helper_tools": [
+      "list_skills",
+      "load_skill",
+      "load_skill_resource",
+      "run_skill_script"
+    ],
+    "kaggle_execution": "NOT_RUN",
+    "llm_calls": 0,
+    "native_tools": [
+      "edit_file",
+      "get_status",
+      "read_file",
+      "run_command",
+      "submit_patch",
+      "write_file"
+    ],
+    "observed_native_calls": 11,
+    "patch_clean": true,
+    "persistent_cli_sha256": "0d59569235517dc64f88d55cceaee11897c0b9a2a7a32941b66216a74c7a3367",
+    "python_workspace_mapping": "physical absolute path with spaces",
+    "refresh_reparsed": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "transient_resources_removed": true,
+    "versions": {
+      "adk-submission": "0.2.13",
+      "google-adk": "1.36.1",
+      "swegemma": "0.2.11"
+    }
+  },
+  "prerequisites": [
+    {
+      "path": "/Users/diego/.codex/worktrees/mostaza-phase2-budget-retrieval/Mostaza-Harness",
+      "status": "PRESENT_REQUIRES_EXISTING_PIN_CHECKS"
+    },
+    {
+      "path": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/results/kaggle-v2-358139443/private-run-evidence/99c637be-d945-4dd7-85d8-4042cfcc2bad/source-inventory.json",
+      "status": "PRESENT_REQUIRES_EXISTING_PIN_CHECKS"
+    },
+    {
+      "path": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/results/kaggle-v2-358139443/mostaza-reviewed-input-836a861c-0811-4de8-b386-a2cedc7861d7",
+      "status": "PRESENT_REQUIRES_EXISTING_PIN_CHECKS"
+    },
+    {
+      "path": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/results/kaggle-v2-358139443/results.zip",
+      "status": "PRESENT_REQUIRES_EXISTING_PIN_CHECKS"
+    },
+    {
+      "path": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/results/kaggle-v2-358139443/mostaza-e0-e1-phase-1-paired-benchmark.ipynb",
+      "status": "PRESENT_REQUIRES_EXISTING_PIN_CHECKS"
+    }
+  ],
+  "project_path": "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness",
+  "python": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "schema_version": 1,
+  "source_assets": "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness",
+  "standalone_sha256": "0d59569235517dc64f88d55cceaee11897c0b9a2a7a32941b66216a74c7a3367",
+  "status": "PASS"
+}

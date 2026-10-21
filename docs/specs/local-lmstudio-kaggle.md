@@ -18,11 +18,11 @@ AC-1: The local run uses the existing LM Studio OpenAI-compatible server at conf
 
 AC-2: Local authentication is optional configuration (MOSTAZA_API_KEY); remove the Ollama-specific key and defaults. Do not print credentials or persist them in delivery artifacts. If the official OpenAI adapter requires a nonempty key for an unauthenticated server, document a neutral non-secret adapter placeholder only for that case; authenticated servers require the actual locally supplied secret.
 
-AC-3: The documented setup/run/pack entrypoints reuse existing installed official packages and task data when configured; every parent and compiler import resolves mostaza from this worktree even when using the source checkout interpreter. Do not edit official packages, verifier, scorer, prompts, submission files, or machine compute configuration.
+AC-3: The documented setup/run/pack entrypoints reuse existing installed official packages and task data when configured; every parent and compiler import resolves mostaza from this worktree even when using the source checkout interpreter. Do not edit official packages, verifier, scorer, prompts, submission files, or machine compute configuration during that original connectivity run. The separately approved search-code plan may change active submission/prompts and host packaging; original run evidence remains frozen.
 
 AC-4: Exactly one requests_7205 evaluation for this unchanged implementation candidate uses official swegemma, subprocess sandbox and concurrency 1. Preserve timeout_seconds=60, max_tool_calls=10, max_time_minutes=1, max_turns=50 and the official verification_timeout_seconds=300 default. Native trace evidence must show a model-produced tool call and its matching official tool response. Task timeout or unresolved FAIL may satisfy connectivity/tool acceptance; missing evidence, connection/auth/model failures, setup/verification infrastructure errors and outer gate timeout fail validation. No automatic whole-task retries or budget increases. For the already executed candidate 34ac6f3f863fabded3a2d07aca5669aee53920b4e8f1902f0c6d171cc4ff4d52, the corrected gate reuses its frozen native result/trace/log without new inference; bind HEAD, source-input inventory, and evidence hashes as specified in the plan. The official ATIF same-step tool observation is matched using extra.tool_name and a successful response, with timestamp ordering. Input/evidence drift fails closed and requires a new user decision before any additional run.
 
-AC-5: Both local run and pack consume collect_submission(submission/) and its existing allowlisted include closure. The competition model in agent.yaml remains unchanged. The official directory/schema/compiler accepts the staged delivery; the ZIP contains exactly the collected agent bytes and excludes local configuration, credentials, task data, solutions, results and development tools.
+AC-5: Both local run and pack consume collect_submission(submission/) and its allowlisted dependency closure, including the narrowly scoped active search-code skill when selected. The competition model in agent.yaml remains unchanged. The official directory/schema/compiler accepts the staged delivery; the ZIP contains exactly the collected agent bytes and excludes local configuration, credentials, task data, solutions, results and development tools.
 
 AC-6: The generated notebook executes locally to reproduce the ZIP byte-for-byte and on Kaggle writes /kaggle/working/submission.zip; it loads no model, enables no GPU, and makes no network calls. Document editing submission/, LM Studio configuration, one-task execution, ZIP/notebook generation and the manual Kaggle continuation without claiming Kaggle acceptance or score.
 
@@ -30,6 +30,8 @@ AC-6: The generated notebook executes locally to reproduce the ZIP byte-for-byte
 
 PD-1 — Local development selects the submission directly; historical explicit E0/E1 experiment packaging remains unchanged (plan: 2026-10-17-lmstudio-local-kaggle, 2026-10-17).
 PD-2 — Start only the existing LM Studio server on configured loopback port after approval; use the already loaded google/gemma-4-12b model and unchanged compute configuration (plan: 2026-10-17-lmstudio-local-kaggle, 2026-10-17).
+
+PD-3 — Extend active same-source ZIP/notebook packaging to the search-code skill; no new local model or Kaggle run is authorized by this extension (plan: 2026-10-20-search-code, 2026-10-20).
 
 ## Interfaces and data contracts
 
