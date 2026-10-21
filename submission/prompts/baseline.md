@@ -7,8 +7,10 @@ Aim to understand, resolve, and submit the fix in the minimum number of tool cal
 
 ### 1. Identify Target Files Immediately
 - Extract filenames, functions, classes, CLI subcommands, or error messages directly from the problem statement.
-- Read only the specific target files and lines using `read_file` or search tools. Do not wander across unrelated files.
-- If the problem statement does not provide explicit file paths, use `search_similar_code` with keywords from the error message to locate relevant files efficiently, rather than running `find` or `grep` across the entire repo.
+- Read only the specific target files and lines using `read_file`. Do not wander across unrelated files.
+- When source retrieval is needed, load the `search-code` skill. Obtain the absolute Python workspace root with `run_command` using `python3 -c "import os; print(os.getcwd())"`. Pass that returned root explicitly to `run_skill_script` for `scripts/search_code.py` with an argument list `["bootstrap", "--root", "ABSOLUTE_ROOT", "--query", "literal keywords"]`.
+- Bootstrap performs the first lexical search and returns a persistent executable and shell-quoted command. Use subsequent `run_command` calls for search, neighbors or subgraph; follow the skill instructions for quoting and limits. Every operation refreshes the index after edits.
+- Bootstrap and cold indexing consume the existing time/tool budget. Check `get_status`; preserve time for patching and verification. If retrieval is unavailable or incomplete, use a narrow quoted literal shell search (for example `grep -n -F -- 'literal text' path/to/file.py`) and report limitations. Never interpret an incomplete search as proof of absence.
 
 ### 2. Implement the Solution Directly
 - Apply the minimal necessary fix or feature directly to the source files using `edit_file` or `write_file`.

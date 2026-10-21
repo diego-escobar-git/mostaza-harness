@@ -7,7 +7,11 @@ from pathlib import Path
 import pytest
 
 from mostaza.packaging import (
+    ACTIVE_TOOLS,
     MODEL,
+    SEARCH_SKILL,
+    SKILL_FILES,
+    TOOLS,
     PackagingError,
     archive_bytes,
     build_submission,
@@ -434,3 +438,281 @@ def test_phase2_ac2_rejects_manifest_drift(
     path.write_text(json.dumps(data))
     with pytest.raises(PackagingError):
         load_manifest(tmp_path, "E1-B180")
+
+
+@pytest.fixture
+def skill_submission(submission: Path) -> Path:
+    """search-code:AC-7 uses the sole runtime source, never a second implementation."""
+    import yaml
+
+    from mostaza.packaging import IncludeDumper, IncludeLoader
+
+    config = submission / "agent.yaml"
+    agent = yaml.load(config.read_bytes(), Loader=IncludeLoader)
+    agent["tools"] = sorted(ACTIVE_TOOLS)
+    agent["skills"] = [SEARCH_SKILL]
+    config.write_text(yaml.dump(agent, Dumper=IncludeDumper))
+    (submission / "eval_config.yaml").write_text(
+        "evaluation: {timeout_seconds: 60, max_time_minutes: 5, "
+        "max_tool_calls: 20, max_turns: 50}\n"
+    )
+    skill = submission / SEARCH_SKILL
+    (skill / "scripts").mkdir(parents=True)
+    (skill / "SKILL.md").write_text(
+        "---\nname: search-code\ndescription: Deterministic source retrieval.\n---\n"
+        "Run scripts/search_code.py with an explicit workspace root.\n"
+    )
+    source = Path(__file__).resolve().parents[2] / "submission" / SEARCH_SKILL
+    (skill / "scripts/search_code.py").write_bytes(
+        (source / "scripts/search_code.py").read_bytes()
+    )
+    return submission
+
+
+def test_search_code_ac7_exact_skill_closure_zip_and_notebook_bytes(
+    skill_submission: Path, tmp_path: Path
+) -> None:
+    import base64
+    import io
+    import re
+
+    from mostaza.development import write_kaggle_notebook
+
+    files = collect_submission(skill_submission)
+    assert set(files) == {
+        "agent.yaml",
+        "eval_config.yaml",
+        "prompts/baseline.md",
+        *SKILL_FILES,
+    }
+    for name in SKILL_FILES:
+        assert files[name] == (skill_submission / name).read_bytes()
+    first, second = tmp_path / "first.zip", tmp_path / "second.zip"
+    assert archive_bytes(files, first) == archive_bytes(files, second)
+    assert first.read_bytes() == second.read_bytes()
+    notebook = json.loads(write_kaggle_notebook(first).read_text())
+    code = "".join(notebook["cells"][1]["source"])
+    payload = re.search(r"base64.b64decode\('([A-Za-z0-9+/=]+)'\)", code)
+    assert payload is not None
+    delivery = base64.b64decode(payload[1], validate=True)
+    assert delivery == first.read_bytes()
+    with zipfile.ZipFile(io.BytesIO(delivery)) as archive:
+        assert archive.namelist() == sorted(files)
+        assert {name: archive.read(name) for name in archive.namelist()} == files
+        assert all(info.external_attr >> 16 == 0o100644 for info in archive.infolist())
+
+
+@pytest.mark.parametrize(
+    "declaration",
+    [
+        "[]",
+        "null",
+        "skills/search-code",
+        "[skills/unknown]",
+        "[skills/search-code, skills/search-code]",
+        "[skills/search-code, skills/unknown]",
+        "[../skills/search-code]",
+        "[/skills/search-code]",
+        "[skills/search-code/../search-code]",
+        "[skills/search-code/]",
+        "[skills//search-code]",
+        "[{path: skills/search-code}]",
+        "!include prompts/skill.yaml",
+    ],
+)
+def test_search_code_ac7_rejects_invalid_skill_declarations(
+    submission: Path, declaration: str
+) -> None:
+    with (submission / "agent.yaml").open("a") as stream:
+        stream.write(f"skills: {declaration}\n")
+    with pytest.raises(PackagingError, match="single search-code"):
+        collect_submission(submission)
+
+
+@pytest.mark.parametrize(
+    "tools",
+    [
+        ["get_status"],
+        sorted(TOOLS),
+        [*sorted(ACTIVE_TOOLS), "run_command"],
+        [*sorted(ACTIVE_TOOLS), "unknown"],
+    ],
+)
+def test_search_code_ac7_requires_six_unique_native_tools(
+    skill_submission: Path, tools: list[str]
+) -> None:
+    import yaml
+
+    from mostaza.packaging import IncludeDumper, IncludeLoader
+
+    config = skill_submission / "agent.yaml"
+    agent = yaml.load(config.read_bytes(), Loader=IncludeLoader)
+    agent["tools"] = tools
+    config.write_text(yaml.dump(agent, Dumper=IncludeDumper))
+    with pytest.raises(PackagingError, match="native tool"):
+        collect_submission(skill_submission)
+
+
+@pytest.mark.parametrize(
+    "name",
+    [
+        "skills/search-code/scripts/extra.py",
+        "skills/search-code/scripts/search_code.pyc",
+        "skills/search-code/search_code.py",
+        "skills/search-code/references/input.md",
+        "skills/search-code/resources/graph.json",
+        "skills/search-code/scripts/.env",
+        "skills/search-code/scripts/__pycache__/cache.pyc",
+        "skills/another/SKILL.md",
+        "skills/SKILL.md",
+    ],
+)
+def test_search_code_ac7_rejects_extra_code_and_resources(
+    skill_submission: Path, name: str
+) -> None:
+    path = skill_submission / name
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("Never deliver")
+    with pytest.raises(PackagingError, match="Forbidden"):
+        collect_submission(skill_submission)
+
+
+@pytest.mark.parametrize("missing", sorted(SKILL_FILES))
+def test_search_code_ac7_declared_skill_requires_both_files(
+    skill_submission: Path, missing: str
+) -> None:
+    (skill_submission / missing).unlink()
+    with pytest.raises(PackagingError, match="Missing or unsafe"):
+        collect_submission(skill_submission)
+
+
+def test_search_code_ac7_rejects_undeclared_skill(skill_submission: Path) -> None:
+    config = skill_submission / "agent.yaml"
+    config.write_text(config.read_text().replace("skills:\n- skills/search-code\n", ""))
+    with pytest.raises(PackagingError, match="Undeclared"):
+        collect_submission(skill_submission)
+
+
+@pytest.mark.parametrize(
+    "name",
+    [
+        "skills",
+        "skills/search-code",
+        "skills/search-code/scripts",
+        *sorted(SKILL_FILES),
+    ],
+)
+def test_search_code_ac7_rejects_symlink_in_each_skill_component(
+    skill_submission: Path, tmp_path: Path, name: str
+) -> None:
+    path = skill_submission / name
+    foreign = tmp_path / "foreign"
+    path.rename(foreign)
+    path.symlink_to(foreign, target_is_directory=foreign.is_dir())
+    with pytest.raises(PackagingError, match="Symlink"):
+        collect_submission(skill_submission)
+
+
+def test_search_code_ac7_skill_swap_after_inspection_cannot_escape(
+    skill_submission: Path, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    from mostaza import packaging
+
+    inspect = packaging._check_tree
+    foreign = tmp_path / "private.py"
+    foreign.write_text("Private source")
+
+    def swap(root: Path) -> None:
+        inspect(root)
+        script = root / SEARCH_SKILL / "scripts/search_code.py"
+        script.unlink()
+        script.symlink_to(foreign)
+
+    monkeypatch.setattr(packaging, "_check_tree", swap)
+    with pytest.raises(PackagingError, match="unsafe"):
+        collect_submission(skill_submission)
+
+
+@pytest.mark.parametrize("name", sorted(SKILL_FILES))
+def test_search_code_ac7_skill_cannot_be_selected_as_an_include(
+    skill_submission: Path, name: str
+) -> None:
+    config = skill_submission / "agent.yaml"
+    config.write_text(config.read_text().replace("prompts/baseline.md", name))
+    with pytest.raises(PackagingError, match="Forbidden include"):
+        collect_submission(skill_submission)
+
+
+@pytest.mark.parametrize("limit", ["bytes", "files"])
+def test_search_code_ac7_skill_closure_retains_size_and_count_limits(
+    skill_submission: Path, monkeypatch: pytest.MonkeyPatch, limit: str
+) -> None:
+    from mostaza import packaging
+
+    if limit == "bytes":
+        monkeypatch.setattr(packaging, "MAX_BYTES", 1000)
+    else:
+        monkeypatch.setattr(packaging, "MAX_FILES", 4)
+    with pytest.raises(PackagingError, match="limit|count"):
+        collect_submission(skill_submission)
+
+
+@pytest.mark.parametrize("change", ["missing", "undeclared", "extra"])
+def test_search_code_ac7_archive_checks_skill_declaration_and_members(
+    skill_submission: Path, tmp_path: Path, change: str
+) -> None:
+    files = collect_submission(skill_submission)
+    if change == "missing":
+        del files[f"{SEARCH_SKILL}/SKILL.md"]
+    elif change == "undeclared":
+        files["agent.yaml"] = files["agent.yaml"].replace(
+            b"skills:\n- skills/search-code\n", b""
+        )
+    else:
+        files[f"{SEARCH_SKILL}/scripts/injected.py"] = b"Injected code"
+    with pytest.raises(PackagingError, match="skill files|Forbidden archive"):
+        archive_bytes(files, tmp_path / "rejected.zip")
+    assert not (tmp_path / "rejected.zip").exists()
+
+
+def test_search_code_ac7_real_official_compiler_accepts_allowed_skill(
+    skill_submission: Path, tmp_path: Path
+) -> None:
+    from mostaza.packaging import compile_directory
+
+    directory = tmp_path / "compiled"
+    for name, data in collect_submission(skill_submission).items():
+        path = directory / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(data)
+    compiler = Path(__file__).resolve().parents[2] / ".tools/official/bin/python"
+    compile_directory(directory, compiler)
+
+
+@pytest.mark.parametrize(
+    "experiment, expected_sha256",
+    [
+        ("E0", "aa40c075b2bf77c62cca80b9a9b1ec8fd5f28131295c9bf03926fce241464fe4"),
+        ("E1", "be8ebd8e660c75b6a7e467b6590e0ff4f093077055e7aeee0db6fa6a0ddd375e"),
+    ],
+)
+def test_search_code_ac7_frozen_historical_archive_bytes_and_native_registry(
+    tmp_path: Path, experiment: str, expected_sha256: str
+) -> None:
+    # agent-retrieval:AC-5: hashes verified using original packaging.py from
+    # initial HEAD 1969aa509b6a161a159c79454e95100f6fba8b54.
+    import yaml
+
+    from mostaza.packaging import IncludeLoader, configuration_files
+
+    root = Path(__file__).resolve().parents[2]
+    files = configuration_files(root, experiment)
+    prompt = "baseline.md" if experiment == "E0" else "hybrid-retrieval.md"
+    assert set(files) == {"agent.yaml", "eval_config.yaml", f"prompts/{prompt}"}
+    assert (
+        files[f"prompts/{prompt}"]
+        == (root / "experiments/historical-submission/prompts" / prompt).read_bytes()
+    )
+    assert set(yaml.load(files["agent.yaml"], Loader=IncludeLoader)["tools"]) == TOOLS
+    assert len(TOOLS) == 9
+    assert archive_bytes(files, tmp_path / f"{experiment}.zip") == expected_sha256

@@ -11,3 +11,4 @@
 - [notebook-import-cpu](notebook-import-cpu.md) — CPU notebook input transport, import witnesses and bounded supervision.
 - [phase2-reconciliation](phase2-reconciliation.md) — pinned iteration-2 evidence reconciliation and bounded pending roadmap.
 - [local-lmstudio-kaggle](local-lmstudio-kaggle.md) — local LM Studio execution and same-source Kaggle ZIP/notebook delivery.
+- [search-code](search-code.md) — sandbox-local lexical retrieval, conservative Python graph and incremental CLI indexing.

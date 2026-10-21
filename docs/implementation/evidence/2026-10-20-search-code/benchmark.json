@@ -1,0 +1,1614 @@
+{
+  "limitations": [
+    "Local CPU only",
+    "Docker source reviewed; Docker not executed",
+    "Kaggle and model efficacy not executed"
+  ],
+  "limits": {
+    "cold_seconds": 45,
+    "database_bytes": 134217728,
+    "peak_rss_bytes": 268435456,
+    "refresh_seconds": 10,
+    "warm_seconds": 3
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "query_basis": "Visible source AST only; no tasks, patches, solutions or precomputed graphs",
+  "schema_version": 1,
+  "snapshots": [
+    {
+      "archive_sha256": "42dc3d360f842a5c7a66d0008ac05447fcd807dc33ee8cc18d2f2d4876283106",
+      "cold": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "bootstrap",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/workspace with spaces",
+          "--query",
+          "FlaskyStyle",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 5947392,
+          "deleted_files": 0,
+          "edge_count": 978,
+          "excluded": {
+            "excluded_directory": 1
+          },
+          "files": 61,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 36,
+          "retries": 0,
+          "source_bytes": 545627,
+          "symbol_count": 791,
+          "unresolved_count": 2856,
+          "updated_files": 61
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "bootstrap",
+        "peak_rss_bytes": 47153152,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 47153152,
+        "raw_unit": "bytes",
+        "seconds": 0.4324216250097379
+      },
+      "edited_source_sha256": "af9ba7069eeffdbe123cfe579da8a6a92fb9cca4e39d97e39e8be12480bd8449",
+      "files": 68,
+      "id": "requests_7205",
+      "queries": [
+        {
+          "end_line": 86,
+          "path": "docs/_themes/flask_theme_support.py",
+          "query": "FlaskyStyle",
+          "query_sha256": "4bd518bb3344b8194dab1438805c4425cd55f6f67264e1ce48b272a9f50f2f08",
+          "start_line": 7,
+          "top5_match": {
+            "end_line": 86,
+            "name": "FlaskyStyle",
+            "path": "docs/_themes/flask_theme_support.py",
+            "rank": 1,
+            "start_line": 7
+          }
+        },
+        {
+          "end_line": 90,
+          "path": "src/requests/__init__.py",
+          "query": "check_compatibility",
+          "query_sha256": "b556f508297dc7f797bf19a4cb531165915285c56123620917962387e07ed25e",
+          "start_line": 58,
+          "top5_match": {
+            "end_line": 90,
+            "name": "check_compatibility",
+            "path": "src/requests/__init__.py",
+            "rank": 1,
+            "start_line": 58
+          }
+        },
+        {
+          "end_line": 36,
+          "path": "src/requests/_internal_utils.py",
+          "query": "to_native_string",
+          "query_sha256": "1339e66b7659db0621f0fbd1e73f4907f2aa33dfbbcb37774bec6d6268ab933e",
+          "start_line": 26,
+          "top5_match": {
+            "end_line": 36,
+            "name": "to_native_string",
+            "path": "src/requests/_internal_utils.py",
+            "rank": 1,
+            "start_line": 26
+          }
+        }
+      ],
+      "refresh": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/temporary/mostaza-search-code-501-6833188b49592230a4b6e69ca771ba7f/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/workspace with spaces",
+          "--query",
+          "FlaskyStyle",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 5967872,
+          "deleted_files": 0,
+          "edge_count": 978,
+          "excluded": {
+            "excluded_directory": 1
+          },
+          "files": 61,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 545672,
+          "symbol_count": 791,
+          "unresolved_count": 2856,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 38010880,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 38010880,
+        "raw_unit": "bytes",
+        "seconds": 0.30559870798606426
+      },
+      "rejected_entries": {
+        "symlink_or_hardlink": 2
+      },
+      "source_sha256": "dc310723b5caba376080bdaee298e498107b7cec6cf27d31e94d7e5737917ea5",
+      "status": "PASS",
+      "warm": [
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/temporary/mostaza-search-code-501-6833188b49592230a4b6e69ca771ba7f/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/workspace with spaces",
+            "--query",
+            "FlaskyStyle",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 5947392,
+            "deleted_files": 0,
+            "edge_count": 978,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 61,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 545627,
+            "symbol_count": 791,
+            "unresolved_count": 2856,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37240832,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37240832,
+          "raw_unit": "bytes",
+          "seconds": 0.090847208048217
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/temporary/mostaza-search-code-501-6833188b49592230a4b6e69ca771ba7f/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/workspace with spaces",
+            "--query",
+            "check_compatibility",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 5947392,
+            "deleted_files": 0,
+            "edge_count": 978,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 61,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 545627,
+            "symbol_count": 791,
+            "unresolved_count": 2856,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37666816,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37666816,
+          "raw_unit": "bytes",
+          "seconds": 0.09456241701263934
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/temporary/mostaza-search-code-501-6833188b49592230a4b6e69ca771ba7f/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7205/workspace with spaces",
+            "--query",
+            "to_native_string",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 5947392,
+            "deleted_files": 0,
+            "edge_count": 978,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 61,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 545627,
+            "symbol_count": 791,
+            "unresolved_count": 2856,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37617664,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37617664,
+          "raw_unit": "bytes",
+          "seconds": 0.09537391597405076
+        }
+      ]
+    },
+    {
+      "archive_sha256": "be20432ae7d54b96a5532c98ac545798bb76237376c7fd546e2275f7f19e93ac",
+      "cold": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "bootstrap",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/workspace with spaces",
+          "--query",
+          "FlaskyStyle",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 5955584,
+          "deleted_files": 0,
+          "edge_count": 977,
+          "excluded": {
+            "excluded_directory": 1
+          },
+          "files": 61,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 36,
+          "retries": 0,
+          "source_bytes": 547654,
+          "symbol_count": 792,
+          "unresolved_count": 2863,
+          "updated_files": 61
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "bootstrap",
+        "peak_rss_bytes": 46874624,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 46874624,
+        "raw_unit": "bytes",
+        "seconds": 0.4341824579751119
+      },
+      "edited_source_sha256": "af9ba7069eeffdbe123cfe579da8a6a92fb9cca4e39d97e39e8be12480bd8449",
+      "files": 68,
+      "id": "requests_7315",
+      "queries": [
+        {
+          "end_line": 86,
+          "path": "docs/_themes/flask_theme_support.py",
+          "query": "FlaskyStyle",
+          "query_sha256": "4bd518bb3344b8194dab1438805c4425cd55f6f67264e1ce48b272a9f50f2f08",
+          "start_line": 7,
+          "top5_match": {
+            "end_line": 86,
+            "name": "FlaskyStyle",
+            "path": "docs/_themes/flask_theme_support.py",
+            "rank": 1,
+            "start_line": 7
+          }
+        },
+        {
+          "end_line": 90,
+          "path": "src/requests/__init__.py",
+          "query": "check_compatibility",
+          "query_sha256": "b556f508297dc7f797bf19a4cb531165915285c56123620917962387e07ed25e",
+          "start_line": 58,
+          "top5_match": {
+            "end_line": 90,
+            "name": "check_compatibility",
+            "path": "src/requests/__init__.py",
+            "rank": 1,
+            "start_line": 58
+          }
+        },
+        {
+          "end_line": 36,
+          "path": "src/requests/_internal_utils.py",
+          "query": "to_native_string",
+          "query_sha256": "1339e66b7659db0621f0fbd1e73f4907f2aa33dfbbcb37774bec6d6268ab933e",
+          "start_line": 26,
+          "top5_match": {
+            "end_line": 36,
+            "name": "to_native_string",
+            "path": "src/requests/_internal_utils.py",
+            "rank": 1,
+            "start_line": 26
+          }
+        }
+      ],
+      "refresh": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/temporary/mostaza-search-code-501-97d7ad72d3ac6ee34fc86e0f70f70470/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/workspace with spaces",
+          "--query",
+          "FlaskyStyle",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 5967872,
+          "deleted_files": 0,
+          "edge_count": 977,
+          "excluded": {
+            "excluded_directory": 1
+          },
+          "files": 61,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 547699,
+          "symbol_count": 792,
+          "unresolved_count": 2863,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 38223872,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 38223872,
+        "raw_unit": "bytes",
+        "seconds": 0.2657031249254942
+      },
+      "rejected_entries": {
+        "symlink_or_hardlink": 2
+      },
+      "source_sha256": "a8087fad381b61049960b6d8cc0911d0f4d79fa1b23d2e3368d76b9e0365f7be",
+      "status": "PASS",
+      "warm": [
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/temporary/mostaza-search-code-501-97d7ad72d3ac6ee34fc86e0f70f70470/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/workspace with spaces",
+            "--query",
+            "FlaskyStyle",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 5955584,
+            "deleted_files": 0,
+            "edge_count": 977,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 61,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 547654,
+            "symbol_count": 792,
+            "unresolved_count": 2863,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37912576,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37912576,
+          "raw_unit": "bytes",
+          "seconds": 0.09921008301898837
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/temporary/mostaza-search-code-501-97d7ad72d3ac6ee34fc86e0f70f70470/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/workspace with spaces",
+            "--query",
+            "check_compatibility",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 5955584,
+            "deleted_files": 0,
+            "edge_count": 977,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 61,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 547654,
+            "symbol_count": 792,
+            "unresolved_count": 2863,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37863424,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37863424,
+          "raw_unit": "bytes",
+          "seconds": 0.10163762501906604
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/temporary/mostaza-search-code-501-97d7ad72d3ac6ee34fc86e0f70f70470/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7315/workspace with spaces",
+            "--query",
+            "to_native_string",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 5955584,
+            "deleted_files": 0,
+            "edge_count": 977,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 61,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 547654,
+            "symbol_count": 792,
+            "unresolved_count": 2863,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37896192,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37896192,
+          "raw_unit": "bytes",
+          "seconds": 0.0896457500057295
+        }
+      ]
+    },
+    {
+      "archive_sha256": "a7da726a17f54ea4d43d1a21e3e9f3e95bfa2787a845a18e2d30a88fcc1f53fb",
+      "cold": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "bootstrap",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/workspace with spaces",
+          "--query",
+          "FlaskyStyle",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 6361088,
+          "deleted_files": 0,
+          "edge_count": 1035,
+          "excluded": {
+            "excluded_directory": 1
+          },
+          "files": 62,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 37,
+          "retries": 0,
+          "source_bytes": 581865,
+          "symbol_count": 838,
+          "unresolved_count": 3042,
+          "updated_files": 62
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "bootstrap",
+        "peak_rss_bytes": 48234496,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 48234496,
+        "raw_unit": "bytes",
+        "seconds": 0.404740541940555
+      },
+      "edited_source_sha256": "af9ba7069eeffdbe123cfe579da8a6a92fb9cca4e39d97e39e8be12480bd8449",
+      "files": 70,
+      "id": "requests_7502",
+      "queries": [
+        {
+          "end_line": 86,
+          "path": "docs/_themes/flask_theme_support.py",
+          "query": "FlaskyStyle",
+          "query_sha256": "4bd518bb3344b8194dab1438805c4425cd55f6f67264e1ce48b272a9f50f2f08",
+          "start_line": 7,
+          "top5_match": {
+            "end_line": 86,
+            "name": "FlaskyStyle",
+            "path": "docs/_themes/flask_theme_support.py",
+            "rank": 1,
+            "start_line": 7
+          }
+        },
+        {
+          "end_line": 96,
+          "path": "src/requests/__init__.py",
+          "query": "check_compatibility",
+          "query_sha256": "b556f508297dc7f797bf19a4cb531165915285c56123620917962387e07ed25e",
+          "start_line": 60,
+          "top5_match": {
+            "end_line": 96,
+            "name": "check_compatibility",
+            "path": "src/requests/__init__.py",
+            "rank": 1,
+            "start_line": 60
+          }
+        },
+        {
+          "end_line": 36,
+          "path": "src/requests/_internal_utils.py",
+          "query": "to_native_string",
+          "query_sha256": "1339e66b7659db0621f0fbd1e73f4907f2aa33dfbbcb37774bec6d6268ab933e",
+          "start_line": 26,
+          "top5_match": {
+            "end_line": 36,
+            "name": "to_native_string",
+            "path": "src/requests/_internal_utils.py",
+            "rank": 1,
+            "start_line": 26
+          }
+        }
+      ],
+      "refresh": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/temporary/mostaza-search-code-501-4ae7d03c8f7706dd594bf8fc405cab54/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/workspace with spaces",
+          "--query",
+          "FlaskyStyle",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 6365184,
+          "deleted_files": 0,
+          "edge_count": 1035,
+          "excluded": {
+            "excluded_directory": 1
+          },
+          "files": 62,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 581910,
+          "symbol_count": 838,
+          "unresolved_count": 3042,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 37044224,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 37044224,
+        "raw_unit": "bytes",
+        "seconds": 0.35427729098591954
+      },
+      "rejected_entries": {
+        "symlink_or_hardlink": 2
+      },
+      "source_sha256": "a2bd9511b1865dc28a9956542afe3f154df9c93d4a9e809608a61ba2de179c88",
+      "status": "PASS",
+      "warm": [
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/temporary/mostaza-search-code-501-4ae7d03c8f7706dd594bf8fc405cab54/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/workspace with spaces",
+            "--query",
+            "FlaskyStyle",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 6361088,
+            "deleted_files": 0,
+            "edge_count": 1035,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 62,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 581865,
+            "symbol_count": 838,
+            "unresolved_count": 3042,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 36683776,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 36683776,
+          "raw_unit": "bytes",
+          "seconds": 0.1016229169908911
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/temporary/mostaza-search-code-501-4ae7d03c8f7706dd594bf8fc405cab54/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/workspace with spaces",
+            "--query",
+            "check_compatibility",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 6361088,
+            "deleted_files": 0,
+            "edge_count": 1035,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 62,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 581865,
+            "symbol_count": 838,
+            "unresolved_count": 3042,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 38469632,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 38469632,
+          "raw_unit": "bytes",
+          "seconds": 0.12812470796052366
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/temporary/mostaza-search-code-501-4ae7d03c8f7706dd594bf8fc405cab54/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/requests_7502/workspace with spaces",
+            "--query",
+            "to_native_string",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 6361088,
+            "deleted_files": 0,
+            "edge_count": 1035,
+            "excluded": {
+              "excluded_directory": 1
+            },
+            "files": 62,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 581865,
+            "symbol_count": 838,
+            "unresolved_count": 3042,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 37765120,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 37765120,
+          "raw_unit": "bytes",
+          "seconds": 0.08293066697660834
+        }
+      ]
+    },
+    {
+      "archive_sha256": "ebaf671c28bccb85aa9d8a85735019b4daa6d78d541a679288c64eed88dc76f0",
+      "cold": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "bootstrap",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/workspace with spaces",
+          "--query",
+          "HTTPBearer403",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 72900608,
+          "deleted_files": 0,
+          "edge_count": 7046,
+          "excluded": {
+            "excluded_directory": 13,
+            "excluded_file": 12
+          },
+          "files": 2620,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1118,
+          "retries": 0,
+          "source_bytes": 15252407,
+          "symbol_count": 6371,
+          "unresolved_count": 16793,
+          "updated_files": 2620
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "bootstrap",
+        "peak_rss_bytes": 141737984,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 141737984,
+        "raw_unit": "bytes",
+        "seconds": 3.3725775410421193
+      },
+      "edited_source_sha256": "9e747dbda73f7e9eda9d20d56092cffa2a94882855eead3b94698e355d65eb5f",
+      "files": 2648,
+      "id": "fastapi_15589",
+      "queries": [
+        {
+          "end_line": 13,
+          "path": "docs_src/authentication_error_status_code/tutorial001_an_py310.py",
+          "query": "HTTPBearer403",
+          "query_sha256": "0f66dc3516293cb77545fd85e515c8bc9ebaa95ad6e30587362e99409249b3d8",
+          "start_line": 9,
+          "top5_match": {
+            "end_line": 13,
+            "name": "HTTPBearer403",
+            "path": "docs_src/authentication_error_status_code/tutorial001_an_py310.py",
+            "rank": 1,
+            "start_line": 9
+          }
+        },
+        {
+          "end_line": 9,
+          "path": "docs_src/background_tasks/tutorial001_py310.py",
+          "query": "write_notification",
+          "query_sha256": "35f5a8a90e8a9d06ab0cfeaf1b83eb05f71acecbb3f7a2c1df9a3f13d6c7b3ac",
+          "start_line": 6,
+          "top5_match": {
+            "end_line": 9,
+            "name": "write_notification",
+            "path": "docs_src/background_tasks/tutorial001_py310.py",
+            "rank": 1,
+            "start_line": 6
+          }
+        },
+        {
+          "end_line": 8,
+          "path": "docs_src/bigger_applications/app_an_py310/dependencies.py",
+          "query": "get_token_header",
+          "query_sha256": "fc5811b1ed02aba1468dd2df48b0c81bac2ee95b8fe32720652ade37a1ec9d04",
+          "start_line": 6,
+          "top5_match": {
+            "end_line": 8,
+            "name": "get_token_header",
+            "path": "docs_src/bigger_applications/app_an_py310/dependencies.py",
+            "rank": 1,
+            "start_line": 6
+          }
+        }
+      ],
+      "refresh": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/temporary/mostaza-search-code-501-4e2c1858cc56318b59c480cb13c13748/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/workspace with spaces",
+          "--query",
+          "HTTPBearer403",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 72900608,
+          "deleted_files": 0,
+          "edge_count": 7046,
+          "excluded": {
+            "excluded_directory": 13,
+            "excluded_file": 12
+          },
+          "files": 2620,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 15252452,
+          "symbol_count": 6371,
+          "unresolved_count": 16793,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 54198272,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 54198272,
+        "raw_unit": "bytes",
+        "seconds": 3.19469129096251
+      },
+      "rejected_entries": {
+        "symlink_or_hardlink": 0
+      },
+      "source_sha256": "5c4f77311ec3b1347d23f8cae59d360a65e625649d9850b9cfddf08fad4484a4",
+      "status": "PASS",
+      "warm": [
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/temporary/mostaza-search-code-501-4e2c1858cc56318b59c480cb13c13748/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/workspace with spaces",
+            "--query",
+            "HTTPBearer403",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 72900608,
+            "deleted_files": 0,
+            "edge_count": 7046,
+            "excluded": {
+              "excluded_directory": 13,
+              "excluded_file": 12
+            },
+            "files": 2620,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 15252407,
+            "symbol_count": 6371,
+            "unresolved_count": 16793,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 51871744,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 51871744,
+          "raw_unit": "bytes",
+          "seconds": 0.8374850830296054
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/temporary/mostaza-search-code-501-4e2c1858cc56318b59c480cb13c13748/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/workspace with spaces",
+            "--query",
+            "write_notification",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 72900608,
+            "deleted_files": 0,
+            "edge_count": 7046,
+            "excluded": {
+              "excluded_directory": 13,
+              "excluded_file": 12
+            },
+            "files": 2620,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 15252407,
+            "symbol_count": 6371,
+            "unresolved_count": 16793,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 52264960,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 52264960,
+          "raw_unit": "bytes",
+          "seconds": 0.9314575829776004
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/temporary/mostaza-search-code-501-4e2c1858cc56318b59c480cb13c13748/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/fastapi_15589/workspace with spaces",
+            "--query",
+            "get_token_header",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 72900608,
+            "deleted_files": 0,
+            "edge_count": 7046,
+            "excluded": {
+              "excluded_directory": 13,
+              "excluded_file": 12
+            },
+            "files": 2620,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 15252407,
+            "symbol_count": 6371,
+            "unresolved_count": 16793,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 52822016,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 52822016,
+          "raw_unit": "bytes",
+          "seconds": 1.0127453330205753
+        }
+      ]
+    },
+    {
+      "archive_sha256": "f32c9ed11538db2bf049314ff7c8f08c01ca23006bbd994c25ad72c2815fe905",
+      "cold": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "bootstrap",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/workspace with spaces",
+          "--query",
+          "TextSuite",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 15945728,
+          "deleted_files": 0,
+          "edge_count": 3571,
+          "excluded": {
+            "excluded_directory": 2,
+            "excluded_file": 1
+          },
+          "files": 256,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 190,
+          "retries": 0,
+          "source_bytes": 2042993,
+          "symbol_count": 2182,
+          "unresolved_count": 9481,
+          "updated_files": 256
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "bootstrap",
+        "peak_rss_bytes": 57720832,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 57720832,
+        "raw_unit": "bytes",
+        "seconds": 1.155161542003043
+      },
+      "edited_source_sha256": "477a681f116943fe3ade90dd27bba615f3f96ee41437cfa955bee3913c1a9564",
+      "files": 262,
+      "id": "rich_3061",
+      "queries": [
+        {
+          "end_line": 61,
+          "path": "benchmarks/benchmarks.py",
+          "query": "TextSuite",
+          "query_sha256": "4283def50bf7373eccae0e22f7247ede7f2963eb77814a87fcf6e54de1d009d3",
+          "start_line": 14,
+          "top5_match": {
+            "end_line": 61,
+            "name": "TextSuite",
+            "path": "benchmarks/benchmarks.py",
+            "rank": 1,
+            "start_line": 14
+          }
+        },
+        {
+          "end_line": 23,
+          "path": "benchmarks/benchmarks.py",
+          "query": "time_wrapping",
+          "query_sha256": "8532523bfab82cc8136f54ec9f3bdb303e26b01b02e9e0dd9150edb7fece9e44",
+          "start_line": 22,
+          "top5_match": {
+            "end_line": 23,
+            "name": "time_wrapping",
+            "path": "benchmarks/benchmarks.py",
+            "rank": 1,
+            "start_line": 22
+          }
+        },
+        {
+          "end_line": 26,
+          "path": "benchmarks/benchmarks.py",
+          "query": "time_indent_guides",
+          "query_sha256": "1a186d95a0e36f91f8d70f53adb799f52418714741fedf8f2ee4e7ef16c1cf6e",
+          "start_line": 25,
+          "top5_match": {
+            "end_line": 26,
+            "name": "time_indent_guides",
+            "path": "benchmarks/benchmarks.py",
+            "rank": 1,
+            "start_line": 25
+          }
+        }
+      ],
+      "refresh": {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/temporary/mostaza-search-code-501-a655fbfc5616571d474c7e85f2d3208e/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/workspace with spaces",
+          "--query",
+          "TextSuite",
+          "--limit",
+          "5"
+        ],
+        "index": {
+          "database_bytes": 15990784,
+          "deleted_files": 0,
+          "edge_count": 3571,
+          "excluded": {
+            "excluded_directory": 2,
+            "excluded_file": 1
+          },
+          "files": 256,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 2043038,
+          "symbol_count": 2182,
+          "unresolved_count": 9481,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 41893888,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 41893888,
+        "raw_unit": "bytes",
+        "seconds": 0.7830673749558628
+      },
+      "rejected_entries": {
+        "symlink_or_hardlink": 0
+      },
+      "source_sha256": "1d9e467b94a050562cfb9cf71fd8ac143524562f2c961c2e14fe36cde52da0f3",
+      "status": "PASS",
+      "warm": [
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/temporary/mostaza-search-code-501-a655fbfc5616571d474c7e85f2d3208e/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/workspace with spaces",
+            "--query",
+            "TextSuite",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 15945728,
+            "deleted_files": 0,
+            "edge_count": 3571,
+            "excluded": {
+              "excluded_directory": 2,
+              "excluded_file": 1
+            },
+            "files": 256,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 2042993,
+            "symbol_count": 2182,
+            "unresolved_count": 9481,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 40615936,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 40615936,
+          "raw_unit": "bytes",
+          "seconds": 0.12372675002552569
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/temporary/mostaza-search-code-501-a655fbfc5616571d474c7e85f2d3208e/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/workspace with spaces",
+            "--query",
+            "time_wrapping",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 15945728,
+            "deleted_files": 0,
+            "edge_count": 3571,
+            "excluded": {
+              "excluded_directory": 2,
+              "excluded_file": 1
+            },
+            "files": 256,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 2042993,
+            "symbol_count": 2182,
+            "unresolved_count": 9481,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 40960000,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 40960000,
+          "raw_unit": "bytes",
+          "seconds": 0.12243479199241847
+        },
+        {
+          "cli_argv": [
+            "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/temporary/mostaza-search-code-501-a655fbfc5616571d474c7e85f2d3208e/search_code.py",
+            "search",
+            "--root",
+            "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/rich_3061/workspace with spaces",
+            "--query",
+            "time_indent_guides",
+            "--limit",
+            "5"
+          ],
+          "index": {
+            "database_bytes": 15945728,
+            "deleted_files": 0,
+            "edge_count": 3571,
+            "excluded": {
+              "excluded_directory": 2,
+              "excluded_file": 1
+            },
+            "files": 256,
+            "generation": 1,
+            "graph_limited_files": 0,
+            "parse_errors": 0,
+            "reparsed_files": 0,
+            "retries": 0,
+            "source_bytes": 2042993,
+            "symbol_count": 2182,
+            "unresolved_count": 9481,
+            "updated_files": 0
+          },
+          "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+          "mode": "search",
+          "peak_rss_bytes": 40992768,
+          "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+          "raw_peak_rss": 40992768,
+          "raw_unit": "bytes",
+          "seconds": 0.1213385839946568
+        }
+      ]
+    }
+  ],
+  "status": "PASS",
+  "synthetic": {
+    "ambiguity": "ambiguous",
+    "dependent_edges_invalidated": true,
+    "expected_edges": [
+      [
+        "caller_symbol",
+        "target_symbol",
+        "calls"
+      ]
+    ],
+    "nested_edges": [
+      [
+        "async_symbol",
+        "nested_symbol",
+        "calls"
+      ],
+      [
+        "async_symbol",
+        "nested_symbol",
+        "contains"
+      ],
+      [
+        "nested.py",
+        "async_symbol",
+        "contains"
+      ]
+    ],
+    "non_python_retrieved": true,
+    "operations": [
+      {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "neighbors",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic/workspace with spaces",
+          "--symbol",
+          "caller_symbol",
+          "--edge-kind",
+          "callees"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 9,
+          "excluded": {},
+          "files": 4,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 3,
+          "retries": 0,
+          "source_bytes": 279,
+          "symbol_count": 9,
+          "unresolved_count": 0,
+          "updated_files": 4
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "neighbors",
+        "peak_rss_bytes": 30179328,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 30179328,
+        "raw_unit": "bytes",
+        "seconds": 0.0709921249654144
+      },
+      {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "subgraph",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic/workspace with spaces",
+          "--symbol",
+          "async_symbol",
+          "--hops",
+          "1"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 9,
+          "excluded": {},
+          "files": 4,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 0,
+          "retries": 0,
+          "source_bytes": 279,
+          "symbol_count": 9,
+          "unresolved_count": 0,
+          "updated_files": 0
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "subgraph",
+        "peak_rss_bytes": 29769728,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 29769728,
+        "raw_unit": "bytes",
+        "seconds": 0.05634633300360292
+      },
+      {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic/workspace with spaces",
+          "--query",
+          "nonpython_unique_marker"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 9,
+          "excluded": {},
+          "files": 4,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 0,
+          "retries": 0,
+          "source_bytes": 279,
+          "symbol_count": 9,
+          "unresolved_count": 0,
+          "updated_files": 0
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 29769728,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 29769728,
+        "raw_unit": "bytes",
+        "seconds": 0.055357250035740435
+      },
+      {
+        "cli_argv": [
+          "/Users/diego/Documents/Desarrollo/Mostaza Dev/PyCharm Projects/Mostaza-Harness/.venv/bin/python",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "neighbors",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic/workspace with spaces",
+          "--symbol",
+          "caller_symbol",
+          "--edge-kind",
+          "callees"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 7,
+          "excluded": {},
+          "files": 4,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 280,
+          "symbol_count": 9,
+          "unresolved_count": 2,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "neighbors",
+        "peak_rss_bytes": 30294016,
+        "python_version": "3.13.15 (main, Sep 28 2026, 16:25:10) [Clang 21.0.0 (clang-2100.3.34.2)]",
+        "raw_peak_rss": 30294016,
+        "raw_unit": "bytes",
+        "seconds": 0.058255541953258216
+      }
+    ],
+    "status": "PASS"
+  },
+  "synthetic_python312": {
+    "ambiguity": "ambiguous",
+    "dependent_edges_invalidated": true,
+    "expected_edges": [
+      [
+        "caller_symbol",
+        "target_symbol",
+        "calls"
+      ]
+    ],
+    "nested_edges": [
+      [
+        "async_symbol",
+        "nested_symbol",
+        "calls"
+      ],
+      [
+        "async_symbol",
+        "nested_symbol",
+        "contains"
+      ],
+      [
+        "nested.py",
+        "async_symbol",
+        "contains"
+      ]
+    ],
+    "non_python_retrieved": true,
+    "operations": [
+      {
+        "cli_argv": [
+          "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "neighbors",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic312/workspace with spaces",
+          "--symbol",
+          "caller_symbol",
+          "--edge-kind",
+          "callees"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 9,
+          "excluded": {},
+          "files": 4,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 3,
+          "retries": 0,
+          "source_bytes": 279,
+          "symbol_count": 9,
+          "unresolved_count": 0,
+          "updated_files": 4
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "neighbors",
+        "peak_rss_bytes": 28557312,
+        "python_version": "3.12.8 (main, Dec 26 2024, 19:09:16) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "raw_peak_rss": 28557312,
+        "raw_unit": "bytes",
+        "seconds": 0.10762316710315645
+      },
+      {
+        "cli_argv": [
+          "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "subgraph",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic312/workspace with spaces",
+          "--symbol",
+          "async_symbol",
+          "--hops",
+          "1"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 9,
+          "excluded": {},
+          "files": 4,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 0,
+          "retries": 0,
+          "source_bytes": 279,
+          "symbol_count": 9,
+          "unresolved_count": 0,
+          "updated_files": 0
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "subgraph",
+        "peak_rss_bytes": 28000256,
+        "python_version": "3.12.8 (main, Dec 26 2024, 19:09:16) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "raw_peak_rss": 28000256,
+        "raw_unit": "bytes",
+        "seconds": 0.054797374992631376
+      },
+      {
+        "cli_argv": [
+          "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "search",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic312/workspace with spaces",
+          "--query",
+          "nonpython_unique_marker"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 9,
+          "excluded": {},
+          "files": 4,
+          "generation": 1,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 0,
+          "retries": 0,
+          "source_bytes": 279,
+          "symbol_count": 9,
+          "unresolved_count": 0,
+          "updated_files": 0
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "search",
+        "peak_rss_bytes": 27951104,
+        "python_version": "3.12.8 (main, Dec 26 2024, 19:09:16) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "raw_peak_rss": 27951104,
+        "raw_unit": "bytes",
+        "seconds": 0.05409233400132507
+      },
+      {
+        "cli_argv": [
+          "/Users/diego/.pyenv/versions/3.12.8/bin/python3.12",
+          "/Users/diego/.codex/worktrees/sdd/2026-10-20-search-code/Mostaza-Harness/submission/skills/search-code/scripts/search_code.py",
+          "neighbors",
+          "--root",
+          "/private/var/folders/8p/k_xsw2wd26vdz5rbz28b7yc00000gn/T/mostaza-search-validation-lslv2y3c/synthetic312/workspace with spaces",
+          "--symbol",
+          "caller_symbol",
+          "--edge-kind",
+          "callees"
+        ],
+        "index": {
+          "database_bytes": 184320,
+          "deleted_files": 0,
+          "edge_count": 7,
+          "excluded": {},
+          "files": 4,
+          "generation": 2,
+          "graph_limited_files": 0,
+          "parse_errors": 0,
+          "reparsed_files": 1,
+          "retries": 0,
+          "source_bytes": 280,
+          "symbol_count": 9,
+          "unresolved_count": 2,
+          "updated_files": 1
+        },
+        "measurement_launcher_sha256": "5477342fe1ae83376171d7f9accb598c819e74bbee2327433bc7026b10d252d0",
+        "mode": "neighbors",
+        "peak_rss_bytes": 28180480,
+        "python_version": "3.12.8 (main, Dec 26 2024, 19:09:16) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "raw_peak_rss": 28180480,
+        "raw_unit": "bytes",
+        "seconds": 0.0550606669858098
+      }
+    ],
+    "status": "PASS"
+  }
+}

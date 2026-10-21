@@ -1,4 +1,4 @@
-"""Deterministic declarative MVP archive boundary (agent-retrieval:AC-5)."""
+"""Deterministic submission boundary (agent-retrieval:AC-5, search-code:AC-7)."""
 
 from __future__ import annotations
 
@@ -35,6 +35,16 @@ TOOLS = frozenset(
         "get_code_subgraph",
     }
 )
+ACTIVE_TOOLS = TOOLS - {
+    "get_code_neighbors",
+    "search_similar_code",
+    "get_code_subgraph",
+}
+SEARCH_SKILL = "skills/search-code"
+SKILL_FILES = frozenset(
+    {f"{SEARCH_SKILL}/SKILL.md", f"{SEARCH_SKILL}/scripts/search_code.py"}
+)
+SKILL_DIRECTORIES = frozenset({"skills", SEARCH_SKILL, f"{SEARCH_SKILL}/scripts"})
 HISTORICAL_SUBMISSION = "experiments/historical-submission"
 EXPERIMENTS = {"E0": "E0-baseline", "E1": "E1-hybrid-retrieval"}
 VARIANTS = ("E0-B180", "E1-B180", "E0-B300", "E1-B300", "E1-R180")
@@ -110,7 +120,7 @@ def _allowed(value: str) -> bool:
         "tasks",
     }:
         return False
-    return value in {"agent.yaml", "eval_config.yaml"} or (
+    return value in {"agent.yaml", "eval_config.yaml", *SKILL_FILES} or (
         value.startswith("prompts/")
         and PurePosixPath(value).suffix in {".md", ".txt", ".yaml", ".yml"}
     )
@@ -127,7 +137,11 @@ def _check_tree(root: Path) -> None:
             if path.is_symlink():
                 raise PackagingError(f"Symlink is forbidden: {relative}")
             if path.is_dir():
-                if relative != "prompts" and not relative.startswith("prompts/"):
+                if (
+                    relative not in SKILL_DIRECTORIES
+                    and relative != "prompts"
+                    and not relative.startswith("prompts/")
+                ):
                     raise PackagingError(f"Forbidden directory: {relative}")
             elif not path.is_file() or not _allowed(relative):
                 raise PackagingError(f"Forbidden submission file: {relative}")
@@ -180,6 +194,7 @@ def _validate_agent(agent: Any) -> dict[str, Any]:
         "include_contents",
         "generate_content_config",
         "tools",
+        "skills",
     }
     if set(agent) - allowed:
         raise PackagingError("MVP config contains unsupported fields or delegation")
@@ -199,11 +214,16 @@ def _validate_agent(agent: Any) -> dict[str, Any]:
         or len(tools) != len(set(tools))
     ):
         raise PackagingError("Unknown, duplicate or non-native tool")
+    if "skills" in agent:
+        if agent["skills"] != [SEARCH_SKILL]:
+            raise PackagingError("Only the single search-code skill is supported")
+        if set(tools) != ACTIVE_TOOLS:
+            raise PackagingError("The search-code skill requires the six native tools")
     return agent
 
 
 def collect_submission(root: Path, prompt: str | None = None) -> dict[str, bytes]:
-    """Collect root config, optional eval settings and transitive !include closure.
+    """Collect config, transitive !include closure and the declared skill's files.
 
     This checks the host boundary only. Official schema/compiler validation is separate.
     """
@@ -211,6 +231,8 @@ def collect_submission(root: Path, prompt: str | None = None) -> dict[str, bytes
     agent = _validate_agent(
         yaml.load(_read_input(root, "agent.yaml"), Loader=IncludeLoader)
     )
+    if "skills" not in agent and (root / "skills").exists():
+        raise PackagingError("Undeclared skill directory")
     if prompt is not None:
         selected = _relative(prompt)
         if not selected.startswith("prompts/") or not _allowed(selected):
@@ -244,9 +266,9 @@ def collect_submission(root: Path, prompt: str | None = None) -> dict[str, bytes
             containers.remove(id(value))
             completed_containers.add((id(value), parent))
 
-    def visit(relative: str) -> None:
+    def visit(relative: str, *, skill: bool = False) -> None:
         relative = _relative(relative)
-        if not _allowed(relative):
+        if not _allowed(relative) or (relative in SKILL_FILES and not skill):
             raise PackagingError(f"Forbidden include: {relative}")
         if relative in active:
             raise PackagingError(f"Include cycle: {relative}")
@@ -272,6 +294,11 @@ def collect_submission(root: Path, prompt: str | None = None) -> dict[str, bytes
     active.remove("agent.yaml")
     if (root / "eval_config.yaml").exists():
         visit("eval_config.yaml")
+    if "skills" in agent:
+        for relative in sorted(SKILL_FILES):
+            visit(relative, skill=True)
+    if len(files) > MAX_FILES or sum(map(len, files.values())) > MAX_BYTES:
+        raise PackagingError("Submission exceeds MVP size/count limits")
     return dict(sorted(files.items()))
 
 
@@ -283,6 +310,11 @@ def archive_bytes(files: dict[str, bytes], output: Path) -> str:
         or sum(map(len, files.values())) > MAX_BYTES
     ):
         raise PackagingError("Missing root config or oversized archive")
+    agent = _validate_agent(yaml.load(files["agent.yaml"], Loader=IncludeLoader))
+    skill_members = set(files) & SKILL_FILES
+    expected_skill = SKILL_FILES if "skills" in agent else frozenset()
+    if skill_members != expected_skill:
+        raise PackagingError("Archive skill files differ from the declared closure")
     if output.is_symlink() or output.exists():
         raise PackagingError("Archive output already exists; refusing to overwrite")
     output.parent.mkdir(parents=True, exist_ok=True)
